@@ -1,0 +1,8 @@
+                                  label rows_old rows_new rows_ok names_ok
+1 development_lpm.qmd:790 2023 Hennepin   444443   444443    TRUE     TRUE
+  cols_differ geom_ok geom_detail   ok
+1                TRUE             TRUE
+                                                                                                                                     old_path
+1 /Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb
+   mode
+1 exact

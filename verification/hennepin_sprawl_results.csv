@@ -1,0 +1,2 @@
+"label","rows_old","rows_new","rows_ok","names_ok","cols_differ","geom_ok","geom_detail","ok","old_path","mode","via_raw"
+"development_lpm.qmd:790 2023 Hennepin",444443,444443,TRUE,TRUE,NA,TRUE,NA,TRUE,"/Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb","exact",FALSE

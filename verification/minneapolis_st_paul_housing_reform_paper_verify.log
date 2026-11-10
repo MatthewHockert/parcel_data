@@ -1,0 +1,18 @@
+2014 Ramsey                              ok=TRUE
+2015 Ramsey                              ok=TRUE
+2016 Ramsey                              ok=TRUE
+2017 Ramsey                              ok=TRUE
+2018 Ramsey                              ok=TRUE
+2019 Ramsey                              ok=TRUE
+2020 Ramsey                              ok=TRUE
+2021 Ramsey                              ok=TRUE
+2022 Ramsey                              ok=TRUE
+2023 Ramsey gdb                          ok=TRUE
+          used (Mb) gc trigger  (Mb) limit (Mb) max used  (Mb)
+Ncells 1076743 57.6   11402822 609.0         NA 14253527 761.3
+Vcells 2826586 21.6   74784257 570.6      65536 88451612 674.9
+2024 Ramsey shp                          ok=TRUE
+2024 Ramsey shp                          ok=TRUE
+          used (Mb) gc trigger  (Mb) limit (Mb) max used  (Mb)
+Ncells 1077591 57.6    9122258 487.2         NA 14253527 761.3
+Vcells 2828526 21.6   71856887 548.3      65536 89820210 685.3

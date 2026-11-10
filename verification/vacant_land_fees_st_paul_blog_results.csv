@@ -1,0 +1,20 @@
+"site","mode","note","label","ok","rows_old","rows_new","rows_ok","names_ok","cols_differ","geom_ok","geom_detail"
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2005 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2006 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2007 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2008 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2009 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2010 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2011 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2012 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2013 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2014 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2015 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2016 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2017 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2018 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2019 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2020 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2021 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels_over_time.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2022 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"vacant_land_st_paul/ramsey_parcels.R:13","exact","","2024 Ramsey shp",TRUE,171747,171747,TRUE,TRUE,"",TRUE,""

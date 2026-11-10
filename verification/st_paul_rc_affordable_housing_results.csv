@@ -1,0 +1,276 @@
+"site","mode","note","label","rows_old","rows_new","rows_ok","names_ok","cols_differ","geom_ok","geom_detail","ok","via_raw","attrs_ok","share_exact","share_within_1m","share_ok_points","max_dist_m"
+"R/01:189","exact",NA,"2005 Ramsey shp full",148724,148724,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2005 Ramsey shp full",148724,148724,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2005 Ramsey shp full",148724,148724,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2006 Ramsey shp full",148967,148967,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2006 Ramsey shp full",148967,148967,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2006 Ramsey shp full",148967,148967,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2006 Ramsey shp full",148967,148967,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2007 Ramsey shp full",149093,149093,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2007 Ramsey shp full",149093,149093,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2007 Ramsey shp full",149093,149093,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2007 Ramsey shp full",149093,149093,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2008 Ramsey shp full",149169,149169,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2008 Ramsey shp full",149169,149169,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2008 Ramsey shp full",149169,149169,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2008 Ramsey shp full",149169,149169,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2009 Ramsey shp full",149101,149101,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2009 Ramsey shp full",149101,149101,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2009 Ramsey shp full",149101,149101,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2009 Ramsey shp full",149101,149101,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2010 Ramsey shp full",149055,149055,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2010 Ramsey shp full",149055,149055,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2010 Ramsey shp full",149055,149055,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2010 Ramsey shp full",149055,149055,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2010 Ramsey shp full",149055,149055,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2010 Ramsey shp full",149055,149055,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2011 Ramsey shp full",148978,148978,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2011 Ramsey shp full",148978,148978,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2011 Ramsey shp full",148978,148978,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2011 Ramsey shp full",148978,148978,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2011 Ramsey shp full",148978,148978,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2011 Ramsey shp full",148978,148978,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2012 Ramsey shp full",148889,148889,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2012 Ramsey shp full",148889,148889,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2012 Ramsey shp full",148889,148889,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2012 Ramsey shp full",148889,148889,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2012 Ramsey shp full",148889,148889,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2012 Ramsey shp full",148889,148889,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2013 Ramsey shp full",148842,148842,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2013 Ramsey shp full",148842,148842,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2013 Ramsey shp full",148842,148842,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2013 Ramsey shp full",148842,148842,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2013 Ramsey shp full",148842,148842,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2013 Ramsey shp full",148842,148842,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2014 Ramsey shp full",152210,152210,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2014 Ramsey shp full",152210,152210,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2014 Ramsey shp full",152210,152210,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2014 Ramsey shp full",152210,152210,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2014 Ramsey shp full",152210,152210,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2014 Ramsey shp full",152210,152210,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1496","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:255","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:396","exact",NA,"2015 Ramsey shp full",154512,154512,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1496","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:255","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:396","exact",NA,"2016 Ramsey shp full",158207,158207,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1186","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1428","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1496","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:255","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:396","exact",NA,"2017 Ramsey shp full",159625,159625,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1193","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1435","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1503","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:262","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:403","exact",NA,"2018 Ramsey shp full",167468,167468,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1193","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1435","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1503","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:262","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:403","exact",NA,"2019 Ramsey shp full",170627,170627,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:162","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:201(p20 via loader)","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1449","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:138","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:98","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:166","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1144","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1839","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:275","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:351","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:430","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:696","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:941","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:2025","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:2177","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:2635","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1193","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1435","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1503","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:262","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:403","exact",NA,"2020 Ramsey shp full",170733,170733,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03b:32","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1193","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1435","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1503","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:262","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:403","exact",NA,"2022 Ramsey shp full",171336,171336,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact",NA,"2005 Hennepin shp full",354778,354778,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact",NA,"2005 Hennepin shp full",354778,354778,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact",NA,"2006 Hennepin shp full",358064,358064,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact",NA,"2006 Hennepin shp full",358064,358064,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact",NA,"2007 Hennepin shp full",359042,359042,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact",NA,"2007 Hennepin shp full",359042,359042,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact",NA,"2008 Hennepin shp full",422976,422976,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact",NA,"2008 Hennepin shp full",422976,422976,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact",NA,"2009 Hennepin shp full",424182,424182,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact",NA,"2009 Hennepin shp full",424182,424182,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact",NA,"2010 Hennepin shp full",424693,424693,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact",NA,"2010 Hennepin shp full",424693,424693,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/01:189","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/03:47","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:365","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/04:47","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1193","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"shift_share.qmd:1435","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:1503","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"development_effects.qmd:262","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"parcel_rci.qmd:403","exact(as_shapefile 2021)","","2021 Ramsey shp full",171072,171072,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact(as_shapefile 2021)","","2021 Hennepin shp full",440410,440410,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact(as_shapefile 2021)","","2021 Hennepin shp full",440410,440410,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/06:56","exact(as_shapefile 2021)","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS","2021 Ramsey sql06",171072,171072,TRUE,TRUE,NA,NA,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/12:33","exact(as_shapefile 2021)","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG","2021 Ramsey sql12",171072,171072,TRUE,TRUE,NA,NA,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/18:25","exact(as_shapefile 2021)","query: SELECT PIN, CTU_NAME AS c","2021 Ramsey sql18",171072,171072,TRUE,TRUE,NA,NA,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/21:30","exact(as_shapefile 2021)","query: SELECT PIN, CTU_NAME AS c, EMV_TOTAL","2021 Ramsey sql21",171072,171072,TRUE,TRUE,NA,NA,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/06:56","exact(as_shapefile 2021)","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS","2021 Hennepin sql06",440410,440410,TRUE,TRUE,NA,NA,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/12:33","exact(as_shapefile 2021)","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG","2021 Hennepin sql12",440410,440410,TRUE,TRUE,NA,NA,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/08:26","exact(as_shapefile 2021)","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX","2021 Hennepin sql08",440410,440410,TRUE,TRUE,NA,NA,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2011 Hennepin shp full",424882,424882,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2011 Hennepin shp full",424882,424882,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2012 Hennepin shp full",425873,425873,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2012 Hennepin shp full",425873,425873,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2013 Hennepin shp full",425977,425977,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2013 Hennepin shp full",425977,425977,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2014 Hennepin shp full",427762,427762,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2014 Hennepin shp full",427762,427762,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2015 Hennepin shp full",429241,429241,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2015 Hennepin shp full",429241,429241,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2016 Hennepin shp full",430449,430449,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2016 Hennepin shp full",430449,430449,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2017 Hennepin shp full",432434,432434,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2017 Hennepin shp full",432434,432434,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2018 Hennepin shp full",470159,470159,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2018 Hennepin shp full",470159,470159,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2019 Hennepin shp full",437489,437489,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2019 Hennepin shp full",437489,437489,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","","2020 Hennepin shp full",438634,438634,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","","2020 Hennepin shp full",438634,438634,TRUE,TRUE,NA,TRUE,NA,TRUE,NA,NA,NA,NA,NA,NA
+"R/05:37","exact","old read via raw copy (same size)","2022 Hennepin shp full",442750,442750,TRUE,TRUE,NA,TRUE,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"analysis.qmd:366","exact","old read via raw copy (same size)","2022 Hennepin shp full",442750,442750,TRUE,TRUE,NA,TRUE,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/01:193","exact","old read via raw copy (same size)","2023 Ramsey gdb full",171472,171472,TRUE,TRUE,NA,TRUE,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"analysis.qmd:371","exact","old read via raw copy (same size)","2023 Ramsey gdb full",171472,171472,TRUE,TRUE,NA,TRUE,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"shift_share.qmd:1201","exact","old read via raw copy (same size)","2023 Ramsey gdb full",171472,171472,TRUE,TRUE,NA,TRUE,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"shift_share.qmd:1443","exact","old read via raw copy (same size)","2023 Ramsey gdb full",171472,171472,TRUE,TRUE,NA,TRUE,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"analysis.qmd:374","exact","old read via raw copy (same size)","2023 Hennepin gdb full",444443,444443,TRUE,TRUE,NA,TRUE,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/03:56","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/03b:38","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/04:53","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"analysis.qmd:1518","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"development_effects.qmd:277","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"shift_share.qmd:1208","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"shift_share.qmd:1450","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"parcel_rci.qmd:418","exact","","2025 Ramsey shp full",171992,171992,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/05:50 (2025 branch; loop is 2005:2024)","exact","","2025 Hennepin shp full",447024,447024,TRUE,TRUE,NA,TRUE,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CITY AS city_raw, USE1_DESC AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2016 Ramsey sql06",158207,158207,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CITY AS city_raw, USE1_DESC AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2016 Ramsey sql12",158207,158207,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CITY AS c; old read via raw copy (same size)","2016 Ramsey sql18",158207,158207,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CITY AS c, EMV_TOTAL; old read via raw copy (same size)","2016 Ramsey sql21",158207,158207,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CITY AS city_raw, USE1_DESC AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2016 Hennepin sql06",430449,430449,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CITY AS city_raw, USE1_DESC AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2016 Hennepin sql12",430449,430449,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CITY AS city_raw, USE1_DESC AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2017 Ramsey sql06",159625,159625,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CITY AS city_raw, USE1_DESC AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2017 Ramsey sql12",159625,159625,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CITY AS city_raw, USE1_DESC AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX; old read via raw copy (same size)","2017 Ramsey sql08",159625,159625,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CITY AS c; old read via raw copy (same size)","2017 Ramsey sql18",159625,159625,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CITY AS c, EMV_TOTAL; old read via raw copy (same size)","2017 Ramsey sql21",159625,159625,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CITY AS city_raw, USE1_DESC AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2017 Hennepin sql06",432434,432434,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CITY AS city_raw, USE1_DESC AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2017 Hennepin sql12",432434,432434,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CITY AS city_raw, USE1_DESC AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX; old read via raw copy (same size)","2017 Hennepin sql08",432434,432434,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2018 Ramsey sql06",167468,167468,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2018 Ramsey sql12",167468,167468,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CTU_NAME AS c; old read via raw copy (same size)","2018 Ramsey sql18",167468,167468,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CTU_NAME AS c, EMV_TOTAL; old read via raw copy (same size)","2018 Ramsey sql21",167468,167468,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2018 Hennepin sql06",470159,470159,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2018 Hennepin sql12",470159,470159,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2019 Ramsey sql06",170627,170627,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2019 Ramsey sql12",170627,170627,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CTU_NAME AS c; old read via raw copy (same size)","2019 Ramsey sql18",170627,170627,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CTU_NAME AS c, EMV_TOTAL; old read via raw copy (same size)","2019 Ramsey sql21",170627,170627,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2019 Hennepin sql06",437489,437489,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2019 Hennepin sql12",437489,437489,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX; old read via raw copy (same size)","2019 Hennepin sql08",437489,437489,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2020 Ramsey sql06",170733,170733,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2020 Ramsey sql12",170733,170733,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CTU_NAME AS c; old read via raw copy (same size)","2020 Ramsey sql18",170733,170733,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CTU_NAME AS c, EMV_TOTAL; old read via raw copy (same size)","2020 Ramsey sql21",170733,170733,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2020 Hennepin sql06",438634,438634,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2020 Hennepin sql12",438634,438634,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX; old read via raw copy (same size)","2020 Hennepin sql08",438634,438634,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2022 Ramsey sql06",171336,171336,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2022 Ramsey sql12",171336,171336,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CTU_NAME AS c; old read via raw copy (same size)","2022 Ramsey sql18",171336,171336,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CTU_NAME AS c, EMV_TOTAL; old read via raw copy (same size)","2022 Ramsey sql21",171336,171336,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2022 Hennepin sql06",442750,442750,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2022 Hennepin sql12",442750,442750,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX; old read via raw copy (same size)","2022 Hennepin sql08",442750,442750,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2023 Ramsey sql06",171472,171472,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2023 Ramsey sql12",171472,171472,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX; old read via raw copy (same size)","2023 Ramsey sql08",171472,171472,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CTU_NAME AS c; old read via raw copy (same size)","2023 Ramsey sql18",171472,171472,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CTU_NAME AS c, EMV_TOTAL; old read via raw copy (same size)","2023 Ramsey sql21",171472,171472,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS; old read via raw copy (same size)","2023 Hennepin sql06",444443,444443,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG; old read via raw copy (same size)","2023 Hennepin sql12",444443,444443,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX; old read via raw copy (same size)","2023 Hennepin sql08",444443,444443,TRUE,TRUE,NA,NA,NA,TRUE,TRUE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS","2024 Ramsey sql06",171747,171747,TRUE,TRUE,NA,NA,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG","2024 Ramsey sql12",171747,171747,TRUE,TRUE,NA,NA,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/08:26","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX","2024 Ramsey sql08",171747,171747,TRUE,TRUE,NA,NA,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/18:25","exact","query: SELECT PIN, CTU_NAME AS c","2024 Ramsey sql18",171747,171747,TRUE,TRUE,NA,NA,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/21:30","exact","query: SELECT PIN, CTU_NAME AS c, EMV_TOTAL","2024 Ramsey sql21",171747,171747,TRUE,TRUE,NA,NA,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/06:56","exact","query: SELECT CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_LAND, EMV_BLDG, EMV_TOTAL, TAX_CAPAC, TOTAL_TAX, NUM_UNITS","2024 Hennepin sql06",445717,445717,TRUE,TRUE,NA,NA,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/12:33","exact","query: SELECT PIN, CTU_NAME AS city_raw, USECLASS1 AS useclass, EMV_TOTAL, EMV_BLDG","2024 Hennepin sql12",445717,445717,TRUE,TRUE,NA,NA,NA,TRUE,FALSE,NA,NA,NA,NA,NA
+"R/01:193","exact","","2024 Ramsey gdb full",171747,171747,TRUE,TRUE,"",TRUE,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"analysis.qmd:371","exact","","2024 Ramsey gdb full",171747,171747,TRUE,TRUE,"",TRUE,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"shift_share.qmd:1201","exact","","2024 Ramsey gdb full",171747,171747,TRUE,TRUE,"",TRUE,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"shift_share.qmd:1443","exact","","2024 Ramsey gdb full",171747,171747,TRUE,TRUE,"",TRUE,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"analysis.qmd:374","exact","","2024 Hennepin gdb full",445717,445717,TRUE,TRUE,"",TRUE,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"R/03:53","points","old read via raw copy (same size)","2023 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,TRUE,FALSE,0.9568,0.972,1,1589.4
+"R/03b:36","points","old read via raw copy (same size)","2023 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,TRUE,FALSE,0.9568,0.972,1,1589.4
+"R/04:51","points","old read via raw copy (same size)","2023 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,TRUE,FALSE,0.9568,0.972,1,1589.4
+"analysis.qmd:1510","points","old read via raw copy (same size)","2023 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,TRUE,FALSE,0.9568,0.972,1,1589.4
+"development_effects.qmd:269","points","old read via raw copy (same size)","2023 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,TRUE,FALSE,0.9568,0.972,1,1589.4
+"parcel_rci.qmd:411","points","old read via raw copy (same size)","2023 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,TRUE,FALSE,0.9568,0.972,1,1589.4
+"R/03:53","points","","2024 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,FALSE,FALSE,0.9568,0.9719,1,1589.4
+"R/03b:36","points","","2024 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,FALSE,FALSE,0.9568,0.9719,1,1589.4
+"R/04:51","points","","2024 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,FALSE,FALSE,0.9568,0.9719,1,1589.4
+"analysis.qmd:1510","points","","2024 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,FALSE,FALSE,0.9568,0.9719,1,1589.4
+"development_effects.qmd:269","points","","2024 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,FALSE,FALSE,0.9568,0.9719,1,1589.4
+"parcel_rci.qmd:411","points","","2024 Ramsey Points",NA,NA,TRUE,NA,"ACRES_POLY",NA,NA,FALSE,FALSE,FALSE,0.9568,0.9719,1,1589.4
+"R/05:45","points","old read via raw copy (same size)","2023 Hennepin Points",NA,NA,TRUE,NA,"",NA,NA,TRUE,TRUE,TRUE,0.9634,0.964,1,1686.4
+"R/05:45","points","","2024 Hennepin Points",NA,NA,TRUE,NA,"",NA,NA,TRUE,FALSE,TRUE,0.9634,0.9641,1,1686.4
+"R/19:18","exact","query: SELECT CTU_NAME AS c, USECLASS1 AS u, EMV_TOTAL, TAX_CAPAC","2024 Ramsey sql19/28",171747,171747,TRUE,TRUE,"",NA,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"R/28:27","exact","query: SELECT CTU_NAME AS c, USECLASS1 AS u, EMV_TOTAL, TAX_CAPAC","2024 Ramsey sql19/28",171747,171747,TRUE,TRUE,"",NA,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"R/22:23","exact","query: SELECT PIN, CTU_NAME AS c, USECLASS1 AS u, EMV_TOTAL, TAX_CAPAC","2024 Ramsey sql22",171747,171747,TRUE,TRUE,"",NA,"",TRUE,FALSE,NA,NA,NA,NA,NA
+"R/20:31","exact","query: SELECT PIN, CTU_NAME (geometry kept); old read via raw copy (same size)","2022 Ramsey sql20 +geom",171336,171336,TRUE,TRUE,"",TRUE,"",TRUE,TRUE,NA,NA,NA,NA,NA
+"R/20:31","exact","query: SELECT PIN, CTU_NAME (geometry kept); old read via raw copy (same size)","2022 Hennepin sql20 +geom",442750,442750,TRUE,TRUE,"",TRUE,"",TRUE,TRUE,NA,NA,NA,NA,NA

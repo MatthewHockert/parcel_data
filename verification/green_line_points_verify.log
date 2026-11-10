@@ -1,0 +1,38 @@
+Ramsey 2005 IDENTICAL 
+Ramsey 2006 IDENTICAL 
+Ramsey 2007 IDENTICAL 
+Ramsey 2008 IDENTICAL 
+Ramsey 2009 IDENTICAL 
+Ramsey 2010 IDENTICAL 
+Ramsey 2011 IDENTICAL 
+Ramsey 2012 IDENTICAL 
+Ramsey 2013 IDENTICAL 
+Ramsey 2014 IDENTICAL 
+Ramsey 2015 IDENTICAL 
+Ramsey 2016 IDENTICAL 
+Ramsey 2017 IDENTICAL 
+Ramsey 2018 IDENTICAL 
+Ramsey 2019 IDENTICAL 
+Ramsey 2020 IDENTICAL 
+Ramsey 2021 DIFF | year_built:10903 num_units:10904 emv_land:3388 emv_bldg:9418 emv_total:370 tax_capac:166910 total_tax:376 spec_asses:376 sale_value:71777 | year_built:4505 num_units:4100 emv_land:59 emv_bldg:3193 emv_total:59 tax_capac:51793 total_tax:59 spec_asses:59 sale_value:23450 
+Ramsey 2022 IDENTICAL 
+Hennepin 2005 IDENTICAL 
+Hennepin 2006 IDENTICAL 
+Hennepin 2007 IDENTICAL 
+Hennepin 2008 IDENTICAL 
+Hennepin 2009 IDENTICAL 
+Hennepin 2010 IDENTICAL 
+Hennepin 2011 IDENTICAL 
+Hennepin 2012 IDENTICAL 
+Hennepin 2013 IDENTICAL 
+Hennepin 2014 IDENTICAL 
+Hennepin 2015 IDENTICAL 
+Hennepin 2016 IDENTICAL 
+Hennepin 2017 IDENTICAL 
+Hennepin 2018 IDENTICAL 
+Hennepin 2019 IDENTICAL 
+Hennepin 2020 IDENTICAL 
+Hennepin 2021 IDENTICAL 
+Hennepin 2022 IDENTICAL 
+
+identical (full and filtered): 35 of 36 

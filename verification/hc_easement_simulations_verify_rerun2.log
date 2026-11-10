@@ -1,0 +1,4 @@
+                               label rows_old rows_new cols_differ geom_ok   ok
+1 parcel_analysis.R:32 2016 Hennepin   430449   430449                TRUE TRUE
+                               label rows_old rows_new cols_differ geom_ok   ok
+1 parcel_analysis.R:32 2018 Hennepin   470159   470159                TRUE TRUE

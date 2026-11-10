@@ -1,0 +1,17 @@
+# Data: 75 GB of GeoParquet + raw source files. Rebuild with code/01-08
+# from the MetroGIS regional parcel releases (see README.md).
+/data/
+
+# Local disk housekeeping (where old copies on this machine were moved or
+# trashed). Not pipeline provenance; kept on disk, not published.
+/docs/deletion_candidates.csv
+/docs/move_manifest.csv
+/docs/evict_list.txt
+/docs/trash_manifest_*.csv
+
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/

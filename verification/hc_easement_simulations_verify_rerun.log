@@ -1,0 +1,14 @@
+                               label rows_old rows_new cols_differ geom_ok   ok
+1 parcel_analysis.R:32 2016 Hennepin   430449   430449                TRUE TRUE
+                               label rows_old rows_new cols_differ geom_ok   ok
+1 parcel_analysis.R:32 2017 Hennepin   432434   432434                TRUE TRUE
+                               label rows_old rows_new cols_differ geom_ok   ok
+1 parcel_analysis.R:32 2018 Hennepin   470159   470159                TRUE TRUE
+                               label rows_old rows_new cols_differ geom_ok   ok
+1 parcel_analysis.R:32 2019 Hennepin   437489   437489                TRUE TRUE
+                               label rows_old rows_new
+1 parcel_analysis.R:32 2021 Hennepin   440410   440410
+                                                                                                                                                                                                                                                                                                                                                             cols_differ
+1 ANUMBERPRE, ANUMBERSUF, ST_POS_MOD, SUB_ID1, LOT, BLOCK, PLAT_NAME, OWNER_NAME, OWN_ADD_L1, OWN_ADD_L2, OWN_ADD_L3, OWN_ADD_L4, TAX_NAME, TAX_ADD_L1, TAX_ADD_L2, TAX_ADD_L3, TAX_ADD_L4, LANDMARK, ACRES_DEED, TAX_YEAR, MKT_YEAR, DWELL_TYPE, HOME_STYLE, HEATING, COOLING, SALE_DATE, AGPRE_ENRD, AGPRE_EXPD, ABB_LEGAL, EDIT_DATE, EXP_DATE, POLYPTREL, N_STANDARD
+  geom_ok    ok
+1   FALSE FALSE

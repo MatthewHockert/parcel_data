@@ -1,0 +1,10 @@
+label,rows_old,rows_new,rows_ok,names_ok,cols_differ,geom_ok,geom_detail,losses_used,ok,note
+selftest 2017 Ramsey: python original view vs read_file(raw shp),159625,159625,True,True,,True,,,True,dtype mismatches: none
+"selftest 2017 Ramsey: python vs R original view (PIN, EMV_TOTAL, YEAR_BUILT, GARAGESQFT, SALE_DATE, CITY)",159625,159625,True,True,,,,,True,R side via Rscript; SALE_DATE compared as dates (R NA = python '0000/00/00')
+clean_parcels.py:882 2021 Anoka (exact),136871,136871,True,True,,True,,,True,dtype mismatches: none; index equal: True; crs+geometry name equal: True
+clean_parcels.py:882 2021 Carver (exact),44942,44942,True,True,,True,,,True,dtype mismatches: none; index equal: True; crs+geometry name equal: True
+clean_parcels.py:882 2021 Dakota (exact),148135,148135,True,True,,True,,,True,dtype mismatches: none; index equal: True; crs+geometry name equal: True
+clean_parcels.py:882 2021 Hennepin (exact),440410,440410,True,True,,True,,,True,dtype mismatches: none; index equal: True; crs+geometry name equal: True
+clean_parcels.py:882 2021 Ramsey (exact),171072,171072,True,True,,True,,,True,dtype mismatches: none; index equal: True; crs+geometry name equal: True
+clean_parcels.py:882 2021 Scott (exact),59014,59014,True,True,,True,,,True,dtype mismatches: none; index equal: True; crs+geometry name equal: True
+clean_parcels.py:882 2021 Washington (exact),114292,114292,True,True,,True,,,True,dtype mismatches: none; index equal: True; crs+geometry name equal: True

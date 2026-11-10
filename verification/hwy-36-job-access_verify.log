@@ -1,0 +1,65 @@
+[1] TRUE
+                                                                              label
+1 load_parcel_data.R:102 + paper_replication/load_parcel_data.R:101 2015 Washington
+  rows_old rows_new rows_ok names_ok cols_differ geom_ok geom_detail    ok
+1   106045   106045    TRUE     TRUE               FALSE             FALSE
+  has_orig_fid_old
+1             TRUE
+                                                                                                                                                old_path
+1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2015/Parcels2015WashingtonPoints.shp
+   mode
+1 exact
+                                                                              label
+1 load_parcel_data.R:102 + paper_replication/load_parcel_data.R:101 2016 Washington
+  rows_old rows_new rows_ok names_ok cols_differ geom_ok geom_detail    ok
+1   106849   106849    TRUE     TRUE               FALSE             FALSE
+  has_orig_fid_old
+1             TRUE
+                                                                                                                                                old_path
+1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2016/Parcels2016WashingtonPoints.shp
+   mode
+1 exact
+                                                                              label
+1 load_parcel_data.R:102 + paper_replication/load_parcel_data.R:101 2017 Washington
+  rows_old rows_new rows_ok names_ok
+1   108213   108213    TRUE     TRUE
+                                           cols_differ geom_ok geom_detail
+1 DWELL_TYPE, HOME_STYLE, GARAGESQFT, HEATING, COOLING   FALSE            
+     ok has_orig_fid_old
+1 FALSE             TRUE
+                                                                                                                                                old_path
+1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2017/Parcels2017WashingtonPoints.shp
+   mode
+1 exact
+                                                                              label
+1 load_parcel_data.R:102 + paper_replication/load_parcel_data.R:101 2018 Washington
+  rows_old rows_new rows_ok names_ok cols_differ geom_ok geom_detail    ok
+1   109913   109913    TRUE     TRUE               FALSE             FALSE
+  has_orig_fid_old
+1            FALSE
+                                                                                                                                                old_path
+1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2018/Parcels2018WashingtonPoints.shp
+   mode
+1 exact
+                                                                              label
+1 load_parcel_data.R:102 + paper_replication/load_parcel_data.R:101 2019 Washington
+  rows_old rows_new rows_ok names_ok cols_differ geom_ok geom_detail    ok
+1   111175   111175    TRUE     TRUE               FALSE             FALSE
+  has_orig_fid_old
+1            FALSE
+                                                                                                                                                old_path
+1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2019/Parcels2019WashingtonPoints.shp
+   mode
+1 exact
+                                                                              label
+1 load_parcel_data.R:102 + paper_replication/load_parcel_data.R:101 2020 Washington
+  rows_old rows_new rows_ok names_ok cols_differ geom_ok geom_detail    ok
+1   112636   112636    TRUE     TRUE               FALSE             FALSE
+  has_orig_fid_old
+1            FALSE
+                                                                                                                                                old_path
+1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2020/Parcels2020WashingtonPoints.shp
+   mode
+1 exact
+Error: unexpected ')' in "out)"
+Execution halted

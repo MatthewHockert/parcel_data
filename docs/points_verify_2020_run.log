@@ -1,0 +1,29 @@
+points partitions to verify: 7 
+15:15 2020 Anoka OK 
+15:15 2020 Carver OK 
+15:15 2020 Dakota OK 
+15:16 2020 Hennepin OK 
+15:17 2020 Ramsey OK 
+15:18 2020 Scott OK 
+15:20 2020 Washington OK 
+# A tibble: 7 × 8
+  label           rows_old rows_new names_ok cols_differ geom_ok types_differ
+  <chr>              <int>    <int> <lgl>    <chr>       <lgl>   <chr>       
+1 2020 Anoka        135508   135508 TRUE     ""          TRUE    ""          
+2 2020 Carver        43829    43829 TRUE     ""          TRUE    ""          
+3 2020 Dakota       159511   159511 TRUE     ""          TRUE    ""          
+4 2020 Hennepin     438634   438634 TRUE     ""          TRUE    ""          
+5 2020 Ramsey       166723   166723 TRUE     ""          TRUE    ""          
+6 2020 Scott         57917    57917 TRUE     ""          TRUE    ""          
+7 2020 Washington   112636   112636 TRUE     ""          TRUE    ""          
+  ok   
+  <lgl>
+1 TRUE 
+2 TRUE 
+3 TRUE 
+4 TRUE 
+5 TRUE 
+6 TRUE 
+7 TRUE 
+points partitions verified OK: 7 of 7 
+[1] TRUE

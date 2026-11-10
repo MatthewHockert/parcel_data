@@ -1,0 +1,13 @@
+"site","mode","note","label","ok","rows_old","rows_new","rows_ok","names_ok","cols_differ","geom_ok","geom_detail"
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2014 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2015 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2016 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2017 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2018 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2019 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2020 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2021 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:33","missing","old path missing; store partition already verified in docs/store_verification.csv","2022 Ramsey",TRUE,NA,NA,NA,NA,NA,NA,NA
+"ramsey_parcels.R:137","exact","","2023 Ramsey gdb",TRUE,171472,171472,TRUE,TRUE,"",TRUE,""
+"ramsey_parcels.R:207","exact","","2024 Ramsey shp",TRUE,171747,171747,TRUE,TRUE,"",TRUE,""
+"ramsey_parcels.R:406","exact","same file/args as ramsey_parcels.R:207","2024 Ramsey shp",TRUE,171747,171747,TRUE,TRUE,"",TRUE,""

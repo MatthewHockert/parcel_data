@@ -1,0 +1,4 @@
+partitions: 140  already written: 140  ready to write: 140  waiting on copy: 0 
+139 2024 Scott         60542    60542 TRUE    TRUE     ""          TRUE    TRUE 
+140 2024 Washington   117623   117623 TRUE    TRUE     ""          TRUE    TRUE 
+partitions verified OK: 140 of 140 

@@ -1,0 +1,498 @@
+files to inventory: 147  (expect 7 counties x 20 years = 140)
+still iCloud-only (header read will trigger a download): 36 
+# A tibble: 21 × 3
+    year min_fields max_fields
+   <dbl>      <int>      <int>
+ 1  2005         67         67
+ 2  2006         67         67
+ 3  2007         67         67
+ 4  2008         67         67
+ 5  2009         67         67
+ 6  2010         67         67
+ 7  2011         67         67
+ 8  2012         67         67
+ 9  2013         67         67
+10  2014         67         69
+11  2015         67         67
+12  2016         67         67
+13  2017         67         67
+14  2018         95         95
+15  2019         95         95
+16  2020         95         95
+17  2021         93         93
+18  2022         95         95
+19  2023         95         95
+20  2024         95         95
+21  2025         95         95
+distinct field names: 123 
+# A tibble: 123 × 6
+    field        first  last n_years n_county_years types                    
+    <chr>        <dbl> <dbl>   <int>          <int> <chr>                    
+  1 ACRES_DEED    2005  2025      21            147 numeric                  
+  2 ACRES_POLY    2005  2025      21            147 numeric                  
+  3 AGPRE_ENRD    2005  2025      21            147 Date/POSIXct             
+  4 AGPRE_EXPD    2005  2025      21            147 Date/POSIXct             
+  5 AG_PRESERV    2005  2025      21            147 character                
+  6 BASEMENT      2005  2025      21            147 character                
+  7 BLDG_NUM      2005  2017      13             91 character                
+  8 BLOCK         2005  2025      21            147 character                
+  9 CITY          2005  2017      13             91 character                
+ 10 CITY_USPS     2005  2017      13             91 character                
+ 11 COOLING       2005  2025      21            147 character                
+ 12 COUNTY_ID     2005  2017      13             91 character                
+ 13 DWELL_TYPE    2005  2025      21            147 character                
+ 14 EMV_BLDG      2005  2025      21            147 integer/numeric          
+ 15 EMV_LAND      2005  2025      21            147 integer/numeric          
+ 16 EMV_TOTAL     2005  2025      21            147 integer/numeric          
+ 17 FIN_SQ_FT     2005  2025      21            147 integer/numeric          
+ 18 GARAGE        2005  2025      21            143 character                
+ 19 GARAGESQFT    2005  2025      21            147 character/integer/numeric
+ 20 GREEN_ACRE    2005  2025      21            147 character                
+ 21 HEATING       2005  2025      21            147 character                
+ 22 HOMESTEAD     2005  2025      21            143 character                
+ 23 HOME_STYLE    2005  2025      21            147 character                
+ 24 LANDMARK      2005  2025      21            147 character                
+ 25 LOT           2005  2025      21            147 character                
+ 26 MULTI_USES    2005  2025      21            147 character                
+ 27 NUM_UNITS     2005  2025      21            147 character/integer/numeric
+ 28 OPEN_SPACE    2005  2025      21            147 character                
+ 29 OWNER_MORE    2005  2025      21            147 character                
+ 30 OWNER_NAME    2005  2025      21            147 character                
+ 31 OWN_ADD_L1    2005  2025      21            147 character                
+ 32 OWN_ADD_L2    2005  2025      21            147 character                
+ 33 OWN_ADD_L3    2005  2025      21            147 character                
+ 34 PARC_CODE     2005  2017      13             91 integer                  
+ 35 PIN           2005  2025      21            147 character                
+ 36 PLAT_NAME     2005  2025      21            147 character                
+ 37 PREFIXTYPE    2005  2017      13             91 character                
+ 38 PREFIX_DIR    2005  2017      13             91 character                
+ 39 SALE_DATE     2005  2025      21            147 Date/POSIXct             
+ 40 SALE_VALUE    2005  2025      21            147 integer/numeric          
+ 41 SCHOOL_DST    2005  2025      21            147 character                
+ 42 SPEC_ASSES    2005  2025      21            147 integer/numeric          
+ 43 STREETNAME    2005  2017      13             91 character                
+ 44 STREETTYPE    2005  2017      13             91 character                
+ 45 SUFFIX_DIR    2005  2017      13             91 character                
+ 46 Shape_Area    2005  2025      20            140 numeric                  
+ 47 Shape_Leng    2005  2025      18            126 numeric                  
+ 48 TAX_ADD_L1    2005  2025      21            147 character                
+ 49 TAX_ADD_L2    2005  2025      21            147 character                
+ 50 TAX_ADD_L3    2005  2025      21            147 character                
+ 51 TAX_CAPAC     2005  2025      21            147 integer/numeric          
+ 52 TAX_EXEMPT    2005  2025      21            147 character                
+ 53 TAX_NAME      2005  2025      21            147 character                
+ 54 TOTAL_TAX     2005  2025      21            147 integer/numeric          
+ 55 UNIT_INFO     2005  2017      13             91 character                
+ 56 USE1_DESC     2005  2017      13             91 character                
+ 57 USE2_DESC     2005  2017      13             91 character                
+ 58 USE3_DESC     2005  2017      13             91 character                
+ 59 USE4_DESC     2005  2017      13             91 character                
+ 60 WSHD_DIST     2005  2017      13             91 character                
+ 61 XUSE1_DESC    2005  2017      13             91 character                
+ 62 XUSE2_DESC    2005  2017      13             91 character                
+ 63 XUSE3_DESC    2005  2017      13             91 character                
+ 64 XUSE4_DESC    2005  2017      13             91 character                
+ 65 YEAR_BUILT    2005  2025      21            147 integer/numeric          
+ 66 ZIP           2005  2025      21            147 character                
+ 67 ZIP4          2005  2025      21            147 character                
+ 68 Garage        2007  2010       4              4 character                
+ 69 Homestead     2007  2010       4              4 character                
+ 70 Shape_Le_1    2014  2014       1              1 numeric                  
+ 71 Shape_STAr    2014  2014       1              1 numeric                  
+ 72 Shape_STLe    2014  2014       1              1 numeric                  
+ 73 TORRENS       2014  2014       1              1 character                
+ 74 ABB_LEGAL     2018  2025       8             56 character                
+ 75 ANUMBER       2018  2025       8             56 integer/numeric          
+ 76 ANUMBERPRE    2018  2025       8             56 character                
+ 77 ANUMBERSUF    2018  2025       8             56 character                
+ 78 COUNTY_PIN    2018  2025       8             56 character                
+ 79 CO_CODE       2018  2025       8             56 character                
+ 80 CO_NAME       2018  2025       8             56 character                
+ 81 CTU_ID_TXT    2018  2025       8             56 character                
+ 82 CTU_NAME      2018  2025       8             56 character                
+ 83 EDIT_DATE     2018  2025       8             56 Date/POSIXct             
+ 84 EXP_DATE      2018  2025       8             56 Date/POSIXct             
+ 85 MKT_YEAR      2018  2025       8             56 integer                  
+ 86 N_STANDARD    2018  2025       8             56 integer                  
+ 87 OWNERSHIP     2018  2025       8             56 character                
+ 88 OWN_ADD_L4    2018  2025       8             56 character                
+ 89 POLYPTREL     2018  2025       8             56 integer                  
+ 90 POSTCOMM      2018  2025       8             56 character                
+ 91 PRIN_MER      2018  2025       8             56 integer                  
+ 92 RANGE         2018  2025       7             49 integer                  
+ 93 RANGE_DIR     2018  2025       8             56 integer                  
+ 94 SECTION       2018  2025       8             56 integer                  
+ 95 STATE_CODE    2018  2025       8             56 character                
+ 96 STATE_PIN     2018  2025       8             56 character                
+ 97 ST_NAME       2018  2025       8             56 character                
+ 98 ST_POS_DIR    2018  2025       8             56 character                
+ 99 ST_POS_MOD    2018  2025       8             56 character                
+100 ST_POS_TYP    2018  2025       8             56 character                
+101 ST_PRE_DIR    2018  2025       8             56 character                
+102 ST_PRE_MOD    2018  2025       8             56 character                
+103 ST_PRE_SEP    2018  2025       8             56 character                
+104 ST_PRE_TYP    2018  2025       8             56 character                
+105 SUB_ID1       2018  2025       8             56 character                
+106 SUB_ID2       2018  2025       8             56 character                
+107 SUB_TYPE1     2018  2025       8             56 character                
+108 SUB_TYPE2     2018  2025       8             56 character                
+109 TAX_ADD_L4    2018  2025       8             56 character                
+110 TAX_YEAR      2018  2025       8             56 integer                  
+111 TOWNSHIP      2018  2025       8             56 integer                  
+112 USECLASS1     2018  2025       8             56 character                
+113 USECLASS2     2018  2025       8             56 character                
+114 USECLASS3     2018  2025       8             56 character                
+115 USECLASS4     2018  2025       8             56 character                
+116 VIEWID        2018  2025       8             56 integer/numeric          
+117 WSHD_DST      2018  2025       8             56 character                
+118 XUSECLASS1    2018  2025       8             56 character                
+119 XUSECLASS2    2018  2025       8             56 character                
+120 XUSECLASS3    2018  2025       8             56 character                
+121 XUSECLASS4    2018  2025       8             56 character                
+122 RANGE_        2021  2021       1              7 integer                  
+123 Shape_Length  2023  2024       2             14 numeric                  
+std_name collisions within a file: 0 
+# A tibble: 0 × 4
+# ℹ 4 variables: year <dbl>, county <chr>, std_name <chr>, n <int>
+standardized columns: 100  (from 123 original names)
+# A tibble: 100 × 5
+    std_name           years     n_years originals              
+    <chr>              <chr>       <int> <chr>                  
+  1 acres_deed         2005-2025      21 ACRES_DEED             
+  2 acres_poly         2005-2025      21 ACRES_POLY             
+  3 addr_number        2005-2025      21 ANUMBER/BLDG_NUM       
+  4 ag_preserv         2005-2025      21 AG_PRESERV             
+  5 agpre_enrd         2005-2025      21 AGPRE_ENRD             
+  6 agpre_expd         2005-2025      21 AGPRE_EXPD             
+  7 basement           2005-2025      21 BASEMENT               
+  8 block              2005-2025      21 BLOCK                  
+  9 city               2005-2025      21 CITY/CTU_NAME          
+ 10 city_postal        2005-2025      21 CITY_USPS/POSTCOMM     
+ 11 cooling            2005-2025      21 COOLING                
+ 12 county_code        2005-2025      21 CO_CODE/COUNTY_ID      
+ 13 dwell_type         2005-2025      21 DWELL_TYPE             
+ 14 emv_bldg           2005-2025      21 EMV_BLDG               
+ 15 emv_land           2005-2025      21 EMV_LAND               
+ 16 emv_total          2005-2025      21 EMV_TOTAL              
+ 17 exempt_use1        2005-2025      21 XUSE1_DESC/XUSECLASS1  
+ 18 exempt_use2        2005-2025      21 XUSE2_DESC/XUSECLASS2  
+ 19 exempt_use3        2005-2025      21 XUSE3_DESC/XUSECLASS3  
+ 20 exempt_use4        2005-2025      21 XUSE4_DESC/XUSECLASS4  
+ 21 fin_sq_ft          2005-2025      21 FIN_SQ_FT              
+ 22 garage             2005-2025      21 Garage/GARAGE          
+ 23 garagesqft         2005-2025      21 GARAGESQFT             
+ 24 green_acre         2005-2025      21 GREEN_ACRE             
+ 25 heating            2005-2025      21 HEATING                
+ 26 home_style         2005-2025      21 HOME_STYLE             
+ 27 homestead          2005-2025      21 Homestead/HOMESTEAD    
+ 28 landmark           2005-2025      21 LANDMARK               
+ 29 lot                2005-2025      21 LOT                    
+ 30 multi_uses         2005-2025      21 MULTI_USES             
+ 31 num_units          2005-2025      21 NUM_UNITS              
+ 32 open_space         2005-2025      21 OPEN_SPACE             
+ 33 own_add_l1         2005-2025      21 OWN_ADD_L1             
+ 34 own_add_l2         2005-2025      21 OWN_ADD_L2             
+ 35 own_add_l3         2005-2025      21 OWN_ADD_L3             
+ 36 owner_more         2005-2025      21 OWNER_MORE             
+ 37 owner_name         2005-2025      21 OWNER_NAME             
+ 38 parcel_code        2005-2025      21 PARC_CODE/POLYPTREL    
+ 39 pin                2005-2025      21 PIN                    
+ 40 plat_name          2005-2025      21 PLAT_NAME              
+ 41 sale_date          2005-2025      21 SALE_DATE              
+ 42 sale_value         2005-2025      21 SALE_VALUE             
+ 43 school_dst         2005-2025      21 SCHOOL_DST             
+ 44 spec_asses         2005-2025      21 SPEC_ASSES             
+ 45 st_name            2005-2025      21 ST_NAME/STREETNAME     
+ 46 st_post_dir        2005-2025      21 ST_POS_DIR/SUFFIX_DIR  
+ 47 st_post_type       2005-2025      21 ST_POS_TYP/STREETTYPE  
+ 48 st_pre_dir         2005-2025      21 PREFIX_DIR/ST_PRE_DIR  
+ 49 st_pre_type        2005-2025      21 PREFIXTYPE/ST_PRE_TYP  
+ 50 tax_add_l1         2005-2025      21 TAX_ADD_L1             
+ 51 tax_add_l2         2005-2025      21 TAX_ADD_L2             
+ 52 tax_add_l3         2005-2025      21 TAX_ADD_L3             
+ 53 tax_capac          2005-2025      21 TAX_CAPAC              
+ 54 tax_exempt         2005-2025      21 TAX_EXEMPT             
+ 55 tax_name           2005-2025      21 TAX_NAME               
+ 56 total_tax          2005-2025      21 TOTAL_TAX              
+ 57 use_class1         2005-2025      21 USE1_DESC/USECLASS1    
+ 58 use_class2         2005-2025      21 USE2_DESC/USECLASS2    
+ 59 use_class3         2005-2025      21 USE3_DESC/USECLASS3    
+ 60 use_class4         2005-2025      21 USE4_DESC/USECLASS4    
+ 61 watershed_district 2005-2025      21 WSHD_DIST/WSHD_DST     
+ 62 year_built         2005-2025      21 YEAR_BUILT             
+ 63 zip                2005-2025      21 ZIP                    
+ 64 zip4               2005-2025      21 ZIP4                   
+ 65 shape_area         2005-2025      20 Shape_Area             
+ 66 shape_leng         2005-2025      20 Shape_Leng/Shape_Length
+ 67 unit_info          2005-2017      13 UNIT_INFO              
+ 68 abb_legal          2018-2025       8 ABB_LEGAL              
+ 69 anumberpre         2018-2025       8 ANUMBERPRE             
+ 70 anumbersuf         2018-2025       8 ANUMBERSUF             
+ 71 co_name            2018-2025       8 CO_NAME                
+ 72 county_pin         2018-2025       8 COUNTY_PIN             
+ 73 ctu_id_txt         2018-2025       8 CTU_ID_TXT             
+ 74 edit_date          2018-2025       8 EDIT_DATE              
+ 75 exp_date           2018-2025       8 EXP_DATE               
+ 76 mkt_year           2018-2025       8 MKT_YEAR               
+ 77 n_standard         2018-2025       8 N_STANDARD             
+ 78 own_add_l4         2018-2025       8 OWN_ADD_L4             
+ 79 ownership          2018-2025       8 OWNERSHIP              
+ 80 prin_mer           2018-2025       8 PRIN_MER               
+ 81 range              2018-2025       8 RANGE/RANGE_           
+ 82 range_dir          2018-2025       8 RANGE_DIR              
+ 83 section            2018-2025       8 SECTION                
+ 84 st_pos_mod         2018-2025       8 ST_POS_MOD             
+ 85 st_pre_mod         2018-2025       8 ST_PRE_MOD             
+ 86 st_pre_sep         2018-2025       8 ST_PRE_SEP             
+ 87 state_code         2018-2025       8 STATE_CODE             
+ 88 state_pin          2018-2025       8 STATE_PIN              
+ 89 sub_id1            2018-2025       8 SUB_ID1                
+ 90 sub_id2            2018-2025       8 SUB_ID2                
+ 91 sub_type1          2018-2025       8 SUB_TYPE1              
+ 92 sub_type2          2018-2025       8 SUB_TYPE2              
+ 93 tax_add_l4         2018-2025       8 TAX_ADD_L4             
+ 94 tax_year           2018-2025       8 TAX_YEAR               
+ 95 township           2018-2025       8 TOWNSHIP               
+ 96 viewid             2018-2025       8 VIEWID                 
+ 97 shape_le_1         2014-2014       1 Shape_Le_1             
+ 98 shape_star         2014-2014       1 Shape_STAr             
+ 99 shape_stle         2014-2014       1 Shape_STLe             
+100 torrens            2014-2014       1 TORRENS                
+    types                    
+    <chr>                    
+  1 numeric                  
+  2 numeric                  
+  3 character/integer/numeric
+  4 character                
+  5 Date/POSIXct             
+  6 Date/POSIXct             
+  7 character                
+  8 character                
+  9 character                
+ 10 character                
+ 11 character                
+ 12 character                
+ 13 character                
+ 14 integer/numeric          
+ 15 integer/numeric          
+ 16 integer/numeric          
+ 17 character                
+ 18 character                
+ 19 character                
+ 20 character                
+ 21 integer/numeric          
+ 22 character                
+ 23 character/integer/numeric
+ 24 character                
+ 25 character                
+ 26 character                
+ 27 character                
+ 28 character                
+ 29 character                
+ 30 character                
+ 31 character/integer/numeric
+ 32 character                
+ 33 character                
+ 34 character                
+ 35 character                
+ 36 character                
+ 37 character                
+ 38 integer                  
+ 39 character                
+ 40 character                
+ 41 Date/POSIXct             
+ 42 integer/numeric          
+ 43 character                
+ 44 integer/numeric          
+ 45 character                
+ 46 character                
+ 47 character                
+ 48 character                
+ 49 character                
+ 50 character                
+ 51 character                
+ 52 character                
+ 53 integer/numeric          
+ 54 character                
+ 55 character                
+ 56 integer/numeric          
+ 57 character                
+ 58 character                
+ 59 character                
+ 60 character                
+ 61 character                
+ 62 integer/numeric          
+ 63 character                
+ 64 character                
+ 65 numeric                  
+ 66 numeric                  
+ 67 character                
+ 68 character                
+ 69 character                
+ 70 character                
+ 71 character                
+ 72 character                
+ 73 character                
+ 74 Date/POSIXct             
+ 75 Date/POSIXct             
+ 76 integer                  
+ 77 integer                  
+ 78 character                
+ 79 character                
+ 80 integer                  
+ 81 integer                  
+ 82 integer                  
+ 83 integer                  
+ 84 character                
+ 85 character                
+ 86 character                
+ 87 character                
+ 88 character                
+ 89 character                
+ 90 character                
+ 91 character                
+ 92 character                
+ 93 character                
+ 94 integer                  
+ 95 integer                  
+ 96 integer/numeric          
+ 97 numeric                  
+ 98 numeric                  
+ 99 numeric                  
+100 character                
+target types:
+# A tibble: 4 × 2
+  target              n
+  <chr>           <int>
+1 date                5
+2 double             26
+3 double_with_raw     3
+4 string             66
+mixed columns (get a _raw sidecar): addr_number, garagesqft, num_units 
+partitions: 147  already written: 147  ready to write: 147  waiting on copy: 0 
+# A tibble: 0 × 4
+# ℹ 4 variables: year <dbl>, county <chr>, done <lgl>, ready <lgl>
+06:37 2005 Anoka rows 125852 -> 125852 
+06:37 2005 Carver rows 35197 -> 35197 
+06:37 2005 Dakota rows 134302 -> 134302 
+06:38 2005 Hennepin rows 354778 -> 354778 
+06:38 2005 Ramsey rows 148724 -> 148724 
+06:38 2005 Scott rows 52989 -> 52989 
+06:38 2005 Washington rows 96303 -> 96303 
+06:38 2006 Anoka rows 129392 -> 129392 
+06:38 2006 Carver rows 37021 -> 37021 
+06:38 2006 Dakota rows 135586 -> 135586 
+06:39 2006 Hennepin rows 358064 -> 358064 
+06:39 2006 Ramsey rows 148967 -> 148967 
+06:39 2006 Scott rows 54741 -> 54741 
+06:39 2006 Washington rows 97922 -> 97922 
+06:39 2007 Anoka rows 130675 -> 130675 
+06:39 2007 Carver rows 37715 -> 37715 
+06:40 2007 Dakota rows 135771 -> 135771 
+06:40 2007 Hennepin rows 359042 -> 359042 
+06:40 2007 Ramsey rows 149093 -> 149093 
+06:40 2007 Scott rows 55242 -> 55242 
+06:41 2007 Washington rows 98812 -> 98812 
+06:41 2008 Anoka rows 129139 -> 129139 
+06:41 2008 Carver rows 38134 -> 38134 
+06:41 2008 Dakota rows 135925 -> 135925 
+06:42 2008 Hennepin rows 422976 -> 422976 
+06:42 2008 Ramsey rows 149169 -> 149169 
+06:42 2008 Scott rows 55191 -> 55191 
+06:42 2008 Washington rows 98915 -> 98915 
+06:42 2009 Anoka rows 129271 -> 129271 
+06:42 2009 Carver rows 38205 -> 38205 
+06:42 2009 Dakota rows 136067 -> 136067 
+06:43 2009 Hennepin rows 424182 -> 424182 
+06:43 2009 Ramsey rows 149101 -> 149101 
+06:43 2009 Scott rows 55213 -> 55213 
+06:43 2009 Washington rows 98933 -> 98933 
+06:44 2010 Anoka rows 129383 -> 129383 
+06:44 2010 Carver rows 38623 -> 38623 
+06:44 2010 Dakota rows 136497 -> 136497 
+06:44 2010 Hennepin rows 424693 -> 424693 
+06:45 2010 Ramsey rows 149055 -> 149055 
+06:45 2010 Scott rows 55221 -> 55221 
+06:45 2010 Washington rows 104176 -> 104176 
+06:45 2011 Anoka rows 129417 -> 129417 
+06:45 2011 Carver rows 38802 -> 38802 
+06:45 2011 Dakota rows 136987 -> 136987 
+06:46 2011 Hennepin rows 424882 -> 424882 
+06:46 2011 Ramsey rows 148978 -> 148978 
+06:46 2011 Scott rows 55292 -> 55292 
+06:46 2011 Washington rows 106922 -> 106922 
+06:46 2012 Anoka rows 129676 -> 129676 
+06:46 2012 Carver rows 39013 -> 39013 
+06:47 2012 Dakota rows 137575 -> 137575 
+06:47 2012 Hennepin rows 425873 -> 425873 
+06:47 2012 Ramsey rows 148889 -> 148889 
+06:47 2012 Scott rows 55480 -> 55480 
+06:48 2012 Washington rows 104957 -> 104957 
+06:48 2013 Anoka rows 130052 -> 130052 
+06:48 2013 Carver rows 39639 -> 39639 
+06:48 2013 Dakota rows 138356 -> 138356 
+06:49 2013 Hennepin rows 425977 -> 425977 
+06:49 2013 Ramsey rows 148842 -> 148842 
+06:49 2013 Scott rows 55732 -> 55732 
+06:49 2013 Washington rows 105525 -> 105525 
+06:49 2014 Anoka rows 130633 -> 130633 
+06:49 2014 Carver rows 40198 -> 40198 
+06:49 2014 Dakota rows 139405 -> 139405 
+06:50 2014 Hennepin rows 427762 -> 427762 
+06:50 2014 Ramsey rows 152210 -> 152210 
+06:50 2014 Scott rows 55927 -> 55927 
+06:50 2014 Washington rows 106151 -> 106151 
+06:50 2015 Anoka rows 131121 -> 131121 
+06:51 2015 Carver rows 40510 -> 40510 
+06:51 2015 Dakota rows 140770 -> 140770 
+06:51 2015 Hennepin rows 429241 -> 429241 
+06:52 2015 Ramsey rows 154512 -> 154512 
+06:52 2015 Scott rows 56219 -> 56219 
+06:52 2015 Washington rows 106045 -> 106045 
+06:52 2016 Anoka rows 131708 -> 131708 
+06:52 2016 Carver rows 41204 -> 41204 
+06:52 2016 Dakota rows 142121 -> 142121 
+06:53 2016 Hennepin rows 430449 -> 430449 
+06:53 2016 Ramsey rows 158207 -> 158207 
+06:53 2016 Scott rows 56533 -> 56533 
+06:53 2016 Washington rows 106849 -> 106849 
+06:53 2017 Anoka rows 132727 -> 132727 
+06:53 2017 Carver rows 42109 -> 42109 
+06:54 2017 Dakota rows 142921 -> 142921 
+06:54 2017 Hennepin rows 432434 -> 432434 
+06:54 2017 Ramsey rows 159625 -> 159625 
+06:55 2017 Scott rows 56655 -> 56655 
+06:55 2017 Washington rows 108213 -> 108213 
+06:55 2018 Anoka rows 133278 -> 133278 
+06:55 2018 Carver rows 42457 -> 42457 
+06:55 2018 Dakota rows 143353 -> 143353 
+06:56 2018 Hennepin rows 470159 -> 470159 
+06:56 2018 Ramsey rows 167468 -> 167468 
+06:56 2018 Scott rows 57618 -> 57618 
+06:56 2018 Washington rows 109913 -> 109913 
+06:57 2019 Anoka rows 134283 -> 134283 
+06:57 2019 Carver rows 43081 -> 43081 
+06:57 2019 Dakota rows 144730 -> 144730 
+06:58 2019 Hennepin rows 437489 -> 437489 
+06:58 2019 Ramsey rows 170627 -> 170627 
+06:58 2019 Scott rows 57702 -> 57702 
+06:58 2019 Washington rows 111175 -> 111175 
+06:58 2020 Anoka rows 135508 -> 135508 
+06:59 2020 Carver rows 43829 -> 43829 
+06:59 2020 Dakota rows 145808 -> 145808 
+07:00 2020 Hennepin rows 438634 -> 438634 
+07:00 2020 Ramsey rows 170733 -> 170733 
+07:00 2020 Scott rows 57917 -> 57917 
+07:00 2020 Washington rows 112636 -> 112636 
+   shapefile sidecars: 2021 Anoka rows aligned 136871  geometry differs 136871 
+07:00 2021 Anoka rows 136871 -> 136871 
+   shapefile sidecars: 2021 Carver rows aligned 44942  geometry differs 44942 
+07:01 2021 Carver rows 44942 -> 44942 
+   shapefile sidecars: 2021 Dakota rows aligned 148135  geometry differs 148135 
+07:01 2021 Dakota rows 148135 -> 148135 
+   shapefile sidecars: 2021 Hennepin rows aligned 440410  geometry differs 440410 
+07:02 2021 Hennepin rows 440410 -> 440410 
+   shapefile sidecars: 2021 Ramsey rows aligned 171072  geometry differs 171072 
+07:03 2021 Ramsey rows 171072 -> 171072 
+   shapefile sidecars: 2021 Scott rows aligned 59014  geometry differs 59014 
+07:03 2021 Scott rows 59014 -> 59014 

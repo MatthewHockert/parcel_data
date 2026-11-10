@@ -1,0 +1,145 @@
+polygon component files found: 5365  distinct year-county-ext: 1064 
+2023 geodatabase copies: 7 
+[1] "/Users/matthewhockert/Desktop/Personal Info/matthew_maps_saint_paul/Archive/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"           
+[2] "/Users/matthewhockert/Desktop/Personal Info/minneapolis_st_paul_housing_reform_paper/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"  
+[3] "/Users/matthewhockert/Desktop/Personal Info/st_paul_rc_affordable_housing/data/Archive/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"
+[4] "/Users/matthewhockert/Desktop/UMN/hc_easement_simulations/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"                        
+[5] "/Users/matthewhockert/Downloads/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"                                                       
+[6] "/Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"        
+[7] "/Users/matthewhockert/research/parcel_data/data/raw/2023/plan_regonal_parcels_2023.gdb"                                                             
+year-county combos missing a required component:
+# A tibble: 0 × 3
+# ℹ 3 variables: year <int>, county <chr>, n_required <int>
+components whose copies differ in size: 0 
+# A tibble: 3 × 3
+  action             files    gb
+  <chr>              <int> <dbl>
+1 copy                 792  50.4
+2 download_then_copy   272   8  
+3 duplicate           4301 244. 
+# A tibble: 95 × 3
+   project                                                           files    gb
+   <chr>                                                             <int> <dbl>
+ 1 Desktop/Personal Info/matthew_maps_saint_paul/Archive               123  13.6
+ 2 Desktop/UMN/hc_easement_simulations/data                            359  10.8
+ 3 research/hennepin_conservation_easements/hcra_paper/data            106   9.1
+ 4 Downloads                                                           112   6.7
+ 5 Desktop/Personal Info/minneapolis_st_paul_housing_reform_paper       44   3.9
+ 6 Desktop/UMN/hennepin_conservation_easements/hcra_paper/data         134   3.9
+ 7 Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parce…    32   1.7
+ 8 Desktop/AOData/hwy-36-job-access/hwy-36/data/washington_county_p…    30   1  
+ 9 research/brownfield_stpaul/data/raw/parcels/2018/Parcels2018Rams…     1   0.6
+10 research/brownfield_stpaul/data/raw/parcels/2019/Parcels2019Rams…     1   0.6
+11 research/brownfield_stpaul/data/raw/parcels/2020/Parcels2020Rams…     1   0.6
+12 research/brownfield_stpaul/data/raw/parcels/2021/Parcels2021Rams…     1   0.6
+13 research/brownfield_stpaul/data/raw/parcels/2024/Parcels2024Rams…     1   0.6
+14 Desktop/AO/hwy-36-job-access/hwy-36/paper_replication/data/washi…    32   0.4
+15 research/brownfield_stpaul/data/raw/parcels/2006/Parcels2006Rams…     1   0.3
+16 research/brownfield_stpaul/data/raw/parcels/2007/Parcels2007Rams…     1   0.3
+17 research/brownfield_stpaul/data/raw/parcels/2008/Parcels2008Rams…     1   0.3
+18 research/brownfield_stpaul/data/raw/parcels/2009/Parcels2009Rams…     1   0.3
+19 research/brownfield_stpaul/data/raw/parcels/2010/Parcels2010Rams…     1   0.3
+20 research/brownfield_stpaul/data/raw/parcels/2011/Parcels2011Rams…     1   0.3
+21 research/brownfield_stpaul/data/raw/parcels/2012/Parcels2012Rams…     1   0.3
+22 research/brownfield_stpaul/data/raw/parcels/2013/Parcels2013Rams…     1   0.3
+23 research/brownfield_stpaul/data/raw/parcels/2014/Parcels2014Rams…     1   0.3
+24 research/brownfield_stpaul/data/raw/parcels/2015/Parcels2015Rams…     1   0.3
+25 research/brownfield_stpaul/data/raw/parcels/2016/Parcels2016Rams…     1   0.3
+26 research/brownfield_stpaul/data/raw/parcels/2017/Parcels2017Rams…     1   0.3
+27 research/brownfield_stpaul/data/raw/parcels/2014/Parcels2014Rams…     1   0.1
+28 research/brownfield_stpaul/data/raw/parcels/2015/Parcels2015Rams…     1   0.1
+29 research/brownfield_stpaul/data/raw/parcels/2017/Parcels2017Rams…     1   0.1
+30 Desktop/Personal Info/vacant_land_fees_st_paul_blog/vacant_land_…     7   0  
+31 research/brownfield_stpaul/data/raw/parcels/2006/Parcels2006Rams…     1   0  
+32 research/brownfield_stpaul/data/raw/parcels/2006/Parcels2006Rams…     1   0  
+33 research/brownfield_stpaul/data/raw/parcels/2006/Parcels2006Rams…     1   0  
+34 research/brownfield_stpaul/data/raw/parcels/2006/Parcels2006Rams…     1   0  
+35 research/brownfield_stpaul/data/raw/parcels/2007/Parcels2007Rams…     1   0  
+36 research/brownfield_stpaul/data/raw/parcels/2007/Parcels2007Rams…     1   0  
+37 research/brownfield_stpaul/data/raw/parcels/2007/Parcels2007Rams…     1   0  
+38 research/brownfield_stpaul/data/raw/parcels/2007/Parcels2007Rams…     1   0  
+39 research/brownfield_stpaul/data/raw/parcels/2008/Parcels2008Rams…     1   0  
+40 research/brownfield_stpaul/data/raw/parcels/2008/Parcels2008Rams…     1   0  
+41 research/brownfield_stpaul/data/raw/parcels/2008/Parcels2008Rams…     1   0  
+42 research/brownfield_stpaul/data/raw/parcels/2008/Parcels2008Rams…     1   0  
+43 research/brownfield_stpaul/data/raw/parcels/2009/Parcels2009Rams…     1   0  
+44 research/brownfield_stpaul/data/raw/parcels/2009/Parcels2009Rams…     1   0  
+45 research/brownfield_stpaul/data/raw/parcels/2009/Parcels2009Rams…     1   0  
+46 research/brownfield_stpaul/data/raw/parcels/2009/Parcels2009Rams…     1   0  
+47 research/brownfield_stpaul/data/raw/parcels/2010/Parcels2010Rams…     1   0  
+48 research/brownfield_stpaul/data/raw/parcels/2010/Parcels2010Rams…     1   0  
+49 research/brownfield_stpaul/data/raw/parcels/2010/Parcels2010Rams…     1   0  
+50 research/brownfield_stpaul/data/raw/parcels/2010/Parcels2010Rams…     1   0  
+51 research/brownfield_stpaul/data/raw/parcels/2011/Parcels2011Rams…     1   0  
+52 research/brownfield_stpaul/data/raw/parcels/2011/Parcels2011Rams…     1   0  
+53 research/brownfield_stpaul/data/raw/parcels/2011/Parcels2011Rams…     1   0  
+54 research/brownfield_stpaul/data/raw/parcels/2011/Parcels2011Rams…     1   0  
+55 research/brownfield_stpaul/data/raw/parcels/2012/Parcels2012Rams…     1   0  
+56 research/brownfield_stpaul/data/raw/parcels/2012/Parcels2012Rams…     1   0  
+57 research/brownfield_stpaul/data/raw/parcels/2012/Parcels2012Rams…     1   0  
+58 research/brownfield_stpaul/data/raw/parcels/2012/Parcels2012Rams…     1   0  
+59 research/brownfield_stpaul/data/raw/parcels/2013/Parcels2013Rams…     1   0  
+60 research/brownfield_stpaul/data/raw/parcels/2013/Parcels2013Rams…     1   0  
+61 research/brownfield_stpaul/data/raw/parcels/2013/Parcels2013Rams…     1   0  
+62 research/brownfield_stpaul/data/raw/parcels/2013/Parcels2013Rams…     1   0  
+63 research/brownfield_stpaul/data/raw/parcels/2014/Parcels2014Rams…     1   0  
+64 research/brownfield_stpaul/data/raw/parcels/2014/Parcels2014Rams…     1   0  
+65 research/brownfield_stpaul/data/raw/parcels/2014/Parcels2014Rams…     1   0  
+66 research/brownfield_stpaul/data/raw/parcels/2015/Parcels2015Rams…     1   0  
+67 research/brownfield_stpaul/data/raw/parcels/2015/Parcels2015Rams…     1   0  
+68 research/brownfield_stpaul/data/raw/parcels/2015/Parcels2015Rams…     1   0  
+69 research/brownfield_stpaul/data/raw/parcels/2016/Parcels2016Rams…     1   0  
+70 research/brownfield_stpaul/data/raw/parcels/2016/Parcels2016Rams…     1   0  
+71 research/brownfield_stpaul/data/raw/parcels/2016/Parcels2016Rams…     1   0  
+72 research/brownfield_stpaul/data/raw/parcels/2016/Parcels2016Rams…     1   0  
+73 research/brownfield_stpaul/data/raw/parcels/2017/Parcels2017Rams…     1   0  
+74 research/brownfield_stpaul/data/raw/parcels/2017/Parcels2017Rams…     1   0  
+75 research/brownfield_stpaul/data/raw/parcels/2017/Parcels2017Rams…     1   0  
+76 research/brownfield_stpaul/data/raw/parcels/2018/Parcels2018Rams…     1   0  
+77 research/brownfield_stpaul/data/raw/parcels/2018/Parcels2018Rams…     1   0  
+78 research/brownfield_stpaul/data/raw/parcels/2018/Parcels2018Rams…     1   0  
+79 research/brownfield_stpaul/data/raw/parcels/2018/Parcels2018Rams…     1   0  
+80 research/brownfield_stpaul/data/raw/parcels/2019/Parcels2019Rams…     1   0  
+81 research/brownfield_stpaul/data/raw/parcels/2019/Parcels2019Rams…     1   0  
+82 research/brownfield_stpaul/data/raw/parcels/2019/Parcels2019Rams…     1   0  
+83 research/brownfield_stpaul/data/raw/parcels/2019/Parcels2019Rams…     1   0  
+84 research/brownfield_stpaul/data/raw/parcels/2020/Parcels2020Rams…     1   0  
+85 research/brownfield_stpaul/data/raw/parcels/2020/Parcels2020Rams…     1   0  
+86 research/brownfield_stpaul/data/raw/parcels/2020/Parcels2020Rams…     1   0  
+87 research/brownfield_stpaul/data/raw/parcels/2020/Parcels2020Rams…     1   0  
+88 research/brownfield_stpaul/data/raw/parcels/2021/Parcels2021Rams…     1   0  
+89 research/brownfield_stpaul/data/raw/parcels/2021/Parcels2021Rams…     1   0  
+90 research/brownfield_stpaul/data/raw/parcels/2021/Parcels2021Rams…     1   0  
+91 research/brownfield_stpaul/data/raw/parcels/2021/Parcels2021Rams…     1   0  
+92 research/brownfield_stpaul/data/raw/parcels/2024/Parcels2024Rams…     1   0  
+93 research/brownfield_stpaul/data/raw/parcels/2024/Parcels2024Rams…     1   0  
+94 research/brownfield_stpaul/data/raw/parcels/2024/Parcels2024Rams…     1   0  
+95 research/brownfield_stpaul/data/raw/parcels/2024/Parcels2024Rams…     1   0  
+wrote docs/move_manifest.csv
+17:56 2005 done; free 12.3 GB
+17:56 2006 done; free 12.3 GB
+17:56 2007 done; free 12.3 GB
+17:56 2008 done; free 12.3 GB
+17:56 2009 done; free 12.2 GB
+17:56 2010 done; free 11.8 GB
+17:56 2011 done; free 11.8 GB
+17:56 2012 done; free 11.7 GB
+17:56 2013 done; free 11.5 GB
+17:56 2014 done; free 11.5 GB
+17:56 2015 done; free 11.5 GB
+17:56 2016 done; free 11.5 GB
+17:56 2017 done; free 11.5 GB
+17:56 2018 done; free 11.5 GB
+17:56 2019 done; free 11.5 GB
+17:56 2020 done; free 11.5 GB
+17:56 2021 done; free 11.5 GB
+17:56 2022 done; free 11.5 GB
+17:56 2024 done; free 11.5 GB
+2023 gdb copied from /Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb  size (GB): 2.14 
+# A tibble: 2 × 3
+  status         size_ok     n
+  <chr>          <lgl>   <int>
+1 copied         TRUE       48
+2 skipped_exists TRUE     1016
+# A tibble: 0 × 4
+# ℹ 4 variables: year <int>, file <chr>, status <chr>, size_ok <lgl>

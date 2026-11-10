@@ -1,0 +1,14 @@
+2021 Ramsey shp full         ok=TRUE  (9 sites)
+2021 Hennepin shp full       ok=TRUE  (2 sites)
+2021 Ramsey sql06            ok=TRUE  (1 sites)
+2021 Ramsey sql12            ok=TRUE  (1 sites)
+2021 Ramsey sql18            ok=TRUE  (1 sites)
+2021 Ramsey sql21            ok=TRUE  (1 sites)
+2021 Hennepin sql06          ok=TRUE  (1 sites)
+2021 Hennepin sql12          ok=TRUE  (1 sites)
+2021 Hennepin sql08          ok=TRUE  (1 sites)
+
+159 site-rows, 32 distinct comparisons; ok: 159, failed: 0
+ [1] site        mode        note        label       rows_old    rows_new   
+ [7] rows_ok     names_ok    cols_differ geom_ok     geom_detail ok         
+<0 rows> (or 0-length row.names)

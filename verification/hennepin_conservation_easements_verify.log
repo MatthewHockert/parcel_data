@@ -1,0 +1,241 @@
+[1] TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:19 2023 Hennepin       NA   444443
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:24 2022 Hennepin       NA   442750
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:26 2021 Hennepin       NA   440410
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:28 2020 Hennepin       NA   438634
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:30 2006 Hennepin       NA   358064
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2005 Hennepin       NA   354778
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2006 Hennepin       NA   358064
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2007 Hennepin       NA   359042
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2008 Hennepin       NA   422976
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2009 Hennepin       NA   424182
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2010 Hennepin       NA   424693
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2011 Hennepin       NA   424882
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2012 Hennepin       NA   425873
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2013 Hennepin       NA   425977
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2014 Hennepin       NA   427762
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2015 Hennepin       NA   429241
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2016 Hennepin       NA   430449
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2017 Hennepin       NA   432434
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2018 Hennepin       NA   470159
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2019 Hennepin       NA   437489
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2020 Hennepin       NA   438634
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2021 Hennepin       NA   440410
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                                    label rows_old rows_new
+1 ag_preserve_analysis/parcel_analysis.R:68 2022 Hennepin       NA   442750
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2005 Hennepin   354778   354778
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2006 Hennepin   358064   358064
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2007 Hennepin   359042   359042
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2008 Hennepin   422976   422976
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2009 Hennepin   424182   424182
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2010 Hennepin   424693   424693
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2011 Hennepin   424882   424882
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2012 Hennepin   425873   425873
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2013 Hennepin   425977   425977
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2014 Hennepin   427762   427762
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2015 Hennepin   429241   429241
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2016 Hennepin   430449   430449
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2017 Hennepin   432434   432434
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2018 Hennepin   470159   470159
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2019 Hennepin   437489   437489
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2020 Hennepin   438634   438634
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2021 Hennepin   440410   440410
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:861 2022 Hennepin   442750   442750
+  cols_differ geom_ok   ok
+1                  NA TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2005 Hennepin   354778   354778
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2006 Hennepin   358064   358064
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2007 Hennepin   359042   359042
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2008 Hennepin   422976   422976
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2009 Hennepin   424182   424182
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2010 Hennepin   424693   424693
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2011 Hennepin   424882   424882
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2012 Hennepin   425873   425873
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2013 Hennepin   425977   425977
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2014 Hennepin   427762   427762
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2015 Hennepin   429241   429241
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2016 Hennepin   430449   430449
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2017 Hennepin   432434   432434
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2018 Hennepin   470159   470159
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2019 Hennepin   437489   437489
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2020 Hennepin   438634   438634
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2021 Hennepin   440410   440410
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2022 Hennepin   442750   442750
+  cols_differ geom_ok   ok
+1                TRUE TRUE
+                                             label rows_old rows_new
+1 hcra_paper/02_build_exposure.R:231 2023 Hennepin   444443   444443
+  cols_differ geom_ok   ok
+1                TRUE TRUE

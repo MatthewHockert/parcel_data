@@ -1,0 +1,50 @@
+points partitions to verify: 14 
+15:04 2022 Anoka OK 
+15:04 2022 Carver OK 
+15:05 2022 Dakota OK 
+15:05 2022 Hennepin OK 
+15:05 2022 Ramsey OK 
+15:05 2022 Scott OK 
+15:05 2022 Washington OK 
+15:07 2025 Anoka OK 
+15:07 2025 Carver OK 
+15:09 2025 Dakota OK 
+15:10 2025 Hennepin OK 
+15:10 2025 Ramsey OK 
+15:11 2025 Scott OK 
+15:11 2025 Washington OK 
+# A tibble: 14 × 8
+   label           rows_old rows_new names_ok cols_differ geom_ok types_differ
+   <chr>              <int>    <int> <lgl>    <chr>       <lgl>   <chr>       
+ 1 2022 Anoka        138147   138147 TRUE     ""          TRUE    ""          
+ 2 2022 Carver        46105    46105 TRUE     ""          TRUE    ""          
+ 3 2022 Dakota       163287   163287 TRUE     ""          TRUE    ""          
+ 4 2022 Hennepin     442750   442750 TRUE     ""          TRUE    ""          
+ 5 2022 Ramsey       167134   167134 TRUE     ""          TRUE    ""          
+ 6 2022 Scott         59650    59650 TRUE     ""          TRUE    ""          
+ 7 2022 Washington   115474   115474 TRUE     ""          TRUE    ""          
+ 8 2025 Anoka        139930   139930 TRUE     ""          TRUE    ""          
+ 9 2025 Carver        47644    47644 TRUE     ""          TRUE    ""          
+10 2025 Dakota       166941   166941 TRUE     ""          TRUE    ""          
+11 2025 Hennepin     447024   447024 TRUE     ""          TRUE    ""          
+12 2025 Ramsey       167611   167611 TRUE     ""          TRUE    ""          
+13 2025 Scott         61386    61386 TRUE     ""          TRUE    ""          
+14 2025 Washington   118942   118942 TRUE     ""          TRUE    ""          
+   ok   
+   <lgl>
+ 1 TRUE 
+ 2 TRUE 
+ 3 TRUE 
+ 4 TRUE 
+ 5 TRUE 
+ 6 TRUE 
+ 7 TRUE 
+ 8 TRUE 
+ 9 TRUE 
+10 TRUE 
+11 TRUE 
+12 TRUE 
+13 TRUE 
+14 TRUE 
+points partitions verified OK: 14 of 14 
+[1] TRUE

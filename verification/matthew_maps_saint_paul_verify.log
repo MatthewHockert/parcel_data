@@ -1,0 +1,55 @@
+2014 Ramsey polygons                                    ok=TRUE
+2014 Ramsey polygons                                    ok=TRUE
+          used (Mb) gc trigger  (Mb) limit (Mb) max used  (Mb)
+Ncells 1088851 58.2    5462169 291.8         NA  6827711 364.7
+Vcells 2330921 17.8   53732597 410.0      65536 55763982 425.5
+2024 Ramsey gdb (excl. OWNER_NAME, OWNER_MORE, TAX_NAME) ok=TRUE
+          used (Mb) gc trigger  (Mb) limit (Mb) max used  (Mb)
+Ncells 1092243 58.4    9668220 516.4         NA 12085274 645.5
+Vcells 2863273 21.9   74960404 572.0      65536 85791201 654.6
+2014 Ramsey                                             ok=TRUE
+2015 Ramsey                                             ok=TRUE
+2016 Ramsey                                             ok=TRUE
+2017 Ramsey                                             ok=TRUE
+2018 Ramsey                                             ok=TRUE
+2019 Ramsey                                             ok=TRUE
+2020 Ramsey                                             ok=TRUE
+2021 Ramsey                                             ok=TRUE
+2022 Ramsey                                             ok=TRUE
+2005 Ramsey Points PIN coverage                         ok=FALSE
+2005 Hennepin Points PIN coverage                       ok=FALSE
+2006 Ramsey Points PIN coverage                         ok=FALSE
+2006 Hennepin Points PIN coverage                       ok=FALSE
+2007 Ramsey Points PIN coverage                         ok=FALSE
+2007 Hennepin Points PIN coverage                       ok=FALSE
+2008 Ramsey Points PIN coverage                         ok=FALSE
+2008 Hennepin Points PIN coverage                       ok=FALSE
+2009 Ramsey Points PIN coverage                         ok=FALSE
+2009 Hennepin Points PIN coverage                       ok=FALSE
+2010 Ramsey Points PIN coverage                         ok=FALSE
+2010 Hennepin Points PIN coverage                       ok=FALSE
+2011 Ramsey Points PIN coverage                         ok=FALSE
+2011 Hennepin Points PIN coverage                       ok=FALSE
+2012 Ramsey Points PIN coverage                         ok=FALSE
+2012 Hennepin Points PIN coverage                       ok=FALSE
+2013 Ramsey Points PIN coverage                         ok=FALSE
+2013 Hennepin Points PIN coverage                       ok=FALSE
+2014 Ramsey Points PIN coverage                         ok=FALSE
+2014 Hennepin Points PIN coverage                       ok=TRUE
+2015 Ramsey Points PIN coverage                         ok=FALSE
+2015 Hennepin Points PIN coverage                       ok=FALSE
+2016 Ramsey Points PIN coverage                         ok=FALSE
+2016 Hennepin Points PIN coverage                       ok=TRUE
+2017 Ramsey Points PIN coverage                         ok=FALSE
+2017 Hennepin Points PIN coverage                       ok=TRUE
+2018 Ramsey Points PIN coverage                         ok=FALSE
+2018 Hennepin Points PIN coverage                       ok=FALSE
+2019 Ramsey Points PIN coverage                         ok=FALSE
+2019 Hennepin Points PIN coverage                       ok=TRUE
+2020 Ramsey Points PIN coverage                         ok=TRUE
+2020 Hennepin Points PIN coverage                       ok=TRUE
+2021 Ramsey Points PIN coverage                         ok=TRUE
+2021 Hennepin Points PIN coverage                       ok=TRUE
+2022 Ramsey Points PIN coverage                         ok=FALSE
+2022 Hennepin Points PIN coverage                       ok=TRUE
+done: 48 rows
