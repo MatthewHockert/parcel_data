@@ -35,6 +35,9 @@ file each year/county came from.
    download_parcels([2014, 2015, 2016])
    download_parcels(2021, layer="points")      # Python returns the published points
    ```
+   Downloads from Zenodo run at roughly 1 MB/s: one year's polygons (300-600 MB)
+   take about 5-10 minutes, and all 21 years of both layers (10 GB) take
+   several hours, so fetch only the years you need.
    In R, standardized Points reads place each point on its polygon, so R
    fetches that year's polygons too; `point_location = "published"` skips it.
 4. Install the dependencies: R `sf`, `arrow`, `dplyr`, `tibble`; Python
