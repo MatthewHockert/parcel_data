@@ -1,5 +1,7 @@
 # parcel_data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24116899.svg)](https://doi.org/10.5281/zenodo.24116899)
+
 One store for the MetroGIS / Metropolitan Council regional parcel releases
 (Twin Cities 7-county area: Anoka, Carver, Dakota, Hennepin, Ramsey, Scott,
 Washington), file years 2005-2025, as Hive-partitioned GeoParquet

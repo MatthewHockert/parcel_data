@@ -16,3 +16,4 @@ __pycache__/
 .RData
 .Rproj.user/
 /docs/icloud_delete_manifest_*.csv
+/docs/points_copies_delete_manifest_*.csv
