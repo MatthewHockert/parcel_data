@@ -164,7 +164,7 @@ read_parcels <- function(years    = NULL,           # e.g. 2016 or 2005:2024; NU
     if (!is.null(cols)) xwalk <- xwalk[xwalk$original_name %in% cols, ]
     cols_std <- unique(c(xwalk$std_name, paste0(xwalk$std_name, "_raw")))
   } else {
-    cols_std <- cols
+    cols_std <- if (is.null(cols)) NULL else c(cols, paste0(cols, "_shp"))   # sidecars fill 2021 owner names
   }
 
   keep <- NULL

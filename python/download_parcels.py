@@ -2,12 +2,12 @@
 
     from read_parcels import read_parcels, download_parcels
     download_parcels([2014, 2015])              # polygons
-    download_parcels(2021, layer="points")      # published points
+    download_parcels(2021, layer="points")      # points, plus that year's polygons
 
 Zips are one per year and layer (all 7 counties); each is checked against
 docs/zenodo_md5.txt, unzipped into $PARCEL_HOME/data and deleted. Years
-already on disk are skipped unless overwrite=True. The Python reader returns
-the published points, so points do not need the polygons.
+already on disk are skipped unless overwrite=True. Standardized Points reads
+place each point on its polygon, so points also fetch that year's polygons.
 """
 import hashlib
 import os
@@ -39,8 +39,10 @@ def download_parcels(years, layer="polygons",
     with open(os.path.join(home, "docs", "zenodo_md5.txt")) as f:
         md5 = dict(reversed(line.split()) for line in f if line.strip())
 
-    store = "standardized_points" if layer == "points" else "standardized"
-    for yr in [years] if isinstance(years, int) else years:
+    layers = ["polygons", "points"] if layer == "points" else ["polygons"]
+    jobs = [(yr, ly) for yr in ([years] if isinstance(years, int) else years) for ly in layers]
+    for yr, layer in jobs:
+        store = "standardized_points" if layer == "points" else "standardized"
         target = os.path.join(data_dir, store, f"year={yr}")
         if os.path.isdir(target) and not overwrite:
             print(f"{yr} {layer}: already on disk, skipped")

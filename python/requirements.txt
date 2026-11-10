@@ -3,4 +3,4 @@ pandas
 geopandas
 pyarrow
 pyogrio
-shapely>=2.0
+shapely>=2.1

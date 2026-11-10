@@ -39,9 +39,10 @@ layer="points" (as in R) reads the county-published Points layers stored as
 published in data/standardized_points (code/07_points_store.R), with
 docs/points_column_crosswalk.csv and python/points_original_dtypes.csv /
 points_original_geometry.csv (python/build_points_manifest.py). names="original"
-equals read_file() of the Points layer. The geometry is the published point
-(geometry="polygon" or "point" both return it; "none" drops it); point_method
-does not apply.
+equals read_file() of the Points layer. point_location="polygon" (the default
+for standardized names) places each point at its polygon's centroid, as in R;
+"published" (the default for names="original") keeps the published point.
+point_method does not apply.
 """
 from __future__ import annotations
 
@@ -61,6 +62,7 @@ PARCEL_HOME = os.environ.get("PARCEL_HOME", os.path.dirname(os.path.dirname(os.p
 PARCEL_STORE = os.path.join(PARCEL_HOME, "data", "standardized")
 PARCEL_XWALK = os.path.join(PARCEL_HOME, "docs", "column_crosswalk.csv")
 PARCEL_DTYPES = os.path.join(PARCEL_HOME, "python", "original_dtypes.csv")
+PARCEL_SHP_SCHEMA = os.path.join(PARCEL_HOME, "docs", "shapefile_schema.csv")
 PARCEL_GEOMS = os.path.join(PARCEL_HOME, "python", "original_geometry.csv")
 # layer="points": the published Points layers (code/07_points_store.R)
 PARCEL_STORE_POINTS = os.path.join(PARCEL_HOME, "data", "standardized_points")
@@ -140,6 +142,47 @@ def _wkb_to_geoms(wkbs):
     return shapely.from_wkb(np.array(wkbs, dtype=object))
 
 
+def _make_valid_sf(g):
+    """Repair polygons the way R's sf::st_make_valid() does (GEOS "structure"
+    method, collapsed parts kept). Needs shapely >= 2.1."""
+    try:
+        return shapely.make_valid(g, method="structure", keep_collapsed=True)
+    except TypeError:
+        raise ImportError("read_parcels needs shapely >= 2.1 to repair polygons as R does: "
+                          "pip install -U shapely") from None
+
+
+def _shapefile_value(v, r_type, ogr_type, width, shp_side=None):
+    """One column as read_file() of the year's shapefile returns it: text trimmed,
+    cut to the field width, blanks as None; missing numbers as 0; dates without times."""
+    if r_type == "character":
+        if shp_side is not None:
+            v = shp_side.where(shp_side.notna(), v)  # 2021 owner names kept from the shapefile
+        w = None if pd.isna(width) else int(width)
+
+        def clean(z):
+            if z is None or (isinstance(z, float) and np.isnan(z)) or z is pd.NA:
+                return None
+            z = (z if isinstance(z, str) else _fmt_num(z)).strip(" \t\r\n")  # as R trimws()
+            if w is not None:
+                b = z.encode("utf-8")
+                if len(b) > w:  # cut to width, then trim (as the shapefile reader does)
+                    z = b[:w].decode("utf-8", errors="ignore").strip(" \t\r\n")
+            return z or None
+        return pd.Series([clean(z) for z in v.tolist()], index=v.index, dtype=object)
+    if r_type in ("integer", "numeric"):
+        x = pd.to_numeric(v, errors="coerce").fillna(0)
+        if ogr_type == "Integer":
+            return x.astype("int32")
+        if ogr_type == "Integer64":
+            return x.astype("int64")
+        return x.astype("float64")
+    if r_type in ("Date", "POSIXct"):
+        t = pd.to_datetime(v, utc=True)
+        return t.dt.tz_localize(None).dt.normalize().astype("datetime64[ms]")
+    return v
+
+
 def _bbox_geom(bbox):
     if isinstance(bbox, (gpd.GeoDataFrame, gpd.GeoSeries)):
         if bbox.crs is not None:
@@ -176,7 +219,7 @@ def _fmt_num(v):
 def _restore(v: pd.Series, r_type: str, dtype: str | None, n_null: int, n_zero: int, name: str):
     """One stored column -> the pandas column pyogrio returned for the file."""
     if r_type == "character":
-        if v.dtype == object:
+        if v.dtype == object or pd.api.types.is_string_dtype(v):  # pandas 3 "str" too
             out = v.astype(object)
         else:
             out = v.map(_fmt_num).astype(object)
@@ -211,19 +254,20 @@ def _restore(v: pd.Series, r_type: str, dtype: str | None, n_null: int, n_zero: 
 
 def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
                  geometry="polygon", point_method="surface", names="standardized",
-                 layer="polygons"):
+                 layer="polygons", point_location=None, as_shapefile=False,
+                 drop_owner_names=False, collapse_condos=False, orig_fid=False):
     """See module docstring. Returns a GeoDataFrame (EPSG 26915), or a pandas
     DataFrame when geometry="none". layer="points" reads the published Points layers."""
     if layer not in ("polygons", "points"):
         raise ValueError("layer must be 'polygons' or 'points'")
     is_points = layer == "points"
     store = PARCEL_STORE_POINTS if is_points else PARCEL_STORE
-    if is_points and point_method != "surface":
-        raise ValueError('layer="points" returns the published points: point_method does not apply')
+    if is_points and (point_method != "surface" or as_shapefile or orig_fid):
+        raise ValueError('layer="points" returns the published points: as_shapefile, orig_fid and point_method do not apply')
     if geometry not in ("polygon", "point", "none"):
         raise ValueError("geometry must be 'polygon', 'point' or 'none'")
-    if point_method not in ("surface", "centroid", "metrogis"):
-        raise ValueError("point_method must be 'surface', 'centroid' or 'metrogis'")
+    if point_method not in ("surface", "centroid", "metrogis", "metrogis_rows"):
+        raise ValueError("point_method must be 'surface', 'centroid', 'metrogis' or 'metrogis_rows'")
     if names not in ("standardized", "original"):
         raise ValueError("names must be 'standardized' or 'original'")
     years, counties, cols = _as_list(years), _as_list(counties), _as_list(cols)
@@ -236,14 +280,27 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
     bb = _bbox_geom(bbox) if bbox is not None else None
 
     xwalk = None
-    if names == "original":
+    if names == "original" and as_shapefile:
+        # the year's SHAPEFILE version (2021, 2024): its field names, order and widths
+        sx = pd.read_csv(PARCEL_SHP_SCHEMA)
+        sx = sx[(sx.year == int(years[0])) & (sx.county == counties[0])].sort_values("position")
+        if not len(sx):
+            raise ValueError("as_shapefile=True is only for years stored from a richer container (2021, 2024)")
+        xwalk = pd.DataFrame({"original_name": sx.shp_name.values, "std_name": sx.std_name.values,
+                              "r_type": sx.r_type.values, "ogr_type": sx.ogr_type.values, "width": sx.width.values})
+        if cols is not None:
+            xwalk = xwalk[xwalk.original_name.isin(cols)]
+        cols_std = list(dict.fromkeys(list(xwalk.std_name) + [s + "_raw" for s in xwalk.std_name] +
+                                      [s + "_shp" for s in xwalk.std_name] + ["row_in_shp"] +
+                                      (["geometry_shp"] if geometry != "none" else [])))
+    elif names == "original":
         xwalk = pd.read_csv(PARCEL_XWALK_POINTS if is_points else PARCEL_XWALK)
         xwalk = xwalk[(xwalk.year == int(years[0])) & (xwalk.county == counties[0])]
         if cols is not None:
             xwalk = xwalk[xwalk.original_name.isin(cols)]
         cols_std = list(dict.fromkeys(list(xwalk.std_name) + [s + "_raw" for s in xwalk.std_name]))
     else:
-        cols_std = cols
+        cols_std = None if cols is None else list(cols) + [c + "_shp" for c in cols]  # sidecars fill 2021 owner names
 
     need_geom = geometry != "none" or bb is not None
     keep = None
@@ -292,20 +349,49 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
         if dt is None:
             warnings.warn(f"no dtype manifest for {yr} {cty}; dtypes are approximate "
                           "(run python/build_original_manifest.py)")
-        o = np.argsort(out["row_in_file"].to_numpy(), kind="stable")  # file row order
+        if as_shapefile and geom is not None and "geometry_shp" in out.columns:
+            sg = out["geometry_shp"].notna().to_numpy()
+            if sg.any():
+                geom = np.array(geom, dtype=object)
+                geom[sg] = _wkb_to_geoms(out["geometry_shp"][sg].tolist())
+        out = out.drop(columns=["geometry_shp"], errors="ignore")
+        order_col = "row_in_shp" if (as_shapefile and "row_in_shp" in out.columns) else "row_in_file"
+        o = np.argsort(out[order_col].to_numpy(), kind="stable")  # back to the file's row order
         out = out.iloc[o].reset_index(drop=True)
+        rif = out["row_in_file"].to_numpy()  # kept for ORIG_FID
         if geom is not None:
             geom = geom[o]
         res = {}
-        for _, r in xwalk.iterrows():
-            std, typ, raw = r.std_name, r.r_type, r.std_name + "_raw"
-            v = out[raw] if (typ == "character" and raw in out.columns) else out[std]
-            m = dt.loc[r.original_name] if (dt is not None and r.original_name in dt.index) else None
-            res[r.original_name] = _restore(
-                v, typ, None if m is None else m["dtype"],
-                0 if m is None else int(m["n_null"]), 0 if m is None else int(m["n_zero_date"]),
-                f"{yr} {cty} {r.original_name}")
+        if as_shapefile:
+            geom_lin = None
+            for _, r in xwalk.iterrows():
+                std, typ, raw = r.std_name, r.r_type, r.std_name + "_raw"
+                v = out[raw] if (typ == "character" and raw in out.columns) else out.get(std)
+                if std in ("shape_leng", "shape_area") and std + "_shp" in out.columns:
+                    v = out[std + "_shp"]  # the shapefile's own stored values
+                elif v is None or v.isna().all():
+                    if std in ("shape_leng", "shape_area") and geom is not None:
+                        # not in the 2021 GeoPackage: recompute from the polygon
+                        if geom_lin is None:
+                            geom_lin = _make_valid_sf(np.array(geom, dtype=object))
+                        v = pd.Series(shapely.area(geom_lin) if std == "shape_area" else
+                                      shapely.length(shapely.boundary(geom_lin)), index=out.index)
+                    elif v is None:
+                        v = pd.Series([None] * len(out), index=out.index, dtype=object)
+                res[r.original_name] = _shapefile_value(v, typ, r.ogr_type, r.width,
+                                                        out.get(std + "_shp") if typ == "character" else None)
+        else:
+            for _, r in xwalk.iterrows():
+                std, typ, raw = r.std_name, r.r_type, r.std_name + "_raw"
+                v = out[raw] if (typ == "character" and raw in out.columns) else out[std]
+                m = dt.loc[r.original_name] if (dt is not None and r.original_name in dt.index) else None
+                res[r.original_name] = _restore(
+                    v, typ, None if m is None else m["dtype"],
+                    0 if m is None else int(m["n_null"]), 0 if m is None else int(m["n_zero_date"]),
+                    f"{yr} {cty} {r.original_name}")
         out = pd.DataFrame(res, index=out.index)
+        if as_shapefile:
+            gm = {"driver": "ESRI Shapefile", "geometry_type": "", "z_all_zero": "True"}
         # geometry as pyogrio returns it from the original file
         if geom is not None and is_points and geometry != "none":
             geom = np.where(shapely.is_empty(geom), None, geom)  # GDAL null shapes: sf gives EMPTY, pyogrio None
@@ -326,11 +412,58 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
                     warnings.warn(f"{yr} {cty}: source has non-zero Z values the store does not keep")
     else:
         out = out.drop(columns=["row_in_file"], errors="ignore")
+        # standardized view: fill 2021 owner names from the shapefile sidecars, as in R
+        out = out.drop(columns=["row_in_shp", "geometry_shp", "shape_leng_shp", "shape_area_shp"], errors="ignore")
+        for sc in [c for c in out.columns if c.endswith("_shp")]:
+            base = sc[:-4]
+            if base in out.columns:
+                out[base] = out[sc].where(out[sc].notna(), out[base])
+            out = out.drop(columns=[sc])
+
+    if drop_owner_names:
+        for c in ("OWNER_NAME", "OWNER_MORE", "TAX_NAME", "owner_name", "owner_more", "tax_name"):
+            if c in out.columns:
+                out[c] = pd.Series([None] * len(out), index=out.index, dtype=object)
+
+    # Points placed at their polygon's centroid, as in R: every unit point in a
+    # building shares the building polygon's centroid, moved inside the parcel
+    # when the centroid falls outside. Points in no polygon keep the published
+    # location. Default "polygon" for standardized names, "published" for original.
+    if is_points and geom is not None and geometry != "none":
+        loc = point_location or ("polygon" if names == "standardized" else "published")
+        if loc not in ("polygon", "published"):
+            raise ValueError("point_location must be 'polygon' or 'published'")
+        if loc == "polygon" and not collapse_condos:
+            if names == "original":
+                keys = np.array([f"{int(years[0])} {counties[0]}"] * len(out), dtype=object)
+            else:
+                keys = (out["year"].astype(str) + " " + out["county"].astype(str)).to_numpy()
+            geom = np.array(geom, dtype=object)
+            for k in pd.unique(keys):
+                ix = np.flatnonzero(keys == k)
+                yr, cty = k.split(" ", 1)
+                pg = read_parcels(int(yr), cty, cols=["pin"], geometry="polygon")
+                pgl = _make_valid_sf(np.asarray(pg.geometry.values, dtype=object))
+                cen = shapely.centroid(pgl)
+                inside = shapely.intersects(cen, pgl)
+                inside = np.where(pd.isna(inside), False, inside).astype(bool)
+                cen[~inside] = shapely.point_on_surface(pgl[~inside])
+                pt_idx, poly_idx = shapely.STRtree(pgl).query(geom[ix], predicate="intersects")
+                first = pd.Series(poly_idx).groupby(pt_idx).min()  # first containing polygon, as in R
+                geom[ix[first.index.to_numpy()]] = cen[first.to_numpy()]
 
     if geom is not None and geometry == "point" and not is_points:
         g = geom.copy()
-        g = shapely.make_valid(g)
-        if point_method == "metrogis":
+        g = _make_valid_sf(g)  # as R
+        if point_method == "metrogis_rows":
+            # one point per polygon row, placeholders kept, plain centroid (Washington 2015 Points)
+            out = out.drop(columns=["Shape_Leng", "Shape_Length", "Shape_Area", "shape_leng", "shape_area"], errors="ignore")
+            geom = shapely.centroid(g)
+            if orig_fid:
+                if names != "original":
+                    raise ValueError('orig_fid=True needs names="original"')
+                out["ORIG_FID"] = (rif - 1).astype("int32")
+        elif point_method == "metrogis":
             pin_col = "pin" if "pin" in out.columns else "PIN" if "PIN" in out.columns else None
             if pin_col is None:
                 raise ValueError('point_method="metrogis" needs the PIN column (include "pin"/"PIN" in cols)')
@@ -340,17 +473,8 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
             out = out[real].reset_index(drop=True)
             g = g[real]
             out = out.drop(columns=["Shape_Leng", "Shape_Area", "shape_leng", "shape_area"], errors="ignore")
-            yrs = out["year"].astype(str) if "year" in out.columns else pd.Series("", index=out.index)
-            cts = out["county"].astype(str) if "county" in out.columns else pd.Series("", index=out.index)
-            key = (yrs + " " + cts + " " + out[pin_col].astype(str)).to_numpy()
-            first = ~pd.Series(key).duplicated().to_numpy()
-            g_pin = g[first].copy()
-            dup_keys = pd.unique(key[~first])
-            if len(dup_keys):
-                pos_first = {k: i for i, k in enumerate(key[first])}
-                for k in dup_keys:
-                    g_pin[pos_first[k]] = shapely.union_all(g[key == k])
-            out = out[first].reset_index(drop=True)
+            # one point per remaining polygon ROW, as in R: multi-polygon parcels are not collapsed
+            g_pin = g
             cen = shapely.centroid(g_pin)
             inside = shapely.intersects(cen, g_pin)  # centroid inside its OWN parcel?
             inside = np.where(pd.isna(inside), False, inside).astype(bool)
@@ -360,6 +484,16 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
             geom = shapely.point_on_surface(g) if point_method == "surface" else shapely.centroid(g)
 
     out = out.drop(columns=["pt_x", "pt_y"], errors="ignore")
+    if collapse_condos:
+        if not is_points or names != "standardized" or geometry == "none":
+            raise ValueError('collapse_condos=True needs layer="points", names="standardized" and geometry')
+        from collapse_condos import collapse_condos as _collapse
+        gdf = gpd.GeoDataFrame(out, geometry=gpd.GeoSeries(geom, index=out.index, crs=PARCEL_CRS), crs=PARCEL_CRS)
+        pieces = []
+        for (yr, cty), d in gdf.groupby(["year", "county"], sort=False):
+            pg = read_parcels(int(yr), cty, cols=["pin"], geometry="polygon")
+            pieces.append(_collapse(d.reset_index(drop=True), pg))
+        return gpd.GeoDataFrame(pd.concat(pieces, ignore_index=True), crs=PARCEL_CRS)
     if geom is not None and geometry != "none":
         return gpd.GeoDataFrame(out, geometry=gpd.GeoSeries(geom, index=out.index, crs=PARCEL_CRS),
                                 crs=PARCEL_CRS)

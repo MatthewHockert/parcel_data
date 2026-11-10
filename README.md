@@ -2,27 +2,16 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24116899.svg)](https://doi.org/10.5281/zenodo.24116899)
 
-One store for the MetroGIS / Metropolitan Council regional parcel releases
-(Twin Cities 7-county area: Anoka, Carver, Dakota, Hennepin, Ramsey, Scott,
-Washington), file years 2005-2025, as Hive-partitioned GeoParquet
-(`year=YYYY/county=Name/`), so every project reads one verified copy instead
-of keeping its own shapefiles.
+This repository builds and reads one store of the MetroGIS / Metropolitan Council regional parcel releases for the Twin Cities 7-county area (Anoka, Carver, Dakota, Hennepin, Ramsey, Scott, Washington), file years 2005-2025, so every project reads one verified copy instead of keeping its own shapefiles. Each year's county files are standardized into Hive-partitioned GeoParquet (`year=YYYY/county=Name/`), with values kept as published and column names merged by concept across years, and the county-published Points layers are stored alongside the polygons. The goal of this dataset is to make it easier for researchers to pull parcel data across space and time that is unified and standardized making it easy to compare and store the data. It offers the ability to open multiple projects without having to copy the data into each project, freeing up storage, and increasing efficiency. Every one of the 147 polygon partitions and 147 Points partitions reads back identical to its source file (same rows, attributes and geometry). The built store is on Zenodo, and `download_parcels()` fetches the years a project needs.
 
-**The data are not in this repository.** The built store (10 GB) is on Zenodo,
-DOI [10.5281/zenodo.24116899](https://doi.org/10.5281/zenodo.24116899), one zip
-per year and layer. The source releases are the public "Regional Parcel
-Dataset" files once published on the Minnesota Geospatial Commons (public
-domain, Minn. Stat. Ch. 13). Those archive links no longer resolve.
-`code/01_collect_raw.R` and `code/01b_collect_2025.sh` record which release
-file each year/county came from.
+The readers are `R/read_parcels.R` and `python/read_parcels.py`.
 
 ## Setup
+
 1. Clone this repository.
-2. Set `PARCEL_HOME` to the clone: `PARCEL_HOME=${HOME}/parcel_data` in
-   `~/.Renviron` for R, `export PARCEL_HOME="$HOME/parcel_data"` in your shell
-   profile for Python.
-3. Download the years you need (each zip has all 7 counties, checked
-   against `docs/zenodo_md5.txt`, unzipped into `$PARCEL_HOME/data`):
+2. Set `PARCEL_HOME` to the clone: `PARCEL_HOME=${HOME}/parcel_data` in `~/.Renviron` for R, `export PARCEL_HOME="$HOME/parcel_data"` in your shell profile for Python.
+3. Install the dependencies: R `sf`, `arrow`, `dplyr`, `tibble`. Python `pip install -r python/requirements.txt`.
+4. Download the years you need. Each zip has all 7 counties, is checked against `docs/zenodo_md5.txt`, and is unzipped into `$PARCEL_HOME/data`.
    ```r
    source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
    download_parcels(2014:2016)                 # polygons
@@ -33,32 +22,12 @@ file each year/county came from.
    sys.path.insert(0, os.path.join(os.environ["PARCEL_HOME"], "python"))
    from read_parcels import read_parcels, download_parcels
    download_parcels([2014, 2015, 2016])
-   download_parcels(2021, layer="points")      # Python returns the published points
+   download_parcels(2021, layer="points")      # points, plus that year's polygons
    ```
-   Downloads from Zenodo run at roughly 1 MB/s: one year's polygons (300-600 MB)
-   take about 5-10 minutes, and all 21 years of both layers (10 GB) take
-   several hours, so fetch only the years you need.
-   In R, standardized Points reads place each point on its polygon, so R
-   fetches that year's polygons too. `point_location = "published"` skips it.
-4. Install the dependencies: R `sf`, `arrow`, `dplyr`, `tibble`. Python
-   `pip install -r python/requirements.txt`.
-
-## Layout
-- `code/`: build pipeline, run in order: collect raw files (01), standardize
-  to GeoParquet (02), verify every partition against its source (03), fix
-  label points (04), shapefile schema (05), published Points layers (07, 08).
-  06 and 09 are local disk-cleanup tools.
-- `R/download_parcels.R`, `python/download_parcels.py`: fetch years from Zenodo.
-- `R/read_parcels.R`: the reader. `names = "standardized"` gives one column
-  per concept across years, and `names = "original"` returns exactly what
-  `st_read()` of that year's file returned (drop-in for older scripts).
-  `layer = "points"` reads the published Points layers.
-- `python/read_parcels.py`: Python reader with the same views.
-- `verification/`: per-project checks that repointed scripts read identical data.
-- `docs/`: column crosswalks, schema inventory, verification and write logs,
-  `STATUS.md` (running build log and decisions), `REPOINTING.md`.
+   Downloads from Zenodo run slowly. For example, one year's polygons (300-600 MB) take about 5-10 minutes, and all 21 years of both layers (10 GB) may take several hours, so fetch only the years you need. Standardized Points reads place each point on its parcel polygon, so a Points download also fetches that year's polygons. `point_location = "published"` keeps the points where the county published them.
 
 ## Use
+
 ```r
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 ramsey_2016 <- read_parcels(years = 2016, counties = "Ramsey",
@@ -73,6 +42,51 @@ ramsey_2016 = read_parcels(years=2016, counties="Ramsey",
                            cols=["pin", "emv_land", "emv_total"])
 ```
 
+`names = "standardized"` (the default) gives one column per concept across years, and `names = "original"` returns exactly what `st_read()` of that year's file returned, a drop-in for older scripts. `layer = "points"` reads the published Points layers. The R and Python readers take the same options and return the same data.
+
+## Run order (building the store)
+
+Users of the data only need Setup. These scripts built the store from the raw release files and are kept as the record of how it was made. Several still carry my  machine's original paths.
+
+| Step | Script | What it does |
+|---|---|---|
+| 1 | `code/01_collect_raw.R`, `code/01b_collect_2025.sh` | Collect the raw release files (polygons, 2005-2025) into `data/raw/<year>/` and record which release file each year/county came from. |
+| 2 | `code/02_standardize.R` | Build the standardized polygon store read by `read_parcels()`. |
+| 3 | `code/03_verify_store.R` | Check every polygon partition against its source file (`docs/store_verification.csv`). |
+| 4 | `code/04_fix_points.R` | Recompute the stored label points (`pt_x`, `pt_y`) in every partition. |
+| 5 | `code/05_shapefile_schema.R` | Record the shapefile field lists for 2021 and 2024, which are stored from a GeoPackage and a geodatabase, so `as_shapefile = TRUE` can match the shapefiles. |
+| 6 | `code/07_points_store.R` | Build the Points store from the county-published Points layers. |
+| 7 | `code/08_verify_points.R` | Check every Points partition against its source (`docs/points_verification.csv`). |
+| 8 | `code/11_zenodo_package.sh` | Package the store into the Zenodo zips and checksums. |
+
+`code/06`, `09`, `10` and `12` are local disk-cleanup tools that removed duplicate copies of the parcel files from other projects once they read the store.
+
+## Data
+
+The data are not in this repository. They go in `data/` (not tracked).
+
+| Data | Source | Files |
+|---|---|---|
+| Standardized store, polygons and Points, 2005-2025 | Zenodo, DOI [10.5281/zenodo.24116899](https://doi.org/10.5281/zenodo.24116899) (10 GB, one zip per year and layer) | `data/standardized/`, `data/standardized_points/` |
+| Raw release files (build input only) | MetroGIS Regional Parcel Dataset, once published on the Minnesota Geospatial Commons. Those archive links no longer resolve, and Metropolitan Council GIS holds the archive. | `data/raw/<year>/` |
+| Column crosswalks | Built by `code/02_standardize.R` and `code/07_points_store.R` | `docs/column_crosswalk.csv`, `docs/points_column_crosswalk.csv` |
+
+The source data are public domain under the Minnesota Government Data Practices Act (Minn. Stat. Ch. 13).
+
+## Folders
+
+- `R/` the R reader (`read_parcels.R`), the downloader (`download_parcels.R`), `collapse_condos.R` and `verify_read.R`.
+- `python/` the Python reader and downloader with the same options, plus the dtype manifests the `names = "original"` view needs.
+- `code/` the build and cleanup scripts above.
+- `verification/` per-project checks that each repointed script reads identical data from the store.
+- `docs/` column crosswalks, schema inventory, verification and write logs, `STATUS.md` (running build log and decisions), `REPOINTING.md`, and the Zenodo deposit README and checksums.
+
+## Versions
+
+| Version | What it is |
+|---|---|
+| Zenodo 1.0.0 | First deposit: polygons and Points, 2005-2025 (DOI 10.5281/zenodo.24116899) |
+
 ## Citation
-Cite the Zenodo deposit (see `CITATION.cff`) and the MetroGIS Regional Parcel
-Dataset, developed by the seven metro counties and the Metropolitan Council.
+
+Cite the Zenodo deposit (see `CITATION.cff`) and the MetroGIS Regional Parcel Dataset, developed by the seven metro counties and the Metropolitan Council.
