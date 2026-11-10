@@ -1,7 +1,7 @@
 """read_parcels.py -- Python twin of R/read_parcels.R.
 
 One entry point to the MetroGIS 7-county parcel store (2005-2025 files) at
-/Users/matthewhockert/research/parcel_data/data/standardized, partitioned
+$PARCEL_HOME/data/standardized, partitioned
 year=YYYY/county=Name/part-0.parquet (plain Parquet, WKB geometry, EPSG 26915).
 
 Use from any project:
@@ -56,7 +56,8 @@ import geopandas as gpd
 import pyarrow.parquet as pq
 import shapely
 
-PARCEL_HOME = os.environ.get("PARCEL_HOME", "/Users/matthewhockert/research/parcel_data")
+# the repo folder; falls back to the folder above this file
+PARCEL_HOME = os.environ.get("PARCEL_HOME", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PARCEL_STORE = os.path.join(PARCEL_HOME, "data", "standardized")
 PARCEL_XWALK = os.path.join(PARCEL_HOME, "docs", "column_crosswalk.csv")
 PARCEL_DTYPES = os.path.join(PARCEL_HOME, "python", "original_dtypes.csv")
@@ -363,3 +364,6 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
         return gpd.GeoDataFrame(out, geometry=gpd.GeoSeries(geom, index=out.index, crs=PARCEL_CRS),
                                 crs=PARCEL_CRS)
     return out
+
+
+from download_parcels import download_parcels  # noqa: E402  (get years from Zenodo)

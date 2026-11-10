@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite the Zenodo deposit."
+title: "Twin Cities Regional Parcels, 2005-2025: Standardized GeoParquet Store (7 Metro Counties)"
+type: dataset
+authors:
+  - family-names: Hockert
+    given-names: Matthew
+doi: 10.5281/zenodo.24116899
+version: 1.0.0
+repository-code: "https://github.com/MatthewHockert/parcel_data"

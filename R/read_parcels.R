@@ -33,12 +33,14 @@
 ## return it; "none" drops it); point_method / orig_fid / as_shapefile do not
 ## apply.
 
-PARCEL_HOME  <- Sys.getenv("PARCEL_HOME", "/Users/matthewhockert/research/parcel_data")
+PARCEL_HOME  <- Sys.getenv("PARCEL_HOME")   # the repo folder; set in ~/.Renviron
+if (PARCEL_HOME == "") stop("Set PARCEL_HOME to the parcel_data folder, e.g. PARCEL_HOME=${HOME}/parcel_data in ~/.Renviron")
 PARCEL_STORE <- file.path(PARCEL_HOME, "data", "standardized")
 PARCEL_XWALK <- file.path(PARCEL_HOME, "docs", "column_crosswalk.csv")
 PARCEL_STORE_POINTS <- file.path(PARCEL_HOME, "data", "standardized_points")   # layer = "points"
 PARCEL_XWALK_POINTS <- file.path(PARCEL_HOME, "docs", "points_column_crosswalk.csv")
 PARCEL_CRS   <- 26915
+source(file.path(PARCEL_HOME, "R", "download_parcels.R"))   # download_parcels(): get years from Zenodo
 PARCEL_SHP_SCHEMA <- file.path(PARCEL_HOME, "docs", "shapefile_schema.csv")
 ## as_shapefile = TRUE (names = "original", years 2021 or 2024): the store
 ## holds those years from the GeoPackage / geodatabase, which keep more than
