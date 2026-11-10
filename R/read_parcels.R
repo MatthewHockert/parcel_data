@@ -5,7 +5,7 @@
 ## partitioned year=YYYY/county=Name/. Built by code/02_standardize.R.
 ##
 ## Use from ANY project, inside or outside ~/research:
-##   source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
+##   source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 ##   ramsey_2016 <- read_parcels(years = 2016, counties = "Ramsey",
 ##                               cols = c("pin", "emv_land", "emv_total"))
 ##

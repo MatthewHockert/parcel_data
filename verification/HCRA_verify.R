@@ -3,8 +3,8 @@
 ## old-vs-new comparison is possible; each site/year is recorded against the store's
 ## own partition check in docs/store_verification.csv.
 suppressMessages({library(sf); library(dplyr)})
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 sv <- read.csv("/Users/matthewhockert/research/parcel_data/docs/store_verification.csv", stringsAsFactors = FALSE)
 H <- "/Users/matthewhockert/Desktop/HCRA"
 gdb23 <- file.path(H, "fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb")

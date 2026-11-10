@@ -14,7 +14,7 @@
 ## Output: verification/green_line_points_results.csv
 
 suppressPackageStartupMessages({ library(sf); library(dplyr) })
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 MM <- "/Users/matthewhockert/Desktop/Personal Info/matthew_maps_saint_paul"
 utm15 <- 26915
 

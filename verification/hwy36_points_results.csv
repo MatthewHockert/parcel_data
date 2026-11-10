@@ -1,0 +1,7 @@
+"year","rows_old","rows_new","names_ok","crs_ok","cols_differ","geom_identical","max_point_move_m"
+2015,106045,106045,TRUE,TRUE,"",TRUE,0
+2016,106849,106849,TRUE,TRUE,"",TRUE,0
+2017,108213,108213,TRUE,TRUE,"",TRUE,0
+2018,109913,109913,TRUE,TRUE,"",TRUE,0
+2019,111175,111175,TRUE,TRUE,"",TRUE,0
+2020,112636,112636,TRUE,TRUE,"",TRUE,0

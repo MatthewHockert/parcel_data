@@ -2,8 +2,8 @@
 ## "fgdb_plan_regonal_parcels_2023", "plan_regonal_parcels_2023.gdb"), layer = "Parcels2023Hennepin", quiet = TRUE),
 ## PAPER_DATA_DIR = ../hennepin_conservation_easements/hcra_paper/data (from _paths.R). Exact mode (2023 gdb).
 suppressMessages({library(sf); library(dplyr)})
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 p <- "/Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"
 old <- st_read(p, layer = "Parcels2023Hennepin", quiet = TRUE)
 new <- read_parcels(years = 2023, counties = "Hennepin", names = "original")

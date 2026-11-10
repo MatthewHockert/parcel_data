@@ -1,7 +1,7 @@
 ## Verify repointed parcel reads in minneapolis_st_paul_housing_reform_paper (2026-11-07).
 suppressPackageStartupMessages({ library(sf); library(dplyr) })
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 
 proj <- "/Users/matthewhockert/Desktop/Personal Info/minneapolis_st_paul_housing_reform_paper"
 setwd(proj)   # no setwd in the script; relative paths resolve from the .Rproj root

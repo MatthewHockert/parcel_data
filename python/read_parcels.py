@@ -5,7 +5,7 @@ One entry point to the MetroGIS 7-county parcel store (2005-2025 files) at
 year=YYYY/county=Name/part-0.parquet (plain Parquet, WKB geometry, EPSG 26915).
 
 Use from any project:
-    import sys; sys.path.insert(0, "/Users/matthewhockert/research/parcel_data/python")
+    import os, sys; sys.path.insert(0, os.path.join(os.environ["PARCEL_HOME"], "python"))
     from read_parcels import read_parcels
     r16 = read_parcels(years=2016, counties="Ramsey", cols=["pin", "emv_land", "emv_total"])
     r21 = read_parcels(2021, "Ramsey", names="original")   # == gpd.read_file(<2021 Ramsey shp>)

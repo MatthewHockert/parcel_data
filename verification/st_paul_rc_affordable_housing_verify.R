@@ -6,8 +6,8 @@
 ## data/Archive is a symlink to Desktop/Personal Info/matthew_maps_saint_paul/Archive
 ## (the real old files); shp_plan_regional_parcels/ is a real folder in the project.
 suppressPackageStartupMessages({ library(sf); library(dplyr); library(glue) })
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 
 proj <- "/Users/matthewhockert/Desktop/Personal Info/st_paul_rc_affordable_housing"
 setwd(proj)

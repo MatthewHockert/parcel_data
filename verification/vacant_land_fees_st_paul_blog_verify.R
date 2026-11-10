@@ -1,7 +1,7 @@
 ## Verify repointed parcel reads in vacant_land_fees_st_paul_blog (2026-11-07).
 suppressPackageStartupMessages({ library(sf); library(dplyr) })
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 
 proj <- "/Users/matthewhockert/Desktop/Personal Info/vacant_land_fees_st_paul_blog/vacant_land_st_paul"
 setwd(proj)   # scripts run from the vacant_land_st_paul.Rproj root

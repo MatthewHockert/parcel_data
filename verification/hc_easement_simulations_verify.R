@@ -2,8 +2,8 @@
 ## (process_shapefile loop, years 2005:2022). Old read: st_read("data/shp_plan_regonal_parcels_{yr}",
 ## layer = "Parcels{yr}Hennepin"), relative to the project root. Exact mode, one year at a time.
 suppressMessages({library(sf); library(dplyr)})
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 root <- "/Users/matthewhockert/Desktop/UMN/hc_easement_simulations"
 out  <- "/Users/matthewhockert/research/parcel_data/verification/hc_easement_simulations_results.csv"
 ## YEARS env var (e.g. YEARS="2016:2019") reruns only those years and replaces their rows in the CSV.

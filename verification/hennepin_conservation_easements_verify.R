@@ -6,8 +6,8 @@
 ##     as.is = TRUE) vs read_parcels(geometry = "none"). Exact mode.
 ##  ag_preserve_analysis/parcel_analysis.R:19-30, :68 (2005:2022): old paths under Desktop/HCRA are gone.
 suppressMessages({library(sf); library(dplyr)})
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 root <- "/Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper"
 out  <- "/Users/matthewhockert/research/parcel_data/verification/hennepin_conservation_easements_results.csv"
 if (file.exists(out)) file.remove(out)

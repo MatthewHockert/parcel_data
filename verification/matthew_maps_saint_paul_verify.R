@@ -2,8 +2,8 @@
 ## For each changed read site and each year/county it reads: OLD read exactly as
 ## the script did it, NEW read_parcels() call, compared per REPOINTING.md.
 suppressPackageStartupMessages({ library(sf); library(dplyr) })
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 
 proj <- "/Users/matthewhockert/Desktop/Personal Info/matthew_maps_saint_paul"
 setwd(proj)   # the scripts setwd() here and use paths relative to it

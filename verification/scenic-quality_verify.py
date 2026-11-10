@@ -29,7 +29,7 @@ import numpy as np
 import pandas as pd
 import geopandas as gpd
 
-sys.path.insert(0, "/Users/matthewhockert/research/parcel_data/python")
+sys.path.insert(0, os.path.join(os.environ["PARCEL_HOME"], "python"))
 from read_parcels import read_parcels  # noqa: E402
 from verify_read import compare_reads  # noqa: E402
 

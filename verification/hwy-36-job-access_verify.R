@@ -7,8 +7,8 @@
 ## Both scripts read the same files (paper_replication/data has no washington_county_parcels; the hwy-36/data
 ## copy is the one read). Plain exact mode (WKB geometry compare, no tolerances).
 suppressMessages({library(sf); library(dplyr)})
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 root <- "/Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels"
 out  <- "/Users/matthewhockert/research/parcel_data/verification/hwy-36-job-access_results.csv"
 if (file.exists(out)) file.remove(out)
