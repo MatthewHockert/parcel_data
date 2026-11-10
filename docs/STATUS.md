@@ -256,3 +256,13 @@ Remaining after it reports:
 - data/raw/parcels/2024 to the Trash (5 files, 0.67 GB; trash_manifest_brownfield_2024_20261109.csv).
   brownfield now reads NO local parcel files. Its decision_log.md and parcel_file_provenance.csv updated.
 - Trash total: 3,385 files, 199.02 GB. Remaining on disk and still read: hwy-36 AO + AOData (34.0 GB).
+
+## 2026-11-10 — iCloud-only duplicates deleted
+- code/10_delete_icloud_duplicates.py --delete (Matt approved): 3,599 iCloud-only files, 197.59 GB,
+  removed from iCloud (recoverable at iCloud.com Recently Deleted until ~2026-12-10).
+  Rule: folder cleared in the live-read review, and a same-name same-size copy exists in data/raw
+  or among the verified Points source copies. Manifest: docs/icloud_delete_manifest_20261110.csv (local only).
+- Kept: 1,110 files with no name+size match (incl. 42.7 GB of Points); AO + AOData hwy-36
+  (decide with the hwy-36 paper); scenic-quality (data for McWay).
+- hwy-36 load_parcel_data.R repointed in AO, AO/paper_replication, AOData (uncommitted, not pushed);
+  store Points match exactly 2015-2020 (verification/hwy36_points_results.csv).

@@ -15,3 +15,4 @@ __pycache__/
 .Rhistory
 .RData
 .Rproj.user/
+/docs/icloud_delete_manifest_*.csv
