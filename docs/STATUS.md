@@ -266,3 +266,45 @@ Remaining after it reports:
   (decide with the hwy-36 paper); scenic-quality (data for McWay).
 - hwy-36 load_parcel_data.R repointed in AO, AO/paper_replication, AOData (uncommitted, not pushed);
   store Points match exactly 2015-2020 (verification/hwy36_points_results.csv).
+
+## 2026-11-10: Zenodo deposit, Points copies deleted, Python reader matches R
+- Zenodo deposit published: DOI 10.5281/zenodo.24116899 (record 24116899), version 1.0.0, CC-BY 4.0.
+  42 zips (polygons and Points, one per year, 2005-2025) plus README, crosswalks and SHA256SUMS,
+  built by code/11_zenodo_package.sh. Every uploaded file's MD5 matched the local copy
+  (docs/zenodo_md5.txt). Round trip: zips unzipped into a fresh PARCEL_HOME read back identical.
+- download_parcels() in R and Python fetches year zips, checks the MD5 and unzips into PARCEL_HOME.
+  Tested against the published record: R 2006 Points + polygons (Hennepin identical), Python 2005
+  Points (Anoka equal). Zenodo serves about 1 MB/s.
+- Repo made usable by others: no hard-coded home paths in the readers, Setup section, CITATION.cff,
+  MIT LICENSE, python/requirements.txt, README in the standard project layout.
+- code/12_delete_points_copies.py --delete (Matt approved): every Parcels<yr><County>Points.* and
+  All7Points.* copy outside AO / AOData, 1,020 iCloud-only files, 60.25 GB, from hc_easement_simulations,
+  hennepin_conservation_easements, matthew_maps_saint_paul, vacant_land_fees_st_paul_blog and
+  minneapolis_st_paul_housing_reform_paper. No code read them (Points come from
+  read_parcels(layer = "points")). Manifest docs/points_copies_delete_manifest_20261110.csv (local only).
+  The earlier rule (10) had kept these because their verified source copies sit in AO / AOData,
+  which were never trashed, so no size was on record. Original Points files survive only in AO / AOData.
+- hc_easement_simulations: leftover release folders (metadata, previews, attribute PDFs, .lyr; 6 MB)
+  moved to the Trash.
+- scenic-quality: clean_parcels.py (reads the store via PARCEL_HOME) committed locally, not pushed
+  (McWay's repo). Its two MetroGIS zips (2021 and 2024 GeoPackages, 0.98 GB, iCloud-only) deleted.
+  McWay gets the data from Zenodo.
+- Python reader brought to parity with R (Matt: "there shouldn't be a difference"):
+  - point_location ("polygon" default for standardized Points, as in R). Python Points read
+    download_parcels(layer = "points") now also fetches that year's polygons.
+  - polygons repaired with GEOS "structure" (sf's default). shapely's default "linework" moved
+    3 of 167,533 Ramsey 2024 points by up to 125 m. Needs shapely >= 2.1.
+  - point_method = "metrogis": one point per polygon row (R since 2026-11-08). Python still
+    unioned by PIN, one row short in Ramsey 2024.
+  - standardized view fills 2021 owner_name / owner_more / tax_name from the shapefile sidecars.
+    Python had left them blank (about 167,000 Ramsey rows). R skipped this fill when cols was
+    given. Both now fill in every case.
+  - ported as_shapefile, drop_owner_names, collapse_condos (python/collapse_condos.py),
+    metrogis_rows and orig_fid. names = "original" works under pandas 3.
+  - Checks: R vs Python identical for every standardized column (Ramsey 2016, 2021, 2024), Points
+    and polygon-point placement (within 1e-8 m), collapse_condos (Ramsey 2021, 149,235 rows) and
+    metrogis_rows + orig_fid (Washington 2015). as_shapefile equals read_file() of the 2021 and
+    2024 shapefiles (Ramsey 2021, Ramsey 2024, Carver 2021: columns, rows, geometry).
+  - Known: names = "original" reproduces the dtypes of pyogrio 0.10, which built the manifests.
+    Under pyogrio 0.13 read_file() parses shapefile dates such as "0000/00/00" that 0.10
+    returned as text, so those columns differ in type, not in value.
