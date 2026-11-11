@@ -501,3 +501,4 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
 
 
 from download_parcels import download_parcels  # noqa: E402  (get years from Zenodo)
+from parcel_columns import parcel_columns  # noqa: E402  (list columns without reading data)

@@ -28,6 +28,16 @@ The readers are `R/read_parcels.R` and `python/read_parcels.py`.
 
 ## Use
 
+To see which columns exist before downloading anything, use `parcel_columns()`. It reads the crosswalks in `docs/`, so no data is needed.
+
+```r
+parcel_columns()                                    # every standardized column: type, years recorded, original names
+parcel_columns(2014:2016, "Ramsey")                 # columns recorded in those years
+parcel_columns(2016, "Ramsey", names = "original")  # that file's own field names, in order
+```
+
+Python takes the same arguments: `from read_parcels import parcel_columns`.
+
 ```r
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 ramsey_2016 <- read_parcels(years = 2016, counties = "Ramsey",
@@ -75,7 +85,7 @@ The source data are public domain under the Minnesota Government Data Practices 
 
 ## Folders
 
-- `R/` the R reader (`read_parcels.R`), the downloader (`download_parcels.R`), `collapse_condos.R` and `verify_read.R`.
+- `R/` the R reader (`read_parcels.R`), the downloader (`download_parcels.R`), the column lister (`parcel_columns.R`), `collapse_condos.R` and `verify_read.R`.
 - `python/` the Python reader and downloader with the same options, plus the dtype manifests the `names = "original"` view needs.
 - `code/` the build and cleanup scripts above.
 - `verification/` per-project checks that each repointed script reads identical data from the store.
