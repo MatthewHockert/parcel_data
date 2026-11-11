@@ -1,0 +1,2109 @@
+county,use_class1,prop_type,rule,parcels,years
+Anoka,RESIDENTIAL SINGLE FAMILY,R,residential,1638617,2006-2020
+Anoka,1a RESIDENTIAL SINGLE UNIT,R,residential,351360,2023-2025
+Anoka,RESIDENTIAL SINGLE FAMILY-IMPROVED,R,residential,191475,2021-2022
+Anoka,2110,,unmapped,86235,2005-2005
+Anoka,CONDOMINIUMS,X,condo,75677,2006-2020
+Anoka,AGRICULTURAL,F,farm,52819,2006-2020
+Anoka,COMMERCIAL / GOLF COURSE,GC,golf,43141,2006-2020
+Anoka,TOWNHOMES-IMPROVED,Y,townhouse,22607,2021-2022
+Anoka,EXEMPT - MUNICIPAL OTHER,EX,exempt,21207,2006-2017
+Anoka,INDUSTRIAL,I,industrial,19642,2006-2020
+Anoka,CONDOMINIUMS -IMPROVED,X,condo,12507,2021-2022
+Anoka,RESIDENTIAL 1 TO 3 UNITS,TP,2-3 units,11832,2023-2025
+Anoka,"RESIDENTIAL DUPLEXES, DOUBLE BUNGALOWS,",TP,2-3 units,11388,2007-2017
+Anoka,APARTMENTS / COOP,A,apartment,10634,2006-2020
+Anoka,2310,,unmapped,9904,2005-2005
+Anoka,RESIDENTIAL SINGLE FAMILY-VACANT,LR,vacant residential,9424,2021-2022
+Anoka,3a COMMERCIAL PREFERENTIAL,C,commercial,8421,2023-2025
+Anoka,EXEMPT - MUNICIPAL PUBLIC SERVICE,EX,exempt,7989,2007-2017
+Anoka,SEASONAL RECREATIONAL,S,seasonal,7677,2006-2020
+Anoka,"AGRICULTURAL, AGRICULTURAL,",F,farm,6906,2006-2017
+Anoka,EXEMPT - COUNTY OTHER,EX,exempt,6577,2006-2017
+Anoka,MUNICIPAL-PUBLIC SERVICE-OTHER,EX,exempt,6194,2023-2025
+Anoka,2100,,unmapped,6068,2005-2005
+Anoka,3a INDUSTIAL PREFERENTIAL,I,industrial,4930,2023-2025
+Anoka,2a AGRICULTURAL,F,farm,4648,2023-2025
+Anoka,TAX FORFEIT,EX,exempt,4414,2006-2020
+Anoka,COMMERCIAL / GOLF COURSE-IMPROVED,GC,golf,4334,2021-2022
+Anoka,EXEMPT- MUNI OTHER,EX,exempt,3933,2021-2022
+Anoka,EXEMPT - DNR PAYMENT IN LIEU OF TAX (ACQUIRED),EX,exempt,3768,2007-2017
+Anoka,EXEMPT - CHURCH PROPERTY,EX,exempt,3538,2006-2017
+Anoka,QUADS-IMPROVED,A,apartment (quads),3508,2021-2022
+Anoka,2810,,unmapped,3105,2005-2005
+Anoka,RESIDENTIAL DUPLEXES,TP,2-3 units,3050,2018-2020
+Anoka,EXEMPT - SPECIAL TAXING DISTRICT,EX,exempt,3028,2007-2017
+Anoka,EXEMPT - ROADS,EX,exempt,2786,2006-2017
+Anoka,TOWNHOMES-VACANT,LR,vacant residential,2565,2021-2022
+Anoka,INDUSTRIAL-IMPROVED,I,industrial,2561,2021-2022
+Anoka,"COMMERCIAL / GOLF COURSE, RESIDENTIAL SINGLE FAMILY,",GC,golf,2404,2007-2017
+Anoka,EXEMPT - PUBLIC ELEMENTARY & SECONDARY SCHOOLS,EX,exempt,2337,2007-2017
+Anoka,4a APARTMENT 4 OR MORE UNITS,A,apartment,2208,2023-2025
+Anoka,3410,,unmapped,2134,2005-2005
+Anoka,RESIDENTIAL DUPLEX/TRIPLEX,TP,2-3 units,2111,2023-2025
+Anoka,EXEMPT - COUNTY PUBLIC SERVICE,EX,exempt,2066,2006-2017
+Anoka,MUNICIPAL-PUBLIC SERVICE,EX,exempt,2056,2023-2025
+Anoka,"DUPLEXES, DOUBLE BUNGALOWS -IMPROVED",TP,2-3 units,2045,2021-2022
+Anoka,EXEMPT - STATE,EX,exempt,1941,2006-2017
+Anoka,COUNTY-PUBLIC SERVICE-OTHER,EX,exempt,1923,2023-2025
+Anoka,2300,,unmapped,1908,2005-2005
+Anoka,1200,,unmapped,1727,2005-2005
+Anoka,APARTMENTS / COOP-IMPROVED,A,apartment,1521,2021-2022
+Anoka,4019,,unmapped,1512,2005-2005
+Anoka,MANUFACTURED HOME PARK,MH,manufactured park,1464,2006-2025
+Anoka,2b RURAL VACANT LAND,F,farm,1417,2023-2025
+Anoka,2510,,unmapped,1416,2005-2005
+Anoka,EXEMPT- MUNI PUBLIC SERVICE,EX,exempt,1401,2021-2022
+Anoka,COMMERCIAL / GOLF COURSE-VACANT,GC,golf,1339,2021-2022
+Anoka,AG CLASS 2A BARE LAND (LESS THAN 34.5 AC,F,farm,1230,2021-2022
+Anoka,EXEMPT- COUNTY OTHER,EX,exempt,1195,2021-2022
+Anoka,SEASONAL RESIDENTIAL RECREATION,S,seasonal,1168,2023-2025
+Anoka,"AGRICULTURAL, RESIDENTIAL SINGLE FAMILY,",F,farm,1138,2007-2017
+Anoka,"AGRICULTURAL, AGRICULTURAL, AGRICULTURAL,",F,farm,1131,2007-2017
+Anoka,"RESIDENTIAL DUPLEXES, DOUBLE *",TP,2-3 units,1076,2006-2006
+Anoka,STATE ACQUIRED - PILT,EX,exempt,1056,2023-2025
+Anoka,3510,,unmapped,1052,2005-2005
+Anoka,2210,,unmapped,1050,2005-2005
+Anoka,"EXEMPT - PUBLIC ACADEMIES COLLEGES, UNIVERSITIES,",EX,exempt,976,2008-2017
+Anoka,CHURCH,EX,exempt,886,2023-2025
+Anoka,3400,,unmapped,880,2005-2005
+Anoka,4017,,unmapped,854,2005-2005
+Anoka,EXEMPT - MUNICIPAL PUBLIC SER*,EX,exempt,836,2006-2006
+Anoka,TAX FORFEITURE,EX,exempt,815,2023-2025
+Anoka,1100,,unmapped,809,2005-2005
+Anoka,2610,,unmapped,760,2005-2005
+Anoka,SERVICE STATION,,unmapped,758,2006-2020
+Anoka,"APARTMENTS / COOP, APARTMENTS / COOP,",A,apartment,748,2008-2017
+Anoka,EXEMPT- DNR PAY IN LIEU OF TAX (ACQ),EX,exempt,702,2021-2022
+Anoka,EXEMPT - CHARITABLE INSTITUTIONS,EX,exempt,694,2007-2017
+Anoka,EXEMPT CHURCH PROPERTY,EX,exempt,649,2021-2022
+Anoka,INDUSTRIAL-VACANT,LI,vacant industrial,635,2021-2022
+Anoka,K-12 SCHOOL-PUBLIC,EX,exempt,633,2023-2025
+Anoka,AG CLASS 2A LAND WITH BLDGS (LESS THAN 3,F,farm,632,2021-2022
+Anoka,MIX AG 2A & RUR VAC 2B BARE LND (34.5 OR,F,farm,587,2021-2022
+Anoka,4016,,unmapped,583,2005-2005
+Anoka,SEASONAL RECREATIONAL-VACANT,S,seasonal,577,2021-2022
+Anoka,RAILROAD,CR,railroad,571,2006-2020
+Anoka,EXEMPT - PUBLIC BURYING GROUNDS,EX,exempt,543,2007-2022
+Anoka,"EXEMPT - MUNICIPAL LAW ENFORCEMENT FIRE, & ADMIN,",EX,exempt,534,2008-2017
+Anoka,COUNTY-PUBLIC SERVICE,EX,exempt,530,2023-2025
+Anoka,"UTILITY PROPERTY, UTILITY PROPERTY,",U,utility,530,2007-2017
+Anoka,RURAL VAC LAND 2B BARE LND (LESS THAN 34,F,farm,512,2021-2022
+Anoka,3500,,unmapped,507,2005-2005
+Anoka,STATE PROPERTY,EX,exempt,493,2023-2025
+Anoka,1400,,unmapped,477,2005-2005
+Anoka,"RESIDENTIAL SINGLE FAMILY, SEASONAL RECREATIONAL,",S,seasonal,468,2007-2017
+Anoka,EXEMPT- ROADS,EX,exempt,461,2021-2022
+Anoka,"INDUSTRIAL, RESIDENTIAL SINGLE FAMILY,",I,industrial,452,2007-2017
+Anoka,EXEMPT - DNR PAYMENT IN LIEU *,EX,exempt,443,2006-2006
+Anoka,EXEMPT - PUBL ELEMT & SECOND SCHOOLS,EX,exempt,422,2021-2022
+Anoka,"EXEMPT - CHARITABLE INSTITUTIONS,",EX,exempt,411,2008-2011
+Anoka,4023,,unmapped,404,2005-2005
+Anoka,SPECIAL TAXING DISTRICT,EX,exempt,392,2023-2025
+Anoka,RURAL VAC LAND 2B BARE LAND (34.5 OR MOR,F,farm,384,2021-2022
+Anoka,UTILITY PROPERTY,U,utility,382,2006-2020
+Anoka,AG CLASS 2A BARE LAND (34.5 OR MORE AC),F,farm,380,2021-2022
+Anoka,EXEMPT- COUNTY PUBLIC SERVICE,EX,exempt,357,2021-2022
+Anoka,4006,,unmapped,341,2005-2005
+Anoka,EXEMPT SPECIAL TAXING DISTRICT,EX,exempt,333,2021-2022
+Anoka,EXEMPT- STATE,EX,exempt,320,2021-2022
+Anoka,MIX AG 2A & RUR VAC 2B BARE LND (LESS TH,F,farm,305,2021-2022
+Anoka,EXEMPT - DNR PAYMENT IN LIEU OF TAX (TRUST),EX,exempt,300,2007-2017
+Anoka,COLLEGE-PUBLIC,EX,exempt,287,2023-2025
+Anoka,SEASONAL RECREATIONAL-IMPROVED,S,seasonal,282,2021-2022
+Anoka,,,blank,256,2021-2021
+Anoka,CHARITABLE INSTITUTION,EX,exempt,252,2023-2025
+Anoka,EXEMPT - FEDERAL,EX,exempt,249,2006-2017
+Anoka,MIX AG 2A & RUR VAC 2B W/ BLDG (34.5 OR,F,farm,248,2021-2022
+Anoka,"AGRICULTURAL, INDUSTRIAL,",I,industrial,238,2006-2017
+Anoka,"COMMERCIAL / GOLF COURSE, RES*",GC,golf,235,2006-2006
+Anoka,4021,,unmapped,231,2005-2005
+Anoka,MIX AG 2A & RUR VAC 2B W/ BLDG(LESS THAN,F,farm,227,2021-2022
+Anoka,5100,,unmapped,224,2005-2005
+Anoka,EXEMPT - PUBLIC HOSPITALS,EX,exempt,224,2006-2017
+Anoka,EXEMPT - PUBLIC ELEMENTARY & *,EX,exempt,217,2006-2006
+Anoka,4001,,unmapped,214,2005-2005
+Anoka,1410,,unmapped,212,2005-2005
+Anoka,"AGRICULTURAL, AGRICULTURAL, COMMERCIAL / GOLF COURSE,",GC,golf,211,2007-2017
+Anoka,"RESIDENTIAL SINGLE FAMILY, RESIDENTIAL SINGLE FAMILY,",R,residential,209,2007-2017
+Anoka,4c(2) QUALIFY GOLF COURSES,GC,golf,204,2023-2025
+Anoka,AG CLASS 2A LAND WITH BLDGS (34.5 OR MOR,F,farm,197,2021-2022
+Anoka,4013,,unmapped,195,2005-2005
+Anoka,EXEMPT PUBL ACADEMIES COLLEGES UNIV,EX,exempt,194,2021-2022
+Anoka,MANUFACTURED HOME PARK-IMPROVED,MH,manufactured park,186,2021-2022
+Anoka,EXEMPT - SPECIAL TAXING DISTR*,EX,exempt,185,2006-2006
+Anoka,CHARITABLE INSTITUTIONS,EX,exempt,182,2021-2022
+Anoka,"EXEMPT - CHURCH PROPERTY, EXEMPT RESIDENCE - CHURCH PROPERTY,",EX,exempt,182,2007-2017
+Anoka,4014,,unmapped,181,2005-2005
+Anoka,"AGRICULTURAL, COMMERCIAL / GOLF COURSE,",GC,golf,173,2007-2017
+Anoka,4020,,unmapped,165,2005-2005
+Anoka,APARTMENTS / COOP-VACANT,A,apartment,160,2021-2022
+Anoka,EXEMPT - NON-PUBLIC ELEMENTARY & SECONDARY SCHOOLS,EX,exempt,148,2007-2017
+Anoka,MUNICIPAL-POLICE & FIRE-ADMINISTRATION,EX,exempt,147,2023-2025
+Anoka,"COMMERCIAL / GOLF COURSE, RESIDENTIAL DUPLEXES, DOUBLE BUNGALOWS,",GC,golf,142,2007-2017
+Anoka,"APARTMENTS / COOP, COMMERCIAL / GOLF COURSE,",GC,golf,141,2007-2017
+Anoka,TAX FORFEIT - DNR PAYMENT IN LIEU OF TAX,EX,exempt,137,2007-2022
+Anoka,EXEMPT RESIDENCE - CHURCH PROPERTY,EX,exempt,133,2007-2017
+Anoka,4009,,unmapped,121,2005-2005
+Anoka,CEMETERY-PUBLIC,EX,exempt,120,2023-2025
+Anoka,EXEMPT - CHARITABLE INSTITUTI*,EX,exempt,118,2006-2006
+Anoka,"COMMERCIAL / GOLF COURSE, COMMERCIAL / GOLF COURSE,",GC,golf,115,2007-2017
+Anoka,"EXEMPT - PUBLIC ACADEMIES, COLLEGES, UNIVERSITIES,",EX,exempt,115,2007-2007
+Anoka,4003,,unmapped,113,2005-2005
+Anoka,"EXEMPT - PUBLIC ACADEMIES, CO*",EX,exempt,113,2006-2006
+Anoka,NURSING HOMES,,unmapped,107,2006-2020
+Anoka,2710,,unmapped,104,2005-2005
+Anoka,EXEMPT- MUNILAW ENFORCE FIRE & ADMIN,EX,exempt,102,2021-2022
+Anoka,EXEMPT - TRANSITIONAL HOUSING FACILITIES,EX,exempt,98,2007-2022
+Anoka,K-12 SCHOOL-PRIVATE,,unmapped,98,2023-2025
+Anoka,"EXEMPT - CHURCH PROPERTY, EXEMPT - NON-PUBLIC ELEMENTARY & SECONDARY SCHOOLS,",EX,exempt,92,2007-2017
+Anoka,UTILITY PROPERTY-IMPROVED,U,utility,90,2021-2022
+Anoka,RESIDENTIAL 4+ OWNERS VALUE,R,residential,86,2023-2025
+Anoka,"APARTMENTS / COOP, APARTMENTS*",A,apartment,82,2006-2006
+Anoka,4d QUALIFYING LOW INCOME RENTAL HOUSING,HL,low income rental,81,2023-2023
+Anoka,COUNTY ADMINISTERED - PILT,,unmapped,80,2023-2025
+Anoka,APARTMENTS/COOP,A,apartment,78,2007-2007
+Anoka,3a RAILROAD PREFERENTIAL,CR,railroad,74,2024-2025
+Anoka,"AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, COMMERCIAL / GOLF COURSE,",GC,golf,71,2008-2017
+Anoka,RAILROAD-VACANT,CR,railroad,68,2021-2022
+Anoka,"AGRICULTURAL, AGRICULTURAL, INDUSTRIAL,",I,industrial,66,2007-2017
+Anoka,MANAGED FOREST LAND,F,farm,63,2023-2025
+Anoka,HOSPITAL-PUBLIC,EX,exempt,62,2023-2025
+Anoka,"UTILITY PROPERTY, UTILITY PRO*",U,utility,61,2006-2006
+Anoka,FEDERAL PROPERTY,,unmapped,58,2023-2025
+Anoka,EXEMPT RESIDENCE - CHARITABLE INSTITUTIONS,EX,exempt,55,2008-2017
+Anoka,CHURCH-RESIDENTIAL,EX,exempt,53,2023-2025
+Anoka,3610,,unmapped,52,2005-2005
+Anoka,EXEMPT - MUNICIPAL LAW ENFORC*,EX,exempt,52,2006-2006
+Anoka,EXEMPT- DNR PAY IN LIEU OF TAX (TRT),EX,exempt,52,2021-2022
+Anoka,4018,,unmapped,50,2005-2005
+Anoka,"EXEMPT - MUNICIPAL LAW ENFORCEMENT, FIRE, & ADMIN,",EX,exempt,50,2007-2007
+Anoka,4005,,unmapped,49,2005-2005
+Anoka,5123,,unmapped,48,2005-2005
+Anoka,EXEMPT - PUBLIC BURYING GROUN*,EX,exempt,48,2006-2006
+Anoka,"INDUSTRIAL, RESIDENTIAL SINGL*",I,industrial,47,2006-2006
+Anoka,CHARITABLE INSTITUTION-RESIDENTIAL,EX,exempt,46,2023-2025
+Anoka,3800,,unmapped,45,2005-2005
+Anoka,"MANUFACTURED HOME PARK, RESIDENTIAL SINGLE FAMILY,",MH,manufactured park,44,2007-2017
+Anoka,3710,,unmapped,42,2005-2005
+Anoka,UTILITY PROPERTY-VACANT,U,utility,42,2021-2022
+Anoka,2600,,unmapped,41,2005-2005
+Anoka,"APARTMENTS / COOP, APARTMENTS / COOP, APARTMENTS / COOP,",A,apartment,40,2014-2017
+Anoka,EXEMPT PUBLIC HOSPITALS,EX,exempt,40,2021-2022
+Anoka,EXEMPT- FEDERAL,EX,exempt,40,2021-2022
+Anoka,"EXEMPT - COUNTY LAW ENFORCEMENT FIRE, & ADMIN,",EX,exempt,39,2012-2017
+Anoka,"EXEMPT - COUNTY LAW ENFORCEMENT, FIRE, & ADMIN,",EX,exempt,39,2007-2011
+Anoka,4024,,unmapped,38,2005-2005
+Anoka,"RESIDENTIAL SINGLE FAMILY, SE*",R,residential,38,2006-2006
+Anoka,EXEMPT - EMERGENCY SHELTERS FOR VICTIMS OF DOMESTI,EX,exempt,36,2008-2017
+Anoka,QUADS-VACANT,A,apartment (quads),36,2021-2022
+Anoka,TAX FORFEIT - DNR PAYMENT IN *,EX,exempt,35,2006-2006
+Anoka,"AGRICULTURAL, AGRICULTURAL, RESIDENTIAL SINGLE FAMILY,",F,farm,33,2007-2017
+Anoka,EXEMPT - NON-PUBL ELEMT & SECOND SCHOOLS,EX,exempt,32,2021-2022
+Anoka,MANAGED FOREST LAND CLASS 2C (34.5 OR MO,F,farm,31,2021-2022
+Anoka,"EXEMPT - FORESTS PARKS (STATE & FED), & WILDLIFE,",EX,exempt,30,2008-2017
+Anoka,"AGRICULTURAL, COMMERCIAL / GOLF COURSE, RESIDENTIAL SINGLE FAMILY,",GC,golf,29,2011-2017
+Anoka,CONDOMINIUMS-VACANT,LR,vacant residential,29,2021-2022
+Anoka,1a RES/AG SINGLE UNIT,F,farm,28,2023-2025
+Anoka,3700,,unmapped,26,2005-2005
+Anoka,"APARTMENTS / COOP, EXEMPT - SPECIAL TAXING DISTRICT,",EX,exempt,26,2007-2017
+Anoka,4007,,unmapped,25,2005-2005
+Anoka,"AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, AGRICULTURAL,",F,farm,25,2009-2017
+Anoka,"EXEMPT - CHURCH PROPERTY, EXE*",EX,exempt,25,2006-2006
+Anoka,"RESIDENTIAL SINGLE FAMILY, RE*",R,residential,25,2006-2006
+Anoka,"AGRICULTURAL, AGRICULTURAL, SEASONAL RECREATIONAL,",S,seasonal,24,2007-2017
+Anoka,4012,,unmapped,23,2005-2005
+Anoka,"COMMERCIAL / GOLF COURSE, MANUFACTURED HOME PARK,",MH,manufactured park,22,2007-2017
+Anoka,"AGRICULTURAL, AGRICULTURAL, C*",F,farm,21,2006-2006
+Anoka,CHURCH-OTHER,EX,exempt,21,2024-2025
+Anoka,TIMBER,F,farm,21,2006-2011
+Anoka,MANAGED FOREST LAND CLASS 2C(LESS THAN 3,F,farm,19,2021-2022
+Anoka,"AGRICULTURAL, AGRICULTURAL, A*",F,farm,18,2006-2006
+Anoka,COUNTY-POLICE & FIRE-ADMINISTRATION,,unmapped,18,2023-2025
+Anoka,EXEMPT - ICE ARENAS AND BASEBALL PARKS OWNED BY NO,EX,exempt,18,2012-2017
+Anoka,SERVICE STATION-IMPROVED,,unmapped,16,2021-2022
+Anoka,"DUPLEXES, DOUBLE BUNGALOWS -VACANT",LR,vacant residential,15,2021-2022
+Anoka,EXEMPT - NON-PUBLIC ELEMENTAR*,EX,exempt,15,2006-2006
+Anoka,RURAL VAC LAND  2B W/ BLDGS (LESS THAN 3,F,farm,15,2021-2022
+Anoka,"COMMERCIAL / GOLF COURSE, COM*",GC,golf,13,2006-2006
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - APPRENTICESHIP TRAINING FACILITY,",EX,exempt,13,2008-2017
+Anoka,2800,,unmapped,12,2005-2005
+Anoka,EXEMPT - NON-PUBLIC HOSPITALS,EX,exempt,12,2006-2009
+Anoka,EXEMPT- COUNTY LAW ENFORCE FIRE & ADMIN,EX,exempt,12,2021-2022
+Anoka,MANUFACTURED HOME PARK-VACANT,MH,manufactured park,12,2021-2022
+Anoka,4002,,unmapped,11,2005-2005
+Anoka,"AGRICULTURAL, EXEMPT - AGRICULTURAL HISTORICAL SOCIETIES,",EX,exempt,11,2007-2017
+Anoka,"AGRICULTURAL, SEASONAL RECREATIONAL,",S,seasonal,11,2007-2013
+Anoka,"APARTMENTS / COOP, APARTMENTS / COOP, COMMERCIAL / GOLF COURSE,",GC,golf,11,2007-2017
+Anoka,"APARTMENTS / COOP, MANUFACTURED HOME PARK, RESIDENTIAL SINGLE FAMILY,",MH,manufactured park,11,2007-2017
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - MUNICIPAL OTHER,",EX,exempt,11,2007-2017
+Anoka,"COMMERCIAL / GOLF COURSE, MANUFACTURED HOME PARK, RESIDENTIAL SINGLE FAMILY,",MH,manufactured park,11,2007-2017
+Anoka,"COMMERCIAL / GOLF COURSE, RESIDENTIAL SINGLE FAMILY, RESIDENTIAL SINGLE FAMILY,",GC,golf,11,2007-2017
+Anoka,"EXEMPT - CHURCH PROPERTY, EXEMPT - CHURCH PROPERTY, EXEMPT RESIDENCE - CHURCH PROPERTY,",EX,exempt,11,2007-2017
+Anoka,"EXEMPT - CHURCH PROPERTY, EXEMPT - NON-PUBLIC ELEMENTARY & SECONDARY SCHOOLS, EXEMPT RESIDENCE - CHU",EX,exempt,11,2007-2017
+Anoka,EXEMPT - EMERGENCY SHELT FOR VIC OF DOM,EX,exempt,11,2021-2022
+Anoka,"AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, COMMERCIAL / GOLF COURSE,",GC,golf,10,2009-2017
+Anoka,"AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, INDUSTRIAL,",I,industrial,10,2009-2017
+Anoka,"AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, RESIDENTIAL SINGLE FAMILY,",F,farm,10,2009-2017
+Anoka,"APARTMENTS / COOP, COMMERCIAL*",C,commercial,10,2006-2006
+Anoka,"COMMERCIAL / GOLF COURSE, INDUSTRIAL,",GC,golf,10,2009-2017
+Anoka,"EXEMPT - APPRENTICESHIP TRAINING FACILITY, INDUSTRIAL,",EX,exempt,10,2008-2017
+Anoka,EXEMPT - COUNTY LAW ENFORCEME*,EX,exempt,10,2006-2006
+Anoka,"EXEMPT - COUNTY OTHER, RESIDENTIAL SINGLE FAMILY,",EX,exempt,10,2007-2017
+Anoka,NURSING HOMES-IMPROVED,,unmapped,10,2021-2022
+Anoka,2200,,unmapped,9,2005-2005
+Anoka,4015,,unmapped,9,2005-2005
+Anoka,"AGRICULTURAL, AGRICULTURAL, MANUFACTURED HOME PARK,",MH,manufactured park,9,2009-2017
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - COUNTY OTHER,",EX,exempt,9,2009-2017
+Anoka,"FORESTS,PARKS,WILDLIFE REFUGES",F,farm,9,2023-2025
+Anoka,2700,,unmapped,8,2005-2005
+Anoka,3600,,unmapped,8,2005-2005
+Anoka,"AGRICULTURAL, RESIDENTIAL SINGLE FAMILY, RESIDENTIAL SINGLE FAMILY,",F,farm,8,2013-2017
+Anoka,"APARTMENTS / COOP, RESIDENTIAL SINGLE FAMILY,",A,apartment,8,2009-2016
+Anoka,"EXEMPT - CHURCH PROPERTY, EXEMPT - NON-PUBLIC ELEMENTARY & SECONDARY SCHOOLS, EXEMPT - TRANSITIONAL",EX,exempt,8,2010-2017
+Anoka,"EXEMPT - DNR PAYMENT IN LIEU OF TAX (TRUST), RESIDENTIAL SINGLE FAMILY,",EX,exempt,8,2010-2017
+Anoka,RURAL VAC LND 2B  W/BLDGS (34.5  OR  MOR,F,farm,8,2021-2022
+Anoka,1500,,unmapped,7,2005-2005
+Anoka,"AGRICULTURAL, AGRICULTURAL, I*",F,farm,7,2006-2006
+Anoka,"APARTMENTS / COOP, APARTMENTS / COOP, EXEMPT - SPECIAL TAXING DISTRICT,",EX,exempt,7,2007-2013
+Anoka,"EXEMPT - DNR PAYMENT IN LIEU OF TAX (ACQUIRED), RESIDENTIAL SINGLE FAMILY,",EX,exempt,7,2011-2017
+Anoka,2500,,unmapped,6,2005-2005
+Anoka,2910,,unmapped,6,2005-2005
+Anoka,"APARTMENTS / COOP, COMMERCIAL / GOLF COURSE, RESIDENTIAL SINGLE FAMILY,",GC,golf,6,2012-2017
+Anoka,"APARTMENTS / COOP, COMMERCIAL / GOLF COURSE, RESIDENTIAL SINGLE FAMILY, SEASONAL RECREATIONAL,",GC,golf,6,2009-2014
+Anoka,APPRENTICESHIP TRAINING,,unmapped,6,2023-2025
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - CHURCH PROPERTY,",EX,exempt,6,2015-2017
+Anoka,EXEMPT - APPRENTICESHIP TRAINING FACILITY,EX,exempt,6,2012-2017
+Anoka,EXEMPT - ICE ARENAS AND BASEBALL PARKS O,EX,exempt,6,2021-2022
+Anoka,"EXEMPT - ICE ARENAS AND BASEBALL PARKS OWNED BY NO,",EX,exempt,6,2010-2011
+Anoka,EXEMPT - PRIVATE BURYING GROUNDS,EX,exempt,6,2012-2017
+Anoka,EXEMPT- FORESTS PARKS (STAT&FED) & WILD,EX,exempt,6,2021-2022
+Anoka,"AGRICULTURAL, COMMERCIAL / GO*",C,commercial,5,2006-2006
+Anoka,"AGRICULTURAL, INDUSTRIAL, RESIDENTIAL SINGLE FAMILY,",I,industrial,5,2013-2017
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - NON-PUBLIC HOSPITALS,",EX,exempt,5,2013-2017
+Anoka,"EXEMPT - CHURCH PROPERTY, EXEMPT RESIDENCE - CHARITABLE INSTITUTIONS, EXEMPT RESIDENCE - CHURCH PROP",EX,exempt,5,2013-2017
+Anoka,EXEMPT RESIDENCE - CHARITABLE INSTITUTIO,EX,exempt,5,2021-2022
+Anoka,4010,,unmapped,4,2005-2005
+Anoka,EXEMPT RESIDENCE - CHURCH PRO*,EX,exempt,4,2006-2006
+Anoka,"MANUFACTURED HOME PARK, RESID*",MH,manufactured park,4,2006-2006
+Anoka,NURSING HOMES-VACANT,LR,vacant residential,4,2021-2022
+Anoka,RAILROAD-IMPROVED,CR,railroad,4,2021-2022
+Anoka,4008,,unmapped,3,2005-2005
+Anoka,AG MIGRANT HOUSING,F,farm,3,2023-2025
+Anoka,"AGRICULTURAL, AGRICULTURAL, R*",F,farm,3,2006-2006
+Anoka,"AGRICULTURAL, RESIDENTIAL SIN*",F,farm,3,2006-2006
+Anoka,"AGRICULTURAL, SEASONAL RECREA*",S,seasonal,3,2006-2006
+Anoka,"APARTMENTS / COOP, EXEMPT - CHURCH PROPERTY,",EX,exempt,3,2015-2017
+Anoka,COLLEGE-PRIVATE,,unmapped,3,2023-2025
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - CHARITABLE INSTITUTIONS,",EX,exempt,3,2008-2017
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - CHURCH PROPERTY, EXEMPT - NON-PUBLIC ELEMENTARY & SECONDARY SCHOO",EX,exempt,3,2015-2017
+Anoka,"COMMERCIAL / GOLF COURSE, MAN*",GC,golf,3,2006-2006
+Anoka,"COMMERCIAL / GOLF COURSE, RESIDENTIAL SINGLE FAMILY, SEASONAL RECREATIONAL,",GC,golf,3,2015-2017
+Anoka,EXEMPT - FORESTS  PARKS (STAT*,EX,exempt,3,2006-2006
+Anoka,"EXEMPT - FORESTS  PARKS (STATE & FED), & WILDLIFE,",EX,exempt,3,2007-2007
+Anoka,"EXEMPT - NONPROFIT NURSING HOMES,",EX,exempt,3,2015-2017
+Anoka,"EXEMPT - PUBLIC HOSPITALS, EXEMPT RESIDENCE - PUBLIC HOSPITALS,",EX,exempt,3,2015-2017
+Anoka,"EXEMPT - STATE RESIDENTIAL SINGLE FAMILY,",EX,exempt,3,2008-2010
+Anoka,NURSING HOME,,unmapped,3,2023-2025
+Anoka,2900,,unmapped,2,2005-2005
+Anoka,4006R,,unmapped,2,2005-2005
+Anoka,"AGRICULTURAL, MANUFACTURED HOME PARK,",MH,manufactured park,2,2007-2008
+Anoka,"APARTMENTS / COOP, EXEMPT - S*",EX,exempt,2,2006-2006
+Anoka,"COMMERCIAL / GOLF COURSE, EXE*",GC,golf,2,2006-2006
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - PUBLIC HOSPITALS,",EX,exempt,2,2016-2017
+Anoka,EXEMPT - AGRICULTURAL HISTORICAL SOCIETI,EX,exempt,2,2021-2022
+Anoka,EXEMPT - NON-PUBLIC ACADEMIES COLLEGES U,EX,exempt,2,2021-2022
+Anoka,EXEMPT - NONPROFIT NURSING HOMES,EX,exempt,2,2021-2022
+Anoka,"EXEMPT - ROADS, EXEMPT - STATE,",EX,exempt,2,2016-2017
+Anoka,EXEMPT NON-PUBLIC HOSPITALS,EX,exempt,2,2021-2022
+Anoka,"RESIDENTIAL DUPLEXES, DOUBLE BUNGALOWS, RESIDENTIAL DUPLEXES, DOUBLE BUNGALOWS,",TP,2-3 units,2,2011-2012
+Anoka,SERVICE STATION-VACANT,LR,vacant residential,2,2021-2022
+Anoka,"TAX FORFEIT, TAX FORFEIT,",EX,exempt,2,2009-2017
+Anoka,3810,,unmapped,1,2005-2005
+Anoka,4004,,unmapped,1,2005-2005
+Anoka,4073,,unmapped,1,2005-2005
+Anoka,"AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, AGRICULTURAL, AGRICULTURAL,",F,farm,1,2009-2009
+Anoka,"AGRICULTURAL, AGRICULTURAL, E*",F,farm,1,2006-2006
+Anoka,"AGRICULTURAL, AGRICULTURAL, S*",F,farm,1,2006-2006
+Anoka,"AGRICULTURAL, COMMERCIAL / GOLF COURSE",GC,golf,1,2007-2007
+Anoka,"AGRICULTURAL, EXEMPT - AGRICU*",EX,exempt,1,2006-2006
+Anoka,"AGRICULTURAL, MANUFACTURED HO*",F,farm,1,2006-2006
+Anoka,"APARTMENTS / COOP, MANUFACTUR*",A,apartment,1,2006-2006
+Anoka,"APARTMENTS / COOP, MANUFACTURED HOME,",A,apartment,1,2008-2008
+Anoka,"COMMERCIAL / GOLF COURSE, COMMERCIAL / GOLF COURSE, RESIDENTIAL SINGLE FAMILY,",GC,golf,1,2009-2009
+Anoka,"COMMERCIAL / GOLF COURSE, EXEMPT - NON-PUBLIC ACADEMIES, COLLEGES, UNIVERSIT,",EX,exempt,1,2007-2007
+Anoka,"CONDOMINIUMS, RESIDENTIAL SINGLE FAMILY,",X,condo,1,2008-2008
+Anoka,"EXEMPT - APPRENTICESHIP TRAINING FACILITY,",EX,exempt,1,2011-2011
+Anoka,"EXEMPT - CHURCH PROPERTY, RESIDENTIAL SINGLE FAMILY,",EX,exempt,1,2012-2012
+Anoka,"EXEMPT - DNR PAYMENT IN LIEU OF TAX (ACQUIRED), EXEMPT - DNR PAYMENT IN LIEU OF TAX (ACQUIRED),",EX,exempt,1,2017-2017
+Anoka,EXEMPT - MUNICIPAL OTHER  IND*,EX,exempt,1,2006-2006
+Anoka,"EXEMPT - MUNICIPAL OTHER  INDUSTRIAL,",EX,exempt,1,2007-2007
+Anoka,"EXEMPT - PUBLIC ELEMENTARY & SECONDARY SCHOOLS, EXEMPT - PUBLIC ELEMENTARY & SECONDARY SCHOOLS, EXEM",EX,exempt,1,2017-2017
+Anoka,"EXEMPT - STATE, RESIDENTIAL SINGLE FAMILY,",EX,exempt,1,2007-2007
+Anoka,"EXEMPT - TRANSITIONAL HOUSING FACILITIES, RESIDENTIAL SINGLE FAMILY,",EX,exempt,1,2012-2012
+Anoka,EXEMPT - TRANSITIONAL HOUSING*,EX,exempt,1,2006-2006
+Anoka,"EXEMPT RESIDENCE - CHURCH PROPERTY RESIDENTIAL SINGLE FAMILY,",EX,exempt,1,2008-2008
+Anoka,MANUFACTURED HOME,,unmapped,1,2021-2021
+Anoka,NON-PROFIT COMM(DON) 4c(3)(ii),C,commercial,1,2024-2024
+Anoka,"RESIDENTIAL DUPLEXES, DOUBLE BUNGALOWS",TP,2-3 units,1,2007-2007
+Anoka,"TIMBER,",F,farm,1,2016-2016
+Carver,Res 1 unit,R,residential,409714,2010-2025
+Carver,RESIDENTIAL,R,residential,131224,2005-2009
+Carver,Res 1 unit                                                                                          ,R,residential,106305,2021-2024
+Carver,Agricultural,F,farm,34458,2010-2025
+Carver,Res V Land,LR,vacant residential,29435,2010-2025
+Carver,Muni Srvc Other,EX,exempt,16576,2010-2025
+Carver,RES 1-3 UNITS,TP,2-3 units,14571,2005-2009
+Carver,AGRICULTURAL,F,farm,14560,2005-2009
+Carver,Commercial,C,commercial,13998,2010-2025
+Carver,T E Misc Co D 3,EX,exempt,13783,2010-2025
+Carver,Agricultural                                                                                        ,F,farm,7569,2021-2024
+Carver,Res V Land                                                                                          ,LR,vacant residential,7220,2021-2024
+Carver,COMM LAND & BLDGS,C,commercial,5275,2005-2009
+Carver,MUNICIPAL PUB-OTHER,EX,exempt,4725,2005-2009
+Carver,Muni Srvc Other                                                                                     ,EX,exempt,4542,2021-2024
+Carver,Industrial,I,industrial,4040,2010-2025
+Carver,ZERO EMV,EX,exempt,3879,2005-2009
+Carver,T E Misc Co D 3                                                                                     ,EX,exempt,3755,2021-2024
+Carver,RES 1 UNIT,R,residential,3488,2005-2006
+Carver,Commercial                                                                                          ,C,commercial,3186,2021-2024
+Carver,Apt 4+ units,A,apartment,2158,2010-2025
+Carver,INDS LAND & BLDGS,I,industrial,1316,2005-2009
+Carver,Industrial                                                                                          ,I,industrial,1135,2021-2024
+Carver,Muni Srvc Ent,EX,exempt,1113,2010-2025
+Carver,Church,EX,exempt,1110,2010-2025
+Carver,Rural Vacant Land,F,farm,1062,2010-2025
+Carver,RES 4 OR MORE UNITS,A,apartment,969,2005-2009
+Carver,Schools-Public,EX,exempt,924,2010-2025
+Carver,InLieuTx Co D 1,,unmapped,791,2010-2025
+Carver,Res 2-3 units,TP,2-3 units,713,2010-2025
+Carver,Co Srvc Other,EX,exempt,693,2010-2025
+Carver,MiscNotReported,,unmapped,685,2010-2025
+Carver,ForestParkRefuge,F,farm,622,2010-2025
+Carver,Cemetery-Public,EX,exempt,576,2010-2025
+Carver,Apt 4+ units                                                                                        ,A,apartment,559,2021-2024
+Carver,SRR,S,seasonal (SRR),558,2010-2025
+Carver,State Acquired,EX,exempt,546,2010-2025
+Carver,Co Srvc Ent,EX,exempt,481,2010-2025
+Carver,State Property,EX,exempt,414,2010-2025
+Carver,IN LIEU OF TAXES,,unmapped,405,2005-2009
+Carver,CHURCH,EX,exempt,403,2005-2009
+Carver,Charit Inst,EX,exempt,351,2010-2025
+Carver,K-12 SCH-PUBLIC,EX,exempt,325,2005-2009
+Carver,Church - Other,EX,exempt,324,2010-2025
+Carver,MUNICIPAL PUB SERV,EX,exempt,324,2005-2009
+Carver,Colleges-Public,EX,exempt,323,2010-2025
+Carver,Rural Vacant Land                                                                                   ,F,farm,315,2021-2024
+Carver,Sp Tax District,EX,exempt,315,2010-2025
+Carver,T E Misc Co D 1,EX,exempt,270,2010-2025
+Carver,Muni Srvc Ent                                                                                       ,EX,exempt,262,2021-2024
+Carver,Schools-Private,,unmapped,261,2010-2025
+Carver,SEASONAL RES REC,S,seasonal,260,2005-2009
+Carver,Church                                                                                              ,EX,exempt,253,2021-2024
+Carver,InLieuTx Co D 2,,unmapped,253,2010-2025
+Carver,MISC-NOT REPORTED,,unmapped,230,2005-2009
+Carver,COUNTY PUB SERV-OTH,EX,exempt,227,2005-2009
+Carver,InLieuTx Co D 1                                                                                     ,,unmapped,223,2021-2024
+Carver,"FOREST,PARK,WILDLIFE",F,farm,218,2005-2009
+Carver,CEMETERY-PUBLIC,EX,exempt,213,2005-2009
+Carver,Public Hunting,EX,exempt,196,2010-2025
+Carver,Pub Util RR,,unmapped,195,2010-2025
+Carver,STATE ACQUIRED,EX,exempt,192,2005-2009
+Carver,Schools-Public                                                                                      ,EX,exempt,182,2021-2024
+Carver,Q Golf Course,GC,golf,181,2010-2025
+Carver,"MUN LENFRC,FIRE,ADM",,unmapped,178,2005-2009
+Carver,T E Misc Co D 2,EX,exempt,168,2012-2025
+Carver,RES/AG,F,farm,162,2005-2009
+Carver,ForestParkRefuge                                                                                    ,F,farm,153,2021-2024
+Carver,AG PARTNERSHIP,F,farm,152,2005-2009
+Carver,Tax Forfeit,EX,exempt,146,2005-2009
+Carver,RES DUPLEX/TRIPLEX,TP,2-3 units,142,2005-2009
+Carver,COUNTY PUBLIC SERV,EX,exempt,137,2005-2009
+Carver,Cemetery-Public                                                                                     ,EX,exempt,136,2021-2024
+Carver,Pub Util L & S,,unmapped,132,2010-2022
+Carver,MiscNotReported                                                                                     ,,unmapped,130,2021-2024
+Carver,Co Srvc Other                                                                                       ,EX,exempt,128,2021-2024
+Carver,State Acquired                                                                                      ,EX,exempt,126,2021-2024
+Carver,State Property                                                                                      ,EX,exempt,121,2021-2024
+Carver,Res 2-3 units                                                                                       ,TP,2-3 units,120,2021-2024
+Carver,MH Park,,unmapped,118,2010-2025
+Carver,AG SON/DAU-MOTH/FATH,F,farm,116,2005-2009
+Carver,Co Srvc Ent                                                                                         ,EX,exempt,116,2021-2024
+Carver,COLLEGE-PUBLIC,EX,exempt,113,2005-2009
+Carver,K-12 SCH-PRIVATE,,unmapped,111,2005-2009
+Carver,PUB UTIL ATTH MACH,,unmapped,111,2005-2009
+Carver,CHURCH-OTHER,EX,exempt,99,2005-2009
+Carver,Charit Inst                                                                                         ,EX,exempt,98,2021-2024
+Carver,CHARITABLE INS,EX,exempt,94,2005-2009
+Carver,SRR                                                                                                 ,S,seasonal (SRR),94,2021-2024
+Carver,Church-Residence,EX,exempt,92,2010-2025
+Carver,SPECIAL TAXING DIST,EX,exempt,87,2005-2009
+Carver,MiscReported,,unmapped,81,2010-2025
+Carver,Church - Other                                                                                      ,EX,exempt,78,2021-2024
+Carver,Sp Tax District                                                                                     ,EX,exempt,78,2021-2024
+Carver,STATE PROPERTY,EX,exempt,77,2005-2009
+Carver,T E Misc Co D 1                                                                                     ,EX,exempt,76,2021-2024
+Carver,PUBL HUNTING GROUNDS,,unmapped,75,2005-2009
+Carver,Colleges-Public                                                                                     ,EX,exempt,74,2021-2024
+Carver,Schools-Private                                                                                     ,,unmapped,71,2021-2024
+Carver,Wetlands,,unmapped,68,2010-2025
+Carver,Church-Other Res,EX,exempt,64,2010-2025
+Carver,Other Non-Ad Valorem Property Tax Property,,unmapped,60,2019-2025
+Carver,RR LAND & BLDGS,,unmapped,60,2005-2009
+Carver,QUALIFY GOLF COURSES,GC,golf,59,2005-2009
+Carver,Colleges-Private,,unmapped,52,2010-2025
+Carver,ACTIVELY FARMING,F,farm,50,2005-2009
+Carver,"CHURCH-OTHER,RES",EX,exempt,50,2005-2009
+Carver,Q Golf Course                                                                                       ,GC,golf,49,2021-2024
+Carver,Pub Util RR                                                                                         ,,unmapped,48,2021-2024
+Carver,Public Hunting                                                                                      ,EX,exempt,46,2021-2024
+Carver,T E Misc Co D 2                                                                                     ,EX,exempt,44,2021-2024
+Carver,"CHURCH,RES",EX,exempt,43,2005-2009
+Carver,Other Non-Ad Valorem Property Tax Property                                                          ,,unmapped,43,2021-2024
+Carver,MFG HOME PARK,,unmapped,42,2005-2009
+Carver,Hospital-Public,EX,exempt,40,2010-2025
+Carver,Comm Services-Donations,C,commercial,37,2010-2025
+Carver,Co Admin-TaxForf,,unmapped,30,2010-2025
+Carver,Charit Inst-Res,EX,exempt,28,2010-2025
+Carver,InLieuTx Co D 2                                                                                     ,,unmapped,26,2021-2024
+Carver,In Lieu of Taxes,,unmapped,25,2005-2009
+Carver,MH Park Class I,,unmapped,25,2018-2025
+Carver,TIMBERLANDS,F,farm,24,2009-2009
+Carver,Federal Property,,unmapped,23,2010-2025
+Carver,Cemetery-Private,,unmapped,22,2010-2025
+Carver,MH Park                                                                                             ,,unmapped,21,2021-2024
+Carver,PUB UTIL - ATTH MACH,,unmapped,21,2005-2009
+Carver,COLLEGE-PRIVATE,,unmapped,20,2005-2009
+Carver,State Admin-DNR,,unmapped,20,2013-2025
+Carver,Wetlands                                                                                            ,,unmapped,20,2021-2024
+Carver,InLieuTx Co D 3,,unmapped,16,2014-2016
+Carver,MiscReported                                                                                        ,,unmapped,16,2021-2024
+Carver,Church-Residence                                                                                    ,EX,exempt,15,2021-2024
+Carver,Low Income Housing HRA Property (with Shelter,HL,low income rental,15,2019-2025
+Carver,Charit Inst-Res                                                                                     ,EX,exempt,14,2021-2024
+Carver,Colleges-Private                                                                                    ,,unmapped,12,2021-2024
+Carver,HOSPITAL-PUBLIC,EX,exempt,12,2005-2009
+Carver,Hospital-Public                                                                                     ,EX,exempt,12,2021-2024
+Carver,Low Income Housing HRA Property (with Shelter                                                       ,HL,low income rental,12,2021-2024
+Carver,MH Park Class I                                                                                     ,,unmapped,12,2021-2024
+Carver,Pub Util L & S                                                                                      ,,unmapped,12,2021-2024
+Carver,Schools-Pub Res,R,residential,12,2010-2016
+Carver,Federal Property                                                                                    ,,unmapped,11,2021-2024
+Carver,Com SRR,S,seasonal (SRR),10,2011-2020
+Carver,"MISC,NONRES-REPORTED",R,residential,10,2008-2009
+Carver,"MISC,RES-REPORTED",R,residential,9,2005-2009
+Carver,Real Property,,unmapped,9,2011-2013
+Carver,Sr Citizens Fac,,unmapped,9,2014-2025
+Carver,AG DUPLEX/TRIPLEX,F,farm,8,2005-2009
+Carver,Ag 2 - 3 Units,F,farm,8,2010-2013
+Carver,Ag Hist Society,F,farm,8,2014-2025
+Carver,Managed Forest Land,F,farm,8,2011-2018
+Carver,Arena/BParkNProf,,unmapped,7,2016-2025
+Carver,BED AND BREAKFAST,,unmapped,7,2005-2009
+Carver,"CHARITABLE INS,RES",EX,exempt,7,2005-2009
+Carver,Comm Services-Donations                                                                             ,C,commercial,7,2021-2024
+Carver,EXEMPT,EX,exempt,7,2005-2009
+Carver,"K-12 SCH-PUBLIC,RES",EX,exempt,7,2006-2009
+Carver,T E Misc Co D 6,EX,exempt,7,2025-2025
+Carver,Cemetery-Private                                                                                    ,,unmapped,6,2021-2024
+Carver,Church-Other Res                                                                                    ,EX,exempt,6,2021-2024
+Carver,MA & PA RESORTS BAL,S,seasonal,6,2008-2009
+Carver,State Admin-DNR                                                                                     ,,unmapped,6,2021-2024
+Carver,T E Misc Co D 21,EX,exempt,6,2010-2011
+Carver,CEMETERY-PRIVATE,,unmapped,5,2005-2009
+Carver,"CNTY LENFRC,FIRE,ADM",,unmapped,5,2005-2009
+Carver,Co Admin-TaxForf                                                                                    ,,unmapped,5,2021-2024
+Carver,Elderly Liv Fac,,unmapped,5,2015-2020
+Carver,FEDERAL PROPERTY,,unmapped,5,2005-2009
+Carver,L Condo Coop,X,condo,5,2011-2013
+Carver,Pub Util El Gen Mach,,unmapped,5,2010-2025
+Carver,B & B,,unmapped,4,2010-2013
+Carver,Ag Hist Society                                                                                     ,F,farm,3,2021-2024
+Carver,Arena/BParkNProf                                                                                    ,,unmapped,3,2021-2024
+Carver,Govt Residence,R,residential,3,2010-2012
+Carver,Sr Citizens Fac                                                                                     ,,unmapped,3,2021-2024
+Carver,AG FAMILY FARM CORP,F,farm,2,2005-2006
+Carver,Res 1 Unit Short Term Rental,R,residential,2,2025-2025
+Carver,T E Misc Co D 11,EX,exempt,2,2010-2011
+Carver,T E Misc Co D 6                                                                                     ,EX,exempt,2,2024-2024
+Carver,WETLANDS,,unmapped,2,2008-2009
+Carver,Ag 2 - 3 Units                                                                                      ,F,farm,1,2023-2023
+Carver,Contine Care,,unmapped,1,2019-2019
+Carver,Elderly Liv Fac                                                                                     ,,unmapped,1,2021-2021
+Carver,L Condo Coop                                                                                        ,X,condo,1,2021-2021
+Carver,Res 1 Unit Short Term Rental                                                                        ,R,residential,1,2024-2024
+Carver,T E Misc Co D 4,EX,exempt,1,2025-2025
+Dakota,RESIDENTIAL,R,residential,1586833,2005-2022
+Dakota,Residential,R,residential,527067,2018-2025
+Dakota,RESIDENTIAL-TOWNHOUSE,Y,townhouse,298352,2005-2022
+Dakota,EXEMPT,EX,exempt,100532,2005-2022
+Dakota,Residential-townhouse,Y,townhouse,64746,2023-2025
+Dakota,COMMERCIAL-PREFERRED,C,commercial,42269,2005-2022
+Dakota,Residential-Townhouse,Y,townhouse,38223,2018-2019
+Dakota,AG,F,farm,37412,2005-2022
+Dakota,Exempt,EX,exempt,34547,2018-2025
+Dakota,AG-GREEN ACRES,F,farm,19312,2012-2022
+Dakota,AG-AG PRESERVE,F,farm,17568,2005-2022
+Dakota,COMMERCIAL,C,commercial,16681,2005-2022
+Dakota,APARTMENT,A,apartment,14816,2005-2022
+Dakota,INDUSTRIAL-PREFERRED,I,industrial,9532,2005-2022
+Dakota,Commercial-preferred,C,commercial,7283,2023-2025
+Dakota,Ag,F,farm,7168,2018-2025
+Dakota,INDUSTRIAL,I,industrial,6561,2005-2022
+Dakota,Ag-green Acres,F,farm,5805,2023-2025
+Dakota,Apartment,A,apartment,5144,2018-2025
+Dakota,Commercial-Preferred,C,commercial,4966,2018-2019
+Dakota,Ag-Green Acres,F,farm,4105,2018-2019
+Dakota,Commercial,C,commercial,3942,2018-2025
+Dakota,Ag-ag Preserve,F,farm,3546,2023-2025
+Dakota,Industrial-preferred,I,industrial,3212,2023-2025
+Dakota,COMMERCIAL-PREFFERED,C,commercial,2907,2011-2011
+Dakota,Ag-Ag Preserve,F,farm,2444,2018-2019
+Dakota,AG HOUSE GARAGE 1 ACRE,F,farm,2261,2005-2010
+Dakota,Industrial,I,industrial,2194,2018-2025
+Dakota,Industrial-Preferred,I,industrial,2063,2018-2019
+Dakota,MACHINERY,,unmapped,864,2005-2022
+Dakota,APARTMENT-MOBILE HOME PARK,MH,manufactured park,741,2005-2022
+Dakota,UTILITIES,U,utility,715,2005-2022
+Dakota,AG HOUSE GARAGE 1 ACRE-AG PRESERVE,F,farm,621,2005-2010
+Dakota,COMMERCIAL-OPEN SPACE,C,commercial,534,2012-2022
+Dakota,UTILITIES-PREFERRED,U,utility,532,2005-2022
+Dakota,INDUSTRIAL-PREFFERED,I,industrial,521,2011-2011
+Dakota,CABIN,S,seasonal,417,2005-2022
+Dakota,Utilities,U,utility,381,2018-2025
+Dakota,Machinery,,unmapped,295,2018-2025
+Dakota,Commercial-open Space,C,commercial,139,2023-2025
+Dakota,RAILROAD,CR,railroad,122,2005-2022
+Dakota,Commercial-Open Space,C,commercial,117,2018-2019
+Dakota,Apartment-mobile Home Park,MH,manufactured park,99,2023-2025
+Dakota,Apartment-Mobile Home Park,MH,manufactured park,78,2018-2019
+Dakota,Cabin,S,seasonal,78,2018-2025
+Dakota,RESIDENTIAL-CONDOMINIUM,X,condo,78,2005-2022
+Dakota,UTILITIES-PREFFERED,U,utility,77,2011-2011
+Dakota,COMMERCIAL-PREFERRED-OPEN SPACE,C,commercial,73,2012-2022
+Dakota,Apartment-mobile Home,A,apartment,57,2023-2025
+Dakota,APARTMENT-MOBILE HOME,A,apartment,49,2020-2022
+Dakota,Railroad,CR,railroad,47,2018-2025
+Dakota,APARTMENT-NURSING HOME,A,apartment,44,2005-2022
+Dakota,Commercial-preferred-open Space,C,commercial,24,2023-2025
+Dakota,NON-PROFIT COMMUNITY SERVICE ORG,EX,exempt,23,2020-2022
+Dakota,Non-profit Community Service Org,EX,exempt,21,2023-2025
+Dakota,Apartment-Mobile Home,A,apartment,20,2018-2019
+Dakota,Non-Profit Community Service Org,EX,exempt,19,2018-2019
+Dakota,Commercial-Preferred-Open Space,C,commercial,16,2018-2019
+Dakota,Utilities-preferred,U,utility,12,2023-2025
+Dakota,Residential-Condominium,X,condo,11,2018-2019
+Dakota,Residential-condominium,X,condo,11,2023-2025
+Dakota,Utilities-Preferred,U,utility,11,2018-2019
+Dakota,Apartment-Nursing Home,A,apartment,6,2018-2019
+Dakota,Apartment-nursing Home,A,apartment,6,2023-2025
+Dakota,RAILROAD-PREFERRED,CR,railroad,4,2005-2008
+Hennepin,Residential,R,Hennepin description,5598683,2005-2025
+Hennepin,Condominium,X,Hennepin description,519062,2005-2019
+Hennepin,Townhouse,Y,Hennepin description,513628,2005-2025
+Hennepin,Vacant Land - Residential,LR,Hennepin description,294712,2005-2025
+Hennepin,Double Bungalow,DB,Hennepin description,274954,2005-2025
+Hennepin,Condominium (also Market Rate Cooperative),X,Hennepin description,272675,2020-2025
+Hennepin,Commercial,C,Hennepin description,234211,2005-2025
+Hennepin,Condo - Garage/Miscellaneous,XM,Hennepin description,145865,2005-2025
+Hennepin,Vacant Land - Commercial,LC,Hennepin description,125906,2005-2025
+Hennepin,Apartment,A,Hennepin description,124858,2005-2025
+Hennepin,Residential Lake Shore,RL,Hennepin description,113415,2005-2025
+Hennepin,Condo Garage/Miscellaneous,XM,Hennepin description,87485,2013-2019
+Hennepin,Industrial,I,Hennepin description,71807,2005-2025
+Hennepin,Common Area (No Value),K,Hennepin description,64400,2005-2025
+Hennepin,Residential Lakeshore,R,residential,55094,2013-2019
+Hennepin,Residential-Zero Lot Line-DB,RZ,Hennepin description,54380,2005-2025
+Hennepin,Cooperative,X,condo,53353,2005-2019
+Hennepin,Farm,F,Hennepin description,27226,2005-2025
+Hennepin,Cooperative (Limited Equity),XC,Hennepin description,24504,2020-2025
+Hennepin,Vacant Land - Industrial,LI,Hennepin description,24047,2005-2025
+Hennepin,Vacant Land - Lakeshore,LL,Hennepin description,23630,2005-2025
+Hennepin,Triplex,TP,Hennepin description,21292,2005-2025
+Hennepin,Seasonal Residential Rec.,S,Hennepin description,19407,2013-2025
+Hennepin,Residential - Zero Lot Line - DB,LR,vacant residential,16792,2008-2012
+Hennepin,Disabled,D,Hennepin description,16709,2005-2025
+Hennepin,Railroad,CR,Hennepin description,10726,2005-2025
+Hennepin,Apartment Condominium,AX,Hennepin description,9899,2005-2025
+Hennepin,Vacant Land - Apartment,LA,Hennepin description,9589,2005-2025
+Hennepin,Blind,B,Hennepin description,9187,2005-2025
+Hennepin,Housing - Low Income > 3 Units,HL,Hennepin description,8370,2006-2025
+Hennepin,Farm-Hmstd (House & 1 Acre),F,farm,7359,2005-2019
+Hennepin,Residential - Misc/ B&B / Multiple,RM,Hennepin description,3406,2020-2025
+Hennepin,Farm - Hmstd (House & 1 Acre),FF,Hennepin description,3263,2020-2025
+Hennepin,Resd'l Misc & Bed & Breakfast,R,residential,2800,2013-2019
+Hennepin,Disabled Joint Tenancy,DJ,Hennepin description,2695,2005-2024
+Hennepin,Bldg. on Perma Lease Land,,unmapped,2591,2005-2016
+Hennepin,Vacant Land - Rural Residential,LV,Hennepin description,2477,2010-2025
+Hennepin,Residential - Miscellaneous,R,residential,2266,2005-2012
+Hennepin,Housing - Low Income < 4 Units,HR,Hennepin description,2108,2006-2025
+Hennepin,Seasonal-Residential Rec.,S,seasonal,2010,2005-2012
+Hennepin,Utility,U,Hennepin description,1898,2005-2025
+Hennepin,Agricultural Preserve,F,farm,1666,2005-2019
+Hennepin,Housing - Low Income > 3 units,HL,Hennepin description,1556,2008-2012
+Hennepin,Golf Course - Reduced Rate,GC,Hennepin description,1410,2005-2025
+Hennepin,Nursing Home,,unmapped,1368,2005-2025
+Hennepin,Blind Joint Tenancy,BJ,Hennepin description,1274,2005-2024
+Hennepin,Non 4BB Compliant (Minneapolis),R,residential,1090,2005-2012
+Hennepin,Sorority/Fraternity Housing,HF,Hennepin description,1081,2005-2025
+Hennepin,Housing - Low Income < 4 Units Excess,HL,low income rental,829,2021-2024
+Hennepin,Vacant Land - Rural Farm,LF,Hennepin description,719,2010-2025
+Hennepin,Resd'l - Misc & Bed & Breakfast,R,residential,706,2006-2007
+Hennepin,Housing - Low Income > 3 Units Excess,HL,low income rental,627,2021-2024
+Hennepin,Seasonal Marina,SM,Hennepin description,592,2010-2025
+Hennepin,Farm - Agricultural Preserve,FP,Hennepin description,569,2020-2025
+Hennepin,Non 4BB Compliant (Mpls only),SR,Hennepin description,440,2013-2020
+Hennepin,Mobile Home Park,MH,manufactured park,430,2005-2019
+Hennepin,Housing - Low Income < 4 units,HR,Hennepin description,401,2008-2012
+Hennepin,Commercial Telephone,C,commercial,356,2005-2012
+Hennepin,Non Profit Comm Assoc (Donation),C,commercial,147,2009-2018
+Hennepin,Non Profit Community Assoc.,EX,exempt,145,2005-2012
+Hennepin,Non Profit Comm Assoc,C,commercial,113,2013-2018
+Hennepin,Community Org (Non Revenue),NP,Hennepin description,103,2019-2025
+Hennepin,Paraplegic,,unmapped,80,2005-2009
+Hennepin,Chartered Veteran's Org (Donation),NC,Hennepin description,63,2019-2025
+Hennepin,Seasonal Lakeshore Restaurant,SL,Hennepin description,35,2009-2025
+Hennepin,Social Club (Mpls only),SC,Hennepin description,26,2013-2025
+Hennepin,Farm - Non Hmstd Multi Unit,FM,Hennepin description,23,2021-2025
+Hennepin,Community Org (Donation),ND,Hennepin description,22,2020-2025
+Hennepin,Manufactured Home Park,MH,Hennepin description,18,2020-2025
+Hennepin,Manufactured Home Park - EDU Cert,ME,Hennepin description,17,2020-2025
+Hennepin,HM,,unmapped,10,2017-2017
+Hennepin,Social Club (Minneapolis),,unmapped,6,2008-2012
+Hennepin,Chartered Veteran's Org (Non Revenue),NI,Hennepin description,3,2019-2025
+Ramsey,Res 1 unit,R,residential,1318341,2012-2021
+Ramsey,RESIDENTIAL,R,residential,580557,2005-2009
+Ramsey,1A/1B/4BB RESIDENTIAL SINGLE UNIT,R,residential,568690,2022-2025
+Ramsey,"Single Family Dwelling, Platted Lot",LR,vacant residential,222660,2010-2011
+Ramsey,Res 2-3 units,TP,2-3 units,69241,2012-2021
+Ramsey,Commercial,C,commercial,49378,2012-2021
+Ramsey,RES 1-3 UNITS,TP,2-3 units,30122,2005-2009
+Ramsey,COMM LAND & BLDGS,C,commercial,28444,2005-2009
+Ramsey,RES 1 UNIT,R,residential,27786,2005-2007
+Ramsey,Apt 4+ units,A,apartment,27034,2012-2021
+Ramsey,1A/1B/4B1 RESIDENTIAL 1-3 UNITS,TP,2-3 units,26622,2022-2025
+Ramsey,Muni Srvc Other,EX,exempt,21581,2012-2021
+Ramsey,Res V Land,LR,vacant residential,21252,2012-2021
+Ramsey,RES DUPLEX/TRIPLEX,TP,2-3 units,18988,2005-2009
+Ramsey,3A COMMERCIAL LAND AND BUILDING,C,commercial,18499,2022-2025
+Ramsey,Industrial,I,industrial,13721,2012-2021
+Ramsey,RES 4 OR MORE UNITS,A,apartment,12098,2005-2009
+Ramsey,"Two Family Dwelling, Platted Lot",LR,vacant residential,10317,2010-2011
+Ramsey,4A APARTMENT 4 OR MORE UNITS,A,apartment,10046,2022-2025
+Ramsey,MUNICIPAL PUB-OTHER,EX,exempt,9911,2005-2009
+Ramsey,4B4 UNIMPROVED RESIDENTIAL LAND,LR,vacant residential,8444,2022-2025
+Ramsey,5E MUNICIPAL-PUBLIC SERVICE-OTHER,EX,exempt,8055,2022-2025
+Ramsey,Townhome-outer,Y,townhouse,8037,2010-2011
+Ramsey,Townhome-inner,Y,townhouse,7406,2010-2011
+Ramsey,Sp Tax District,EX,exempt,6403,2012-2021
+Ramsey,3A INDUSTRIAL LAND AND BUILDING,I,industrial,6386,2022-2025
+Ramsey,T E Misc Co D 10,EX,exempt,6293,2012-2021
+Ramsey,INDS LAND & BLDGS,I,industrial,5855,2005-2009
+Ramsey,Vacant Land,LR,vacant residential,5625,2010-2011
+Ramsey,"Residential, Vacant Land, Lot",LR,vacant residential,5299,2010-2011
+Ramsey,T E Misc Co D 4,EX,exempt,5044,2012-2021
+Ramsey,Co Srvc Other,EX,exempt,3970,2012-2021
+Ramsey,SPECIAL TAXING DIST,EX,exempt,3626,2005-2009
+Ramsey,Church,EX,exempt,3492,2012-2021
+Ramsey,T E Misc Co D 1,EX,exempt,3303,2012-2021
+Ramsey,5E EXEMPT NOT REPORTED,EX,exempt,3029,2022-2025
+Ramsey,NON-TAXABLE OUTLOT,EX,exempt,2844,2005-2009
+Ramsey,Schools-Public,EX,exempt,2731,2012-2021
+Ramsey,Commercial Vacant Land,LC,vacant commercial,2695,2010-2011
+Ramsey,RAILROAD,CR,railroad,2583,2005-2009
+Ramsey,Charit Inst,EX,exempt,2579,2012-2021
+Ramsey,5E SPECIAL TAXING DISTRICT,EX,exempt,2447,2022-2025
+Ramsey,Double Dwelling,TP,2-3 units,2412,2010-2011
+Ramsey,Muni Srvc Ent,EX,exempt,2365,2012-2021
+Ramsey,COUNTY PUB SERV-OTH,EX,exempt,2191,2005-2009
+Ramsey,Condo/co-op,X,condo,2113,2010-2011
+Ramsey,5E RAILROAD EXEMPT NOT REPORTED,EX,exempt,2019,2022-2025
+Ramsey,Apartments 1-9 Rental Units,A,apartment,1992,2010-2011
+Ramsey,Resid/exempt Vacant Land,EX,exempt,1807,2010-2011
+Ramsey,State Property,EX,exempt,1723,2012-2021
+Ramsey,K-12 SCH-PUBLIC,EX,exempt,1717,2005-2009
+Ramsey,Church - Other,EX,exempt,1669,2012-2021
+Ramsey,1/2 Double Dwelling,TP,2-3 units,1597,2010-2011
+Ramsey,CHURCH,EX,exempt,1570,2005-2009
+Ramsey,5E COUNTY-PUBLIC SERVICE-OTHER,EX,exempt,1512,2022-2025
+Ramsey,MUNICIPAL PUB SERV,EX,exempt,1456,2005-2009
+Ramsey,Commercial Warehouses,C,commercial,1387,2010-2011
+Ramsey,5E CHURCH,EX,exempt,1381,2022-2025
+Ramsey,Res/exempt Single Family Dwelling,EX,exempt,1367,2010-2011
+Ramsey,4D1 NON-HOMESTD QUALIFY LOW INC RENTAL,HL,low income rental,1366,2024-2025
+Ramsey,Other Retail Structures,C,commercial,1311,2010-2011
+Ramsey,Colleges-Private,,unmapped,1308,2012-2021
+Ramsey,4D QUAL LOW INC RENTAL HOUSING <= LIMIT,HL,low income rental,1261,2022-2023
+Ramsey,5E TAX FORFEITURE NOT REPORTED,EX,exempt,1233,2022-2025
+Ramsey,CHARITABLE INS,EX,exempt,1209,2005-2009
+Ramsey,Apartments 10-19 Rental Units,A,apartment,1201,2010-2011
+Ramsey,5E K-12 SCHOOL-PUBLIC,EX,exempt,1193,2022-2025
+Ramsey,"Industrial, Vacant Land",LI,vacant industrial,1158,2010-2011
+Ramsey,5E CHARITABLE INSTITUTION,EX,exempt,1156,2022-2025
+Ramsey,CHURCH-OTHER,EX,exempt,1085,2005-2009
+Ramsey,"Small (under 10,000sf) Detach Retai",,unmapped,1063,2010-2011
+Ramsey,Railroad Real Prop Used In Operation,CR,railroad,998,2010-2011
+Ramsey,Office Building 1-2 Stories,C,commercial,961,2010-2011
+Ramsey,Charit Inst-Res,EX,exempt,950,2012-2021
+Ramsey,TRUST EXEMPT,EX,exempt,899,2005-2009
+Ramsey,"Three Family Dwelling, Platted Lot",LR,vacant residential,883,2010-2011
+Ramsey,5E MUNICIPAL-PUBLIC SERVICE,EX,exempt,863,2022-2025
+Ramsey,STATE PROPERTY,EX,exempt,792,2005-2009
+Ramsey,Churches Etc Public Worship Prive,EX,exempt,713,2010-2011
+Ramsey,Apartments 20-49 Rental Units,A,apartment,711,2010-2011
+Ramsey,Townhome - Detached,Y,townhouse,681,2010-2011
+Ramsey,"Residential, Townhome Vacant",LR,vacant residential,673,2010-2011
+Ramsey,5E STATE PROPERTY,EX,exempt,646,2022-2025
+Ramsey,Exempt Property Owned By Municipals,EX,exempt,643,2010-2011
+Ramsey,Automotive Service Station,,unmapped,636,2010-2011
+Ramsey,Colleges-Public,EX,exempt,627,2012-2021
+Ramsey,5E CHURCH-OTHER,EX,exempt,594,2022-2025
+Ramsey,4D 4 OR MORE UNITS,HL,low income rental,584,2005-2009
+Ramsey,Manufacturing & Assembly Light,,unmapped,568,2010-2011
+Ramsey,T E Misc Co D 16,EX,exempt,565,2012-2021
+Ramsey,COLLEGE-PRIVATE,,unmapped,560,2005-2009
+Ramsey,Schools-Private,,unmapped,550,2012-2021
+Ramsey,5E COLLEGE-PRIVATE,EX,exempt,529,2022-2025
+Ramsey,Church-Other Res,EX,exempt,483,2012-2021
+Ramsey,"MUN LENFRC,FIRE,ADM",,unmapped,478,2005-2009
+Ramsey,Apartment Vacant Land,A,apartment,472,2010-2011
+Ramsey,Church-Residence,EX,exempt,467,2012-2021
+Ramsey,"CHARITABLE INS,RES",EX,exempt,432,2005-2009
+Ramsey,5E CHARITABLE INSTITUTION-RESIDENTIAL,EX,exempt,417,2022-2025
+Ramsey,"Resturant, Cafeteria, And/or Bar",R,residential,417,2010-2011
+Ramsey,Condominium Office Units,C,commercial,415,2010-2011
+Ramsey,LEASED PUBLIC PROP,EX,exempt,414,2005-2009
+Ramsey,Wetlands,,unmapped,403,2012-2021
+Ramsey,Flex Industrail Center,I,industrial,390,2010-2011
+Ramsey,Cemetery-Private,,unmapped,379,2012-2021
+Ramsey,T E Misc Co D 11,EX,exempt,368,2015-2021
+Ramsey,Townhome Non-tax Outlot,Y,townhouse,366,2010-2011
+Ramsey,5E MHP INVENTORY,EX,exempt,362,2022-2025
+Ramsey,Other Residential,R,residential,348,2010-2011
+Ramsey,Hospital-Private,,unmapped,345,2012-2021
+Ramsey,Federal Property,,unmapped,340,2012-2021
+Ramsey,Exempt Property Owned By Bd Of Educ.,EX,exempt,337,2010-2011
+Ramsey,COLLEGE-PUBLIC,EX,exempt,332,2005-2009
+Ramsey,"CHURCH-OTHER,RES",EX,exempt,327,2005-2009
+Ramsey,Two Residences On One Parcel,R,residential,309,2010-2011
+Ramsey,Agricultural,F,farm,296,2012-2021
+Ramsey,Apartments 50 Or More Units,A,apartment,288,2010-2011
+Ramsey,K-12 SCH-PRIVATE,,unmapped,288,2005-2009
+Ramsey,"CHURCH,RES",EX,exempt,287,2005-2009
+Ramsey,Convenience Store,C,commercial,274,2010-2011
+Ramsey,College-Priv Res,R,residential,266,2012-2021
+Ramsey,RES 4+ OWNERS VALUE,R,residential,266,2005-2009
+Ramsey,Drive-in Rest/food Service Facility,R,residential,256,2010-2011
+Ramsey,WETLANDS,,unmapped,255,2005-2009
+Ramsey,Exempt Prop Owned By Private Schools,EX,exempt,253,2010-2011
+Ramsey,5E COLLEGE-PUBLIC,EX,exempt,243,2022-2025
+Ramsey,5E K-12 SCHOOL-PRIVATE,EX,exempt,242,2022-2025
+Ramsey,Office Buld 3 Or More Stories Elevat,C,commercial,229,2010-2011
+Ramsey,AGRICULTURAL,F,farm,226,2005-2009
+Ramsey,Other Commercial Structures,C,commercial,214,2010-2011
+Ramsey,STREET-PUBWRK ASSMNT,,unmapped,213,2005-2009
+Ramsey,MH Park,,unmapped,212,2012-2021
+Ramsey,5E CHURCH-RESIDENTIAL,EX,exempt,211,2022-2025
+Ramsey,Medical Clinics And Offices,C,commercial,206,2010-2011
+Ramsey,CEMETERY-PRIVATE,,unmapped,200,2005-2009
+Ramsey,FEDERAL PROPERTY,,unmapped,197,2005-2009
+Ramsey,Welfare/charitable Facility,EX,exempt,186,2010-2011
+Ramsey,T E Misc Co D 7,EX,exempt,182,2012-2015
+Ramsey,Medium Detached Retail,C,commercial,171,2010-2011
+Ramsey,MFG HOME PARK,,unmapped,166,2005-2009
+Ramsey,Exempt Office Buildings,EX,exempt,162,2010-2011
+Ramsey,2A/1B/4BB AGRICULTURAL,F,farm,158,2022-2025
+Ramsey,5E WETLANDS,EX,exempt,156,2022-2025
+Ramsey,Neighborhood Shopping Center,,unmapped,155,2010-2011
+Ramsey,Full Service Banks,,unmapped,154,2010-2011
+Ramsey,5E CHURCH-OTHER RESIDENTIAL,EX,exempt,153,2022-2025
+Ramsey,5E HOSPITAL-PRIVATE,EX,exempt,153,2022-2025
+Ramsey,Co Admin-TaxForf,,unmapped,150,2012-2021
+Ramsey,SRR,S,seasonal (SRR),149,2012-2021
+Ramsey,Small Strip Center,,unmapped,149,2010-2011
+Ramsey,5E CEMETERY-PRIVATE,EX,exempt,148,2022-2025
+Ramsey,5E FEDERAL PROPERTY,EX,exempt,144,2022-2025
+Ramsey,Auto Car Sales And Services,,unmapped,144,2010-2011
+Ramsey,HOSPITAL-PRIVATE,,unmapped,140,2005-2009
+Ramsey,SEASONAL RES REC,S,seasonal,138,2005-2009
+Ramsey,"COLLEGE-PRIVATE,RES",R,residential,137,2005-2009
+Ramsey,State Acquired,EX,exempt,135,2012-2021
+Ramsey,PUB UTIL ATTH MACH,,unmapped,132,2005-2009
+Ramsey,Double Dwelling Exempt,EX,exempt,127,2010-2011
+Ramsey,5E COLLEGE-PRIVATE RES,EX,exempt,117,2022-2025
+Ramsey,Comm Ld&impro Own By Pub Uti Th Rail,C,commercial,111,2010-2011
+Ramsey,St Paul Airport & Mac Property,,unmapped,106,2010-2011
+Ramsey,RR LAND & BLDGS,,unmapped,99,2005-2009
+Ramsey,ER Shelter,,unmapped,98,2012-2021
+Ramsey,Exempt Property Owned By Counties,EX,exempt,96,2010-2011
+Ramsey,Res/exempt Multi Family Dwelling,EX,exempt,95,2010-2011
+Ramsey,4D2 HOMESTEAD COMMUNITY LAND TRUST,EX,exempt,93,2025-2025
+Ramsey,Co Srvc Ent,EX,exempt,93,2012-2021
+Ramsey,Student Hse,,unmapped,93,2012-2021
+Ramsey,5E STATE ACQUIRED - PILT,EX,exempt,92,2022-2025
+Ramsey,Exempt Property Owned By State Of Mn,EX,exempt,86,2010-2011
+Ramsey,Pub Util RR,,unmapped,79,2012-2018
+Ramsey,Charitable Exempt Hosp./nursg Homes,EX,exempt,74,2010-2011
+Ramsey,ForestParkRefuge,F,farm,72,2012-2021
+Ramsey,COUNTY ADMINISTERED,,unmapped,70,2005-2009
+Ramsey,Q Golf Course,GC,golf,70,2012-2021
+Ramsey,Day Care Centers,,unmapped,67,2010-2011
+Ramsey,Exempt Other Residential,EX,exempt,67,2010-2011
+Ramsey,Gas Station,,unmapped,65,2010-2011
+Ramsey,COUNTY PUBLIC SERV,EX,exempt,62,2005-2009
+Ramsey,Lodge Halls And Amusement Parks,,unmapped,62,2010-2011
+Ramsey,Mixed Retail/commercial,C,commercial,62,2010-2011
+Ramsey,Nursing Homes & Private Hospitals,,unmapped,61,2010-2011
+Ramsey,5E COUNTY ADMINISTERED - PILT,EX,exempt,60,2022-2025
+Ramsey,"FOREST,PARK,WILDLIFE",F,farm,60,2005-2009
+Ramsey,Funeral Homes,,unmapped,58,2010-2011
+Ramsey,4BB NON-COMM CONDO STORAGE,C,commercial,57,2025-2025
+Ramsey,Sport/public Assesmbly Facility,EX,exempt,57,2010-2011
+Ramsey,Supermarkets,,unmapped,57,2010-2011
+Ramsey,Parking Ramp,,unmapped,53,2010-2011
+Ramsey,4C5III MFD HOME PARK CLASS 1,MH,manufactured park,52,2022-2025
+Ramsey,Other Industrial Structures,I,industrial,52,2010-2011
+Ramsey,"Graveyards Monuments, Cemeteries",,unmapped,51,2010-2011
+Ramsey,Railroad Real Prop Not Used Operatos,CR,railroad,51,2010-2011
+Ramsey,COUNTY STREET,,unmapped,50,2005-2009
+Ramsey,Mini Warehouse,R,residential,50,2010-2011
+Ramsey,Trailer Or Mobile Home Park,MH,manufactured park,49,2010-2011
+Ramsey,4C5I MANUFACTURED HOME PARK,MH,manufactured park,48,2022-2025
+Ramsey,"5E K-12 SCH-PUBLIC,RES",EX,exempt,47,2022-2025
+Ramsey,MH Park Class I,,unmapped,47,2018-2021
+Ramsey,Veterinary Clinic,,unmapped,47,2010-2011
+Ramsey,Apprenticeship Train,,unmapped,46,2012-2017
+Ramsey,Agricultural Vacant Land,F,farm,45,2010-2011
+Ramsey,Golf Courses,GC,golf,45,2010-2011
+Ramsey,4C12 SEASONAL RESIDENTIAL RECREATION,S,seasonal,44,2022-2025
+Ramsey,Hotels,,unmapped,44,2010-2011
+Ramsey,Car Washes,,unmapped,42,2010-2011
+Ramsey,Community Shopping Center,EX,exempt,42,2010-2011
+Ramsey,Motels And Tourist Cabins,S,seasonal,42,2010-2011
+Ramsey,4C4 POST SECONDARY STUDENT HOUSING,,unmapped,41,2022-2025
+Ramsey,Apartment Misc Improvements,A,apartment,41,2010-2011
+Ramsey,EMERGENCY SHELTERS,,unmapped,40,2005-2009
+Ramsey,Founderies&heavy Manufact Plants,,unmapped,40,2010-2011
+Ramsey,QUALIFY GOLF COURSES,GC,golf,37,2005-2009
+Ramsey,Apprenticeship Training Facilities,,unmapped,36,2018-2021
+Ramsey,T E Misc Co D 6,EX,exempt,36,2012-2015
+Ramsey,ci/condo/co-op Non-tax Outlot,X,condo,36,2010-2011
+Ramsey,Food&drink Process Plants And Storae,,unmapped,35,2010-2011
+Ramsey,STUDENT HOUSING,,unmapped,35,2005-2009
+Ramsey,5E EMERGENCY SHELTER,EX,exempt,34,2022-2025
+Ramsey,"CNTY LENFRC,FIRE,ADM",,unmapped,34,2005-2009
+Ramsey,5E APPRENTICESHIP TRAINING,EX,exempt,33,2022-2025
+Ramsey,Comm Services-Donati,C,commercial,33,2012-2017
+Ramsey,"Greenhouses, Vegetables & Floracult.",R,residential,33,2010-2011
+Ramsey,Commercial Truck Terminals,C,commercial,32,2010-2011
+Ramsey,Discount Stores & Jr. Dept Stores,C,commercial,32,2010-2011
+Ramsey,Exempt Property Owned By Usa,EX,exempt,32,2010-2011
+Ramsey,Hospital-Public,EX,exempt,32,2012-2021
+Ramsey,COMMUNITY SERVICE,EX,exempt,31,2005-2008
+Ramsey,4D 1-3 UNITS,HL,low income rental,30,2005-2009
+Ramsey,Comm Services-Non Re,C,commercial,30,2012-2017
+Ramsey,Exempt Cultural & Nature Exhibits,EX,exempt,30,2010-2011
+Ramsey,Regional Water District,,unmapped,30,2010-2011
+Ramsey,Exempt Owned By Port Authority,EX,exempt,29,2010-2011
+Ramsey,Library,,unmapped,29,2010-2011
+Ramsey,Schools-Pub Res,R,residential,29,2012-2021
+Ramsey,4C2 QUALIFY GOLF COURSES,GC,golf,28,2022-2025
+Ramsey,Pub Util L & S,,unmapped,26,2012-2012
+Ramsey,Trans Housing,,unmapped,25,2012-2021
+Ramsey,4C3II CONGRESS CHARTERED VETS DONATE,R,residential,24,2022-2025
+Ramsey,Comm Serv-Donations Congr Charter,C,commercial,24,2018-2021
+Ramsey,"Residential, Condo/co-op Vacant",LR,vacant residential,23,2010-2011
+Ramsey,Condo/co-op Garage Or Storage,XM,condo garage,22,2010-2011
+Ramsey,Full Line Department Stores,C,commercial,22,2010-2011
+Ramsey,5E COUNTY-PUBLIC SERVICE,EX,exempt,20,2022-2025
+Ramsey,Exempt Property Owned By Met Council,EX,exempt,20,2010-2011
+Ramsey,Schools-Priv Res,R,residential,20,2012-2021
+Ramsey,5E HOSPITAL-PUBLIC,EX,exempt,18,2022-2025
+Ramsey,5E MISC,EX,exempt,18,2023-2024
+Ramsey,Exempt Clinics,EX,exempt,18,2010-2011
+Ramsey,"K-12 SCH-PRIVATE,RES",R,residential,18,2005-2009
+Ramsey,Research And Development Facility,R,residential,18,2010-2011
+Ramsey,HOSPITAL-PUBLIC,EX,exempt,17,2005-2009
+Ramsey,Parking Garage Structure & Lots,,unmapped,17,2010-2011
+Ramsey,EXEMPT TIF BASE,EX,exempt,16,2005-2007
+Ramsey,Exempt Hra Vacant Land,EX,exempt,16,2010-2011
+Ramsey,Firestations,R,residential,16,2010-2011
+Ramsey,5E NURSING HOME,EX,exempt,15,2022-2025
+Ramsey,5E TRANSITIONAL HOUSING,EX,exempt,15,2022-2025
+Ramsey,Theaters,,unmapped,15,2010-2011
+Ramsey,Comm Services-Non Revenue,C,commercial,14,2018-2021
+Ramsey,Nursing Homes,,unmapped,13,2016-2021
+Ramsey,4C3I NON-PROFIT COMSRV NONREV,,unmapped,12,2022-2025
+Ramsey,Commercial Garages,C,commercial,12,2010-2011
+Ramsey,Fraternity/sorority House,R,residential,12,2010-2011
+Ramsey,MISC-NOT REPORTED,,unmapped,12,2005-2009
+Ramsey,STATE ACQUIRED,EX,exempt,12,2005-2009
+Ramsey,Skyways,,unmapped,12,2010-2021
+Ramsey,5E LICENSE CHILD CARE FACILITY,EX,exempt,11,2025-2025
+Ramsey,BILLBOARD/CELL ESMT,,unmapped,11,2008-2009
+Ramsey,Bowling Alleys,,unmapped,10,2010-2011
+Ramsey,Childrens Homes,,unmapped,10,2012-2021
+Ramsey,Sr Citizens Fac,,unmapped,9,2012-2020
+Ramsey,"5E FORESTS,PARKS,WILDLIFE REFUGES",EX,exempt,8,2022-2025
+Ramsey,5E RESIDENCE NON PUB ELEMENTARY,EX,exempt,8,2022-2025
+Ramsey,Condominium Warehouse,X,condo,8,2010-2011
+Ramsey,Elderly Liv Fac,,unmapped,8,2013-2020
+Ramsey,"ICE ARENAS,BASEBALL",,unmapped,8,2006-2009
+Ramsey,NON-PROFIT COMM(NON),C,commercial,7,2009-2009
+Ramsey,PUB UTIL - ATTH MACH,,unmapped,7,2005-2009
+Ramsey,Regional Shopping Center,,unmapped,7,2010-2011
+Ramsey,5E LEASED CHARTER SCHOOL,EX,exempt,6,2022-2025
+Ramsey,Other Commercial Housing,C,commercial,6,2010-2011
+Ramsey,Res/exempt 1/2 Double Dwelling,EX,exempt,6,2010-2011
+Ramsey,Retail Condominium,C,commercial,6,2010-2011
+Ramsey,Three Family Dwelling - Exempt,EX,exempt,6,2010-2011
+Ramsey,CHILDRENS HOMES,,unmapped,5,2005-2009
+Ramsey,"HOSPITAL-PUBLIC,RES",EX,exempt,5,2005-2009
+Ramsey,"K-12 SCH-PUBLIC,RES",EX,exempt,5,2005-2009
+Ramsey,"MISC,NONRES-REPORTED",R,residential,5,2005-2008
+Ramsey,NON-PROFIT COMM(DON),C,commercial,5,2009-2009
+Ramsey,SENIOR CITIZEN FAC,,unmapped,5,2005-2009
+Ramsey,SKYWAYS,,unmapped,5,2005-2009
+Ramsey,SOLAR HEATING,,unmapped,5,2005-2009
+Ramsey,TRANSITIONAL HOUSING,,unmapped,5,2005-2009
+Ramsey,5E EXEMPT PROP CHILDRENS HOME,EX,exempt,4,2022-2025
+Ramsey,5E EXEMPT SKYWAYS,EX,exempt,4,2022-2025
+Ramsey,APPRENTICESHIP TRAIN,,unmapped,4,2009-2009
+Ramsey,BED AND BREAKFAST,,unmapped,4,2005-2009
+Ramsey,Exempt Property Owned Park Dist Pub,EX,exempt,4,2010-2011
+Ramsey,Marine Service Facilities,,unmapped,4,2010-2011
+Ramsey,Pub Util Per Prop Other Than Rr,,unmapped,4,2010-2011
+Ramsey,T E Misc Co D 17,EX,exempt,4,2014-2015
+Ramsey,5E STREETS/ROADWAYS EXEMPT NOT REPORTED,EX,exempt,3,2023-2025
+Ramsey,B & B,,unmapped,3,2016-2018
+Ramsey,Water-Treatment,,unmapped,3,2017-2019
+Ramsey,4C3II NON-PROFIT COMSRV DONATE,,unmapped,2,2024-2025
+Ramsey,Condo/co-op Non-tax Outlot,X,condo,2,2011-2011
+Ramsey,Grain Elevators,,unmapped,2,2010-2011
+Ramsey,"MISC,RES-REPORTED",R,residential,2,2005-2006
+Ramsey,Tax Forfeit,EX,exempt,2,2005-2006
+Ramsey,1A/1B/4A APT 4 + OWNERS,A,apartment,1,2022-2022
+Ramsey,5E CEMETERY-PUBLIC,EX,exempt,1,2025-2025
+Ramsey,5E ELDERLY LIVING FACILITY,EX,exempt,1,2023-2023
+Ramsey,Bed And Breakfast,,unmapped,1,2011-2011
+Ramsey,Comm Services-Donations,C,commercial,1,2018-2018
+Ramsey,Conversion,,unmapped,1,2011-2011
+Ramsey,MiscNotReported,,unmapped,1,2012-2012
+Ramsey,MiscReported,,unmapped,1,2019-2019
+Ramsey,RES/AG,F,farm,1,2008-2008
+Ramsey,T E Misc Co D 2,EX,exempt,1,2021-2021
+Scott,100 Res 1 unit,R,residential,445677,2011-2022
+Scott,201 1A/4BB(1) RESIDENTIAL SINGLE UNIT,R,residential,98079,2024-2025
+Scott,201 1A/1B/4BB RESIDENTIAL SINGLE UNIT,R,residential,96089,2022-2023
+Scott,RESIDENTIAL,R,residential,77228,2005-2010
+Scott,201 1a RESIDENTIAL SINGLE UNIT,R,residential,47303,2021-2021
+Scott,140 Res V Land,LR,vacant residential,25569,2011-2020
+Scott,200 Agricultural,F,farm,21609,2011-2020
+Scott,300 Commercial,C,commercial,12560,2011-2025
+Scott,958 Muni Srvc Other,EX,exempt,11981,2011-2020
+Scott,RES 1-3 UNITS,TP,2-3 units,9226,2005-2010
+Scott,305 Industrial,I,industrial,7016,2011-2025
+Scott,962 T E Misc Co D 3,EX,exempt,6727,2011-2020
+Scott,206 4B(4) UNIMPROVED RESIDENTIAL LAND,LR,vacant residential,6551,2021-2025
+Scott,AGRICULTURAL,F,farm,6393,2005-2010
+Scott,958 5E MUNICIPAL-PUBLIC SERVICE-OTHER,EX,exempt,5381,2022-2025
+Scott,101 2A AGRICULTURAL,F,farm,5155,2024-2025
+Scott,206 4B4 UNIMPROVED RESIDENTIAL LAND,LR,vacant residential,4988,2022-2023
+Scott,101 2A/1B/4BB AGRICULTURAL,F,farm,4858,2022-2023
+Scott,101 2a AGRICULTURAL,F,farm,3057,2021-2023
+Scott,RES 1 UNIT,R,residential,2591,2005-2005
+Scott,110 Apt 4+ units,A,apartment,2388,2011-2020
+Scott,211 Rural Vacant Land,F,farm,2345,2011-2020
+Scott,233 3A COMMERCIAL LAND AND BUILDING,C,commercial,2324,2022-2023
+Scott,233 3A COMMERCIAL PREFERENTIAL,C,commercial,2287,2024-2025
+Scott,211 Rural Vacant Land/200 Agricultural,F,farm,2225,2011-2016
+Scott,961 5E COMMON AREA,EX,exempt,2133,2022-2024
+Scott,234 3A INDUSTRIAL PREFERENTIAL,I,industrial,2097,2024-2025
+Scott,200 Agricultural/211 Rural Vacant Land,F,farm,1898,2011-2016
+Scott,941 ForestParkRefuge,F,farm,1841,2011-2020
+Scott,234 3A INDUSTRIAL LAND AND BUILDING,I,industrial,1830,2022-2023
+Scott,955 Co Srvc Other,EX,exempt,1746,2011-2020
+Scott,952 State Property,EX,exempt,1647,2011-2020
+Scott,942 Indian Resrv,R,residential,1622,2011-2020
+Scott,COMM LAND & BLDGS,C,commercial,1582,2005-2010
+Scott,981 State Acquired,EX,exempt,1469,2011-2020
+Scott,125 SRR,S,seasonal (SRR),1455,2011-2020
+Scott,961 COMMON AREA,C,commercial,1422,2021-2025
+Scott,958 MUNICIPAL-PUBLIC SERVICE-OTHER,EX,exempt,1356,2021-2021
+Scott,105 Res 2-3 units,TP,2-3 units,1182,2011-2020
+Scott,233 3a COMMERCIAL PREFERENTIAL,C,commercial,1162,2021-2021
+Scott,PREF COMMERCIAL,C,commercial,1093,2005-2005
+Scott,MUNICIPAL PUB-OTHER,EX,exempt,1070,2005-2005
+Scott,MUNICIPAL PUBLIC SER,EX,exempt,1066,2010-2010
+Scott,205 4A APARTMENT 4 OR MORE UNITS,A,apartment,1011,2022-2025
+Scott,942 5E INDIAN LANDS - RESERVATION,EX,exempt,955,2022-2025
+Scott,990 InLieuTx Co D 1,,unmapped,933,2011-2020
+Scott,234 3a INDUSTIAL PREFERENTIAL,I,industrial,916,2021-2021
+Scott,901 Schools-Public,EX,exempt,800,2011-2020
+Scott,955 5E COUNTY-PUBLIC SERVICE-OTHER,EX,exempt,789,2022-2025
+Scott,Tax Exempt Miscellan,EX,exempt,741,2010-2010
+Scott,100 Res 1 unit/300 Commercial,R,residential,692,2011-2016
+Scott,INDS LAND & BLDGS,I,industrial,691,2005-2010
+Scott,"941 5E FORESTS,PARKS,WILDLIFE REFUGES",EX,exempt,660,2022-2025
+Scott,915 Church,EX,exempt,630,2011-2020
+Scott,952 5E STATE PROPERTY,EX,exempt,594,2022-2025
+Scott,105 2A ACTIVELY FARMING,F,farm,581,2022-2025
+Scott,COMMON AREA,C,commercial,567,2005-2005
+Scott,984 Public Hunting,EX,exempt,534,2011-2020
+Scott,RES 4 OR MORE UNITS,A,apartment,515,2005-2010
+Scott,963 T E Misc Co D 4,EX,exempt,425,2011-2017
+Scott,360 Pub Util RR,,unmapped,417,2011-2020
+Scott,111 2B AG RURAL VACANT LAND,F,farm,412,2024-2025
+Scott,111 2B/1B RURAL VACANT LAND,F,farm,410,2022-2023
+Scott,918 Church - Other,EX,exempt,388,2011-2020
+Scott,990 5E IN LIEU OF TAXES,EX,exempt,386,2022-2025
+Scott,100 Res 1 unit/200 Agricultural,R,residential,383,2011-2016
+Scott,300 Commercial/100 Res 1 unit,C,commercial,382,2011-2016
+Scott,981 5E STATE ACQUIRED,EX,exempt,379,2023-2025
+Scott,"FOREST,PARK,WILDLIFE",F,farm,379,2005-2010
+Scott,956 Muni Srvc Ent,EX,exempt,359,2011-2020
+Scott,320 Q Golf Course,GC,golf,347,2011-2020
+Scott,901 5E K-12 SCHOOL-PUBLIC,EX,exempt,334,2022-2025
+Scott,PREF INDUSTRIAL,I,industrial,324,2005-2005
+Scott,SEASONAL RES REC,S,seasonal,307,2005-2010
+Scott,915 5E CHURCH,EX,exempt,305,2022-2025
+Scott,STATE PROPERTY,EX,exempt,298,2005-2010
+Scott,205 4a APARMENT 4 OR MORE UNITS,A,apartment,288,2021-2021
+Scott,982 State Admin-DNR,,unmapped,286,2011-2020
+Scott,210 4BB(3) NON-COMM CONDO STORAGE,C,commercial,285,2024-2025
+Scott,203 1A/4B(1) RESIDENTIAL 1-3 UNITS,TP,2-3 units,280,2024-2025
+Scott,203 1A/1B/4B1 RESIDENTIAL 1-3 UNITS,TP,2-3 units,279,2022-2023
+Scott,STATE ACQUIRED,EX,exempt,271,2005-2010
+Scott,151 4C12 SEASONAL RESIDENTIAL RECREATION,S,seasonal,256,2022-2023
+Scott,151 4C(12) SEASONAL RESIDENTIAL RECREATION,S,seasonal,254,2024-2025
+Scott,In Lieu of Taxes,,unmapped,246,2005-2010
+Scott,912 Cemetery-Private,,unmapped,236,2011-2020
+Scott,210 4BB NON-COMM CONDO STORAGE,C,commercial,223,2022-2023
+Scott,942,,unmapped,209,2021-2021
+Scott,111 2b RURAL VACANT LAND,F,farm,207,2021-2021
+Scott,911 Cemetery-Public,EX,exempt,204,2011-2020
+Scott,955 COUNTY-PUBLIC SERVICE-OTHER,EX,exempt,199,2021-2021
+Scott,200 Agricultural/100 Res 1 unit,F,farm,187,2011-2016
+Scott,ACTIVELY FARMING,F,farm,183,2005-2010
+Scott,350 MH Park,,unmapped,176,2011-2020
+Scott,956 5E MUNICIPAL-PUBLIC SERVICE,EX,exempt,172,2022-2025
+Scott,984 5E PUB HUNTING GROUNDS,EX,exempt,167,2023-2025
+Scott,917 Church-Other Res,EX,exempt,164,2011-2020
+Scott,211 Rural Vacant Land/100 Res 1 unit/200 Agricultural,F,farm,159,2011-2016
+Scott,"941 FORESTS,PARKS,WILDLIFE REFUGES",F,farm,158,2021-2021
+Scott,952 STATE PROPERTY,EX,exempt,156,2021-2022
+Scott,900 MiscNotReported,,unmapped,154,2011-2020
+Scott,105 ACTIVELY FARMING,F,farm,150,2021-2021
+Scott,COUNTY PUBLIC SERVIC,EX,exempt,147,2010-2010
+Scott,203 1a RESIDENTIAL 1-3 UNIT,TP,2-3 units,138,2021-2021
+Scott,983 Co Admin-TaxForf,,unmapped,136,2011-2020
+Scott,140 Res V Land/200 Agricultural,LR,vacant residential,132,2011-2016
+Scott,COUNTY PUB SERV-OTH,EX,exempt,132,2005-2005
+Scott,151 SEASONAL RESIDENTIAL RECREATION,S,seasonal,131,2021-2021
+Scott,INDIAN RESERVATIONS,R,residential,129,2010-2010
+Scott,VALUE W/ADJ.PARCEL,,unmapped,128,2005-2005
+Scott,100 Res 1 unit/211 Rural Vacant Land,R,residential,127,2011-2016
+Scott,918 5E CHURCH-OTHER,EX,exempt,126,2022-2025
+Scott,981 5E STATE ACQUIRED - PILT,EX,exempt,124,2022-2022
+Scott,981 STATE ACQUIRED - PILT,EX,exempt,123,2021-2021
+Scott,INDIAN RESERV,R,residential,121,2005-2005
+Scott,CHURCH,EX,exempt,117,2005-2010
+Scott,953 Co Srvc Ent,EX,exempt,116,2011-2020
+Scott,TIMBERLANDS,F,farm,115,2010-2010
+Scott,931 Charit Inst,EX,exempt,111,2011-2020
+Scott,920 Hospital-Public,EX,exempt,110,2011-2020
+Scott,100 Res 1 unit/211 Rural Vacant Land/200 Agricultural,R,residential,108,2011-2016
+Scott,200 Agricultural/140 Res V Land,F,farm,106,2011-2016
+Scott,CHURCH-OTHER,EX,exempt,106,2005-2010
+Scott,211 Rural Vacant Land/100 Res 1 unit,F,farm,105,2011-2016
+Scott,982 5E STATE ADMINISTERED,EX,exempt,104,2023-2025
+Scott,105 Res 2-3 units/300 Commercial,TP,2-3 units,102,2011-2016
+Scott,966 5E STREETS/ROADWAYS EXEMPT NOT REPORTED,EX,exempt,102,2022-2025
+Scott,200 Agricultural/300 Commercial,F,farm,98,2011-2016
+Scott,104 2A AG FARM ENTITY TIER1,F,farm,97,2022-2025
+Scott,990 IN LIEU OF TAXES,,unmapped,95,2021-2021
+Scott,100 Res 1 unit/200 Agricultural/211 Rural Vacant Land,R,residential,91,2011-2016
+Scott,247 4C2 QUALIFY GOLF COURSES,GC,golf,87,2022-2023
+Scott,300 Commercial/105 Res 2-3 units,C,commercial,87,2011-2016
+Scott,235 3A RAILROAD PREFERENTIAL,CR,railroad,84,2024-2025
+Scott,235 3A RAILROAD PROPERTY,CR,railroad,84,2022-2023
+Scott,901 K-12 SCHOOL-PUBLIC,EX,exempt,84,2021-2021
+Scott,RES DUPLEX/TRIPLEX,TP,2-3 units,84,2005-2010
+Scott,911 5E CEMETERY-PUBLIC,EX,exempt,82,2022-2025
+Scott,247 4C(2) QUALIFY GOLF COURSES,GC,golf,80,2024-2025
+Scott,912 5E CEMETERY-PRIVATE,EX,exempt,80,2022-2025
+Scott,QUALIFY GOLF COURSES,GC,golf,80,2005-2010
+Scott,931 5E CHARITABLE INSTITUTION,EX,exempt,79,2022-2025
+Scott,SPEC USE TAX FORFEIT,EX,exempt,76,2005-2005
+Scott,916 Church-Residence,EX,exempt,74,2011-2020
+Scott,210,C,"bare code, same code's label",73,2021-2021
+Scott,365 Pub Util Mach/300 Commercial,,unmapped,73,2011-2016
+Scott,915 CHURCH,EX,exempt,73,2021-2021
+Scott,K-12 SCHOOLS-PUBLIC,EX,exempt,71,2010-2010
+Scott,300 Commercial/200 Agricultural,C,commercial,70,2011-2016
+Scott,200 Agricultural/211 Rural Vacant Land/100 Res 1 unit,F,farm,69,2011-2016
+Scott,105 Res 2-3 units/200 Agricultural,TP,2-3 units,68,2011-2016
+Scott,202 1A RES/AG SINGLE UNIT,F,farm,67,2024-2025
+Scott,RR LAND & BLDGS,,unmapped,66,2005-2010
+Scott,200 Agricultural/100 Res 1 unit/211 Rural Vacant Land,F,farm,65,2011-2016
+Scott,961 T E Misc Co D 2,EX,exempt,64,2011-2015
+Scott,K-12 SCH-PUBLIC,EX,exempt,64,2005-2005
+Scott,RES/AG,F,farm,63,2005-2010
+Scott,224 4D1 QUALIFYING LOW INCOME RENTAL HOUSING,HL,low income rental,62,2024-2025
+Scott,202 1A/1B/4BB RES/AG SINGLE UNIT,F,farm,61,2022-2023
+Scott,229 4D QUAL LOW INC RENTAL HOUSING <= LIMIT,HL,low income rental,61,2022-2023
+Scott,300 Commercial/365 Pub Util Mach,C,commercial,61,2011-2016
+Scott,300 Commercial/110 Apt 4+ units,C,commercial,60,2011-2016
+Scott,902 Schools-Private,,unmapped,57,2011-2020
+Scott,984 PUB HUNTING GROUNDS - PILT,,unmapped,56,2021-2021
+Scott,984 5E PUB HUNTING GROUNDS - PILT,EX,exempt,55,2022-2022
+Scott,AG SON/DAU-MOTH/FATH,F,farm,55,2005-2010
+Scott,110 Apt 4+ units/300 Commercial,A,apartment,52,2011-2016
+Scott,940 5E WETLANDS,EX,exempt,49,2021-2025
+Scott,PUBLIC HUNTING GROUN,EX,exempt,49,2010-2010
+Scott,PUBL HUNTING GROUNDS,,unmapped,48,2005-2005
+Scott,200 Agricultural/211 Rural Vacant Land/940 Wetlands,F,farm,45,2013-2016
+Scott,310 Com SRR,S,seasonal (SRR),45,2011-2020
+Scott,925 Trans Housing,,unmapped,45,2011-2020
+Scott,211 Rural Vacant Land/940 Wetlands,F,farm,44,2013-2016
+Scott,920 5E HOSPITAL-PUBLIC,EX,exempt,44,2022-2025
+Scott,MFG HOME PARK,,unmapped,44,2005-2010
+Scott,247 4c(2) QUALIFY GOLF COURSES,GC,golf,43,2021-2021
+Scott,211 Rural Vacant Land/200 Agricultural/940 Wetlands,F,farm,42,2013-2016
+Scott,235 3a RAILROAD PREFERENTIAL,CR,railroad,42,2021-2021
+Scott,4D 4 OR MORE UNITS,HL,low income rental,42,2005-2010
+Scott,917 5E CHURCH-OTHER RESIDENTIAL,EX,exempt,42,2022-2025
+Scott,940 Wetlands,,unmapped,41,2011-2020
+Scott,CEMETERY-PUBLIC,EX,exempt,41,2005-2010
+Scott,937 Arena/BParkNProf,,unmapped,39,2011-2020
+Scott,918 CHURCH-OTHER,EX,exempt,38,2021-2021
+Scott,352 MH Park Class I,,unmapped,37,2018-2020
+Scott,953 5E COUNTY-PUBLIC SERVICE,EX,exempt,37,2022-2025
+Scott,956 MUNICIPAL-PUBLIC SERVICE,EX,exempt,35,2021-2021
+Scott,982 5E STATE ADMINISTERED - PILT,EX,exempt,35,2022-2022
+Scott,982 STATE ADMINISTERED - PILT,,unmapped,34,2021-2021
+Scott,CEMETERY-PRIVATE,,unmapped,34,2005-2010
+Scott,EXEMPT RR,EX,exempt,34,2005-2005
+Scott,211 Rural Vacant Land/940 Wetlands/200 Agricultural,F,farm,33,2013-2016
+Scott,921 Hospital-Private,,unmapped,33,2011-2020
+Scott,PUB UTIL ATTH MACH,,unmapped,33,2005-2010
+Scott,200 Agricultural/940 Wetlands,F,farm,32,2013-2016
+Scott,105 Res 2-3 units/200 Agricultural/211 Rural Vacant Land,TP,2-3 units,31,2011-2016
+Scott,200 Agricultural/940 Wetlands/211 Rural Vacant Land,F,farm,31,2013-2016
+Scott,305 Industrial/300 Commercial,I,industrial,31,2012-2016
+Scott,902 5E K-12 SCHOOL-PRIVATE,EX,exempt,31,2022-2025
+Scott,211 Rural Vacant Land/200 Agricultural/100 Res 1 unit,F,farm,30,2011-2016
+Scott,211 Rural Vacant Land/305 Industrial,F,farm,30,2011-2016
+Scott,959 Sp Tax District,EX,exempt,30,2011-2020
+Scott,"CHURCH-OTHER,RES",EX,exempt,30,2005-2010
+Scott,202 1a RES/AG SINGLE UNIT,F,farm,29,2021-2021
+Scott,225 4D2 HOMESTEAD COMMUNITY LAND TRUST,EX,exempt,29,2024-2025
+Scott,229 4d QUALIFYING LOW INCOME RENTAL HOUSING,HL,low income rental,29,2021-2021
+Scott,940 Wetlands/211 Rural Vacant Land,,unmapped,29,2013-2016
+Scott,916 5E CHURCH-RESIDENTIAL,EX,exempt,28,2022-2025
+Scott,925 5E TRANSITIONAL HOUSING,EX,exempt,28,2022-2025
+Scott,940 Wetlands/211 Rural Vacant Land/200 Agricultural,,unmapped,28,2013-2016
+Scott,220 4C(5)i MANUFACTURED HOME PARK,MH,manufactured park,27,2024-2025
+Scott,951 Federal Property,,unmapped,27,2011-2020
+Scott,MUNICIPAL PUB SERV,EX,exempt,27,2005-2005
+Scott,300 Commercial/320 Q Golf Course,C,commercial,25,2011-2016
+Scott,305 Industrial/211 Rural Vacant Land,I,industrial,25,2011-2016
+Scott,980 T E Misc Co D 21,EX,exempt,25,2011-2015
+Scott,983 5E COUNTY ADMIN TAX FORF,EX,exempt,24,2023-2025
+Scott,104 AG FARM ENTITY TIER1,F,farm,23,2021-2021
+Scott,320 Q Golf Course/300 Commercial,GC,golf,23,2011-2016
+Scott,HOSPITAL-PUBLIC,EX,exempt,23,2005-2010
+Scott,211 Rural Vacant Land/105 Res 2-3 units/200 Agricultural,F,farm,22,2011-2016
+Scott,211 Rural Vacant Land/200 Agricultural/300 Commercial,F,farm,22,2011-2016
+Scott,252 Managed Forest Land,F,farm,22,2011-2020
+Scott,916 Church-Residence/915 Church,EX,exempt,22,2011-2016
+Scott,948 5E WATER TREATMENT FACILITIES,EX,exempt,22,2022-2025
+Scott,931 CHARITABLE INSTITUTION,EX,exempt,21,2021-2021
+Scott,222V 4C(3)(ii) NPRFT COMSRV DONATE VETS,,unmapped,20,2024-2025
+Scott,262 4C5III MFD HOME PARK CLASS 1,MH,manufactured park,20,2022-2023
+Scott,922 Hosp-Pub Res,R,residential,20,2011-2020
+Scott,940 Wetlands/200 Agricultural,,unmapped,20,2013-2016
+Scott,940 Wetlands/200 Agricultural/211 Rural Vacant Land,,unmapped,20,2013-2016
+Scott,300 Commercial/211 Rural Vacant Land,C,commercial,19,2011-2016
+Scott,911 CEMETERY-PUBLIC,EX,exempt,19,2021-2021
+Scott,915 Church/916 Church-Residence,EX,exempt,19,2011-2016
+Scott,"CHURCH,RES",EX,exempt,19,2005-2010
+Scott,200 Agricultural/211 Rural Vacant Land/305 Industrial,F,farm,18,2011-2016
+Scott,220 4C5I MANUFACTURED HOME PARK,MH,manufactured park,18,2022-2023
+Scott,300 Commercial/305 Industrial,C,commercial,18,2014-2016
+Scott,912,EX,"bare code, same code's label",18,2021-2021
+Scott,937 5E ICE ARENA/BALL PARK OWNED NON-PROFIT,EX,exempt,18,2022-2025
+Scott,967 T E Misc Co D 8,EX,exempt,18,2011-2017
+Scott,300 Commercial/211 Rural Vacant Land/200 Agricultural,C,commercial,17,2011-2016
+Scott,COMM SEAS REC RES,C,commercial,17,2005-2010
+Scott,200 Agricultural/252 Managed Forest Land,F,farm,16,2011-2016
+Scott,211 Rural Vacant Land/200 Agricultural/305 Industrial,F,farm,16,2012-2016
+Scott,940 Wetlands/140 Res V Land,,unmapped,16,2013-2016
+Scott,959 5E SPECIAL TAXING DISTRICT,EX,exempt,16,2022-2025
+Scott,RES 4+ OWNERS VALUE,R,residential,16,2005-2010
+Scott,200 Agricultural/105 Res 2-3 units,F,farm,15,2011-2016
+Scott,211 Rural Vacant Land/300 Commercial/200 Agricultural,F,farm,15,2011-2016
+Scott,305 Industrial/200 Agricultural/211 Rural Vacant Land,I,industrial,15,2011-2016
+Scott,"MUNICIPAL LAW ENF,FI",EX,exempt,15,2010-2010
+Scott,252 Managed Forest Land/200 Agricultural,F,farm,14,2011-2016
+Scott,300 Commercial/200 Agricultural/211 Rural Vacant Land,C,commercial,14,2011-2016
+Scott,305 Industrial/200 Agricultural,I,industrial,14,2011-2016
+Scott,"COUNTY LAW ENF,FIRE,",,unmapped,14,2010-2010
+Scott,MISC-NOT REPORTED,,unmapped,14,2005-2005
+Scott,TRANSITIONAL HOUSING,,unmapped,14,2005-2010
+Scott,211 Rural Vacant Land/300 Commercial,F,farm,13,2012-2016
+Scott,262,MH,"bare code, same code's label",13,2021-2021
+Scott,305 Industrial/100 Res 1 unit,I,industrial,13,2011-2016
+Scott,917 CHURCH-OTHER RESIDENTIAL,EX,exempt,13,2021-2021
+Scott,957 Railroad Wyes,CR,railroad,13,2016-2016
+Scott,983 COUNTY ADMINISTERED - PILT,,unmapped,13,2021-2021
+Scott,COUNTY PUBLIC SERV,EX,exempt,13,2005-2005
+Scott,"MUN LENFRC,FIRE,ADM",,unmapped,13,2005-2005
+Scott,200 Agricultural/211 Rural Vacant Land/300 Commercial,F,farm,12,2012-2016
+Scott,200 Agricultural/955 Co Srvc Other,F,farm,12,2011-2016
+Scott,355 Pub Util L & S/300 Commercial/365 Pub Util Mach,,unmapped,12,2015-2016
+Scott,365 Pub Util Mach/305 Industrial,,unmapped,12,2011-2014
+Scott,955 Co Srvc Other/200 Agricultural,EX,exempt,12,2011-2015
+Scott,MISC-NOT REPORTED ON,,unmapped,12,2010-2010
+Scott,100 Res 1 unit/915 Church,R,residential,11,2011-2016
+Scott,112 2C MANAGED FOREST LAND,F,farm,11,2022-2025
+Scott,262 4C(5)iii MFD HOME PARK CLASS 1,MH,manufactured park,11,2024-2025
+Scott,920 HOSPITAL-PUBLIC,EX,exempt,11,2021-2021
+Scott,940 Wetlands/300 Commercial,,unmapped,11,2013-2016
+Scott,FEDERAL PROPERTY,,unmapped,11,2005-2010
+Scott,140 Res V Land/300 Commercial,LR,vacant residential,10,2011-2016
+Scott,200 Agricultural/300 Commercial/211 Rural Vacant Land,F,farm,10,2011-2016
+Scott,300 Commercial/355 Pub Util L & S/365 Pub Util Mach,C,commercial,10,2015-2016
+Scott,305 Industrial/958 Muni Srvc Other,I,industrial,10,2011-2016
+Scott,336 Comm Services-Donations,C,commercial,10,2011-2020
+Scott,906 Schools-Pub Res,R,residential,10,2011-2020
+Scott,930 ER Shelter,,unmapped,10,2011-2020
+Scott,93C 5E LICENSE CHILD CARE FACILITY,EX,exempt,10,2023-2025
+Scott,953 COUNTY-PUBLIC SERVICE,EX,exempt,10,2021-2021
+Scott,983 5E COUNTY ADMINISTERED - PILT,EX,exempt,10,2022-2022
+Scott,CHARITABLE INSTITUTE,EX,exempt,10,2010-2010
+Scott,100 Res 1 unit/252 Managed Forest Land,R,residential,9,2011-2016
+Scott,140 Res V Land/940 Wetlands,LR,vacant residential,9,2013-2016
+Scott,211 Rural Vacant Land/305 Industrial/200 Agricultural,F,farm,9,2012-2015
+Scott,305 Industrial/945 PollutionControl,I,industrial,9,2011-2016
+Scott,930 5E EMERGENCY SHELTER,EX,exempt,9,2022-2025
+Scott,932 5E CHARITABLE INSTITUTION-RESIDENTIAL,EX,exempt,9,2022-2025
+Scott,CHARITABLE INS,EX,exempt,9,2005-2005
+Scott,"CNTY LENFRC,FIRE,ADM",,unmapped,9,2005-2005
+Scott,200 Agricultural/305 Industrial,F,farm,8,2012-2015
+Scott,209 1A/4B(1) RES 1-3 UNITS - PREV SSR,TP,2-3 units,8,2024-2025
+Scott,209 4B1 RES 1-3 UNITS - PREV SSR,TP,2-3 units,8,2022-2023
+Scott,300 Commercial/990 InLieuTx Co D 1,C,commercial,8,2011-2016
+Scott,355 Pub Util L & S/365 Pub Util Mach/300 Commercial,,unmapped,8,2015-2016
+Scott,916 CHURCH-RESIDENTIAL,EX,exempt,8,2021-2021
+Scott,922 5E HOSPITAL-PUBLIC RES,EX,exempt,8,2022-2025
+Scott,951 5E FEDERAL PROPERTY,EX,exempt,8,2022-2025
+Scott,100 Res 1 unit/115 B & B,R,residential,7,2011-2016
+Scott,100 Res 1 unit/200 Agricultural/300 Commercial,R,residential,7,2011-2016
+Scott,902 K-12 SCHOOL-PRIVATE,,unmapped,7,2021-2021
+Scott,902 Schools-Private/915 Church,,unmapped,7,2012-2016
+Scott,955 Co Srvc Other/100 Res 1 unit,EX,exempt,7,2011-2016
+Scott,HOSPITAL-PRIVATE,,unmapped,7,2005-2010
+Scott,100 Res 1 unit/305 Industrial,R,residential,6,2011-2015
+Scott,100 Res 1 unit/310 Com SRR,R,residential,6,2011-2015
+Scott,100 Res 1 unit/350 MH Park,R,residential,6,2011-2016
+Scott,100 Res 1 unit/955 Co Srvc Other,R,residential,6,2011-2016
+Scott,140 Res V Land/211 Rural Vacant Land,LR,vacant residential,6,2011-2016
+Scott,211 Rural Vacant Land/200 Agricultural/105 Res 2-3 units,F,farm,6,2013-2014
+Scott,220 MANUFACTURED HOME PARK,MH,manufactured park,6,2021-2021
+Scott,305 Industrial/365 Pub Util Mach,I,industrial,6,2011-2016
+Scott,350 MH Park/100 Res 1 unit,,unmapped,6,2011-2016
+Scott,365 Pub Util Mach/300 Commercial/355 Pub Util L & S,,unmapped,6,2015-2016
+Scott,365 Pub Util Mach/355 Pub Util L & S/300 Commercial,,unmapped,6,2015-2016
+Scott,915 Church/912 Cemetery-Private,EX,exempt,6,2011-2015
+Scott,921 5E HOSPITAL-PRIVATE,EX,exempt,6,2022-2025
+Scott,958 Muni Srvc Other/305 Industrial,EX,exempt,6,2012-2014
+Scott,"ICE ARENAS,BASEBALL",,unmapped,6,2005-2010
+Scott,100 Res 1 unit/105 Res 2-3 units,R,residential,5,2014-2016
+Scott,200 Agricultural/100 Res 1 unit/300 Commercial,F,farm,5,2011-2016
+Scott,200 Agricultural/211 Rural Vacant Land/105 Res 2-3 units,F,farm,5,2012-2014
+Scott,200 Agricultural/305 Industrial/211 Rural Vacant Land,F,farm,5,2013-2015
+Scott,200 Agricultural/939 Ag Hist Society,F,farm,5,2011-2016
+Scott,211 Rural Vacant Land/100 Res 1 unit/940 Wetlands,F,farm,5,2013-2016
+Scott,252 Managed Forest Land/100 Res 1 unit,F,farm,5,2012-2015
+Scott,252 Managed Forest Land/211 Rural Vacant Land,F,farm,5,2011-2016
+Scott,300 Commercial/365 Pub Util Mach/355 Pub Util L & S,C,commercial,5,2015-2016
+Scott,317 Seasonal Restaurant on Lake,S,seasonal,5,2011-2015
+Scott,355 Pub Util L & S/365 Pub Util Mach/305 Industrial,,unmapped,5,2015-2016
+Scott,915 Church/902 Schools-Private,EX,exempt,5,2011-2016
+Scott,925,EX,"bare code, same code's label",5,2021-2021
+Scott,931 Charit Inst/300 Commercial,EX,exempt,5,2011-2016
+Scott,934 Elderly Liv Fac,,unmapped,5,2011-2015
+Scott,100 Res 1 unit/211 Rural Vacant Land/300 Commercial,R,residential,4,2011-2015
+Scott,100 Res 1 unit/305 Industrial/211 Rural Vacant Land/200 Agricultural,R,residential,4,2015-2016
+Scott,105 Res 2-3 units/200 Agricultural/300 Commercial,TP,2-3 units,4,2012-2016
+Scott,112 MANAGED FOREST LAND,F,farm,4,2021-2021
+Scott,114 2B RURAL VACANT FARM ENTITY TIER1,F,farm,4,2022-2025
+Scott,140 Res V Land/100 Res 1 unit,LR,vacant residential,4,2012-2016
+Scott,209,TP,"bare code, same code's label",4,2021-2021
+Scott,211 Rural Vacant Land/100 Res 1 unit/200 Agricultural/305 Industrial,F,farm,4,2013-2014
+Scott,211 Rural Vacant Land/100 Res 1 unit/300 Commercial,F,farm,4,2011-2016
+Scott,222V 4C3II CONGRESS CHARTERED VETS DONATE,R,residential,4,2022-2023
+Scott,252 Managed Forest Land/940 Wetlands,F,farm,4,2013-2016
+Scott,300 Commercial/140 Res V Land,C,commercial,4,2011-2013
+Scott,300 Commercial/318 Marina Recreational Land,C,commercial,4,2013-2016
+Scott,300 Commercial/958 Muni Srvc Other,C,commercial,4,2011-2014
+Scott,310 Com SRR/100 Res 1 unit,S,seasonal (SRR),4,2011-2013
+Scott,335 Comm Services-Non Revenue/300 Commercial,C,commercial,4,2011-2016
+Scott,350 MH Park/300 Commercial,,unmapped,4,2011-2012
+Scott,904 Colleges-Public,EX,exempt,4,2011-2014
+Scott,905 5E COLLEGE-PRIVATE,EX,exempt,4,2024-2025
+Scott,912 Cemetery-Private/915 Church,,unmapped,4,2012-2013
+Scott,931 Charit Inst/100 Res 1 unit,EX,exempt,4,2013-2016
+Scott,931 Charit Inst/110 Apt 4+ units,EX,exempt,4,2012-2016
+Scott,937,,unmapped,4,2021-2021
+Scott,93A 5E NURSING HOME,EX,exempt,4,2022-2025
+Scott,953 Co Srvc Ent/200 Agricultural,EX,exempt,4,2012-2016
+Scott,957 5E MUNICIPAL-POLICE & FIRE-ADMIN,EX,exempt,4,2022-2025
+Scott,967 5E RAILROAD EXEMPT NOT REPORTED,EX,exempt,4,2022-2025
+Scott,ALL OTHER PROPERTY,,unmapped,4,2005-2010
+Scott,K-12 SCH-PRIVATE,,unmapped,4,2005-2005
+Scott,K-12 SCHOOLS-PRIVATE,,unmapped,4,2010-2010
+Scott,Tax Forfeit,EX,exempt,4,2005-2005
+Scott,100 Res 1 unit/211 Rural Vacant Land/940 Wetlands/200 Agricultural,R,residential,3,2014-2016
+Scott,100 Res 1 unit/300 Commercial/200 Agricultural,R,residential,3,2011-2015
+Scott,100 Res 1 unit/940 Wetlands,R,residential,3,2014-2016
+Scott,100 Res 1 unit/940 Wetlands/211 Rural Vacant Land,R,residential,3,2014-2015
+Scott,140 Res V Land/200 Agricultural/940 Wetlands,LR,vacant residential,3,2013-2016
+Scott,200 Agricultural/140 Res V Land/940 Wetlands,F,farm,3,2013-2015
+Scott,200 Agricultural/300 Commercial/140 Res V Land,F,farm,3,2011-2014
+Scott,211 Rural Vacant Land/300 Commercial/100 Res 1 unit,F,farm,3,2011-2012
+Scott,255 1a RESIDENTIAL 4+ OWNERS VALUE,R,residential,3,2021-2021
+Scott,300 Commercial/100 Res 1 unit/200 Agricultural,C,commercial,3,2012-2015
+Scott,300 Commercial/931 Charit Inst,C,commercial,3,2012-2014
+Scott,305 Industrial/211 Rural Vacant Land/200 Agricultural,I,industrial,3,2011-2016
+Scott,902 Schools-Private/915 Church/916 Church-Residence,,unmapped,3,2011-2013
+Scott,902 Schools-Private/916 Church-Residence/915 Church,,unmapped,3,2011-2016
+Scott,915 Church/100 Res 1 unit,EX,exempt,3,2013-2014
+Scott,918 Church - Other/140 Res V Land,EX,exempt,3,2014-2016
+Scott,932 Charit Inst-Res,EX,exempt,3,2018-2020
+Scott,940 Wetlands/100 Res 1 unit,,unmapped,3,2014-2016
+Scott,946 Ag Containment/305 Industrial,F,farm,3,2016-2016
+Scott,958 Muni Srvc Other/211 Rural Vacant Land/200 Agricultural,EX,exempt,3,2015-2015
+Scott,959 SPECIAL TAXING DISTRICT,EX,exempt,3,2021-2021
+Scott,100 Res 1 unit/105 Res 2-3 units/200 Agricultural,R,residential,2,2011-2014
+Scott,100 Res 1 unit/140 Res V Land,R,residential,2,2011-2013
+Scott,100 Res 1 unit/140 Res V Land/200 Agricultural,R,residential,2,2016-2016
+Scott,100 Res 1 unit/211 Rural Vacant Land/200 Agricultural/305 Industrial,R,residential,2,2012-2012
+Scott,100 Res 1 unit/211 Rural Vacant Land/305 Industrial/200 Agricultural,R,residential,2,2015-2015
+Scott,100 Res 1 unit/211 Rural Vacant Land/940 Wetlands,R,residential,2,2015-2016
+Scott,100 Res 1 unit/916 Church-Residence,R,residential,2,2012-2014
+Scott,100 Res 1 unit/955 Co Srvc Other/200 Agricultural,R,residential,2,2013-2014
+Scott,100 Res 1 unit/958 Muni Srvc Other,R,residential,2,2014-2016
+Scott,105 Res 2-3 units/200 Agricultural/211 Rural Vacant Land/100 Res 1 unit,TP,2-3 units,2,2012-2016
+Scott,105 Res 2-3 units/300 Commercial/200 Agricultural,TP,2-3 units,2,2011-2015
+Scott,110 Apt 4+ units/100 Res 1 unit,A,apartment,2,2011-2012
+Scott,110 Apt 4+ units/931 Charit Inst,A,apartment,2,2011-2015
+Scott,115 B & B/100 Res 1 unit,,unmapped,2,2015-2016
+Scott,140 Res V Land/200 Agricultural/100 Res 1 unit,LR,vacant residential,2,2014-2016
+Scott,140 Res V Land/940 Wetlands/300 Commercial,LR,vacant residential,2,2014-2016
+Scott,2,,unmapped,2,2021-2021
+Scott,200 Agricultural/140 Res V Land/300 Commercial,F,farm,2,2015-2016
+Scott,200 Agricultural/211 Rural Vacant Land/100 Res 1 unit/310 Com SRR,F,farm,2,2012-2013
+Scott,200 Agricultural/300 Commercial/100 Res 1 unit,F,farm,2,2013-2015
+Scott,200 Agricultural/918 Church - Other,F,farm,2,2014-2015
+Scott,200 Agricultural/953 Co Srvc Ent,F,farm,2,2011-2015
+Scott,200 Agricultural/955 Co Srvc Other/100 Res 1 unit,F,farm,2,2011-2015
+Scott,211 Rural Vacant Land/305 Industrial/100 Res 1 unit/200 Agricultural,F,farm,2,2014-2014
+Scott,222 4C(3)(ii) NON-PROFIT COMSRV DONATE,,unmapped,2,2024-2025
+Scott,222 4C3II NON-PROFIT COMSRV DONATE,,unmapped,2,2022-2023
+Scott,222V,,unmapped,2,2021-2021
+Scott,232 4C(1) COMMERCIAL SEASONAL REC (RESORT),S,seasonal,2,2024-2025
+Scott,232 4C1 COMMERCIAL SEASONAL REC (RESORT),S,seasonal,2,2022-2023
+Scott,255 1A RESIDENTIAL 4+ OWNERS VALUE,R,residential,2,2024-2025
+Scott,255 1A/1B/4A APT 4 + OWNERS,A,apartment,2,2022-2023
+Scott,300 Commercial/200 Agricultural/100 Res 1 unit,C,commercial,2,2012-2015
+Scott,300 Commercial/335 Comm Services-Non Revenue,C,commercial,2,2012-2015
+Scott,300 Commercial/955 Co Srvc Other,C,commercial,2,2011-2012
+Scott,305 Industrial/100 Res 1 unit/200 Agricultural/211 Rural Vacant Land,I,industrial,2,2011-2011
+Scott,305 Industrial/211 Rural Vacant Land/100 Res 1 unit/200 Agricultural,I,industrial,2,2016-2016
+Scott,305 Industrial/370 Pub Util El Gen Mach,I,industrial,2,2011-2013
+Scott,305 Industrial/940 Wetlands,I,industrial,2,2013-2016
+Scott,318 Marina Recreational Land/300 Commercial,S,seasonal,2,2011-2012
+Scott,337 Comm Serv-Donations Congr Charter,C,commercial,2,2020-2020
+Scott,370 Pub Util El Gen Mach/305 Industrial,,unmapped,2,2012-2014
+Scott,906 5E COLLEGE-PUBLIC RES,EX,exempt,2,2022-2023
+Scott,912 Cemetery-Private/915 Church/916 Church-Residence,,unmapped,2,2011-2012
+Scott,915 Church/100 Res 1 unit/912 Cemetery-Private,EX,exempt,2,2012-2013
+Scott,916 Church-Residence/100 Res 1 unit,EX,exempt,2,2011-2013
+Scott,916 Church-Residence/902 Schools-Private/915 Church,EX,exempt,2,2012-2015
+Scott,916 Church-Residence/915 Church/902 Schools-Private,EX,exempt,2,2014-2015
+Scott,921 HOSPITAL-PRIVATE,,unmapped,2,2021-2021
+Scott,922,,unmapped,2,2021-2021
+Scott,940 Wetlands/305 Industrial,,unmapped,2,2014-2015
+Scott,945 PollutionControl/305 Industrial,,unmapped,2,2012-2014
+Scott,951 FEDERAL PROPERTY,,unmapped,2,2021-2021
+Scott,953 Co Srvc Ent/300 Commercial,EX,exempt,2,2011-2012
+Scott,954 Nursing Homes,,unmapped,2,2019-2020
+Scott,955 Co Srvc Other/200 Agricultural/940 Wetlands,EX,exempt,2,2014-2015
+Scott,958 Muni Srvc Other/300 Commercial,EX,exempt,2,2015-2016
+Scott,958 Muni Srvc Other/300 Commercial/990 InLieuTx Co D 1,EX,exempt,2,2012-2014
+Scott,965 5E EXEMPT NOT REPORTED,EX,exempt,2,2022-2022
+Scott,987 CCC-Consv Land,LR,vacant residential,2,2015-2016
+Scott,990 InLieuTx Co D 1/300 Commercial,,unmapped,2,2012-2012
+Scott,990 InLieuTx Co D 1/300 Commercial/958 Muni Srvc Other,,unmapped,2,2015-2016
+Scott,"APTS SEC 8, 2-3 UNIT",A,apartment,2,2005-2005
+Scott,COLLEGE-PUBLIC,EX,exempt,2,2005-2010
+Scott,COUNTY ADMINISTERED,,unmapped,2,2005-2010
+Scott,EMERGENCY SHELTERS,,unmapped,2,2005-2010
+Scott,GAME REFUGES,,unmapped,2,2010-2010
+Scott,"HOSPITAL-PUBLIC,RES",EX,exempt,2,2010-2010
+Scott,PUB UTIL - ATTH MACH,,unmapped,2,2005-2005
+Scott,SPECIAL TAXING DISTR,EX,exempt,2,2010-2010
+Scott,STATE ADMINISTERED,,unmapped,2,2005-2010
+Scott,100 Res 1 unit/105 Res 2-3 units/200 Agricultural/211 Rural Vacant Land,R,residential,1,2013-2013
+Scott,100 Res 1 unit/125 SRR,R,residential,1,2016-2016
+Scott,100 Res 1 unit/200 Agricultural/140 Res V Land,R,residential,1,2013-2013
+Scott,100 Res 1 unit/200 Agricultural/300 Commercial/211 Rural Vacant Land,R,residential,1,2016-2016
+Scott,100 Res 1 unit/200 Agricultural/940 Wetlands,R,residential,1,2015-2015
+Scott,100 Res 1 unit/211 Rural Vacant Land/200 Agricultural/940 Wetlands,R,residential,1,2014-2014
+Scott,100 Res 1 unit/211 Rural Vacant Land/310 Com SRR/200 Agricultural,R,residential,1,2016-2016
+Scott,100 Res 1 unit/300 Commercial/211 Rural Vacant Land,R,residential,1,2015-2015
+Scott,100 Res 1 unit/300 Commercial/211 Rural Vacant Land/200 Agricultural,R,residential,1,2014-2014
+Scott,100 Res 1 unit/310 Com SRR/211 Rural Vacant Land/200 Agricultural,R,residential,1,2015-2015
+Scott,100 Res 1 unit/912 Cemetery-Private/915 Church,R,residential,1,2015-2015
+Scott,100 Res 1 unit/940 Wetlands/200 Agricultural/211 Rural Vacant Land,R,residential,1,2015-2015
+Scott,105 Res 2-3 units/1 - Real Property,TP,2-3 units,1,2012-2012
+Scott,105 Res 2-3 units/100 Res 1 unit,TP,2-3 units,1,2016-2016
+Scott,105 Res 2-3 units/200 Agricultural/100 Res 1 unit,TP,2-3 units,1,2016-2016
+Scott,105 Res 2-3 units/200 Agricultural/100 Res 1 unit/211 Rural Vacant Land,TP,2-3 units,1,2015-2015
+Scott,114 RURAL VACANT FARM ENTITY TIER1,F,farm,1,2021-2021
+Scott,115 B & B,,unmapped,1,2017-2017
+Scott,125 SRR/200 Agricultural,S,seasonal (SRR),1,2011-2011
+Scott,140 Res V Land/100 Res 1 unit/300 Commercial,LR,vacant residential,1,2015-2015
+Scott,140 Res V Land/918 Church - Other,LR,vacant residential,1,2013-2013
+Scott,140 Res V Land/940 Wetlands/200 Agricultural,LR,vacant residential,1,2014-2014
+Scott,200 Agricultural/100 Res 1 unit/105 Res 2-3 units,F,farm,1,2015-2015
+Scott,200 Agricultural/100 Res 1 unit/105 Res 2-3 units/211 Rural Vacant Land,F,farm,1,2011-2011
+Scott,200 Agricultural/100 Res 1 unit/140 Res V Land,F,farm,1,2015-2015
+Scott,200 Agricultural/100 Res 1 unit/940 Wetlands,F,farm,1,2016-2016
+Scott,200 Agricultural/100 Res 1 unit/940 Wetlands/211 Rural Vacant Land,F,farm,1,2016-2016
+Scott,200 Agricultural/105 Res 2-3 units/211 Rural Vacant Land,F,farm,1,2016-2016
+Scott,200 Agricultural/125 SRR,F,farm,1,2012-2012
+Scott,200 Agricultural/140 Res V Land/100 Res 1 unit,F,farm,1,2016-2016
+Scott,200 Agricultural/211 Rural Vacant Land/100 Res 1 unit/300 Commercial,F,farm,1,2015-2015
+Scott,200 Agricultural/211 Rural Vacant Land/100 Res 1 unit/940 Wetlands,F,farm,1,2014-2014
+Scott,200 Agricultural/211 Rural Vacant Land/310 Com SRR/305 Industrial,F,farm,1,2012-2012
+Scott,200 Agricultural/300 Commercial/100 Res 1 unit/211 Rural Vacant Land,F,farm,1,2011-2011
+Scott,200 Agricultural/940 Wetlands/955 Co Srvc Other,F,farm,1,2013-2013
+Scott,200 Agricultural/958 Muni Srvc Other/211 Rural Vacant Land,F,farm,1,2015-2015
+Scott,211 Rural Vacant Land/100 Res 1 unit/200 Agricultural/105 Res 2-3 units,F,farm,1,2014-2014
+Scott,211 Rural Vacant Land/100 Res 1 unit/200 Agricultural/300 Commercial,F,farm,1,2016-2016
+Scott,211 Rural Vacant Land/100 Res 1 unit/200 Agricultural/310 Com SRR,F,farm,1,2011-2011
+Scott,211 Rural Vacant Land/252 Managed Forest Land,F,farm,1,2015-2015
+Scott,211 Rural Vacant Land/305 Industrial/310 Com SRR/200 Agricultural,F,farm,1,2014-2014
+Scott,211 Rural Vacant Land/305 Industrial/940 Wetlands,F,farm,1,2015-2015
+Scott,211 Rural Vacant Land/365 Pub Util Mach/300 Commercial,F,farm,1,2015-2015
+Scott,222 NON-PROFIT COMM(DON) 4c(3)(ii),C,commercial,1,2021-2021
+Scott,232,S,"bare code, same code's label",1,2021-2021
+Scott,243 3A COMMERCIAL NON PREFERENTIAL,C,commercial,1,2024-2024
+Scott,300 Commercial/100 Res 1 unit/211 Rural Vacant Land,C,commercial,1,2014-2014
+Scott,300 Commercial/140 Res V Land/200 Agricultural,C,commercial,1,2012-2012
+Scott,300 Commercial/140 Res V Land/940 Wetlands,C,commercial,1,2015-2015
+Scott,300 Commercial/211 Rural Vacant Land/100 Res 1 unit,C,commercial,1,2012-2012
+Scott,300 Commercial/211 Rural Vacant Land/365 Pub Util Mach,C,commercial,1,2014-2014
+Scott,300 Commercial/365 Pub Util Mach/200 Agricultural/355 Pub Util L & S,C,commercial,1,2016-2016
+Scott,300 Commercial/915 Church,C,commercial,1,2016-2016
+Scott,300 Commercial/940 Wetlands,C,commercial,1,2013-2013
+Scott,300 Commercial/953 Co Srvc Ent,C,commercial,1,2013-2013
+Scott,300 Commercial/962 T E Misc Co D 3,C,commercial,1,2016-2016
+Scott,300 Commercial/990 InLieuTx Co D 1/958 Muni Srvc Other,C,commercial,1,2013-2013
+Scott,305 Industrial/211 Rural Vacant Land/310 Com SRR/200 Agricultural,I,industrial,1,2015-2015
+Scott,305 Industrial/211 Rural Vacant Land/940 Wetlands,I,industrial,1,2016-2016
+Scott,305 Industrial/300 Commercial/200 Agricultural/211 Rural Vacant Land,I,industrial,1,2016-2016
+Scott,305 Industrial/355 Pub Util L & S/365 Pub Util Mach,I,industrial,1,2015-2015
+Scott,305 Industrial/355 Pub Util L & S/370 Pub Util El Gen Mach,I,industrial,1,2016-2016
+Scott,310 Com SRR/100 Res 1 unit/200 Agricultural/211 Rural Vacant Land,S,seasonal (SRR),1,2014-2014
+Scott,310 Com SRR/200 Agricultural,S,seasonal (SRR),1,2011-2011
+Scott,310 Com SRR/305 Industrial/200 Agricultural/211 Rural Vacant Land,S,seasonal (SRR),1,2013-2013
+Scott,355 Pub Util L & S/305 Industrial/370 Pub Util El Gen Mach,,unmapped,1,2015-2015
+Scott,355 Pub Util L & S/365 Pub Util Mach/211 Rural Vacant Land/300 Commercial,,unmapped,1,2016-2016
+Scott,365 Pub Util Mach/200 Agricultural/300 Commercial,,unmapped,1,2014-2014
+Scott,365 Pub Util Mach/355 Pub Util L & S/300 Commercial/200 Agricultural,,unmapped,1,2015-2015
+Scott,902 Schools-Private/917 Church-Other Res/912 Cemetery-Private/915 Church/93,,unmapped,1,2016-2016
+Scott,902 Schools-Private/917 Church-Other Res/915 Church/937 Arena/BParkNProf/91,,unmapped,1,2011-2011
+Scott,906,,unmapped,1,2021-2021
+Scott,912 Cemetery-Private/100 Res 1 unit/915 Church,,unmapped,1,2016-2016
+Scott,912 Cemetery-Private/916 Church-Residence/915 Church,,unmapped,1,2014-2014
+Scott,915 Church/300 Commercial/916 Church-Residence,EX,exempt,1,2015-2015
+Scott,915 Church/902 Schools-Private/916 Church-Residence,EX,exempt,1,2016-2016
+Scott,915 Church/912 Cemetery-Private/100 Res 1 unit,EX,exempt,1,2014-2014
+Scott,915 Church/912 Cemetery-Private/916 Church-Residence,EX,exempt,1,2011-2011
+Scott,915 Church/916 Church-Residence/902 Schools-Private,EX,exempt,1,2014-2014
+Scott,915 Church/937 Arena/BParkNProf/912 Cemetery-Private/902 Schools-Private/91,EX,exempt,1,2012-2012
+Scott,916 Church-Residence/300 Commercial/915 Church,EX,exempt,1,2016-2016
+Scott,916 Church-Residence/902 Schools-Private/917 Church-Other Res/912 Cemetery-,EX,exempt,1,2015-2015
+Scott,916 Church-Residence/912 Cemetery-Private/915 Church,EX,exempt,1,2015-2015
+Scott,916 Church-Residence/915 Church/912 Cemetery-Private,EX,exempt,1,2013-2013
+Scott,918 Church - Other/200 Agricultural,EX,exempt,1,2013-2013
+Scott,930,EX,"bare code, same code's label",1,2021-2021
+Scott,932 CHARITABLE INSTITUTION-RESIDENTIAL,EX,exempt,1,2021-2021
+Scott,933 Sr Citizens Fac,,unmapped,1,2016-2016
+Scott,939 Ag Hist Society/200 Agricultural,F,farm,1,2012-2012
+Scott,93A NURSING HOME,,unmapped,1,2021-2021
+Scott,940 Wetlands/100 Res 1 unit/211 Rural Vacant Land,,unmapped,1,2014-2014
+Scott,940 Wetlands/140 Res V Land/211 Rural Vacant Land/200 Agricultural,,unmapped,1,2015-2015
+Scott,940 Wetlands/200 Agricultural/100 Res 1 unit,,unmapped,1,2014-2014
+Scott,940 Wetlands/211 Rural Vacant Land/100 Res 1 unit,,unmapped,1,2016-2016
+Scott,940 Wetlands/211 Rural Vacant Land/305 Industrial,,unmapped,1,2013-2013
+Scott,940 Wetlands/305 Industrial/211 Rural Vacant Land,,unmapped,1,2014-2014
+Scott,948,EX,"bare code, same code's label",1,2021-2021
+Scott,948 Water-Treatment,,unmapped,1,2020-2020
+Scott,953 Co Srvc Ent/211 Rural Vacant Land/305 Industrial,EX,exempt,1,2016-2016
+Scott,955 Co Srvc Other/200 Agricultural/100 Res 1 unit,EX,exempt,1,2012-2012
+Scott,955 Co Srvc Other/300 Commercial,EX,exempt,1,2013-2013
+Scott,958 Muni Srvc Other/100 Res 1 unit,EX,exempt,1,2015-2015
+Scott,958 Muni Srvc Other/200 Agricultural/211 Rural Vacant Land,EX,exempt,1,2015-2015
+Scott,958 Muni Srvc Other/990 InLieuTx Co D 1,EX,exempt,1,2013-2013
+Scott,967,EX,"bare code, same code's label",1,2021-2021
+Scott,979 T E Misc Co D 20,EX,exempt,1,2015-2015
+Scott,990 InLieuTx Co D 1/958 Muni Srvc Other/300 Commercial,,unmapped,1,2011-2011
+Scott,ELDERLY LIVING FACIL,,unmapped,1,2010-2010
+Scott,"K-12 SCHOOLS-PUBLIC,",EX,exempt,1,2010-2010
+Scott,NON-PROFIT COMMUNITY,EX,exempt,1,2010-2010
+Scott,SEASONAL RESTAURANT,S,seasonal,1,2010-2010
+Scott,SHERIFFS SALE,,unmapped,1,2005-2005
+Scott,SPECIAL TAXING DIST,EX,exempt,1,2005-2005
+Washington,100 Res 1 unit,R,residential,1323971,2010-2024
+Washington,RESIDENTIAL,R,residential,290947,2006-2009
+Washington,100,R,"bare code, same code's label",97437,2025-2025
+Washington,140 Res V Land,LR,vacant residential,66065,2010-2024
+Washington,300 Commercial,C,commercial,39573,2010-2024
+Washington,958 Muni Srvc Other,EX,exempt,35125,2010-2024
+Washington,200 Agricultural,F,farm,31250,2010-2024
+Washington,RES 1-3 UNITS,TP,2-3 units,26441,2006-2009
+Washington,962 T E Misc Co D 3,EX,exempt,24834,2010-2024
+Washington,COMM LAND & BLDGS,C,commercial,13919,2006-2009
+Washington,966 T E Misc Co D 7,EX,exempt,12841,2010-2024
+Washington,305 Industrial,I,industrial,12385,2010-2024
+Washington,AGRICULTURAL,F,farm,12276,2006-2009
+Washington,965 T E Misc Co D 6,EX,exempt,10925,2010-2024
+Washington,967 T E Misc Co D 8,EX,exempt,10921,2010-2024
+Washington,211 Rural Vacant Land,F,farm,7554,2010-2024
+Washington,125 SRR,S,seasonal (SRR),6110,2010-2024
+Washington,MUNICIPAL PUB-OTHER,EX,exempt,5951,2007-2009
+Washington,110 Apt 4+ units,A,apartment,5945,2010-2024
+Washington,105 Res 2-3 units,TP,2-3 units,5804,2010-2024
+Washington,VALUE INCLUDED IN,EX,exempt,4730,2006-2009
+Washington,RES 1 UNIT,R,residential,4674,2006-2006
+Washington,955 Co Srvc Other,EX,exempt,4315,2010-2024
+Washington,140,LR,"bare code, same code's label",4133,2025-2025
+Washington,931 Charit Inst,EX,exempt,3695,2010-2024
+Washington,952 State Property,EX,exempt,3296,2010-2024
+Washington,981 State Acquired,EX,exempt,3043,2010-2024
+Washington,NULL,,unmapped,2988,2016-2019
+Washington,STATE ROAD,EX,exempt,2922,2006-2009
+Washington,TWP/CITY ROAD,EX,exempt,2849,2006-2009
+Washington,915 Church,EX,exempt,2806,2010-2024
+Washington,958,EX,"bare code, same code's label",2729,2025-2025
+Washington,COUNTY ROAD,EX,exempt,2509,2006-2009
+Washington,200,F,"bare code, same code's label",2504,2025-2025
+Washington,300,C,"bare code, same code's label",2418,2025-2025
+Washington,901 Schools-Public,EX,exempt,2277,2010-2024
+Washington,SEASONAL RES REC,S,seasonal,2075,2006-2009
+Washington,941 ForestParkRefuge,F,farm,1976,2010-2024
+Washington,962,EX,"bare code, same code's label",1919,2025-2025
+Washington,MUNICIPAL PUBLIC SERVICE-OTHER,EX,exempt,1901,2006-2006
+Washington,350 MH Park,,unmapped,1767,2010-2024
+Washington,963 T E Misc Co D 4,EX,exempt,1693,2010-2024
+Washington,990 InLieuTx Co D 1,,unmapped,1660,2010-2024
+Washington,956 Muni Srvc Ent,EX,exempt,1603,2010-2024
+Washington,INDS LAND & BLDGS,I,industrial,1302,2006-2009
+Washington,RES 4 OR MORE UNITS,A,apartment,1276,2006-2009
+Washington,200 Agricultural/211 Rural Vacant Land,F,farm,1231,2010-2011
+Washington,983 Co Admin-TaxForf,,unmapped,1228,2010-2024
+Washington,305,I,"bare code, same code's label",1122,2025-2025
+Washington,211 Rural Vacant Land/200 Agricultural,F,farm,980,2010-2011
+Washington,959 Sp Tax District,EX,exempt,976,2010-2024
+Washington,966,EX,"bare code, same code's label",951,2025-2025
+Washington,STATE PROPERTY,EX,exempt,873,2006-2009
+Washington,STATE ACQUIRED,EX,exempt,829,2006-2009
+Washington,COUNTY PUB SERV-OTH,EX,exempt,788,2007-2009
+Washington,967,EX,"bare code, same code's label",764,2025-2025
+Washington,965,EX,"bare code, same code's label",742,2025-2025
+Washington,,,blank,709,2023-2024
+Washington,CHARITABLE INS,EX,exempt,691,2007-2009
+Washington,320 Q Golf Course,GC,golf,678,2010-2024
+Washington,100 Res 1 unit/940 Wetlands,R,residential,608,2010-2011
+Washington,COUNTY ADMINISTERED,,unmapped,596,2006-2009
+Washington,110,A,"bare code, same code's label",568,2025-2025
+Washington,CHURCH,EX,exempt,544,2006-2009
+Washington,"FOREST,PARK,WILDLIFE",F,farm,536,2007-2009
+Washington,911 Cemetery-Public,EX,exempt,491,2010-2024
+Washington,MFG HOME PARK,,unmapped,488,2006-2009
+Washington,211,F,"bare code, same code's label",475,2025-2025
+Washington,912 Cemetery-Private,,unmapped,458,2010-2024
+Washington,K-12 SCH-PUBLIC,EX,exempt,443,2007-2009
+Washington,105,TP,"bare code, same code's label",401,2025-2025
+Washington,921 Hospital-Private,,unmapped,392,2010-2024
+Washington,918 Church - Other,EX,exempt,381,2010-2024
+Washington,CHURCH-OTHER,EX,exempt,368,2006-2009
+Washington,951 Federal Property,,unmapped,364,2010-2024
+Washington,984 Public Hunting,EX,exempt,349,2010-2024
+Washington,RES DUPLEX/TRIPLEX,TP,2-3 units,333,2006-2009
+Washington,940 Wetlands,,unmapped,324,2010-2024
+Washington,MUNICIPAL PUB SERV,EX,exempt,324,2007-2009
+Washington,982 State Admin-DNR,,unmapped,322,2010-2024
+Washington,AG DUPLEX/TRIPLEX,F,farm,301,2006-2009
+Washington,125,S,"bare code, same code's label",300,2025-2025
+Washington,955,EX,"bare code, same code's label",293,2025-2025
+Washington,940 Wetlands/100 Res 1 unit,,unmapped,290,2010-2011
+Washington,COUNTY PUBLIC SERVICE-OTHER,EX,exempt,258,2006-2006
+Washington,Tax Forfeit,EX,exempt,256,2007-2009
+Washington,252 Managed Forest Land,F,farm,251,2010-2024
+Washington,210 Ag 2 - 3 Units,F,farm,245,2012-2024
+Washington,PUB UTIL - ATTH MACH,,unmapped,235,2006-2009
+Washington,952,EX,"bare code, same code's label",233,2025-2025
+Washington,916 Church-Residence,EX,exempt,225,2010-2024
+Washington,CHARITABLE INSTITUTES,EX,exempt,225,2006-2006
+Washington,931,EX,"bare code, same code's label",221,2025-2025
+Washington,211 Rural Vacant Land/100 Res 1 unit,F,farm,218,2010-2011
+Washington,100 Res 1 unit/300 Commercial,R,residential,217,2010-2011
+Washington,355 Pub Util L & S,,unmapped,216,2010-2024
+Washington,100 Res 1 unit/211 Rural Vacant Land,R,residential,205,2010-2011
+Washington,902 Schools-Private,,unmapped,203,2010-2024
+Washington,915,EX,"bare code, same code's label",197,2025-2025
+Washington,981,EX,"bare code, same code's label",188,2025-2025
+Washington,100 Res 1 unit/200 Agricultural,R,residential,179,2010-2011
+Washington,"FOREST,PARK,WILDLIFE REFUGE",F,farm,179,2006-2006
+Washington,QUALIFY GOLF COURSES,GC,golf,178,2006-2009
+Washington,360 Pub Util RR,,unmapped,177,2016-2024
+Washington,In Lieu of Taxes,,unmapped,172,2008-2009
+Washington,AG SON/DAU-MOTH/FATH,F,farm,166,2006-2009
+Washington,917 Church-Other Res,EX,exempt,161,2010-2024
+Washington,901,EX,"bare code, same code's label",156,2025-2025
+Washington,953 Co Srvc Ent,EX,exempt,151,2010-2024
+Washington,K-12 SCHOOLS-PUBLIC,EX,exempt,145,2006-2006
+Washington,CEMETERY-PUBLIC,EX,exempt,143,2006-2009
+Washington,950 MiscReported,,unmapped,127,2010-2021
+Washington,RES NON-HSTD,R,residential,127,2009-2009
+Washington,SPECIAL TAXING DIST,EX,exempt,121,2007-2009
+Washington,979 T E Misc Co D 20,EX,exempt,120,2010-2024
+Washington,350,,unmapped,116,2025-2025
+Washington,990,,unmapped,114,2025-2025
+Washington,200 Agricultural/100 Res 1 unit,F,farm,112,2010-2011
+Washington,FEDERAL PROPERTY,,unmapped,111,2006-2009
+Washington,RES HSTD,R,residential,108,2008-2009
+Washington,956,EX,"bare code, same code's label",105,2025-2025
+Washington,"MUN LENFRC,FIRE,ADM",,unmapped,105,2007-2009
+Washington,MUNICIPAL PUBLIC SERVICE,EX,exempt,105,2006-2006
+Washington,CEMETERY-PRIVATE,,unmapped,103,2006-2009
+Washington,900 MiscNotReported,,unmapped,99,2010-2024
+Washington,941,F,"bare code, same code's label",93,2025-2025
+Washington,954 Nursing Homes,,unmapped,93,2017-2024
+Washington,IN LIEU OF TAXES,,unmapped,92,2007-2009
+Washington,HOSPITAL-PRIVATE,,unmapped,90,2006-2009
+Washington,PUBL HUNTING GROUNDS,,unmapped,90,2007-2009
+Washington,"IN LIEU OF TAXES, AS DEFINED BY COUNTY",,unmapped,89,2006-2006
+Washington,337 Comm Serv-Donations Congr Charter,C,commercial,88,2017-2024
+Washington,959,EX,"bare code, same code's label",85,2025-2025
+Washington,STATE ADMINISTERED,,unmapped,81,2006-2009
+Washington,336 Comm Services-Donations,C,commercial,79,2010-2016
+Washington,940 Wetlands/211 Rural Vacant Land,,unmapped,76,2010-2011
+Washington,211 Rural Vacant Land/940 Wetlands,F,farm,74,2010-2011
+Washington,Tax Exempt Miscellaneous (County defined) often Tax Forfeite,EX,exempt,74,2006-2006
+Washington,300 Commercial/100 Res 1 unit,C,commercial,72,2010-2011
+Washington,904 Colleges-Public,EX,exempt,70,2010-2024
+Washington,934 Elderly Liv Fac,,unmapped,69,2010-2018
+Washington,200 Agricultural/211 Rural Vacant Land/940 Wetlands,F,farm,66,2010-2011
+Washington,940 Wetlands/200 Agricultural/211 Rural Vacant Land,,unmapped,63,2010-2011
+Washington,4D 4 OR MORE UNITS,HL,low income rental,62,2007-2009
+Washington,963,EX,"bare code, same code's label",61,2025-2025
+Washington,"CNTY LENFRC,FIRE,ADM",,unmapped,61,2007-2009
+Washington,315 Com Ma & Pa,,unmapped,60,2010-2024
+Washington,211 Rural Vacant Land/200 Agricultural/940 Wetlands,F,farm,55,2010-2011
+Washington,TIMBERLANDS,F,farm,55,2006-2009
+Washington,200 Agricultural/940 Wetlands/211 Rural Vacant Land,F,farm,54,2010-2011
+Washington,"CHURCH-OTHER,RES",EX,exempt,54,2006-2009
+Washington,318 Marina Recreational Land,S,seasonal,52,2011-2024
+Washington,100 Res 1 unit/200 Agricultural/211 Rural Vacant Land,R,residential,50,2010-2011
+Washington,930 ER Shelter,,unmapped,50,2010-2024
+Washington,211 Rural Vacant Land/100 Res 1 unit/200 Agricultural,F,farm,48,2010-2011
+Washington,335 Comm Services-Non Revenue,C,commercial,45,2010-2024
+Washington,211 Rural Vacant Land/940 Wetlands/200 Agricultural,F,farm,43,2010-2011
+Washington,920 Hospital-Public,EX,exempt,42,2010-2024
+Washington,940 Wetlands/140 Res V Land,,unmapped,42,2010-2011
+Washington,320,GC,"bare code, same code's label",41,2025-2025
+Washington,RES 4+ OWNERS VALUE,R,residential,41,2006-2009
+Washington,RES/AG,F,farm,41,2006-2009
+Washington,352 MH Park Class I,,unmapped,39,2018-2024
+Washington,200 Agricultural/940 Wetlands,F,farm,38,2010-2011
+Washington,SPECIAL TAXING DISTRICTS,EX,exempt,38,2006-2006
+Washington,200 Agricultural/211 Rural Vacant Land/100 Res 1 unit,F,farm,37,2010-2011
+Washington,140 Res V Land/940 Wetlands,LR,vacant residential,36,2010-2011
+Washington,"CHURCH,RES",EX,exempt,36,2006-2009
+Washington,"MUNICIPAL LAW ENF,FIRE,ADMIN",EX,exempt,34,2006-2006
+Washington,200 Agricultural/300 Commercial,F,farm,33,2010-2011
+Washington,211 Rural Vacant Land/305 Industrial,F,farm,32,2010-2011
+Washington,911,EX,"bare code, same code's label",32,2025-2025
+Washington,912,,unmapped,31,2025-2025
+Washington,355 Pub Util L & S/365 Pub Util Mach,,unmapped,30,2010-2011
+Washington,937 Arena/BParkNProf,,unmapped,30,2010-2022
+Washington,940,,unmapped,30,2025-2025
+Washington,983,,unmapped,30,2025-2025
+Washington,PUB UTIL ATTH MACH,,unmapped,30,2006-2006
+Washington,PUBLIC HUNTING GROUNDS,EX,exempt,30,2006-2006
+Washington,211 Rural Vacant Land/100 Res 1 unit/940 Wetlands,F,farm,29,2010-2011
+Washington,902,,unmapped,29,2025-2025
+Washington,COMM,C,commercial,29,2009-2009
+Washington,921,,unmapped,28,2025-2025
+Washington,940 Wetlands/211 Rural Vacant Land/200 Agricultural,,unmapped,28,2010-2011
+Washington,982,,unmapped,28,2025-2025
+Washington,COUNTY PUBLIC SERV,EX,exempt,27,2007-2009
+Washington,K-12 SCH-PRIVATE,,unmapped,27,2007-2009
+Washington,RES 4 OR MORE UNITS (PRIOR 4D PROP),HL,low income rental,27,2006-2006
+Washington,100 Res 1 unit/940 Wetlands/211 Rural Vacant Land,R,residential,25,2010-2011
+Washington,105 Res 2-3 units/300 Commercial,TP,2-3 units,25,2010-2011
+Washington,210,F,"bare code, same code's label",24,2025-2025
+Washington,252,F,"bare code, same code's label",24,2025-2025
+Washington,951,,unmapped,24,2025-2025
+Washington,300 Commercial/320 Q Golf Course,C,commercial,23,2010-2011
+Washington,COLLEGE-PUBLIC,EX,exempt,23,2006-2009
+Washington,360,,unmapped,22,2025-2025
+Washington,984,EX,"bare code, same code's label",22,2025-2025
+Washington,305 Industrial/211 Rural Vacant Land,I,industrial,21,2010-2011
+Washington,905 Colleges-Private,,unmapped,21,2010-2024
+Washington,AG HSTD,F,farm,21,2009-2009
+Washington,"COUNTY LAW ENF,FIRE,ADMIN",,unmapped,21,2006-2006
+Washington,940 Wetlands/200 Agricultural,,unmapped,20,2010-2011
+Washington,ACTIVELY FARMING,F,farm,20,2006-2009
+Washington,STUDENT HOUSING,,unmapped,20,2006-2009
+Washington,100 Res 1 unit/211 Rural Vacant Land/200 Agricultural,R,residential,19,2010-2011
+Washington,100 Res 1 unit/211 Rural Vacant Land/940 Wetlands,R,residential,19,2010-2011
+Washington,211 Rural Vacant Land/200 Agricultural/300 Commercial,F,farm,18,2010-2011
+Washington,300 Commercial/200 Agricultural,C,commercial,18,2010-2011
+Washington,EXEMPT LEASED PROP,EX,exempt,18,2007-2009
+Washington,MISC-NOT REPORTED,,unmapped,18,2007-2009
+Washington,955 Co Srvc Other/995 InLieuTx Co D 6,EX,exempt,17,2010-2011
+Washington,956 Muni Srvc Ent/979 T E Misc Co D 20,EX,exempt,17,2010-2011
+Washington,200 Agricultural/100 Res 1 unit/211 Rural Vacant Land,F,farm,16,2010-2011
+Washington,365 Pub Util Mach/355 Pub Util L & S,,unmapped,16,2010-2011
+Washington,979 T E Misc Co D 20/958 Muni Srvc Other,EX,exempt,16,2010-2011
+Washington,979 T E Misc Co D 20/956 Muni Srvc Ent,EX,exempt,15,2010-2011
+Washington,981 State Acquired/300 Commercial,EX,exempt,15,2010-2010
+Washington,995 InLieuTx Co D 6,,unmapped,15,2011-2024
+Washington,995 InLieuTx Co D 6/955 Co Srvc Other,,unmapped,15,2010-2011
+Washington,200 Agricultural/140 Res V Land,F,farm,14,2011-2011
+Washington,932 Charit Inst-Res,EX,exempt,14,2010-2017
+Washington,940 Wetlands/100 Res 1 unit/211 Rural Vacant Land,,unmapped,14,2010-2011
+Washington,211 Rural Vacant Land/940 Wetlands/100 Res 1 unit,F,farm,13,2010-2011
+Washington,200 Agricultural/300 Commercial/211 Rural Vacant Land,F,farm,12,2010-2011
+Washington,300 Commercial/200 Agricultural/211 Rural Vacant Land,C,commercial,12,2010-2011
+Washington,954,,unmapped,12,2025-2025
+Washington,958 Muni Srvc Other/979 T E Misc Co D 20,EX,exempt,12,2010-2011
+Washington,AG PARTNERSHIP,F,farm,12,2006-2009
+Washington,EMERGENCY SHELTERS,,unmapped,12,2006-2009
+Washington,MA & PA RESORTS,S,seasonal,12,2007-2009
+Washington,110 Apt 4+ units/300 Commercial,A,apartment,11,2010-2011
+Washington,200 Agricultural/252 Managed Forest Land,F,farm,11,2010-2011
+Washington,337,C,"bare code, same code's label",11,2025-2025
+Washington,916,EX,"bare code, same code's label",11,2025-2025
+Washington,940 Wetlands/211 Rural Vacant Land/100 Res 1 unit,,unmapped,11,2010-2011
+Washington,COMMUNITY SERVICE,EX,exempt,11,2006-2009
+Washington,140 Res V Land/300 Commercial,LR,vacant residential,10,2010-2011
+Washington,200 Agricultural/100 Res 1 unit/940 Wetlands,F,farm,10,2010-2011
+Washington,211 Rural Vacant Land/300 Commercial/200 Agricultural,F,farm,10,2010-2011
+Washington,917,EX,"bare code, same code's label",10,2025-2025
+Washington,941 ForestParkRefuge/981 State Acquired,F,farm,10,2010-2011
+Washington,953,EX,"bare code, same code's label",10,2025-2025
+Washington,100 Res 1 unit/115 B & B,R,residential,9,2010-2011
+Washington,211 Rural Vacant Land/100 Res 1 unit/200 Agricultural/940 Wetlands,F,farm,9,2010-2011
+Washington,211 Rural Vacant Land/200 Agricultural/100 Res 1 unit,F,farm,9,2010-2011
+Washington,252 Managed Forest Land/100 Res 1 unit,F,farm,9,2010-2011
+Washington,918,EX,"bare code, same code's label",9,2025-2025
+Washington,940 Wetlands/958 Muni Srvc Other,,unmapped,9,2010-2011
+Washington,COUNTY PUBLIC SERVICE,EX,exempt,9,2006-2006
+Washington,"MISC,NONRES-REPORTED",R,residential,9,2007-2009
+Washington,300 Commercial/105 Res 2-3 units,C,commercial,8,2010-2011
+Washington,940 Wetlands/931 Charit Inst,,unmapped,8,2010-2011
+Washington,AG NON-HSTD,F,farm,8,2009-2009
+Washington,COLLEGE-PRIVATE,,unmapped,8,2006-2009
+Washington,K-12 SCHOOLS-PRIVATE,,unmapped,8,2006-2006
+Washington,NONPROFIT COMMUNITY,EX,exempt,8,2008-2009
+Washington,105 Res 2-3 units/200 Agricultural,TP,2-3 units,7,2010-2011
+Washington,115 B & B/100 Res 1 unit,,unmapped,7,2010-2011
+Washington,140 Res V Land/200 Agricultural,LR,vacant residential,7,2010-2011
+Washington,150 Res 1 Unit Short Term Rental,R,residential,7,2021-2021
+Washington,200 Agricultural/211 Rural Vacant Land/300 Commercial,F,farm,7,2010-2011
+Washington,300 Commercial/211 Rural Vacant Land/200 Agricultural,C,commercial,7,2010-2011
+Washington,979 T E Misc Co D 20/950 MiscReported,EX,exempt,7,2011-2011
+Washington,HOSPITAL-PUBLIC,EX,exempt,7,2006-2009
+Washington,LEASED PARCEL OWNED BY EXEMPT ENTITY (TAXED AS PERSONAL PROP,EX,exempt,7,2006-2006
+Washington,100 Res 1 unit/200 Agricultural/940 Wetlands,R,residential,6,2010-2011
+Washington,100 Res 1 unit/931 Charit Inst,R,residential,6,2010-2011
+Washington,100 Res 1 unit/940 Wetlands/200 Agricultural/211 Rural Vacant Land,R,residential,6,2010-2011
+Washington,105 Res 2-3 units/200 Agricultural/210 Ag 2 - 3 Units,TP,2-3 units,6,2010-2011
+Washington,140 Res V Land/305 Industrial,LR,vacant residential,6,2011-2011
+Washington,305 Industrial/140 Res V Land,I,industrial,6,2011-2011
+Washington,958 Muni Srvc Other/940 Wetlands,EX,exempt,6,2010-2011
+Washington,"ICE ARENAS,BASEBALL",,unmapped,6,2007-2009
+Washington,MISC-NOT REPORTED ON ABSTRACT,,unmapped,6,2006-2006
+Washington,WETLANDS,,unmapped,6,2008-2009
+Washington,100 Res 1 unit/200 Agricultural/211 Rural Vacant Land/940 Wetlands,R,residential,5,2010-2011
+Washington,105 Res 2-3 units/200 Agricultural/211 Rural Vacant Land,TP,2-3 units,5,2010-2011
+Washington,105 Res 2-3 units/211 Rural Vacant Land,TP,2-3 units,5,2010-2011
+Washington,210 Ag 2 - 3 Units/211 Rural Vacant Land/105 Res 2-3 units/200 Agricultural,F,farm,5,2010-2010
+Washington,211 Rural Vacant Land/200 Agricultural/100 Res 1 unit/940 Wetlands,F,farm,5,2010-2010
+Washington,211 Rural Vacant Land/200 Agricultural/105 Res 2-3 units,F,farm,5,2010-2011
+Washington,211 Rural Vacant Land/300 Commercial,F,farm,5,2010-2011
+Washington,300 Commercial/140 Res V Land,C,commercial,5,2010-2011
+Washington,300 Commercial/958 Muni Srvc Other,C,commercial,5,2010-2011
+Washington,320 Q Golf Course/300 Commercial,GC,golf,5,2010-2011
+Washington,352,,unmapped,5,2025-2025
+Washington,940 Wetlands/100 Res 1 unit/200 Agricultural/211 Rural Vacant Land,,unmapped,5,2010-2011
+Washington,940 Wetlands/983 Co Admin-TaxForf,,unmapped,5,2010-2011
+Washington,955 Co Srvc Other/940 Wetlands,EX,exempt,5,2011-2011
+Washington,958 Muni Srvc Other/300 Commercial,EX,exempt,5,2010-2011
+Washington,979,EX,"bare code, same code's label",5,2025-2025
+Washington,100 Res 1 unit/252 Managed Forest Land,R,residential,4,2010-2011
+Washington,100 Res 1 unit/940 Wetlands/200 Agricultural,R,residential,4,2010-2011
+Washington,200 Agricultural/100 Res 1 unit/940 Wetlands/211 Rural Vacant Land,F,farm,4,2010-2011
+Washington,200 Agricultural/211 Rural Vacant Land/940 Wetlands/100 Res 1 unit,F,farm,4,2011-2011
+Washington,210 Ag 2 - 3 Units/105 Res 2-3 units/200 Agricultural/211 Rural Vacant Land,F,farm,4,2010-2011
+Washington,211 Rural Vacant Land/105 Res 2-3 units/200 Agricultural/210 Ag 2 - 3 Units,F,farm,4,2010-2011
+Washington,211 Rural Vacant Land/252 Managed Forest Land,F,farm,4,2010-2011
+Washington,300 Commercial/355 Pub Util L & S/365 Pub Util Mach,C,commercial,4,2011-2011
+Washington,300 Commercial/979 T E Misc Co D 20,C,commercial,4,2010-2011
+Washington,320 Q Golf Course/200 Agricultural/211 Rural Vacant Land,GC,golf,4,2011-2011
+Washington,320 Q Golf Course/350 MH Park/300 Commercial,GC,golf,4,2010-2011
+Washington,904,EX,"bare code, same code's label",4,2025-2025
+Washington,931 Charit Inst/100 Res 1 unit,EX,exempt,4,2010-2011
+Washington,940 Wetlands/300 Commercial,,unmapped,4,2010-2011
+Washington,940 Wetlands/955 Co Srvc Other,,unmapped,4,2011-2011
+Washington,940 Wetlands/981 State Acquired,,unmapped,4,2010-2011
+Washington,951 Federal Property/979 T E Misc Co D 20,,unmapped,4,2010-2011
+Washington,955 Co Srvc Other/979 T E Misc Co D 20,EX,exempt,4,2010-2011
+Washington,979 T E Misc Co D 20/931 Charit Inst,EX,exempt,4,2010-2011
+Washington,979 T E Misc Co D 20/955 Co Srvc Other,EX,exempt,4,2010-2011
+Washington,981 State Acquired/940 Wetlands,EX,exempt,4,2010-2011
+Washington,MA & PA RESORTS PRF,S,seasonal,4,2006-2006
+Washington,100 Res 1 unit/200 Agricultural/211 Rural Vacant Land/300 Commercial,R,residential,3,2010-2010
+Washington,105 Res 2-3 units/200 Agricultural/210 Ag 2 - 3 Units/211 Rural Vacant Land,TP,2-3 units,3,2010-2011
+Washington,105 Res 2-3 units/315 Com Ma & Pa,TP,2-3 units,3,2010-2011
+Washington,140 Res V Land/962 T E Misc Co D 3,LR,vacant residential,3,2011-2011
+Washington,200 Agricultural/211 Rural Vacant Land/105 Res 2-3 units/210 Ag 2 - 3 Units,F,farm,3,2011-2011
+Washington,200 Agricultural/915 Church,F,farm,3,2010-2011
+Washington,200 Agricultural/940 Wetlands/100 Res 1 unit,F,farm,3,2010-2011
+Washington,210 Ag 2 - 3 Units/105 Res 2-3 units/200 Agricultural,F,farm,3,2010-2011
+Washington,211 Rural Vacant Land/100 Res 1 unit/940 Wetlands/200 Agricultural,F,farm,3,2011-2011
+Washington,211 Rural Vacant Land/105 Res 2-3 units/200 Agricultural,F,farm,3,2010-2011
+Washington,252 Managed Forest Land/211 Rural Vacant Land,F,farm,3,2010-2011
+Washington,300 Commercial/110 Apt 4+ units,C,commercial,3,2010-2011
+Washington,300 Commercial/211 Rural Vacant Land/100 Res 1 unit,C,commercial,3,2010-2011
+Washington,300 Commercial/318 Marina Recreational Land,C,commercial,3,2011-2011
+Washington,300 Commercial/921 Hospital-Private,C,commercial,3,2010-2011
+Washington,315,,unmapped,3,2025-2025
+Washington,320 Q Golf Course/350 MH Park,GC,golf,3,2010-2011
+Washington,335,C,"bare code, same code's label",3,2025-2025
+Washington,915 Church/100 Res 1 unit,EX,exempt,3,2010-2011
+Washington,915 Church/979 T E Misc Co D 20,EX,exempt,3,2010-2011
+Washington,921 Hospital-Private/300 Commercial,,unmapped,3,2010-2011
+Washington,930,,unmapped,3,2025-2025
+Washington,940 Wetlands/200 Agricultural/100 Res 1 unit,,unmapped,3,2010-2010
+Washington,956 Muni Srvc Ent/300 Commercial,EX,exempt,3,2010-2011
+Washington,979 T E Misc Co D 20/300 Commercial,EX,exempt,3,2010-2011
+Washington,981 State Acquired/941 ForestParkRefuge,EX,exempt,3,2010-2011
+Washington,983 Co Admin-TaxForf/940 Wetlands,,unmapped,3,2010-2011
+Washington,990 InLieuTx Co D 1/110 Apt 4+ units,,unmapped,3,2010-2011
+Washington,"CHARITABLE INS,RES",EX,exempt,3,2007-2009
+Washington,"MISC,NON RES-REPORTED ON ABSTRACT",R,residential,3,2006-2006
+Washington,RES HSTD FRCT,R,residential,3,2009-2009
+Washington,RURAL LAND,,unmapped,3,2009-2009
+Washington,1 - Real Property,,unmapped,2,2010-2010
+Washington,100 Res 1 unit/200 Agricultural/940 Wetlands/211 Rural Vacant Land/300 Comm,R,residential,2,2010-2010
+Washington,100 Res 1 unit/211 Rural Vacant Land/200 Agricultural/300 Commercial,R,residential,2,2011-2011
+Washington,100 Res 1 unit/211 Rural Vacant Land/940 Wetlands/200 Agricultural,R,residential,2,2011-2011
+Washington,100 Res 1 unit/300 Commercial/211 Rural Vacant Land/200 Agricultural,R,residential,2,2011-2011
+Washington,100 Res 1 unit/350 MH Park,R,residential,2,2010-2011
+Washington,100 Res 1 unit/940 Wetlands/211 Rural Vacant Land/200 Agricultural,R,residential,2,2011-2011
+Washington,100 Res 1 unit/981 State Acquired,R,residential,2,2011-2011
+Washington,105 Res 2-3 units/200 Agricultural/100 Res 1 unit/211 Rural Vacant Land,TP,2-3 units,2,2010-2011
+Washington,105 Res 2-3 units/200 Agricultural/940 Wetlands,TP,2-3 units,2,2011-2011
+Washington,125 SRR/940 Wetlands,S,seasonal (SRR),2,2010-2011
+Washington,140 Res V Land/959 Sp Tax District,LR,vacant residential,2,2011-2011
+Washington,155 Res 2-3 Unit Short Term Rental,TP,2-3 units,2,2021-2021
+Washington,200 Agricultural/211 Rural Vacant Land/305 Industrial,F,farm,2,2010-2011
+Washington,200 Agricultural/211 Rural Vacant Land/320 Q Golf Course,F,farm,2,2010-2010
+Washington,200 Agricultural/305 Industrial,F,farm,2,2010-2011
+Washington,200 Agricultural/918 Church - Other,F,farm,2,2010-2011
+Washington,200 Agricultural/940 Wetlands/211 Rural Vacant Land/300 Commercial,F,farm,2,2011-2011
+Washington,200 Agricultural/958 Muni Srvc Other,F,farm,2,2010-2011
+Washington,210 Ag 2 - 3 Units/300 Commercial/105 Res 2-3 units/200 Agricultural/211 Ru,F,farm,2,2011-2011
+Washington,211 Rural Vacant Land/200 Agricultural/125 SRR,F,farm,2,2010-2011
+Washington,211 Rural Vacant Land/200 Agricultural/918 Church - Other,F,farm,2,2010-2011
+Washington,211 Rural Vacant Land/200 Agricultural/940 Wetlands/100 Res 1 unit,F,farm,2,2011-2011
+Washington,211 Rural Vacant Land/940 Wetlands/200 Agricultural/300 Commercial,F,farm,2,2010-2011
+Washington,211 Rural Vacant Land/979 T E Misc Co D 20/200 Agricultural,F,farm,2,2010-2011
+Washington,252 Managed Forest Land/940 Wetlands,F,farm,2,2010-2011
+Washington,300 Commercial/100 Res 1 unit/200 Agricultural/211 Rural Vacant Land,C,commercial,2,2010-2010
+Washington,300 Commercial/115 B & B/100 Res 1 unit,C,commercial,2,2010-2010
+Washington,300 Commercial/252 Managed Forest Land,C,commercial,2,2010-2011
+Washington,300 Commercial/365 Pub Util Mach/355 Pub Util L & S,C,commercial,2,2010-2010
+Washington,300 Commercial/940 Wetlands,C,commercial,2,2010-2010
+Washington,318,S,"bare code, same code's label",2,2025-2025
+Washington,318 Marina Recreational Land/105 Res 2-3 units/300 Commercial,S,seasonal,2,2011-2011
+Washington,318 Marina Recreational Land/300 Commercial,S,seasonal,2,2010-2010
+Washington,318 Marina Recreational Land/300 Commercial/105 Res 2-3 units,S,seasonal,2,2010-2010
+Washington,350 MH Park/100 Res 1 unit,,unmapped,2,2010-2011
+Washington,900,,unmapped,2,2025-2025
+Washington,901 Schools-Public/958 Muni Srvc Other,EX,exempt,2,2011-2011
+Washington,901 Schools-Public/979 T E Misc Co D 20,EX,exempt,2,2010-2011
+Washington,912 Cemetery-Private/918 Church - Other,,unmapped,2,2010-2011
+Washington,915 Church/912 Cemetery-Private/917 Church-Other Res,EX,exempt,2,2010-2010
+Washington,915 Church/917 Church-Other Res/912 Cemetery-Private,EX,exempt,2,2011-2011
+Washington,917 Church-Other Res/915 Church,EX,exempt,2,2010-2011
+Washington,920,EX,"bare code, same code's label",2,2025-2025
+Washington,931 Charit Inst/940 Wetlands,EX,exempt,2,2011-2011
+Washington,934 Elderly Liv Fac/300 Commercial,,unmapped,2,2010-2011
+Washington,940 Wetlands/100 Res 1 unit/200 Agricultural,,unmapped,2,2011-2011
+Washington,940 Wetlands/105 Res 2-3 units/200 Agricultural,,unmapped,2,2010-2010
+Washington,940 Wetlands/211 Rural Vacant Land/200 Agricultural/300 Commercial,,unmapped,2,2010-2010
+Washington,940 Wetlands/300 Commercial/211 Rural Vacant Land/200 Agricultural,,unmapped,2,2011-2011
+Washington,940 Wetlands/305 Industrial,,unmapped,2,2010-2011
+Washington,940 Wetlands/915 Church,,unmapped,2,2010-2011
+Washington,940 Wetlands/962 T E Misc Co D 3,,unmapped,2,2011-2011
+Washington,940 Wetlands/965 T E Misc Co D 6,,unmapped,2,2011-2011
+Washington,955 Co Srvc Other/995 InLieuTx Co D 6/979 T E Misc Co D 20,EX,exempt,2,2010-2011
+Washington,958 Muni Srvc Other/100 Res 1 unit,EX,exempt,2,2010-2011
+Washington,962 T E Misc Co D 3/140 Res V Land,EX,exempt,2,2011-2011
+Washington,962 T E Misc Co D 3/300 Commercial/921 Hospital-Private,EX,exempt,2,2010-2011
+Washington,979 T E Misc Co D 20/901 Schools-Public,EX,exempt,2,2010-2011
+Washington,AG HSTD FRCT,F,farm,2,2009-2009
+Washington,APT,A,apartment,2,2009-2009
+Washington,INDUST,I,industrial,2,2009-2009
+Washington,SEASONAL,S,seasonal,2,2009-2009
+Washington,100 Res 1 unit/115 B & B/300 Commercial,R,residential,1,2011-2011
+Washington,100 Res 1 unit/140 Res V Land,R,residential,1,2010-2010
+Washington,100 Res 1 unit/200 Agricultural/300 Commercial,R,residential,1,2011-2011
+Washington,100 Res 1 unit/200 Agricultural/940 Wetlands/211 Rural Vacant Land,R,residential,1,2010-2010
+Washington,100 Res 1 unit/211 Rural Vacant Land/200 Agricultural/940 Wetlands,R,residential,1,2010-2010
+Washington,100 Res 1 unit/211 Rural Vacant Land/300 Commercial,R,residential,1,2010-2010
+Washington,100 Res 1 unit/211 Rural Vacant Land/940 Wetlands/300 Commercial,R,residential,1,2011-2011
+Washington,100 Res 1 unit/211 Rural Vacant Land/979 T E Misc Co D 20,R,residential,1,2011-2011
+Washington,100 Res 1 unit/252 Managed Forest Land/940 Wetlands,R,residential,1,2011-2011
+Washington,100 Res 1 unit/300 Commercial/200 Agricultural,R,residential,1,2011-2011
+Washington,100 Res 1 unit/300 Commercial/200 Agricultural/940 Wetlands,R,residential,1,2011-2011
+Washington,100 Res 1 unit/300 Commercial/211 Rural Vacant Land,R,residential,1,2011-2011
+Washington,100 Res 1 unit/300 Commercial/211 Rural Vacant Land/940 Wetlands/200 Agricu,R,residential,1,2011-2011
+Washington,100 Res 1 unit/979 T E Misc Co D 20,R,residential,1,2010-2010
+Washington,105 Res 2-3 units/100 Res 1 unit/211 Rural Vacant Land/200 Agricultural,TP,2-3 units,1,2010-2010
+Washington,105 Res 2-3 units/115 B & B/300 Commercial,TP,2-3 units,1,2010-2010
+Washington,105 Res 2-3 units/125 SRR,TP,2-3 units,1,2010-2010
+Washington,105 Res 2-3 units/200 Agricultural/918 Church - Other,TP,2-3 units,1,2010-2010
+Washington,105 Res 2-3 units/211 Rural Vacant Land/300 Commercial,TP,2-3 units,1,2011-2011
+Washington,105 Res 2-3 units/211 Rural Vacant Land/940 Wetlands,TP,2-3 units,1,2010-2010
+Washington,105 Res 2-3 units/940 Wetlands,TP,2-3 units,1,2010-2010
+Washington,105 Res 2-3 units/940 Wetlands/211 Rural Vacant Land,TP,2-3 units,1,2010-2010
+Washington,110 Apt 4+ units/940 Wetlands,A,apartment,1,2011-2011
+Washington,110 Apt 4+ units/990 InLieuTx Co D 1,A,apartment,1,2010-2010
+Washington,115 B & B/100 Res 1 unit/300 Commercial,,unmapped,1,2011-2011
+Washington,125 SRR/105 Res 2-3 units,S,seasonal (SRR),1,2011-2011
+Washington,125 SRR/200 Agricultural/211 Rural Vacant Land,S,seasonal (SRR),1,2010-2010
+Washington,125 SRR/200 Agricultural/940 Wetlands,S,seasonal (SRR),1,2010-2010
+Washington,125 SRR/211 Rural Vacant Land/200 Agricultural,S,seasonal (SRR),1,2011-2011
+Washington,140 Res V Land/100 Res 1 unit,LR,vacant residential,1,2011-2011
+Washington,140 Res V Land/211 Rural Vacant Land/200 Agricultural,LR,vacant residential,1,2011-2011
+Washington,200 Agricultural/100 Res 1 unit/300 Commercial,F,farm,1,2010-2010
+Washington,200 Agricultural/105 Res 2-3 units/210 Ag 2 - 3 Units/211 Rural Vacant Land,F,farm,1,2010-2010
+Washington,200 Agricultural/105 Res 2-3 units/211 Rural Vacant Land/100 Res 1 unit,F,farm,1,2011-2011
+Washington,200 Agricultural/125 SRR/211 Rural Vacant Land,F,farm,1,2011-2011
+Washington,200 Agricultural/210 Ag 2 - 3 Units/211 Rural Vacant Land/105 Res 2-3 units,F,farm,1,2011-2011
+Washington,200 Agricultural/211 Rural Vacant Land/100 Res 1 unit/300 Commercial,F,farm,1,2011-2011
+Washington,200 Agricultural/211 Rural Vacant Land/125 SRR,F,farm,1,2010-2010
+Washington,200 Agricultural/300 Commercial/211 Rural Vacant Land/940 Wetlands,F,farm,1,2011-2011
+Washington,200 Agricultural/305 Industrial/211 Rural Vacant Land,F,farm,1,2011-2011
+Washington,200 Agricultural/918 Church - Other/105 Res 2-3 units,F,farm,1,2011-2011
+Washington,200 Agricultural/940 Wetlands/100 Res 1 unit/211 Rural Vacant Land,F,farm,1,2010-2010
+Washington,200 Agricultural/940 Wetlands/300 Commercial/211 Rural Vacant Land,F,farm,1,2010-2010
+Washington,210 Ag 2 - 3 Units/105 Res 2-3 units/211 Rural Vacant Land/200 Agricultural,F,farm,1,2010-2010
+Washington,210 Ag 2 - 3 Units/200 Agricultural/105 Res 2-3 units,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/100 Res 1 unit/300 Commercial,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/105 Res 2-3 units,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/105 Res 2-3 units/200 Agricultural/100 Res 1 unit,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/105 Res 2-3 units/200 Agricultural/300 Commercial,F,farm,1,2011-2011
+Washington,211 Rural Vacant Land/105 Res 2-3 units/940 Wetlands,F,farm,1,2011-2011
+Washington,211 Rural Vacant Land/105 Res 2-3 units/940 Wetlands/125 SRR,F,farm,1,2011-2011
+Washington,211 Rural Vacant Land/125 SRR/105 Res 2-3 units/940 Wetlands,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/200 Agricultural/105 Res 2-3 units/300 Commercial,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/200 Agricultural/305 Industrial,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/200 Agricultural/940 Wetlands/100 Res 1 unit/300 Comm,F,farm,1,2011-2011
+Washington,211 Rural Vacant Land/200 Agricultural/940 Wetlands/300 Commercial,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/350 MH Park,F,farm,1,2010-2010
+Washington,211 Rural Vacant Land/940 Wetlands/100 Res 1 unit/200 Agricultural,F,farm,1,2011-2011
+Washington,252 Managed Forest Land/200 Agricultural,F,farm,1,2011-2011
+Washington,300 Commercial/100 Res 1 unit/115 B & B,C,commercial,1,2011-2011
+Washington,300 Commercial/100 Res 1 unit/200 Agricultural,C,commercial,1,2010-2010
+Washington,300 Commercial/105 Res 2-3 units/211 Rural Vacant Land,C,commercial,1,2010-2010
+Washington,300 Commercial/200 Agricultural/100 Res 1 unit,C,commercial,1,2011-2011
+Washington,300 Commercial/200 Agricultural/940 Wetlands/211 Rural Vacant Land,C,commercial,1,2010-2010
+Washington,300 Commercial/211 Rural Vacant Land,C,commercial,1,2011-2011
+Washington,300 Commercial/211 Rural Vacant Land/940 Wetlands/100 Res 1 unit,C,commercial,1,2010-2010
+Washington,300 Commercial/350 MH Park,C,commercial,1,2010-2010
+Washington,300 Commercial/915 Church,C,commercial,1,2011-2011
+Washington,300 Commercial/918 Church - Other,C,commercial,1,2011-2011
+Washington,300 Commercial/921 Hospital-Private/940 Wetlands,C,commercial,1,2011-2011
+Washington,300 Commercial/931 Charit Inst,C,commercial,1,2011-2011
+Washington,300 Commercial/955 Co Srvc Other,C,commercial,1,2010-2010
+Washington,300 Commercial/959 Sp Tax District,C,commercial,1,2011-2011
+Washington,300 Commercial/962 T E Misc Co D 3,C,commercial,1,2010-2010
+Washington,305 Industrial/100 Res 1 unit/211 Rural Vacant Land,I,industrial,1,2011-2011
+Washington,305 Industrial/200 Agricultural,I,industrial,1,2011-2011
+Washington,305 Industrial/211 Rural Vacant Land/100 Res 1 unit,I,industrial,1,2010-2010
+Washington,310 Com SRR/125 SRR,S,seasonal (SRR),1,2011-2011
+Washington,315 Com Ma & Pa/105 Res 2-3 units,,unmapped,1,2010-2010
+Washington,336 Comm Services-Donations/300 Commercial,C,commercial,1,2011-2011
+Washington,350 MH Park/211 Rural Vacant Land,,unmapped,1,2011-2011
+Washington,350 MH Park/300 Commercial,,unmapped,1,2011-2011
+Washington,350 MH Park/320 Q Golf Course,,unmapped,1,2010-2010
+Washington,355,,unmapped,1,2025-2025
+Washington,355 Pub Util L & S/300 Commercial/365 Pub Util Mach,,unmapped,1,2010-2010
+Washington,355 Pub Util L & S/365 Pub Util Mach/300 Commercial,,unmapped,1,2010-2010
+Washington,355 Pub Util L & S/365 Pub Util Mach/300 Commercial/370 Pub Util El Gen Mac,,unmapped,1,2010-2010
+Washington,355 Pub Util L & S/365 Pub Util Mach/370 Pub Util El Gen Mach/300 Commercia,,unmapped,1,2011-2011
+Washington,900 MiscNotReported/940 Wetlands,,unmapped,1,2011-2011
+Washington,905,,unmapped,1,2025-2025
+Washington,906 Schools-Pub Res,R,residential,1,2024-2024
+Washington,915 Church/140 Res V Land/918 Church - Other,EX,exempt,1,2010-2010
+Washington,915 Church/200 Agricultural,EX,exempt,1,2010-2010
+Washington,915 Church/912 Cemetery-Private/916 Church-Residence,EX,exempt,1,2011-2011
+Washington,916 Church-Residence/915 Church/912 Cemetery-Private,EX,exempt,1,2010-2010
+Washington,917 Church-Other Res/918 Church - Other,EX,exempt,1,2010-2010
+Washington,918 Church - Other/140 Res V Land/915 Church,EX,exempt,1,2011-2011
+Washington,918 Church - Other/300 Commercial,EX,exempt,1,2010-2010
+Washington,918 Church - Other/912 Cemetery-Private,EX,exempt,1,2011-2011
+Washington,918 Church - Other/917 Church-Other Res,EX,exempt,1,2011-2011
+Washington,931 Charit Inst/300 Commercial,EX,exempt,1,2010-2010
+Washington,937,,unmapped,1,2025-2025
+Washington,937 Arena/BParkNProf/979 T E Misc Co D 20,EX,exempt,1,2011-2011
+Washington,940 Wetlands/100 Res 1 unit/300 Commercial/211 Rural Vacant Land,,unmapped,1,2011-2011
+Washington,940 Wetlands/105 Res 2-3 units,,unmapped,1,2011-2011
+Washington,940 Wetlands/105 Res 2-3 units/200 Agricultural/210 Ag 2 - 3 Units,,unmapped,1,2011-2011
+Washington,940 Wetlands/140 Res V Land/300 Commercial,,unmapped,1,2010-2010
+Washington,940 Wetlands/200 Agricultural/100 Res 1 unit/211 Rural Vacant Land,,unmapped,1,2011-2011
+Washington,940 Wetlands/200 Agricultural/125 SRR,,unmapped,1,2011-2011
+Washington,940 Wetlands/200 Agricultural/211 Rural Vacant Land/100 Res 1 unit,,unmapped,1,2011-2011
+Washington,940 Wetlands/211 Rural Vacant Land/200 Agricultural/100 Res 1 unit,,unmapped,1,2011-2011
+Washington,940 Wetlands/300 Commercial/921 Hospital-Private,,unmapped,1,2010-2010
+Washington,940 Wetlands/956 Muni Srvc Ent,,unmapped,1,2011-2011
+Washington,950 MiscReported/979 T E Misc Co D 20,,unmapped,1,2011-2011
+Washington,952 State Property/981 State Acquired,EX,exempt,1,2010-2010
+Washington,955 Co Srvc Other/300 Commercial,EX,exempt,1,2011-2011
+Washington,958 Muni Srvc Other/965 T E Misc Co D 6,EX,exempt,1,2010-2010
+Washington,959 Sp Tax District/300 Commercial,EX,exempt,1,2010-2010
+Washington,959 Sp Tax District/940 Wetlands,EX,exempt,1,2011-2011
+Washington,965 T E Misc Co D 6/958 Muni Srvc Other,EX,exempt,1,2011-2011
+Washington,979 T E Misc Co D 20/100 Res 1 unit,EX,exempt,1,2011-2011
+Washington,979 T E Misc Co D 20/200 Agricultural/211 Rural Vacant Land,EX,exempt,1,2010-2010
+Washington,979 T E Misc Co D 20/211 Rural Vacant Land/200 Agricultural,EX,exempt,1,2011-2011
+Washington,979 T E Misc Co D 20/915 Church,EX,exempt,1,2010-2010
+Washington,979 T E Misc Co D 20/940 Wetlands,EX,exempt,1,2011-2011
+Washington,981 State Acquired/100 Res 1 unit,EX,exempt,1,2010-2010
+Washington,981 State Acquired/952 State Property,EX,exempt,1,2011-2011
+Washington,989 30% DNR-RentPmt,,unmapped,1,2012-2012
+Washington,995,,unmapped,1,2025-2025
+Washington,"ICE ARENAS,BASEBALL PARKS",,unmapped,1,2006-2006

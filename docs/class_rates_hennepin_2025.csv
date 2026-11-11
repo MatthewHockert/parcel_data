@@ -1,0 +1,57 @@
+prop_type,description,class_homestead,class_nonhomestead,prism_homestead,prism_nonhomestead,state_general_tax,fiscal_disparities,referendum_exclusion,hmstd_bdp_rate,hmstd_base1_rate,hmstd_over_rate,nonhmstd_rate,nonhmstd_over_rate,nonhmstd_mach_rate,limit_bdp,limit_base1,note
+A,Apartment,1a,4a,D10,D33,,,,,1.00,1.25,1.25,,,,500000,
+AX,Apartment Condominium,1a,4a,D10,D33,,,,,1.00,1.25,1.25,,,,500000,
+B,Blind,1b,,D20,(D40),,,55% of 1st 50000,0.45,1.00,1.25,1.00,1.25,,50000,450000,
+BF,Blind/Farm-Homestead,1b,,A21,D20,,,55% of 1st 50000,0.45,1.00,1.25,1.00,1.25,,50000,450000,
+BJ,Blind Joint Tenancy,1b,,D20,D31,,,55% of 1st 25000,0.45,1.00,1.25,1.00,1.25,,25000,475000,
+C,Commercial,,3a,,J10,Y (5),Y,,,,,1.50,2.00,,,150000,(7)
+CR,Railroad,,3a,,L00,Y (6),Y,,,,,2.00,,,,,
+D,Disabled,1b,,D20,(D40),,,55% of 1st 50000,0.45,1.00,1.25,1.00,1.25,,50000,450000,
+DB,Double Bungalow,1a,4b(1),D10,D32,,,,,1.00,1.25,1.25,,,,500000,
+DF,Disabled/Farm-Homestead,1b,,A21,D20,,,55% of 1st 50000,0.45,1.00,1.25,1.00,1.25,,50000,450000,
+DJ,Disabled Joint Tenancy,1b,,D20,D31,,,55% of 1st 25000,0.45,1.00,1.25,1.00,1.25,,25000,475000,
+F,Farm,2a/2b,2a/2b,A12,A43,,,Y,,0.50,1.00,1.00,,,,3800000,
+FF,Farm - Hmstd (House & 1 Acre),2a,,A11,(D40),,,,,1.00,1.25,1.00,1.25,,,500000,
+FH,Farm - Migrant Housing,,1d,,A42,,,,,,,1.00,1.25,,,500000,
+FM,Farm - Non Hmstd Multi Unit,,4b(3),,D38,,,,,,,1.25,,,,,
+FP,Farm - Agricultural Preserve,2a,2a,A12,A43,,,Y,,0.50,1.00,1.00,,,,3800000,
+GC,Golf Course - Reduced Rate,,4c(2),,I10,,Y,,,,,1.25,,,,,
+HA,Hangar Airport (Personal Property),,4c(7),,M20,,,,,,,1.50,,,,,
+HF,Sorority/Fraternity Housing,,4c(4),,D34,,,Y,,,,1.00,,,,,
+HL,Housing - Low Income > 3 Units,,4d(1),,D43,,,75%,,,,0.25,,,,,
+HR,Housing - Low Income < 4 Units,,4d(1),,D43,,,75%,,,,0.25,,,,,
+HT,Housing - Community Land Trust (single family),4d(2),4bb,D44,D40,,,25%,,0.75,0.75,1.00,1.25,,,500000,
+HX,Housing - Community Land Trust (multi family),4d(2),4b(1),D44,D32,,,25%,,0.75,0.75,1.25,,,,,
+I,Industrial,,3a,,J20,Y (5),Y,,,,,1.50,2.00,,,150000,(7)
+K,Common Area (No Value),,4b(1),,D32,,,,,,,,,,,,rate shown as -----
+LA,Vacant Land - Apartment,,4a,,D33,,,,,,,1.25,,,,,
+LC,Vacant Land - Commercial,,3a,,J10,Y (5),Y,,,,,1.50,2.00,,,150000,(7)
+LF,Vacant Land - Rural Farm,2b,2b,B10,B50,,,Y,,0.50,1.00,1.00,,,,3800000,(8)
+LI,Vacant Land - Industrial,,3a,,J20,Y (5),Y,,,,,1.50,2.00,,,150000,(7)
+LL,Vacant Land - Lakeshore,1a,4b(4),D10,D32,,,,,1.00,1.25,1.25,,,,500000,
+LM,Vacant Land - Managed Forrest,,2c,,B40,,,Y,,,,0.65,,,,,
+LR,Vacant Land - Residential,1a,4b(4),D10,D37,,,,,1.00,1.25,1.25,,,,500000,
+LV,Vacant Land - Rural Residential,,2b,(D10),B50,,,Y,,,,1.00,,,,,
+ME,Manufactured Home Park - EDU Cert,,4c(5)(iii),,E40,,,,,,,1.00,,,,,
+MH,Manufactured Home Park,,4c(5)(i),,E30,,,,,,,1.25,,,,,
+NC,Chartered Veteran's Org (Donation),,4c(3)(ii),,I45,Y (4),Y,,,,,1.00,,,,,
+ND,Community Org (Donation),,4c(3)(ii),,I40,Y (4),Y,,,,,1.50,,,,,
+NH,Med/Care Facility,,4a,,D33,,,,,,,1.25,,,,500000,
+NI,Chartered Veteran's Org (Non Revenue),,4c(3)(i),,I35,,Y,,,,,1.00,,,,,
+NP,Community Org (Non Revenue),,4c(3)(i),,I30,,Y,,,,,1.50,,,,,
+R,Residential,1a,4bb,D10,D40,,,,,1.00,1.25,1.00,1.25,,,500000,
+RL,Residential - Lake Shore,1a,4bb,D10,D40,,,,,1.00,1.25,1.00,1.25,,,500000,
+RM,Residential - Misc/ B&B / Multiple,1a,4b/4c(9),D10,D32/I70,,,,,1.00,1.25,1.25,,,,500000,
+RZ,Residential-Zero Lot Line-DB,1a,4bb,D10,D40,,,,,1.00,1.25,1.00,1.25,,,500000,
+S,Seasonal Residential Rec.,,4c(12),,H20,Y (2),,Y,,,,1.00,1.25,,,500000,
+SC,Social Club (Mpls only),,4c(1),,I20,,Y,,,,,1.25,,,,,
+SL,Seasonal Lakeshore Restaurant,,4c(10),,I50,,Y,,,,,1.25,,,,,
+SM,Seasonal Marina,,4c(11),,I60,,Y,,,,,1.00,1.25,,,500000,(7)
+SR,Non 4BB Compliant (Mpls only),,4b(1),(D10),D32,,,,,,,1.25,,,,,
+TP,Triplex,1a,4b(1),D10,D32,,,,,1.00,1.25,1.25,,,,500000,
+U,Utility,,3a,,K,Y (3)(5)(6),Y,,,,,1.50,2.00,2.00,,150000,(7)
+X,Condominium (also Market Rate Cooperative),1a,4bb,D10,D40,,,,,1.00,1.25,1.00,1.25,,,500000,
+XC,Cooperative (Limited Equity),1a,4b(1),D10,D32,,,,,1.00,1.25,1.25,,,,500000,
+XM,Condo - Garage/Miscellaneous,1a,4bb,D10,D32,,,,,1.00,1.25,1.00,1.25,,,500000,
+Y,Townhouse,1a,4bb,D10,D40,,,,,1.00,1.25,1.00,1.25,,,500000,
+EX,Exempt (not in the source table),,5e,,,,,,,,,0.00,,,,,added: tax-exempt property has no tax capacity

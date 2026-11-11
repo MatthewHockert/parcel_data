@@ -308,3 +308,20 @@ Remaining after it reports:
   - Known: names = "original" reproduces the dtypes of pyogrio 0.10, which built the manifests.
     Under pyogrio 0.13 read_file() parses shapefile dates such as "0000/00/00" that 0.10
     returned as text, so those columns differ in type, not in value.
+
+## 2026-11-11: known gaps, parcel_columns() empty flags, estimate_tax_cap()
+- A session using the store found Ramsey 2005 emv_land / emv_bldg are 0 county-wide. Confirmed
+  in the published shapefile (the store keeps values as published). code/13_known_gaps.py now
+  lists every published column that is entirely blank or zero in a year x county, for both
+  layers: docs/known_gaps.csv, 6,526 cells. Notable: Ramsey tax_capac 0 for 2005-2020 and
+  blank 2021, Hennepin fin_sq_ft and num_units 0 for 2018-2025, Scott tax_capac 0 most years.
+- parcel_columns() gained empty_in (standardized view) and empty (original view), R and Python
+  identical.
+- estimate_tax_cap() (R and Python, identical output): net tax capacity from emv_total,
+  property type and homestead status, with Hennepin's 2025-assessment class rate table
+  (docs/class_rates_hennepin_2025.csv, hand-transcribed from Report T99SS01, payable 2026) and
+  the 2025 homestead market value exclusion. Matt asked for it with a warning that the rates
+  are 2025 for every year. County labels mapped to property types by keyword rules in
+  code/14_use_class_map.py (docs/use_class_map.csv, a judgment call, review per county).
+  Check: Hennepin 2025 file 94.7% of parcels within 1% of published tax_capac, total 0.993.
+  Earlier years and other counties drift (docs/tax_capacity.md).

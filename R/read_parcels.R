@@ -42,6 +42,7 @@ PARCEL_XWALK_POINTS <- file.path(PARCEL_HOME, "docs", "points_column_crosswalk.c
 PARCEL_CRS   <- 26915
 source(file.path(PARCEL_HOME, "R", "download_parcels.R"))   # download_parcels(): get years from Zenodo
 source(file.path(PARCEL_HOME, "R", "parcel_columns.R"))     # parcel_columns(): list columns without reading data
+source(file.path(PARCEL_HOME, "R", "estimate_tax_cap.R"))   # estimate_tax_cap(): net tax capacity from 2025 class rates
 PARCEL_SHP_SCHEMA <- file.path(PARCEL_HOME, "docs", "shapefile_schema.csv")
 ## as_shapefile = TRUE (names = "original", years 2021 or 2024): the store
 ## holds those years from the GeoPackage / geodatabase, which keep more than

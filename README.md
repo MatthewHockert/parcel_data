@@ -36,7 +36,18 @@ parcel_columns(2014:2016, "Ramsey")                 # columns recorded in those 
 parcel_columns(2016, "Ramsey", names = "original")  # that file's own field names, in order
 ```
 
-Python takes the same arguments: `from read_parcels import parcel_columns`.
+Python takes the same arguments: `from read_parcels import parcel_columns`. Its `empty_in` column lists where a column was published but entirely blank or zero (for example `emv_land` in Ramsey 2005). The full list is `docs/known_gaps.csv`, made by `code/13_known_gaps.py`.
+
+### Estimating net tax capacity
+
+Some counties did not publish tax capacity for many years (Ramsey `tax_capac` is 0 for 2005-2020). `estimate_tax_cap()` fills it in from market value, property type and homestead status, using Hennepin County's 2025-assessment class rates.
+
+```r
+p <- read_parcels(2005:2020, "Ramsey", cols = c("pin", "use_class1", "homestead", "emv_total"))
+p <- estimate_tax_cap(p)   # adds prop_type, homestead_status, tmv_est, tax_capac_est
+```
+
+**Warning:** the 2025 rates are applied to every year, so earlier years are priced as if 2025 law applied. On Hennepin's 2025 file the estimate is within 1% for 94.7% of parcels, and it drifts in earlier years. Prefer a county's published `tax_capac` where it exists. Method, rate table and checks: `docs/tax_capacity.md`.
 
 ```r
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
@@ -68,6 +79,8 @@ Users of the data only need Setup. These scripts built the store from the raw re
 | 6 | `code/07_points_store.R` | Build the Points store from the county-published Points layers. |
 | 7 | `code/08_verify_points.R` | Check every Points partition against its source (`docs/points_verification.csv`). |
 | 8 | `code/11_zenodo_package.sh` | Package the store into the Zenodo zips and checksums. |
+| 9 | `code/13_known_gaps.py` | List every column that is entirely blank or zero in a year and county (`docs/known_gaps.csv`). |
+| 10 | `code/14_use_class_map.py` | Map each county's `use_class1` labels to a property type for `estimate_tax_cap()` (`docs/use_class_map.csv`). |
 
 `code/06`, `09`, `10` and `12` are local disk-cleanup tools that removed duplicate copies of the parcel files from other projects once they read the store.
 
@@ -85,7 +98,7 @@ The source data are public domain under the Minnesota Government Data Practices 
 
 ## Folders
 
-- `R/` the R reader (`read_parcels.R`), the downloader (`download_parcels.R`), the column lister (`parcel_columns.R`), `collapse_condos.R` and `verify_read.R`.
+- `R/` the R reader (`read_parcels.R`), the downloader (`download_parcels.R`), the column lister (`parcel_columns.R`), the tax capacity estimator (`estimate_tax_cap.R`), `collapse_condos.R` and `verify_read.R`.
 - `python/` the Python reader and downloader with the same options, plus the dtype manifests the `names = "original"` view needs.
 - `code/` the build and cleanup scripts above.
 - `verification/` per-project checks that each repointed script reads identical data from the store.

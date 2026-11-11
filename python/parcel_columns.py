@@ -64,9 +64,28 @@ def parcel_columns(years=None, counties=None, layer="polygons", names="standardi
     if not len(xw):
         raise ValueError("no columns for those years / counties (years are 2005-2025)")
 
+    gaps = pd.read_csv(os.path.join(docs, "known_gaps.csv"))
+    gaps = gaps[gaps.layer == layer]
+    if years is not None:
+        gaps = gaps[gaps.year.isin([int(y) for y in years])]
+    if counties is not None:
+        gaps = gaps[gaps.county.isin(counties)]
+
     if names == "original":
+        g = dict(zip(gaps.column, gaps.issue))
         return pd.DataFrame({"column": xw.original_name.values, "std_name": xw.std_name.values,
-                             "type": xw.r_type.values})
+                             "type": xw.r_type.values,
+                             "empty": [g.get(s, "") for s in xw.std_name.values]})
+
+    # where the column was published but entirely blank or zero (docs/known_gaps.csv)
+    def empty_in(col):
+        g = gaps[gaps.column == col]
+        if not len(g):
+            return ""
+        parts = []
+        for (cty, iss), d in g.sort_values(["county", "issue", "year"]).groupby(["county", "issue"], sort=True):
+            parts.append(f"{cty} {_year_ranges(d.year)} ({iss.replace('all ', '')})")
+        return "; ".join(parts)
 
     # the type read_parcels() returns, from every year's types: text only -> character,
     # dates -> POSIXct (stored as UTC timestamps), anything numeric -> numeric
@@ -85,11 +104,13 @@ def parcel_columns(years=None, counties=None, layer="polygons", names="standardi
     rows = []
     for std, d in xw.groupby("std_name", sort=True):
         rows.append({"column": std, "type": types[std], "years": _year_ranges(d.year),
-                     "original_names": ", ".join(pd.unique(d.original_name))})
+                     "original_names": ", ".join(pd.unique(d.original_name)),
+                     "empty_in": empty_in(std)})
     out = pd.DataFrame(rows)
     # columns stored as numbers in some years and text in others keep a <col>_raw text copy
-    raw = out[out.column.isin(mixed_all)].assign(column=lambda d: d.column + "_raw", type="character")
+    raw = out[out.column.isin(mixed_all)].assign(column=lambda d: d.column + "_raw", type="character", empty_in="")
     out = pd.concat([out, raw], ignore_index=True).sort_values("column", kind="stable")
     ids = pd.DataFrame({"column": ["year", "county"], "type": ["integer", "character"],
-                        "years": _year_ranges(xw.year), "original_names": "(added by read_parcels)"})
+                        "years": _year_ranges(xw.year), "original_names": "(added by read_parcels)",
+                        "empty_in": ""})
     return pd.concat([ids, out], ignore_index=True)
