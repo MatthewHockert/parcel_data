@@ -47,7 +47,7 @@ p <- read_parcels(2005:2020, "Ramsey", cols = c("pin", "use_class1", "homestead"
 p <- estimate_tax_cap(p)   # adds prop_type, homestead_status, tmv_est, tax_capac_est
 ```
 
-**Warning:** the 2025 rates are applied to every year, so earlier years are priced as if 2025 law applied. On Hennepin's 2025 file the estimate is within 1% for 94.7% of parcels, and it drifts in earlier years. Prefer a county's published `tax_capac` where it exists. Method, rate table and checks: `docs/tax_capacity.md`.
+**Warning:** the 2025 class rates are applied to every year, so earlier years are priced at 2025 rates. The homestead exclusion and each county's value timing do follow the year. Across every county-year with published values, a median 86-93% of parcels are within 1%, except Ramsey, whose published values look wrong. Dakota and Carver publish commercial-industrial tax capacity after the fiscal disparities contribution, and the estimate is before it. Prefer a county's published `tax_capac` where it exists. Method, rate table and checks: `docs/tax_capacity.md`.
 
 ```r
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
@@ -81,6 +81,7 @@ Users of the data only need Setup. These scripts built the store from the raw re
 | 8 | `code/11_zenodo_package.sh` | Package the store into the Zenodo zips and checksums. |
 | 9 | `code/13_known_gaps.py` | List every column that is entirely blank or zero in a year and county (`docs/known_gaps.csv`). |
 | 10 | `code/14_use_class_map.py` | Map each county's `use_class1` labels to a property type for `estimate_tax_cap()` (`docs/use_class_map.csv`). |
+| 11 | `code/15_check_tax_cap.R` | Compare `estimate_tax_cap()` with every county-year's published tax capacity (`docs/tax_capacity_check.csv`). |
 
 `code/06`, `09`, `10` and `12` are local disk-cleanup tools that removed duplicate copies of the parcel files from other projects once they read the store.
 

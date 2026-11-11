@@ -2,11 +2,11 @@
 
     from read_parcels import read_parcels, estimate_tax_cap
     p = read_parcels(list(range(2005, 2021)), "Ramsey", cols=["pin", "use_class1", "homestead", "emv_total"])
-    p = estimate_tax_cap(p)     # adds prop_type, homestead_status, tmv_est, tax_capac_est
+    p = estimate_tax_cap(p)     # adds prop_type, homestead_status, payable_year, tmv_est, tax_capac_est
 
-WARNING: the rates are Hennepin County's table for the 2025 assessment (taxes payable
-2026, docs/class_rates_hennepin_2025.csv), applied to every year. Earlier years are priced
-as if 2025 law applied. Use it to fill gaps, and prefer the county's tax_capac where published.
+WARNING: the class rates are Hennepin County's table for the 2025 assessment (taxes payable
+2026, docs/class_rates_hennepin_2025.csv), applied to every year, so earlier years are
+priced at 2025 rates. Only the homestead exclusion follows the year. Use it to fill gaps, and prefer the county's tax_capac where published.
 See R/estimate_tax_cap.R for the steps.
 """
 import os
@@ -18,7 +18,7 @@ _HOME_DEFAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def estimate_tax_cap(x, value="emv_total", homestead_exclusion=True):
-    need = ["county", "use_class1", "homestead", value]
+    need = ["year", "county", "use_class1", "homestead", value]
     miss = [c for c in need if c not in x.columns]
     if miss:
         raise ValueError(f"estimate_tax_cap needs columns: {', '.join(miss)} (read with names='standardized')")
@@ -27,7 +27,7 @@ def estimate_tax_cap(x, value="emv_total", homestead_exclusion=True):
     umap = pd.read_csv(os.path.join(home, "docs", "use_class_map.csv"), keep_default_na=False,
                        na_values={"prop_type": [""]})
     warnings.warn("estimate_tax_cap: Hennepin 2025-assessment class rates applied to every year; "
-                  "earlier years are priced as if 2025 law applied", stacklevel=2)
+                  "earlier years are priced at 2025 rates (the homestead exclusion follows the year)", stacklevel=2)
 
     lut = dict(zip(zip(umap.county, umap.use_class1.astype(str)), umap.prop_type))
     uc = x["use_class1"].astype(object).where(x["use_class1"].notna(), "NA").astype(str)
@@ -41,12 +41,18 @@ def estimate_tax_cap(x, value="emv_total", homestead_exclusion=True):
                        ["homestead", "partial", "non-homestead"], "unknown")
     hm = np.isin(status, ["homestead", "partial"]) & r["hmstd_base1_rate"].notna().to_numpy()
 
+    # the taxes-payable year the value is for: file year + the county's fitted offset
+    offset = np.where(x["county"].astype(str).isin(["Hennepin", "Ramsey"]).to_numpy(), 0, 1)
+    payable = pd.to_numeric(x["year"].astype(str), errors="coerce").to_numpy(dtype=float) + offset
+
     v = pd.to_numeric(x[value], errors="coerce").to_numpy(dtype=float)
     excl = np.zeros(len(x))
     if homestead_exclusion:
-        elig = hm & r["class_homestead"].astype(str).str[:2].isin(["1a", "1b", "2a"]).to_numpy()
-        e = np.where(v <= 95000, 0.40 * v, np.maximum(0, 38000 - 0.09 * (v - 95000)))
-        excl = np.where(elig & ~np.isnan(v), e, 0.0)
+        elig = hm & (r["class_homestead"].astype(str).str[:2].isin(["1a", "1b"]).to_numpy() |
+                     (pt.to_numpy() == "FF"))
+        cap = np.where(payable >= 2025, 95000.0, 76000.0)  # value with the largest exclusion (40%)
+        e = np.where(v <= cap, 0.40 * v, np.maximum(0, 0.40 * cap - 0.09 * (v - cap)))
+        excl = np.where(elig & ~np.isnan(v) & (payable >= 2012), e, 0.0)
     tmv = v - excl
 
     def z(a):
@@ -70,6 +76,7 @@ def estimate_tax_cap(x, value="emv_total", homestead_exclusion=True):
     out = x.copy()
     out["prop_type"] = pt.to_numpy()
     out["homestead_status"] = status
+    out["payable_year"] = payable
     out["tmv_est"] = np.where(unpriced, np.nan, tmv)
     out["tax_capac_est"] = est
     return out

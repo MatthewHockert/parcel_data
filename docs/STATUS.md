@@ -325,3 +325,13 @@ Remaining after it reports:
   code/14_use_class_map.py (docs/use_class_map.csv, a judgment call, review per county).
   Check: Hennepin 2025 file 94.7% of parcels within 1% of published tax_capac, total 0.993.
   Earlier years and other counties drift (docs/tax_capacity.md).
+- Follow-up (Matt asked why Carver and Dakota were off): estimate_tax_cap() fixed in R and
+  Python. Homestead exclusion now by payable year (none through 2011, 76k / 413.8k for
+  2012-2024, 95k / 517.2k from 2025). Value timing by county (file year for Hennepin and Ramsey,
+  file year + 1 elsewhere, fitted to published tax_capac; tax_year field not used because
+  Anoka 2024's is off by one). Farms no longer get the homestead exclusion, only the farm house.
+  code/15_check_tax_cap.R checks every county-year with published tax_capac
+  (docs/tax_capacity_check.csv): median 86-93% of parcels within 1%. Remaining gaps are in the
+  published data: Dakota, Carver, Anoka 2018-2020 publish C/I tax capacity net of fiscal
+  disparities (about 1/1.55), Dakota publishes tax_capac for exempt parcels, Ramsey 2022-2025
+  and Carver 2018 / 2020 / 2021 published values fit no pairing. Details in docs/tax_capacity.md.
