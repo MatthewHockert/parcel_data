@@ -11,7 +11,7 @@ source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 lagged   <- c("Dakota", "Carver")   # tax_capac lags the value by one year
 counties <- c("Anoka", "Carver", "Dakota", "Hennepin", "Ramsey", "Scott", "Washington")
 cols     <- c("pin", "use_class1", "homestead", "emv_total", "tax_year", "tax_capac")
-gaps     <- read.csv(file.path(PARCEL_HOME, "docs", "known_gaps.csv"))
+gaps     <- read.csv(file.path(PARCEL_HOME, "inst", "extdata", "known_gaps.csv"))
 
 rows <- list()
 for (cty in counties) for (yr in 2006:2025) {

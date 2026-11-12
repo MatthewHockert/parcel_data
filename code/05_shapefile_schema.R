@@ -8,12 +8,12 @@
 ## that read those shapefiles keep working unchanged (Matt, 2026-11-08).
 ##
 ## Source: the shapefiles kept in data/raw/2021 and data/raw/2024.
-## Output: docs/shapefile_schema.csv
+## Output: inst/extdata/shapefile_schema.csv
 
 suppressPackageStartupMessages({ library(dplyr); library(readr); library(sf); library(purrr) })
 PD_ROOT <- "/Users/matthewhockert/research/parcel_data"
 
-xwalk <- read_csv(file.path(PD_ROOT, "docs", "column_crosswalk.csv"), show_col_types = FALSE)
+xwalk <- read_csv(file.path(PD_ROOT, "inst", "extdata", "column_crosswalk.csv"), show_col_types = FALSE)
 # std_name for any original name, by upper-case name (same rules as the crosswalk)
 name_map <- xwalk %>% transmute(u = toupper(original_name), std_name) %>% distinct()
 extra <- tribble(~u, ~std_name,
@@ -49,4 +49,4 @@ cat("fields:", nrow(schema), " unmapped:", sum(is.na(schema$std_name)), "\n")
 schema %>% count(year, county) %>% print()
 schema %>% count(ogr_type, r_type) %>% print()
 write_csv(schema %>% select(year, county, position, shp_name, ogr_type, width, precision, r_type, std_name),
-          file.path(PD_ROOT, "docs", "shapefile_schema.csv"))
+          file.path(PD_ROOT, "inst", "extdata", "shapefile_schema.csv"))

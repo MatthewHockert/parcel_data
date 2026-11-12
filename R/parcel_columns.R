@@ -3,11 +3,11 @@
 ##   parcel_columns(2014:2016, "Ramsey")                # columns recorded in those years
 ##   parcel_columns(2016, "Ramsey", names = "original") # that file's own field names, in order
 ##   parcel_columns(2021, "Ramsey", layer = "points")
-## Reads the crosswalks in docs/, so it works before download_parcels().
+## Reads the crosswalks in inst/extdata/, so it works before download_parcels().
 ## Standardized view: one row per column (year and county first), its type,
 ## the years it was recorded and the original field names it came from. A
 ## column not recorded in a year is NA there. empty_in lists where it was published
-## but entirely blank or zero (docs/known_gaps.csv, code/13_known_gaps.py). Original
+## but entirely blank or zero (inst/extdata/known_gaps.csv, code/13_known_gaps.py). Original
 ## view: one row per field of one year x county file, in file order, with its empty flag.
 
 parcel_columns <- function(years    = NULL,
@@ -21,7 +21,7 @@ parcel_columns <- function(years    = NULL,
     stop('names = "original" needs exactly one year and one county')
 
   if (names == "original" && isTRUE(as_shapefile)) {
-    sx <- utils::read.csv(PARCEL_SHP_SCHEMA, stringsAsFactors = FALSE)
+    sx <- utils::read.csv(.parcel_table("shapefile_schema.csv"), stringsAsFactors = FALSE)
     sx <- sx[sx$year == years & sx$county == counties, ]
     if (!nrow(sx)) stop("as_shapefile = TRUE is only for 2021 and 2024")
     sx <- sx[order(sx$position), ]
@@ -29,13 +29,13 @@ parcel_columns <- function(years    = NULL,
                       stringsAsFactors = FALSE))
   }
 
-  xw <- utils::read.csv(if (layer == "points") PARCEL_XWALK_POINTS else PARCEL_XWALK,
+  xw <- utils::read.csv(.parcel_table(if (layer == "points") "points_column_crosswalk.csv" else "column_crosswalk.csv"),
                         stringsAsFactors = FALSE)
   if (!is.null(years))    xw <- xw[xw$year %in% years, ]
   if (!is.null(counties)) xw <- xw[xw$county %in% counties, ]
   if (!nrow(xw)) stop("no columns for those years / counties (years are 2005-2025)")
 
-  gaps <- utils::read.csv(file.path(PARCEL_HOME, "docs", "known_gaps.csv"), stringsAsFactors = FALSE)
+  gaps <- utils::read.csv(.parcel_table("known_gaps.csv"), stringsAsFactors = FALSE)
   gaps <- gaps[gaps$layer == layer, ]
   if (!is.null(years))    gaps <- gaps[gaps$year %in% years, ]
   if (!is.null(counties)) gaps <- gaps[gaps$county %in% counties, ]
@@ -56,13 +56,13 @@ parcel_columns <- function(years    = NULL,
   }
   # the type read_parcels() returns, from every year's types: text only -> character,
   # dates -> POSIXct (stored as UTC timestamps), anything numeric -> numeric
-  all_xw <- utils::read.csv(if (layer == "points") PARCEL_XWALK_POINTS else PARCEL_XWALK, stringsAsFactors = FALSE)
+  all_xw <- utils::read.csv(.parcel_table(if (layer == "points") "points_column_crosswalk.csv" else "column_crosswalk.csv"), stringsAsFactors = FALSE)
   store_type <- vapply(split(all_xw$r_type, all_xw$std_name), function(ty) {
     if (all(ty == "character")) "character" else if (all(ty %in% c("Date", "POSIXct"))) "POSIXct" else "numeric"
   }, character(1))
   mixed_all <- names(store_type)[vapply(split(all_xw$r_type, all_xw$std_name), function(ty)
     any(ty == "character") && any(ty %in% c("numeric", "integer")), logical(1))]
-  # where the column was published but entirely blank or zero (docs/known_gaps.csv)
+  # where the column was published but entirely blank or zero (inst/extdata/known_gaps.csv)
   empty_in <- function(col) {
     g <- gaps[gaps$column == col, ]
     if (!nrow(g)) return("")

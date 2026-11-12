@@ -1,6 +1,6 @@
 # Estimating net tax capacity
 
-**Warning: one year's class rates for every year.** `estimate_tax_cap()` prices every parcel with Hennepin County's class rate table for the **2025 assessment (taxes payable 2026)**. Minnesota changes class rates and tier limits over time, so a 2010 parcel is priced at 2025 rates. Only the homestead market value exclusion follows the year. Use the estimate to fill gaps, for example Ramsey, whose published `tax_capac` is 0 for 2005-2020 and blank for 2021 (see `docs/known_gaps.csv`). Where a county published `tax_capac`, prefer it.
+**Warning: one year's class rates for every year.** `estimate_tax_cap()` prices every parcel with Hennepin County's class rate table for the **2025 assessment (taxes payable 2026)**. Minnesota changes class rates and tier limits over time, so a 2010 parcel is priced at 2025 rates. Only the homestead market value exclusion follows the year. Use the estimate to fill gaps, for example Ramsey, whose published `tax_capac` is 0 for 2005-2020 and blank for 2021 (see `inst/extdata/known_gaps.csv`). Where a county published `tax_capac`, prefer it.
 
 ## Use
 
@@ -20,7 +20,7 @@ p = estimate_tax_cap(read_parcels(list(range(2005, 2021)), "Ramsey",
 
 ## Steps
 
-1. **Property type.** `use_class1` is looked up in `docs/use_class_map.csv`, which maps each county's labels to a property type in the rate table. Labels no rule covers get no estimate.
+1. **Property type.** `use_class1` is looked up in `inst/extdata/use_class_map.csv`, which maps each county's labels to a property type in the rate table. Labels no rule covers get no estimate.
 2. **Homestead.** `Y`, `Yes`, `1` are homestead. `P`, `Fractional` are partial homesteads, priced as homestead. `N`, `No`, `0` are non-homestead. Anything else (Washington's codes 2, 3, 5, 7, 9, or blank) is unknown and priced as non-homestead.
 3. **Payable year.** The taxes-payable year the market value is for: the file year for Hennepin and Ramsey, the file year plus one for the other counties. Found by fitting each county's published `tax_capac` (below). The files' `tax_year` field is not used, because Anoka's 2024 file says 2024 while its values fit payable 2025.
 4. **Taxable market value.** Market value (`emv_total`) less the homestead market value exclusion in force for that payable year, for homesteaded class 1a and 1b property and the farm house (FF) (Minn. Stat. 273.13, subd. 35):
@@ -35,9 +35,9 @@ p = estimate_tax_cap(read_parcels(list(range(2005, 2021)), "Ramsey",
 
 | File | What it is | Made by |
 |---|---|---|
-| `docs/class_rates_hennepin_2025.csv` | Hennepin County "Property Types, State Class Codes, Prism Codes & Rates" (Report T99SS01, 2025 Assessment, Taxes Payable 2026, dated 06/30/25), transcribed by hand, every row and footnote marker. One row added: `EX`, exempt, rate 0. | Hand transcription of https://www.hennepincounty.gov/-/media/hennepinus/residents/property/taxing-district-information/2026-values-properties-types.pdf |
-| `docs/use_class_map.csv` | Each county's `use_class1` label mapped to a property type, with the rule that matched and the parcel count | `code/14_use_class_map.py` (keyword rules, a judgment call: review before relying on a county) |
-| `docs/known_gaps.csv` | Every published column that is entirely blank or zero in a year and county | `code/13_known_gaps.py` |
+| `inst/extdata/class_rates_hennepin_2025.csv` | Hennepin County "Property Types, State Class Codes, Prism Codes & Rates" (Report T99SS01, 2025 Assessment, Taxes Payable 2026, dated 06/30/25), transcribed by hand, every row and footnote marker. One row added: `EX`, exempt, rate 0. | Hand transcription of https://www.hennepincounty.gov/-/media/hennepinus/residents/property/taxing-district-information/2026-values-properties-types.pdf |
+| `inst/extdata/use_class_map.csv` | Each county's `use_class1` label mapped to a property type, with the rule that matched and the parcel count | `code/14_use_class_map.py` (keyword rules, a judgment call: review before relying on a county) |
+| `inst/extdata/known_gaps.csv` | Every published column that is entirely blank or zero in a year and county | `code/13_known_gaps.py` |
 
 Source footnotes not modelled: commercial and industrial contiguity (note 7), the state general tax rules (notes 1-6), the 3.8M farm limit across linked PIDs (note 8), machinery value for utilities, and the referendum market value exclusions. They change the state general tax and referendum levies, not net tax capacity, except note 7.
 

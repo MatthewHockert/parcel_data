@@ -1,8 +1,8 @@
-## download_parcels(): fetch store years from the Zenodo deposit into PARCEL_HOME.
+## download_parcels(): fetch store years from the Zenodo deposit into parcel_data_dir().
 ##   download_parcels(2014:2016)                     # polygons
 ##   download_parcels(2021, layer = "points")         # points + that year's polygons
 ## Zips are one per year and layer (all 7 counties); each is checked against
-## docs/zenodo_md5.txt, unzipped into $PARCEL_HOME/data and deleted.
+## inst/extdata/zenodo_md5.txt, unzipped into parcel_data_dir() (see R/paths.R) and deleted.
 ## Years already on disk are skipped unless overwrite = TRUE.
 
 ZENODO_RECORD <- "24116899"   # DOI 10.5281/zenodo.24116899
@@ -12,12 +12,11 @@ download_parcels <- function(years,
                              base_url  = sprintf("https://zenodo.org/records/%s/files", ZENODO_RECORD),
                              overwrite = FALSE) {
   layer <- match.arg(layer)
-  home  <- Sys.getenv("PARCEL_HOME")
-  if (home == "") stop("Set PARCEL_HOME to the parcel_data folder first")
-  data_dir <- file.path(home, "data")
+  data_dir <- parcel_data_dir()
   dir.create(data_dir, showWarnings = FALSE, recursive = TRUE)
+  message("parcel files are saved in ", data_dir)
 
-  md5 <- utils::read.table(file.path(home, "docs", "zenodo_md5.txt"),
+  md5 <- utils::read.table(.parcel_table("zenodo_md5.txt"),
                            col.names = c("md5", "file"), stringsAsFactors = FALSE)
 
   # standardized Points reads place each point on its polygon, so points need polygons too

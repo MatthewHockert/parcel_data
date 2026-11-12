@@ -50,7 +50,7 @@ ensure_local <- function(files, timeout_min = DOWNLOAD_TIMEOUT_MIN) {
 }
 
 sources <- read_csv(file.path(PD_ROOT, "docs", "points_sources.csv"), show_col_types = FALSE)
-written <- list.dirs(PARCEL_STORE_POINTS, recursive = TRUE, full.names = FALSE)
+written <- list.dirs(file.path(parcel_data_dir(), "standardized_points"), recursive = TRUE, full.names = FALSE)
 written <- written[grepl("^year=[0-9]{4}/county=", written)]
 parts <- tibble(year = as.integer(sub("^year=([0-9]{4}).*", "\\1", written)),
                 county = sub(".*county=", "", written)) %>%

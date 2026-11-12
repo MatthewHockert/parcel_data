@@ -335,3 +335,29 @@ Remaining after it reports:
   published data: Dakota, Carver, Anoka 2018-2020 publish C/I tax capacity net of fiscal
   disparities (about 1/1.55), Dakota publishes tax_capac for exempt parcels, Ramsey 2022-2025
   and Carver 2018 / 2020 / 2021 published values fit no pairing. Details in docs/tax_capacity.md.
+
+## 2026-11-12: installable R and Python package (parceldata)
+- Why: a Windows user could not get the clone + PARCEL_HOME setup working (shell commands
+  pasted into R, R code pasted into PowerShell, clone on F:). Matt asked for one setup that
+  works the same on Windows, Mac and Linux.
+- The repository is now the R package `parceldata` (DESCRIPTION, NAMESPACE, .Rbuildignore;
+  `remotes::install_github("MatthewHockert/parcel_data")`) and the Python package
+  `parceldata` (pyproject.toml, hatchling; pip install of the GitHub zip). No terminal, Git or
+  environment variable needed.
+- Lookup tables moved with git mv from docs/ and python/ to inst/extdata/ so both packages
+  ship them: column and points crosswalks, shapefile_schema, known_gaps, class rates,
+  use_class_map, zenodo_md5, the four Python dtype/geometry manifests. Build scripts in
+  code/ and python/build_*_manifest.py now write there.
+- Where parcel files go (R/paths.R, python/parceldata/_paths.py): parcel_data_dir("...") for
+  the session, else <PARCEL_HOME>/data when PARCEL_HOME is set (this machine, unchanged),
+  else R's per-user data folder tools::R_user_dir("parceldata", "data"). Python uses the same
+  folder, so one download serves both.
+- Old use keeps working: source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+  loads the other R files itself, and python/read_parcels.py etc. are now shims over the
+  package, so sys.path + `from read_parcels import ...` scripts are unchanged.
+  R/verify_read.R is left out of the package (build tool).
+- Checks: the installed packages with PARCEL_HOME unset give identical results to the old
+  sourced / sys.path use on Ramsey 2016 (standardized, original, estimate_tax_cap,
+  parcel_columns) and Ramsey 2021 (points, collapse_condos, as_shapefile), in R and in
+  Python. A real Zenodo download of 2009 polygons into an empty per-user folder, then read
+  and map, worked in R and in Python. Windows not tested on this machine.

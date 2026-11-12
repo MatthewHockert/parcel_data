@@ -1,13 +1,16 @@
 ## read_parcels.R
 ##
-## One entry point to the MetroGIS 7-county parcel archive (2005-2024 files),
-## stored once at /Users/matthewhockert/research/parcel_data as GeoParquet,
-## partitioned year=YYYY/county=Name/. Built by code/02_standardize.R.
+## One entry point to the MetroGIS 7-county parcel archive (2005-2025 files),
+## stored as GeoParquet partitioned year=YYYY/county=Name/. Built by
+## code/02_standardize.R.
 ##
-## Use from ANY project, inside or outside ~/research:
-##   source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
+## Use as a package (any computer, see README Setup):
+##   library(parceldata)
+##   download_parcels(2016)
 ##   ramsey_2016 <- read_parcels(years = 2016, counties = "Ramsey",
 ##                               cols = c("pin", "emv_land", "emv_total"))
+## or, from a clone with PARCEL_HOME set:
+##   source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 ##
 ## Two views of the same stored table:
 ##   names = "standardized"  one column per concept across all years; a
@@ -25,7 +28,7 @@
 ## layer = "points" reads the county-published Points layers instead
 ## (Parcels<yr><County>Points, stored as published in data/standardized_points
 ## by code/07_points_store.R; Matt, 2026-11-08). Same standardized names and
-## types as the polygons (docs/points_column_crosswalk.csv); names = "original"
+## types as the polygons (inst/extdata/points_column_crosswalk.csv); names = "original"
 ## returns exactly what st_read() of that Points layer returned. Older Points
 ## layers include condo-unit records whose PINs are in no polygon file.
 ##   p14 <- read_parcels(2014, "Ramsey", layer = "points", names = "original")
@@ -33,17 +36,15 @@
 ## return it; "none" drops it); point_method / orig_fid / as_shapefile do not
 ## apply.
 
-PARCEL_HOME  <- Sys.getenv("PARCEL_HOME")   # the repo folder; set in ~/.Renviron
-if (PARCEL_HOME == "") stop("Set PARCEL_HOME to the parcel_data folder, e.g. PARCEL_HOME=${HOME}/parcel_data in ~/.Renviron")
-PARCEL_STORE <- file.path(PARCEL_HOME, "data", "standardized")
-PARCEL_XWALK <- file.path(PARCEL_HOME, "docs", "column_crosswalk.csv")
-PARCEL_STORE_POINTS <- file.path(PARCEL_HOME, "data", "standardized_points")   # layer = "points"
-PARCEL_XWALK_POINTS <- file.path(PARCEL_HOME, "docs", "points_column_crosswalk.csv")
+# Sourced from a clone (not loaded as the package): load the other files too
+if (!isNamespace(topenv())) {
+  PARCEL_HOME <- Sys.getenv("PARCEL_HOME")   # the clone; R/ and inst/extdata are read from it
+  if (PARCEL_HOME == "") stop("Set PARCEL_HOME to the parcel_data folder, or install the package (see README Setup)")
+  for (f in c("paths.R", "download_parcels.R", "parcel_columns.R", "estimate_tax_cap.R", "collapse_condos.R"))
+    source(file.path(PARCEL_HOME, "R", f))
+  rm(f)
+}
 PARCEL_CRS   <- 26915
-source(file.path(PARCEL_HOME, "R", "download_parcels.R"))   # download_parcels(): get years from Zenodo
-source(file.path(PARCEL_HOME, "R", "parcel_columns.R"))     # parcel_columns(): list columns without reading data
-source(file.path(PARCEL_HOME, "R", "estimate_tax_cap.R"))   # estimate_tax_cap(): net tax capacity from 2025 class rates
-PARCEL_SHP_SCHEMA <- file.path(PARCEL_HOME, "docs", "shapefile_schema.csv")
 ## as_shapefile = TRUE (names = "original", years 2021 or 2024): the store
 ## holds those years from the GeoPackage / geodatabase, which keep more than
 ## the shapefiles of the same release. Scripts written against the
@@ -115,11 +116,12 @@ read_parcels <- function(years    = NULL,           # e.g. 2016 or 2005:2024; NU
   names    <- match.arg(names)
   layer    <- match.arg(layer)
   is_points <- layer == "points"
-  store_dir <- if (is_points) PARCEL_STORE_POINTS else PARCEL_STORE
+  store_dir <- file.path(parcel_data_dir(), if (is_points) "standardized_points" else "standardized")
   if (is_points && (isTRUE(as_shapefile) || isTRUE(orig_fid) || pm_given)) {
     stop('layer = "points" returns the published points: as_shapefile, orig_fid and point_method do not apply')
   }
-  stopifnot(dir.exists(store_dir))
+  if (!dir.exists(store_dir)) stop("no parcel files in ", store_dir, ". Run download_parcels() first, ",
+                                   "or parcel_data_dir() if you saved them in another folder")
   if (names == "original" && (length(years) != 1 || length(counties) != 1)) {
     stop('names = "original" needs exactly one year and one county')
   }
@@ -136,7 +138,8 @@ read_parcels <- function(years    = NULL,           # e.g. 2016 or 2005:2024; NU
                       county = sub(".*county=", "", part_dirs), stringsAsFactors = FALSE)
   if (!is.null(years))    parts <- parts[parts$year %in% years, ]
   if (!is.null(counties)) parts <- parts[parts$county %in% counties, ]
-  if (nrow(parts) == 0) stop("no stored partitions match years/counties")
+  if (nrow(parts) == 0) stop("no stored partitions match years/counties in ", store_dir,
+                            ". Download them with download_parcels()")
 
   # bbox: cheap pre-filter on the stored points (on the Arrow table, before
   # conversion to R), then an exact polygon intersection afterwards
@@ -152,7 +155,7 @@ read_parcels <- function(years    = NULL,           # e.g. 2016 or 2005:2024; NU
     stop('as_shapefile = TRUE needs names = "original" and years = 2021 or 2024')
   }
   if (names == "original" && isTRUE(as_shapefile)) {
-    sx <- utils::read.csv(PARCEL_SHP_SCHEMA, stringsAsFactors = FALSE)
+    sx <- utils::read.csv(.parcel_table("shapefile_schema.csv"), stringsAsFactors = FALSE)
     sx <- sx[sx$year == years & sx$county == counties, ]
     sx <- sx[order(sx$position), ]
     xwalk <- data.frame(original_name = sx$shp_name, std_name = sx$std_name, r_type = sx$r_type,
@@ -161,7 +164,7 @@ read_parcels <- function(years    = NULL,           # e.g. 2016 or 2005:2024; NU
     cols_std <- unique(c(xwalk$std_name, paste0(xwalk$std_name, "_raw"), paste0(xwalk$std_name, "_shp"),
                          "row_in_shp", if (geometry != "none") "geometry_shp"))
   } else if (names == "original") {
-    xwalk <- utils::read.csv(if (is_points) PARCEL_XWALK_POINTS else PARCEL_XWALK, stringsAsFactors = FALSE)
+    xwalk <- utils::read.csv(.parcel_table(if (is_points) "points_column_crosswalk.csv" else "column_crosswalk.csv"), stringsAsFactors = FALSE)
     xwalk <- xwalk[xwalk$year == years & xwalk$county == counties, ]
     if (!is.null(cols)) xwalk <- xwalk[xwalk$original_name %in% cols, ]
     cols_std <- unique(c(xwalk$std_name, paste0(xwalk$std_name, "_raw")))
@@ -364,7 +367,6 @@ read_parcels <- function(years    = NULL,           # e.g. 2016 or 2005:2024; NU
   if (isTRUE(collapse_condos)) {
     if (layer != "points" || names != "standardized" || geometry == "none")
       stop('collapse_condos = TRUE needs layer = "points", names = "standardized" and geometry')
-    source(file.path(PARCEL_HOME, "R", "collapse_condos.R"), local = TRUE)
     out <- do.call(rbind, lapply(split(seq_len(nrow(out)), paste(out$year, out$county)), function(ix) {
       p  <- out[ix, ]
       pg <- read_parcels(years = p$year[1], counties = p$county[1], cols = "pin", geometry = "polygon")

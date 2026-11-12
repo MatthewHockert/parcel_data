@@ -17,8 +17,8 @@ for yr in $(seq 2005 2025); do
 done
 
 # docs the readers need, plus the deposit README
-cp "$PARCEL_HOME/docs/column_crosswalk.csv" \
-   "$PARCEL_HOME/docs/points_column_crosswalk.csv" "$OUT/"
+cp "$PARCEL_HOME/inst/extdata/column_crosswalk.csv" \
+   "$PARCEL_HOME/inst/extdata/points_column_crosswalk.csv" "$OUT/"
 cp "$PARCEL_HOME/docs/zenodo_README.md" "$OUT/README.md"
 
 cd "$OUT"

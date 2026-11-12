@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """14_use_class_map.py: map every county's use_class1 label to a property type in
-docs/class_rates_hennepin_2025.csv, so estimate_tax_cap() can price any county-year.
-Writes docs/use_class_map.csv (county, use_class1, prop_type, rule, parcels, years).
+inst/extdata/class_rates_hennepin_2025.csv, so estimate_tax_cap() can price any county-year.
+Writes inst/extdata/use_class_map.csv (county, use_class1, prop_type, rule, parcels, years).
 
 Hennepin labels are Hennepin's own property-type descriptions and match the rate table
 directly. Every other label is mapped by the keyword rules below, in order (first match
 wins); the matching rule is recorded per row. This is a judgment call (Matt, 2026-11-11):
-review docs/use_class_map.csv before relying on a county's estimate. Labels no rule
+review inst/extdata/use_class_map.csv before relying on a county's estimate. Labels no rule
 covers stay unmapped and get no estimate.
 
 Run:  python3 -I code/14_use_class_map.py
@@ -16,7 +16,7 @@ import pandas as pd
 import pyarrow.parquet as pq
 
 PD = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-rates = pd.read_csv(os.path.join(PD, "docs", "class_rates_hennepin_2025.csv"))
+rates = pd.read_csv(os.path.join(PD, "inst", "extdata", "class_rates_hennepin_2025.csv"))
 by_desc = {d.upper(): p for d, p in zip(rates.description, rates.prop_type)}
 # Hennepin spellings that differ from the rate table
 by_desc.update({"RESIDENTIAL LAKE SHORE": "RL", "CONDOMINIUM": "X", "CONDO GARAGE/MISCELLANEOUS": "XM",
@@ -93,7 +93,7 @@ for i in out.index[bare]:
 out["years"] = out["first"].astype(str) + "-" + out["last"].astype(str)
 out = out[["county", "use_class1", "prop_type", "rule", "parcels", "years"]].sort_values(
     ["county", "parcels"], ascending=[True, False])
-out.to_csv(os.path.join(PD, "docs", "use_class_map.csv"), index=False)
+out.to_csv(os.path.join(PD, "inst", "extdata", "use_class_map.csv"), index=False)
 
 tot = out.groupby("county").parcels.sum()
 mapped = out[out.prop_type.notna()].groupby("county").parcels.sum()

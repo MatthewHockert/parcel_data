@@ -9,8 +9,8 @@ integer column with nulls into float64, and a shapefile date column holding
 
 Inputs : data/raw/<year>/... (the same sources code/02_standardize.R read;
          2021 from the GeoPackage, 2023 and 2024 from the geodatabases, 2025 = Parcels{County}.shp)
-Outputs: python/original_dtypes.csv   (year, county, column, dtype, n_null, n_zero_date)
-         python/original_geometry.csv (year, county, driver, geometry_type, n_rows, z_all_zero)
+Outputs: inst/extdata/original_dtypes.csv   (year, county, column, dtype, n_null, n_zero_date)
+         inst/extdata/original_geometry.csv (year, county, driver, geometry_type, n_rows, z_all_zero)
 Fully regenerable:  <pkg-test python> python/build_original_manifest.py
 Reads one partition at a time (attributes without geometry; geometry only to
 check Z values on Z-typed shapefiles).
@@ -23,8 +23,8 @@ import shapely
 
 HOME = os.environ.get("PARCEL_HOME", "/Users/matthewhockert/research/parcel_data")
 RAW = os.path.join(HOME, "data", "raw")
-OUT_D = os.path.join(HOME, "python", "original_dtypes.csv")
-OUT_G = os.path.join(HOME, "python", "original_geometry.csv")
+OUT_D = os.path.join(HOME, "inst", "extdata", "original_dtypes.csv")
+OUT_G = os.path.join(HOME, "inst", "extdata", "original_geometry.csv")
 COUNTIES = ["Anoka", "Carver", "Dakota", "Hennepin", "Ramsey", "Scott", "Washington"]
 GDB_YEARS = (2023, 2024)
 
@@ -40,7 +40,7 @@ def source(year, county):
 
 
 def main(years):
-    xw = pd.read_csv(os.path.join(HOME, "docs", "column_crosswalk.csv"))
+    xw = pd.read_csv(os.path.join(HOME, "inst", "extdata", "column_crosswalk.csv"))
     rows_d, rows_g = [], []
     for yr in years:
         for cty in COUNTIES:

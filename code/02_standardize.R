@@ -6,7 +6,7 @@
 ##   1. Schema inventory: every year x county file's column names and types,
 ##      read from headers only (no rows), to see how the schema changed.
 ##   2. (next) Column crosswalk: original name -> one standardized name per
-##      concept; documented in docs/column_crosswalk.csv.
+##      concept; documented in inst/extdata/column_crosswalk.csv.
 ##   3. (next) Write GeoParquet partitioned year=/county=, with point-on-surface
 ##      x/y; verify row counts per file are unchanged.
 
@@ -290,7 +290,7 @@ std_schema <- column_crosswalk %>%
 cat("standardized columns:", nrow(std_schema), " (from", n_distinct(column_crosswalk$original_name), "original names)\n")
 print(std_schema, n = Inf, width = Inf)
 
-write_csv(column_crosswalk, file.path(PD_ROOT, "docs", "column_crosswalk.csv"))
+write_csv(column_crosswalk, file.path(PD_ROOT, "inst", "extdata", "column_crosswalk.csv"))
 
 # Write the store ----
 source(file.path(PD_ROOT, "R", "read_parcels.R"))   # parcel_linearize, parcel_interior_xy

@@ -4,13 +4,13 @@
 ##   p <- estimate_tax_cap(p)   # adds prop_type, homestead_status, payable_year, tmv_est, tax_capac_est
 ##
 ## WARNING: the class rates are Hennepin County's table for the 2025 assessment (taxes
-## payable 2026, docs/class_rates_hennepin_2025.csv), applied to every year. Minnesota
+## payable 2026, inst/extdata/class_rates_hennepin_2025.csv), applied to every year. Minnesota
 ## changes class rates and tier limits over time, so earlier years are priced at 2025
 ## rates. Only the homestead exclusion follows the year (step 4). Use it to fill gaps (e.g. Ramsey, whose tax_capac is 0 for 2005-2020),
 ## not as the county's own figure. Where the county published tax_capac, prefer it.
 ##
 ## Steps, per parcel:
-##   1. prop_type: use_class1 looked up in docs/use_class_map.csv (code/14_use_class_map.py).
+##   1. prop_type: use_class1 looked up in inst/extdata/use_class_map.csv (code/14_use_class_map.py).
 ##      Unmapped labels get NA.
 ##   2. homestead_status: Y / Yes / 1 = homestead, P / Fractional = partial (priced as
 ##      homestead), N / No / 0 = non-homestead, anything else = unknown (priced as
@@ -36,9 +36,9 @@ estimate_tax_cap <- function(x, value = "emv_total", homestead_exclusion = TRUE)
   miss <- setdiff(need, names(x))
   if (length(miss)) stop("estimate_tax_cap needs columns: ", paste(miss, collapse = ", "),
                          ' (read with names = "standardized")')
-  rates <- utils::read.csv(file.path(PARCEL_HOME, "docs", "class_rates_hennepin_2025.csv"),
+  rates <- utils::read.csv(.parcel_table("class_rates_hennepin_2025.csv"),
                            stringsAsFactors = FALSE)
-  umap  <- utils::read.csv(file.path(PARCEL_HOME, "docs", "use_class_map.csv"),
+  umap  <- utils::read.csv(.parcel_table("use_class_map.csv"),
                            stringsAsFactors = FALSE)
   message("estimate_tax_cap: Hennepin 2025-assessment class rates applied to every year; ",
           "earlier years are priced at 2025 rates (the homestead exclusion follows the year)")

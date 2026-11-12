@@ -31,7 +31,7 @@
 ##                    ~/Desktop/Personal Info/st_paul_rc_affordable_housing (files dated Jan 2026)
 ##   All7Points is skipped (union of the seven counties).
 ##
-## Outputs: data/standardized_points/..., docs/points_column_crosswalk.csv
+## Outputs: data/standardized_points/..., inst/extdata/points_column_crosswalk.csv
 ##          (year, county, original_name, std_name, r_type),
 ##          docs/points_sources.csv (year, county, source, layer, bytes, rows, ...),
 ##          docs/points_write_log.csv
@@ -47,7 +47,7 @@ suppressPackageStartupMessages({
 
 PD_ROOT    <- "/Users/matthewhockert/research/parcel_data"
 POINTS_DIR <- file.path(PD_ROOT, "data", "standardized_points")
-XWALK_OUT  <- file.path(PD_ROOT, "docs", "points_column_crosswalk.csv")
+XWALK_OUT  <- file.path(PD_ROOT, "inst", "extdata", "points_column_crosswalk.csv")
 SOURCES_OUT <- file.path(PD_ROOT, "docs", "points_sources.csv")
 LOG_OUT    <- file.path(PD_ROOT, "docs", "points_write_log.csv")
 COUNTIES   <- c("Anoka", "Carver", "Dakota", "Hennepin", "Ramsey", "Scott", "Washington")
@@ -165,7 +165,7 @@ print(count(sources, year), n = Inf)
 # the std_name its polygon twin has in the same year x county. A field with
 # no polygon twin (ORIG_FID in some years, e.g. Washington 2015-2017) takes
 # the name any year gives it, else its lower-case name (the 02 rule).
-poly_xw <- read_csv(file.path(PD_ROOT, "docs", "column_crosswalk.csv"), show_col_types = FALSE)
+poly_xw <- read_csv(file.path(PD_ROOT, "inst", "extdata", "column_crosswalk.csv"), show_col_types = FALSE)
 any_year_name <- poly_xw %>% mutate(u = toupper(original_name)) %>% distinct(u, std_name) %>%
   group_by(u) %>% filter(n() == 1) %>% ungroup()
 

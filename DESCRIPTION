@@ -1,0 +1,17 @@
+Package: parceldata
+Type: Package
+Title: Read the Twin Cities Regional Parcels, 2005-2025
+Version: 1.0.0
+Authors@R: person("Matthew", "Hockert", email = "MatthewHockert@users.noreply.github.com", role = c("aut", "cre"))
+Description: Download the standardized MetroGIS 7-county parcel files from
+    Zenodo (DOI 10.5281/zenodo.24116899) and read them by year, county and
+    column, as polygons or points, with the original or standardized field
+    names. Includes a column lister and a net tax capacity estimator.
+License: file LICENSE
+URL: https://github.com/MatthewHockert/parcel_data
+Depends: R (>= 4.0)
+Imports:
+    sf,
+    arrow,
+    dplyr
+Encoding: UTF-8

@@ -1,0 +1,12 @@
+^data$
+^code$
+^docs$
+^verification$
+^python$
+^pyproject\.toml$
+^CITATION\.cff$
+^README\.md$
+^\.here$
+^.*\.Rproj$
+^\.Rproj\.user$
+^R/verify_read\.R$

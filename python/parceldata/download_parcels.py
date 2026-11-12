@@ -1,0 +1,67 @@
+"""download_parcels(): fetch store years from the Zenodo deposit into parcel_data_dir().
+
+    from parceldata import read_parcels, download_parcels
+    download_parcels([2014, 2015])              # polygons
+    download_parcels(2021, layer="points")      # points, plus that year's polygons
+
+Zips are one per year and layer (all 7 counties); each is checked against
+inst/extdata/zenodo_md5.txt, unzipped into parcel_data_dir() (see _paths.py) and deleted. Years
+already on disk are skipped unless overwrite=True. Standardized Points reads
+place each point on its polygon, so points also fetch that year's polygons.
+"""
+import hashlib
+import os
+import shutil
+import tempfile
+import urllib.request
+import zipfile
+
+ZENODO_RECORD = "24116899"  # DOI 10.5281/zenodo.24116899
+from ._paths import _table, parcel_data_dir
+
+
+def _md5(path):
+    h = hashlib.md5()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def download_parcels(years, layer="polygons",
+                     base_url=f"https://zenodo.org/records/{ZENODO_RECORD}/files",
+                     overwrite=False):
+    if layer not in ("polygons", "points"):
+        raise ValueError("layer must be 'polygons' or 'points'")
+    data_dir = parcel_data_dir()
+    os.makedirs(data_dir, exist_ok=True)
+    print(f"parcel files are saved in {data_dir}")
+    with open(_table("zenodo_md5.txt")) as f:
+        md5 = dict(reversed(line.split()) for line in f if line.strip())
+
+    layers = ["polygons", "points"] if layer == "points" else ["polygons"]
+    jobs = [(yr, ly) for yr in ([years] if isinstance(years, int) else years) for ly in layers]
+    for yr, layer in jobs:
+        store = "standardized_points" if layer == "points" else "standardized"
+        target = os.path.join(data_dir, store, f"year={yr}")
+        if os.path.isdir(target) and not overwrite:
+            print(f"{yr} {layer}: already on disk, skipped")
+            continue
+        zip_name = f"parcels_{layer}_{yr}.zip"
+        if zip_name not in md5:
+            raise ValueError(f"{zip_name} is not in the deposit (years are 2005-2025)")
+
+        url = f"{base_url}/{zip_name}" + ("?download=1" if base_url.startswith("http") else "")
+        zip_path = os.path.join(tempfile.gettempdir(), zip_name)
+        print(f"{yr} {layer}: downloading")
+        with urllib.request.urlopen(url) as r, open(zip_path, "wb") as out:
+            shutil.copyfileobj(r, out, 1 << 20)
+        if _md5(zip_path) != md5[zip_name]:
+            os.remove(zip_path)
+            raise IOError(f"{zip_name}: checksum does not match, download again")
+        if overwrite:
+            shutil.rmtree(target, ignore_errors=True)
+        with zipfile.ZipFile(zip_path) as z:
+            z.extractall(data_dir)
+        os.remove(zip_path)
+    return data_dir

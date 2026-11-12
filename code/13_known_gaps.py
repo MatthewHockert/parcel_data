@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """13_known_gaps.py: list every column that is entirely blank or entirely zero in a
-year x county, for the polygon and Points stores. Writes docs/known_gaps.csv.
+year x county, for the polygon and Points stores. Writes inst/extdata/known_gaps.csv.
 
-Only columns the county's file actually carried that year (docs/column_crosswalk.csv,
-docs/points_column_crosswalk.csv) are checked, so a field a county never published is
+Only columns the county's file actually carried that year (inst/extdata/column_crosswalk.csv,
+inst/extdata/points_column_crosswalk.csv) are checked, so a field a county never published is
 not listed here (it is simply absent from that year in parcel_columns()). The store keeps
 values as published, so every gap here is in the county's release, not the store.
 
@@ -42,6 +42,6 @@ for layer, (store, xw_file) in STORES.items():
 
 out = pd.DataFrame(rows, columns=["layer", "year", "county", "column", "original_name", "issue", "rows"])
 out = out.sort_values(["layer", "column", "county", "year"]).reset_index(drop=True)
-out.to_csv(os.path.join(PD, "docs", "known_gaps.csv"), index=False)
-print(f"{len(out)} empty column x year x county cells written to docs/known_gaps.csv")
+out.to_csv(os.path.join(PD, "inst", "extdata", "known_gaps.csv"), index=False)
+print(f"{len(out)} empty column x year x county cells written to inst/extdata/known_gaps.csv")
 print(out.groupby(["layer", "issue"]).size().to_string())
