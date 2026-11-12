@@ -8,23 +8,59 @@ The readers are `R/read_parcels.R` and `python/read_parcels.py`.
 
 ## Setup
 
-1. Clone this repository. In a terminal, from any folder, this puts it in your home folder:
+Each block below says where to paste it and which computer it is for. A **terminal** is the Terminal app on Mac, PowerShell on Windows, or in VS Code Terminal > New Terminal. It is not the R console.
+
+1. **Clone this repository.** This needs Git (on Windows, install it from https://git-scm.com first).
+
+   Mac or Linux, paste into a terminal:
    ```bash
    git clone https://github.com/MatthewHockert/parcel_data.git ~/parcel_data
    ```
-2. Tell R and Python where the clone is, by setting `PARCEL_HOME`. Run these once in a terminal, from any folder. Each adds one line to a settings file in your home folder. If you cloned somewhere else, change `parcel_data` to that path.
-   ```bash
-   echo 'PARCEL_HOME=${HOME}/parcel_data' >> ~/.Renviron           # for R
-   echo 'export PARCEL_HOME="$HOME/parcel_data"' >> ~/.zshrc       # for Python (Mac). Linux: ~/.bashrc
+   Windows, paste into PowerShell:
+   ```powershell
+   git clone https://github.com/MatthewHockert/parcel_data.git "$env:USERPROFILE\parcel_data"
    ```
-   Then restart R and open a new terminal. To check, `Sys.getenv("PARCEL_HOME")` in R and `echo $PARCEL_HOME` in the terminal should both print the path. On Windows, run `usethis::edit_r_environ()` in R, add the line `PARCEL_HOME=C:/path/to/parcel_data`, save, and restart R. For Python, set it under System Properties > Environment Variables.
-3. Install the dependencies: R `sf`, `arrow`, `dplyr`, `tibble`. Python `pip install -r python/requirements.txt`.
-4. Download the years you need. Each zip has all 7 counties, is checked against `docs/zenodo_md5.txt`, and is unzipped into `$PARCEL_HOME/data`.
+2. **Tell R and Python where the clone is**, by setting `PARCEL_HOME`. Do this once. If you cloned to a different folder in step 1, put that folder in place of `parcel_data` below.
+
+   Mac, paste into a terminal (on Linux, change `~/.zshrc` to `~/.bashrc`):
+   ```bash
+   echo 'PARCEL_HOME=${HOME}/parcel_data' >> ~/.Renviron
+   echo 'export PARCEL_HOME="$HOME/parcel_data"' >> ~/.zshrc
+   ```
+   Windows, paste into PowerShell:
+   ```powershell
+   setx PARCEL_HOME "$env:USERPROFILE\parcel_data"
+   ```
+   Then quit R, the terminal and VS Code completely and reopen them, so they pick up the setting. To check, paste into the R console. Both lines should print the folder and `TRUE`:
+   ```r
+   Sys.getenv("PARCEL_HOME")
+   file.exists(file.path(Sys.getenv("PARCEL_HOME"), "R", "read_parcels.R"))
+   ```
+   An empty `""` means R has not been restarted. `FALSE` means the folder in step 2 is not where you cloned.
+3. **Install the packages.**
+
+   R, paste into the R console or the top of your script (same on Mac and Windows). It installs only the packages you do not have yet:
+   ```r
+   pkgs <- c("sf", "arrow", "dplyr", "tibble")
+   install.packages(setdiff(pkgs, rownames(installed.packages())))
+   ```
+   Python, Mac or Linux, paste into a terminal:
+   ```bash
+   pip install -r "$PARCEL_HOME/python/requirements.txt"
+   ```
+   Python, Windows, paste into PowerShell:
+   ```powershell
+   pip install -r "$env:PARCEL_HOME\python\requirements.txt"
+   ```
+4. **Download the years you need.** Each zip has all 7 counties, is checked against `docs/zenodo_md5.txt`, and is unzipped into `$PARCEL_HOME/data`. The code is the same on Mac and Windows.
+
+   R, paste into the R console or a script:
    ```r
    source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
    download_parcels(2014:2016)                 # polygons
    download_parcels(2021, layer = "points")    # points, plus that year's polygons
    ```
+   Python, paste into Python or a script:
    ```python
    import os, sys
    sys.path.insert(0, os.path.join(os.environ["PARCEL_HOME"], "python"))
@@ -33,7 +69,7 @@ The readers are `R/read_parcels.R` and `python/read_parcels.py`.
    download_parcels(2021, layer="points")      # points, plus that year's polygons
    ```
    Downloads from Zenodo run slowly. For example, one year's polygons (300-600 MB) take about 5-10 minutes, and all 21 years of both layers (10 GB) may take several hours, so fetch only the years you need. Standardized Points reads place each point on its parcel polygon, so a Points download also fetches that year's polygons. `point_location = "published"` keeps the points where the county published them.
-5. Map one county and year to check it works. This colors Ramsey County's 2016 parcels by estimated market value, on a log scale because a few large parcels are worth far more than the rest. Parcels with no value are left out.
+5. **Map one county and year to check it works.** Same on Mac and Windows, run after step 4 in the same session. This colors Ramsey County's 2016 parcels by estimated market value, on a log scale because a few large parcels are worth far more than the rest. Parcels with no value are left out.
    ```r
    p <- read_parcels(2016, "Ramsey", cols = "emv_total", filter = quote(emv_total > 0))
    plot(p["emv_total"], logz = TRUE, border = NA, main = "Ramsey County 2016, estimated market value")
