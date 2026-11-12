@@ -8,8 +8,16 @@ The readers are `R/read_parcels.R` and `python/read_parcels.py`.
 
 ## Setup
 
-1. Clone this repository.
-2. Set `PARCEL_HOME` to the clone: `PARCEL_HOME=${HOME}/parcel_data` in `~/.Renviron` for R, `export PARCEL_HOME="$HOME/parcel_data"` in your shell profile for Python.
+1. Clone this repository. In a terminal, from any folder, this puts it in your home folder:
+   ```bash
+   git clone https://github.com/MatthewHockert/parcel_data.git ~/parcel_data
+   ```
+2. Tell R and Python where the clone is, by setting `PARCEL_HOME`. Run these once in a terminal, from any folder. Each adds one line to a settings file in your home folder. If you cloned somewhere else, change `parcel_data` to that path.
+   ```bash
+   echo 'PARCEL_HOME=${HOME}/parcel_data' >> ~/.Renviron           # for R
+   echo 'export PARCEL_HOME="$HOME/parcel_data"' >> ~/.zshrc       # for Python (Mac). Linux: ~/.bashrc
+   ```
+   Then restart R and open a new terminal. To check, `Sys.getenv("PARCEL_HOME")` in R and `echo $PARCEL_HOME` in the terminal should both print the path. On Windows, run `usethis::edit_r_environ()` in R, add the line `PARCEL_HOME=C:/path/to/parcel_data`, save, and restart R. For Python, set it under System Properties > Environment Variables.
 3. Install the dependencies: R `sf`, `arrow`, `dplyr`, `tibble`. Python `pip install -r python/requirements.txt`.
 4. Download the years you need. Each zip has all 7 counties, is checked against `docs/zenodo_md5.txt`, and is unzipped into `$PARCEL_HOME/data`.
    ```r
