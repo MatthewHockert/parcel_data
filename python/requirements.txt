@@ -1,6 +1,7 @@
 numpy
 pandas
 geopandas
+matplotlib
 pyarrow
 pyogrio
 shapely>=2.1

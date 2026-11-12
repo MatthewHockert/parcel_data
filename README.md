@@ -25,6 +25,18 @@ The readers are `R/read_parcels.R` and `python/read_parcels.py`.
    download_parcels(2021, layer="points")      # points, plus that year's polygons
    ```
    Downloads from Zenodo run slowly. For example, one year's polygons (300-600 MB) take about 5-10 minutes, and all 21 years of both layers (10 GB) may take several hours, so fetch only the years you need. Standardized Points reads place each point on its parcel polygon, so a Points download also fetches that year's polygons. `point_location = "published"` keeps the points where the county published them.
+5. Map one county and year to check it works. This colors Ramsey County's 2016 parcels by estimated market value, on a log scale because a few large parcels are worth far more than the rest. Parcels with no value are left out.
+   ```r
+   p <- read_parcels(2016, "Ramsey", cols = "emv_total", filter = quote(emv_total > 0))
+   plot(p["emv_total"], logz = TRUE, border = NA, main = "Ramsey County 2016, estimated market value")
+   ```
+   ```python
+   import numpy as np
+   import pyarrow.compute as pc
+   p = read_parcels(2016, "Ramsey", cols=["emv_total"], filter=pc.field("emv_total") > 0)
+   ax = p.plot(column=np.log10(p["emv_total"]), legend=True, linewidth=0, figsize=(9, 9))
+   ax.set_title("Ramsey County 2016, estimated market value (log10 $)")
+   ```
 
 ## Use
 
