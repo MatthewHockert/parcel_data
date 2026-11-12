@@ -41,6 +41,8 @@ shp_files <- manifest %>%
 # resources.gisdata.mn.gov/.../us_mn_state_metrogis/plan_regonal_parcels_2021/
 # gpkg_plan_regonal_parcels_2021.zip (retrieved 2026-06-10 for scenic-quality;
 # provenance json kept in data/raw/2021). Archive URLs 404 as of 2026-11-07.
+# The Geospatial Commons moved to gis.data.mn.gov. Each release is now listed there as
+# "Metropolitan 7-County Parcel Polygons - <year>" (and "Parcel Points - <year>").
 GDB_YEARS <- c(2021L, 2023L, 2024L)   # years read from a container (gpkg / gdb), not shapefiles
 gdb_path <- function(yr) {
   if (yr == 2021) return(file.path(PD_ROOT, "data", "raw", "2021", "plan_regonal_parcels_2021.gpkg"))
