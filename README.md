@@ -69,7 +69,7 @@ parcel_data_dir("F:/parcels")      # Python
 
 **Updating.** Run the install line in step 1 again.
 
-## Use
+## Functions and examples
 
 To see which columns exist before downloading anything, use `parcel_columns()`. It reads the crosswalks that come with the package, so no data is needed.
 
