@@ -6,7 +6,7 @@
   has_orig_fid_old
 1             TRUE
                                                                                                                                                 old_path
-1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2015/Parcels2015WashingtonPoints.shp
+1 ~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2015/Parcels2015WashingtonPoints.shp
    mode
 1 exact
                                                                               label
@@ -16,7 +16,7 @@
   has_orig_fid_old
 1             TRUE
                                                                                                                                                 old_path
-1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2016/Parcels2016WashingtonPoints.shp
+1 ~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2016/Parcels2016WashingtonPoints.shp
    mode
 1 exact
                                                                               label
@@ -28,7 +28,7 @@
      ok has_orig_fid_old
 1 FALSE             TRUE
                                                                                                                                                 old_path
-1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2017/Parcels2017WashingtonPoints.shp
+1 ~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2017/Parcels2017WashingtonPoints.shp
    mode
 1 exact
                                                                               label
@@ -38,7 +38,7 @@
   has_orig_fid_old
 1            FALSE
                                                                                                                                                 old_path
-1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2018/Parcels2018WashingtonPoints.shp
+1 ~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2018/Parcels2018WashingtonPoints.shp
    mode
 1 exact
                                                                               label
@@ -48,7 +48,7 @@
   has_orig_fid_old
 1            FALSE
                                                                                                                                                 old_path
-1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2019/Parcels2019WashingtonPoints.shp
+1 ~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2019/Parcels2019WashingtonPoints.shp
    mode
 1 exact
                                                                               label
@@ -58,7 +58,7 @@
   has_orig_fid_old
 1            FALSE
                                                                                                                                                 old_path
-1 /Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2020/Parcels2020WashingtonPoints.shp
+1 ~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2020/Parcels2020WashingtonPoints.shp
    mode
 1 exact
 Error: unexpected ')' in "out)"

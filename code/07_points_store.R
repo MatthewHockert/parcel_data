@@ -45,13 +45,13 @@ suppressPackageStartupMessages({
   library(arrow)
 })
 
-PD_ROOT    <- "/Users/matthewhockert/research/parcel_data"
+PD_ROOT    <- Sys.getenv("PARCEL_HOME")
 POINTS_DIR <- file.path(PD_ROOT, "data", "standardized_points")
 XWALK_OUT  <- file.path(PD_ROOT, "inst", "extdata", "points_column_crosswalk.csv")
 SOURCES_OUT <- file.path(PD_ROOT, "docs", "points_sources.csv")
 LOG_OUT    <- file.path(PD_ROOT, "docs", "points_write_log.csv")
 COUNTIES   <- c("Anoka", "Carver", "Dakota", "Hennepin", "Ramsey", "Scott", "Washington")
-DIR_2025   <- "/Users/matthewhockert/Desktop/Personal Info/st_paul_rc_affordable_housing/shp_plan_regional_parcels"
+DIR_2025   <- "~/Desktop/Personal Info/st_paul_rc_affordable_housing/shp_plan_regional_parcels"
 REWRITE    <- FALSE
 DOWNLOAD_TIMEOUT_MIN <- 8    # per copy: give up on an iCloud placeholder after this long and try the
                              # next copy of the same file; if no copy downloads, listed and the run continues

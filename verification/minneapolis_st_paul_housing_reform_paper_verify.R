@@ -3,9 +3,9 @@ suppressPackageStartupMessages({ library(sf); library(dplyr) })
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 
-proj <- "/Users/matthewhockert/Desktop/Personal Info/minneapolis_st_paul_housing_reform_paper"
+proj <- "~/Desktop/Personal Info/minneapolis_st_paul_housing_reform_paper"
 setwd(proj)   # no setwd in the script; relative paths resolve from the .Rproj root
-out_csv <- "/Users/matthewhockert/research/parcel_data/verification/minneapolis_st_paul_housing_reform_paper_results.csv"
+out_csv <- file.path(Sys.getenv("PARCEL_HOME"), "verification/minneapolis_st_paul_housing_reform_paper_results.csv")
 res <- list()
 add <- function(r, site, mode, note = "") {
   r <- mutate(r, site = site, mode = mode, note = note, .before = 1)
@@ -15,12 +15,12 @@ add <- function(r, site, mode, note = "") {
 }
 MISSING <- "old path missing; store partition already verified in docs/store_verification.csv"
 
-## ramsey_parcels.R:33 -- loop 2014:2022 over /Users/matthewhockert/Desktop/HCRA/shp_plan_regonal_parcels_<yr>
-stopifnot(!dir.exists("/Users/matthewhockert/Desktop/HCRA/shp_plan_regonal_parcels_2014"))
+## ramsey_parcels.R:33 -- loop 2014:2022 over ~/Desktop/HCRA/shp_plan_regonal_parcels_<yr>
+stopifnot(!dir.exists("~/Desktop/HCRA/shp_plan_regonal_parcels_2014"))
 for (yr in 2014:2022) add(tibble(label = sprintf("%d Ramsey", yr), ok = TRUE), "ramsey_parcels.R:33", "missing", MISSING)
 
 ## ramsey_parcels.R:137 -- 2023 gdb (exact)
-old <- st_read("/Users/matthewhockert/Downloads/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb",
+old <- st_read("~/Downloads/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb",
                layer = "Parcels2023Ramsey", quiet = TRUE)
 new <- read_parcels(years = 2023, counties = "Ramsey", names = "original")
 add(compare_reads(old, new, label = "2023 Ramsey gdb"), "ramsey_parcels.R:137", "exact")

@@ -9,7 +9,7 @@
 ## Check after: every non-empty parcel's point lies inside its own polygon.
 
 suppressPackageStartupMessages({ library(dplyr); library(arrow); library(sf); library(readr) })
-PD_ROOT <- "/Users/matthewhockert/research/parcel_data"
+PD_ROOT <- Sys.getenv("PARCEL_HOME")
 source(file.path(PD_ROOT, "R", "read_parcels.R"))
 
 files <- list.files(file.path(PD_ROOT, "data", "standardized"), pattern = "part-0[.]parquet$",

@@ -40,7 +40,7 @@
 if (!isNamespace(topenv())) {
   PARCEL_HOME <- Sys.getenv("PARCEL_HOME")   # the clone; R/ and inst/extdata are read from it
   if (PARCEL_HOME == "") stop("Set PARCEL_HOME to the parcel_data folder, or install the package (see README Setup)")
-  for (f in c("paths.R", "download_parcels.R", "parcel_columns.R", "estimate_tax_cap.R", "collapse_condos.R"))
+  for (f in c("paths.R", "download_parcels.R", "parcel_columns.R", "estimate_tax_cap.R", "collapse_condos.R", "get_sales.R"))
     source(file.path(PARCEL_HOME, "R", f))
   rm(f)
 }

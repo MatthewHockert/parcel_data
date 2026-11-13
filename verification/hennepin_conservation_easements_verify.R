@@ -8,8 +8,8 @@
 suppressMessages({library(sf); library(dplyr)})
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
-root <- "/Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper"
-out  <- "/Users/matthewhockert/research/parcel_data/verification/hennepin_conservation_easements_results.csv"
+root <- "~/research/hennepin_conservation_easements/hcra_paper"
+out  <- file.path(Sys.getenv("PARCEL_HOME"), "verification/hennepin_conservation_easements_results.csv")
 if (file.exists(out)) file.remove(out)
 emit <- function(r) {
   write.table(r, out, sep = ",", row.names = FALSE, col.names = !file.exists(out), append = file.exists(out), qmethod = "double")
@@ -19,8 +19,8 @@ tmpl <- function(label, old_path, mode) tibble::tibble(label = label, rows_old =
   rows_ok = NA, names_ok = NA, cols_differ = "", geom_ok = NA, geom_detail = "", ok = NA, old_path = old_path, mode = mode, note = "")
 
 # ag_preserve_analysis/parcel_analysis.R: old paths missing
-sv <- read.csv("/Users/matthewhockert/research/parcel_data/docs/store_verification.csv", stringsAsFactors = FALSE)
-H <- "/Users/matthewhockert/Desktop/HCRA"
+sv <- read.csv(file.path(Sys.getenv("PARCEL_HOME"), "docs/store_verification.csv"), stringsAsFactors = FALSE)
+H <- "~/Desktop/HCRA"
 ag <- rbind(data.frame(site = "19", year = 2023, old = file.path(H, "fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb")),
             data.frame(site = c("24", "26", "28", "30"), year = c(2022, 2021, 2020, 2006), old = NA),
             data.frame(site = "68", year = 2005:2022, old = NA))

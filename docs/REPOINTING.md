@@ -3,14 +3,14 @@
 Brief for repointing every script that reads MetroGIS regional parcel files
 (`shp_plan_regonal_parcels_*`, `fgdb_plan_regonal_parcels_*`,
 `shp_plan_regional_parcels/Parcels{County}.shp`) to the central store at
-`/Users/matthewhockert/research/parcel_data`, and verifying each read returns
+`<PARCEL_HOME>`, and verifying each read returns
 the same data. Decisions are Matt's (2026-11-07). Deletion of the old files is
 a later, separate step that Matt confirms; never delete anything while repointing.
 
 ## The store and the helper
 
 ```r
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
+source("<PARCEL_HOME>/R/read_parcels.R")
 read_parcels(years, counties, cols = NULL, filter = NULL, bbox = NULL,
              geometry = c("polygon", "point", "none"),
              point_method = c("surface", "centroid", "metrogis"),
@@ -73,14 +73,14 @@ not code: do not edit it; list it in your report.
 ## How to verify (required for every changed read)
 
 For each project, write ONE verification script at
-`/Users/matthewhockert/research/parcel_data/verification/<project>_verify.R`
+`<PARCEL_HOME>/verification/<project>_verify.R`
 that, for every changed read site and every year/county that site reads,
 runs the OLD read exactly as the script did before (old path, same
 arguments) and the NEW `read_parcels()` call, then compares:
 
 ```r
-source("/Users/matthewhockert/research/parcel_data/R/read_parcels.R")
-source("/Users/matthewhockert/research/parcel_data/R/verify_read.R")
+source("<PARCEL_HOME>/R/read_parcels.R")
+source("<PARCEL_HOME>/R/verify_read.R")
 compare_reads(old, new, label = "<script>:<line> <year> <county>")          # exact (default)
 compare_reads(old, new, label, key = "PIN", geom_tol = 1, shp_losses = TRUE) # old read = 2024 SHAPEFILE
 compare_point_reads(old, new, polygons, label = ...)                          # old read = published Points
@@ -102,7 +102,7 @@ Rules:
 - Old files that are iCloud placeholders will download when read; that is
   expected and can be slow.
 - Write all results to
-  `/Users/matthewhockert/research/parcel_data/verification/<project>_results.csv`
+  `<PARCEL_HOME>/verification/<project>_results.csv`
   (one row per comparison, including `ok`).
 - Run the verification script with `Rscript` and report the results.
 - Do not edit anything under `parcel_data/R/` or `parcel_data/code/`. If the

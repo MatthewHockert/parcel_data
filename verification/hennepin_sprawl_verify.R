@@ -4,9 +4,9 @@
 suppressMessages({library(sf); library(dplyr)})
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
-p <- "/Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"
+p <- "~/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"
 old <- st_read(p, layer = "Parcels2023Hennepin", quiet = TRUE)
 new <- read_parcels(years = 2023, counties = "Hennepin", names = "original")
 r <- compare_reads(old, new, label = "development_lpm.qmd:790 2023 Hennepin"); r$old_path <- p; r$mode <- "exact"
-write.csv(r, "/Users/matthewhockert/research/parcel_data/verification/hennepin_sprawl_results.csv", row.names = FALSE)
+write.csv(r, file.path(Sys.getenv("PARCEL_HOME"), "verification/hennepin_sprawl_results.csv"), row.names = FALSE)
 print(as.data.frame(r))

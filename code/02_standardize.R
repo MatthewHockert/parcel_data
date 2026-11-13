@@ -17,7 +17,7 @@ suppressPackageStartupMessages({
   library(sf)
 })
 
-PD_ROOT <- "/Users/matthewhockert/research/parcel_data"
+PD_ROOT <- Sys.getenv("PARCEL_HOME")
 
 # Schema inventory ----
 # Source files: the copy chosen for each year x county in the move manifest.

@@ -1,12 +1,12 @@
-## HCRA_verify.R: repointed reads in /Users/matthewhockert/Desktop/HCRA/HCRA_R (2026-11-07).
+## HCRA_verify.R: repointed reads in ~/Desktop/HCRA/HCRA_R (2026-11-07).
 ## Every old path under Desktop/HCRA is gone (the script was already broken), so no
 ## old-vs-new comparison is possible; each site/year is recorded against the store's
 ## own partition check in docs/store_verification.csv.
 suppressMessages({library(sf); library(dplyr)})
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
-sv <- read.csv("/Users/matthewhockert/research/parcel_data/docs/store_verification.csv", stringsAsFactors = FALSE)
-H <- "/Users/matthewhockert/Desktop/HCRA"
+sv <- read.csv(file.path(Sys.getenv("PARCEL_HOME"), "docs/store_verification.csv"), stringsAsFactors = FALSE)
+H <- "~/Desktop/HCRA"
 gdb23 <- file.path(H, "fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb")
 shp <- function(y) file.path(H, sprintf("shp_plan_regonal_parcels_%d", y))
 sites <- rbind(
@@ -26,5 +26,5 @@ res <- do.call(rbind, lapply(seq_len(nrow(sites)), function(i) {
              ok = isTRUE(as.logical(sv_ok)),
              note = "old path missing; store partition already verified in docs/store_verification.csv")
 }))
-write.csv(res, "/Users/matthewhockert/research/parcel_data/verification/HCRA_results.csv", row.names = FALSE)
+write.csv(res, file.path(Sys.getenv("PARCEL_HOME"), "verification/HCRA_results.csv"), row.names = FALSE)
 print(res[, c("label", "rows_new", "ok")])

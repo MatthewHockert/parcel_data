@@ -21,7 +21,7 @@ import pandas as pd
 import pyogrio
 import shapely
 
-HOME = os.environ.get("PARCEL_HOME", "/Users/matthewhockert/research/parcel_data")
+HOME = os.environ["PARCEL_HOME"]
 RAW = os.path.join(HOME, "data", "raw")
 OUT_D = os.path.join(HOME, "inst", "extdata", "original_dtypes.csv")
 OUT_G = os.path.join(HOME, "inst", "extdata", "original_geometry.csv")

@@ -1,4 +1,5 @@
 export(read_parcels)
+export(get_sales)
 export(download_parcels)
 export(parcel_columns)
 export(estimate_tax_cap)

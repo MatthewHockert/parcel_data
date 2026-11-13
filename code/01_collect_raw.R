@@ -32,11 +32,9 @@ suppressPackageStartupMessages({
   library(tidyr)
 })
 
-PD_ROOT  <- "/Users/matthewhockert/research/parcel_data"
+PD_ROOT  <- Sys.getenv("PARCEL_HOME")
 RAW_DIR  <- file.path(PD_ROOT, "data", "raw")
-SEARCH_ROOTS <- c("/Users/matthewhockert/Desktop",
-                  "/Users/matthewhockert/Downloads",
-                  "/Users/matthewhockert/research")
+SEARCH_ROOTS <- path.expand(c("~/Desktop", "~/Downloads", "~/research"))
 
 # Find every polygon component ----
 # File names follow Parcels<year><County>.<ext>; points are Parcels<year><County>Points.*
@@ -110,7 +108,7 @@ manifest %>%
 
 # 4. which project folders lose files (so their scripts can be repointed)
 manifest %>% filter(chosen) %>%
-  mutate(project = sub("^/Users/matthewhockert/", "", sub("/shp_plan_regonal_parcels_.*$", "", path))) %>%
+  mutate(project = sub(paste0("^", path.expand("~"), "/"), "", sub("/shp_plan_regonal_parcels_.*$", "", path))) %>%
   group_by(project) %>% summarise(files = n(), gb = round(sum(bytes) / 1e9, 1), .groups = "drop") %>%
   arrange(desc(gb)) %>% print(n = Inf)
 
@@ -177,7 +175,7 @@ for (yr in sort(unique(to_copy$year))) {
 
 ## 2023 geodatabase ----
 # One copy of the 7-county gdb; prefer a copy outside iCloud-synced folders.
-gdb_src  <- gdb_2023[grepl("^/Users/matthewhockert/research/", gdb_2023)][1]
+gdb_src  <- gdb_2023[grepl(paste0("^", path.expand("~/research"), "/"), gdb_2023)][1]
 gdb_dest <- file.path(RAW_DIR, "2023", "plan_regonal_parcels_2023.gdb")
 if (!dir.exists(gdb_dest)) {
   dir.create(file.path(RAW_DIR, "2023"), showWarnings = FALSE)

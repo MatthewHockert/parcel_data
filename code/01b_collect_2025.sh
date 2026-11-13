@@ -5,8 +5,8 @@
 # into data/raw/2025/, polygons only, original file names kept.
 # Waits on iCloud: requests each evicted file and copies it once local.
 # Verifies byte size after copy. Rerunnable.
-SRC="/Users/matthewhockert/Desktop/Personal Info/st_paul_rc_affordable_housing/shp_plan_regional_parcels"
-DST="/Users/matthewhockert/research/parcel_data/data/raw/2025"
+SRC="$HOME/Desktop/Personal Info/st_paul_rc_affordable_housing/shp_plan_regional_parcels"
+DST="$PARCEL_HOME/data/raw/2025"
 mkdir -p "$DST"
 for i in $(seq 1 120); do
   left=0

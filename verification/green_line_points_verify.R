@@ -15,7 +15,7 @@
 
 suppressPackageStartupMessages({ library(sf); library(dplyr) })
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
-MM <- "/Users/matthewhockert/Desktop/Personal Info/matthew_maps_saint_paul"
+MM <- "~/Desktop/Personal Info/matthew_maps_saint_paul"
 utm15 <- 26915
 
 # study area exactly as build_green_line_panel.R builds it
@@ -91,5 +91,5 @@ for (cty in c("Ramsey", "Hennepin")) for (yr in 2005:2022) {
   cat(cty, yr, if (full_diff == "" && filt_diff == "") "IDENTICAL" else paste("DIFF |", full_diff, "|", filt_diff), "\n")
 }
 out <- bind_rows(res)
-write.csv(out, "/Users/matthewhockert/research/parcel_data/verification/green_line_points_results.csv", row.names = FALSE)
+write.csv(out, file.path(Sys.getenv("PARCEL_HOME"), "verification/green_line_points_results.csv"), row.names = FALSE)
 cat("\nidentical (full and filtered):", sum(out$full_identical & out$filtered_identical), "of", nrow(out), "\n")

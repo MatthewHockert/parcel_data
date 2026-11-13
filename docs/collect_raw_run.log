@@ -1,12 +1,12 @@
 polygon component files found: 5365  distinct year-county-ext: 1064 
 2023 geodatabase copies: 7 
-[1] "/Users/matthewhockert/Desktop/Personal Info/matthew_maps_saint_paul/Archive/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"           
-[2] "/Users/matthewhockert/Desktop/Personal Info/minneapolis_st_paul_housing_reform_paper/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"  
-[3] "/Users/matthewhockert/Desktop/Personal Info/st_paul_rc_affordable_housing/data/Archive/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"
-[4] "/Users/matthewhockert/Desktop/UMN/hc_easement_simulations/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"                        
-[5] "/Users/matthewhockert/Downloads/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"                                                       
-[6] "/Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"        
-[7] "/Users/matthewhockert/research/parcel_data/data/raw/2023/plan_regonal_parcels_2023.gdb"                                                             
+[1] "~/Desktop/Personal Info/matthew_maps_saint_paul/Archive/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"           
+[2] "~/Desktop/Personal Info/minneapolis_st_paul_housing_reform_paper/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"  
+[3] "~/Desktop/Personal Info/st_paul_rc_affordable_housing/data/Archive/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"
+[4] "~/Desktop/UMN/hc_easement_simulations/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"                        
+[5] "~/Downloads/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"                                                       
+[6] "~/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb"        
+[7] "<PARCEL_HOME>/data/raw/2023/plan_regonal_parcels_2023.gdb"                                                             
 year-county combos missing a required component:
 # A tibble: 0 × 3
 # ℹ 3 variables: year <int>, county <chr>, n_required <int>
@@ -135,7 +135,7 @@ wrote docs/move_manifest.csv
 17:56 2021 done; free 11.5 GB
 17:56 2022 done; free 11.5 GB
 17:56 2024 done; free 11.5 GB
-2023 gdb copied from /Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb  size (GB): 2.14 
+2023 gdb copied from ~/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb  size (GB): 2.14 
 # A tibble: 2 × 3
   status         size_ok     n
   <chr>          <lgl>   <int>

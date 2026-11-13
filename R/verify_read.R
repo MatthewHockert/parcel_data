@@ -163,7 +163,7 @@ resolve_old <- function(path) {
     fl <- suppressWarnings(as.numeric(system2("stat", c("-f", "%f", shQuote(f)), stdout = TRUE, stderr = FALSE)))
     length(fl) == 1 && !is.na(fl) && bitwAnd(fl %/% 2^30, 1L) == 1L
   }
-  raw_root <- "/Users/matthewhockert/research/parcel_data/data/raw"
+  raw_root <- file.path(Sys.getenv("PARCEL_HOME"), "data/raw")
   bn <- basename(sub("[.](shp|gdb|gpkg)$", "", path))
   yr <- regmatches(bn, regexpr("20[0-9]{2}", bn))
   if (!length(yr)) { pd <- basename(dirname(path)); yr <- regmatches(pd, regexpr("20[0-9]{2}", pd)) }

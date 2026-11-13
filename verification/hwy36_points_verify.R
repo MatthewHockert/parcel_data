@@ -4,7 +4,7 @@
 # returns the same table: names, rows, every attribute (NA-aware), geometry. 2026-11-10.
 suppressPackageStartupMessages(library(sf))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
-base <- "/Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels"
+base <- "~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels"
 mism <- function(x, y) xor(is.na(x), is.na(y)) | (!is.na(x) & !is.na(y) & x != y)
 out <- list()
 for (yr in 2015:2020) {
@@ -23,4 +23,4 @@ for (yr in 2015:2020) {
   print(tail(out, 1)[[1]])
 }
 res <- do.call(rbind, out)
-write.csv(res, "/Users/matthewhockert/research/parcel_data/verification/hwy36_points_results.csv", row.names = FALSE)
+write.csv(res, file.path(Sys.getenv("PARCEL_HOME"), "verification/hwy36_points_results.csv"), row.names = FALSE)

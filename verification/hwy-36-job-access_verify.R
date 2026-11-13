@@ -9,8 +9,8 @@
 suppressMessages({library(sf); library(dplyr)})
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
-root <- "/Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels"
-out  <- "/Users/matthewhockert/research/parcel_data/verification/hwy-36-job-access_results.csv"
+root <- "~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels"
+out  <- file.path(Sys.getenv("PARCEL_HOME"), "verification/hwy-36-job-access_results.csv")
 if (file.exists(out)) file.remove(out)
 for (yr in 2015:2020) {
   p <- resolve_old(file.path(root, sprintf("shp_plan_regonal_parcels_%d/Parcels%dWashingtonPoints.shp", yr, yr)))

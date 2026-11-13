@@ -2,7 +2,7 @@
 ## hwy-36 Washington 2015 Points read failed compare_point_reads().
 suppressMessages({library(sf); library(dplyr)})
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
-p <- "/Users/matthewhockert/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2015/Parcels2015WashingtonPoints.shp"
+p <- "~/Desktop/AO/hwy-36-job-access/hwy-36/data/washington_county_parcels/shp_plan_regonal_parcels_2015/Parcels2015WashingtonPoints.shp"
 old <- st_drop_geometry(st_read(p, quiet = TRUE))
 pol <- st_drop_geometry(read_parcels(2015, "Washington", names = "original", geometry = "polygon"))
 new <- st_drop_geometry(read_parcels(2015, "Washington", names = "original", geometry = "point", point_method = "metrogis"))

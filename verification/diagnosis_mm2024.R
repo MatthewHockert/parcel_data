@@ -2,8 +2,8 @@
 ## (download dated 2025-12-16) with the store's 2024 gdb (housing_reform copy,
 ## dated 2025-01-24) for every layer: rows, PIN sets, owner/taxpayer names.
 suppressMessages({library(sf); library(dplyr)})
-A <- "/Users/matthewhockert/Desktop/Personal Info/matthew_maps_saint_paul/Archive/fgdb_plan_regonal_parcels_2024/plan_regonal_parcels_2024.gdb"
-B <- "/Users/matthewhockert/research/parcel_data/data/raw/2024/plan_regonal_parcels_2024.gdb"
+A <- "~/Desktop/Personal Info/matthew_maps_saint_paul/Archive/fgdb_plan_regonal_parcels_2024/plan_regonal_parcels_2024.gdb"
+B <- file.path(Sys.getenv("PARCEL_HOME"), "data/raw/2024/plan_regonal_parcels_2024.gdb")
 la <- st_layers(A); lb <- st_layers(B)
 cat("layers mm:", sort(la$name), "\nlayers store:", sort(lb$name), "\n")
 print(data.frame(layer = la$name, rows_mm = la$features, rows_store = lb$features[match(la$name, lb$name)]))
@@ -32,4 +32,4 @@ for (ly in sort(intersect(la$name, lb$name))) {
   }
 }
 out <- bind_rows(res); options(width = 250); print(out, row.names = FALSE)
-write.csv(out, "/Users/matthewhockert/research/parcel_data/verification/diagnosis_mm2024_results.csv", row.names = FALSE)
+write.csv(out, file.path(Sys.getenv("PARCEL_HOME"), "verification/diagnosis_mm2024_results.csv"), row.names = FALSE)

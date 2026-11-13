@@ -13,7 +13,7 @@ Run:  python3 -I code/10_delete_icloud_duplicates.py            (dry run)
 """
 import csv, os, sys, collections
 
-HOME = "/Users/matthewhockert"
+HOME = os.path.expanduser("~")
 PD = HOME + "/research/parcel_data"
 PI = HOME + "/Desktop/Personal Info/"
 DATALESS = 0x40000000

@@ -3,6 +3,6 @@
   cols_differ geom_ok geom_detail   ok
 1                TRUE             TRUE
                                                                                                                                      old_path
-1 /Users/matthewhockert/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb
+1 ~/research/hennepin_conservation_easements/hcra_paper/data/fgdb_plan_regonal_parcels_2023/plan_regonal_parcels_2023.gdb
    mode
 1 exact

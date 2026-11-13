@@ -12,7 +12,7 @@ Matt's review. Nothing is deleted here. Output: docs/deletion_candidates.csv
 Excluded: anything under parcel_data; plan_parcels_open files (a different dataset).
 """
 import os, re, csv, collections
-ROOTS = ["/Users/matthewhockert/Desktop", "/Users/matthewhockert/Downloads", "/Users/matthewhockert/research"]
+ROOTS = [os.path.expanduser("~/Desktop"), os.path.expanduser("~/Downloads"), os.path.expanduser("~/research")]
 SKIP = ("/Library/", "/.Trash/", "/research/parcel_data/")
 DATALESS = 0x40000000
 pat_poly = re.compile(r"^Parcels(20\d{2})(Anoka|Carver|Dakota|Hennepin|Ramsey|Scott|Washington)\.")
@@ -22,7 +22,7 @@ rows = []
 def add(cat, path, st):
     rows.append(dict(category=cat, path=path, bytes=st.st_size,
                      icloud_only=bool(st.st_flags & DATALESS),
-                     synced=path.startswith("/Users/matthewhockert/Desktop/")))
+                     synced=path.startswith(os.path.expanduser("~/Desktop/"))))
 for r in ROOTS:
     for d, dn, fn in os.walk(r):
         if any(s in d + "/" for s in SKIP): dn[:] = []; continue
@@ -40,7 +40,7 @@ for r in ROOTS:
             elif base == "shp_plan_regional_parcels" and pat_25.match(f): add("release_2025", p, st)
             elif re.match(r"(gpkg|fgdb|shp)_plan_regonal_parcels_20\d{2}\.zip$", f) or re.match(r"plan_regonal_parcels_20\d{2}\.gpkg$", f):
                 add("gdb_gpkg", p, st)
-out = "/Users/matthewhockert/research/parcel_data/docs/deletion_candidates.csv"
+out = os.path.join(os.environ["PARCEL_HOME"], "docs/deletion_candidates.csv")
 with open(out, "w", newline="") as fh:
     w = csv.DictWriter(fh, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
 agg = collections.defaultdict(lambda: [0, 0, 0, 0])
@@ -55,6 +55,6 @@ tb = sum(x["bytes"] for x in rows); tl = sum(x["bytes"] for x in rows if not x["
 print(f"{'TOTAL':16s} {len(rows):7d} {tb/1e9:9.1f} {tl/1e9:11.1f} {(tb-tl)/1e9:15.1f}")
 proj = collections.Counter()
 for x in rows:
-    m = re.match(r"/Users/matthewhockert/((?:Desktop/(?:Personal Info|UMN|AO|AOData)/[^/]+)|Desktop/[^/]+|Downloads|research/[^/]+)", x["path"])
+    m = re.match(re.escape(os.path.expanduser("~")) + r"/((?:Desktop/(?:Personal Info|UMN|AO|AOData)/[^/]+)|Desktop/[^/]+|Downloads|research/[^/]+)", x["path"])
     proj[m.group(1) if m else "?"] += x["bytes"]
 print("\nby folder (GB):"); [print(f"  {v/1e9:7.1f}  {k}") for k, v in proj.most_common()]

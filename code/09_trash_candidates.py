@@ -27,7 +27,7 @@ History: tier1 moved 2026-11-09 (974 files, 46.24 GB) as 09_trash_tier1.py.
 """
 import csv, os, sys, shutil
 
-HOME = "/Users/matthewhockert"
+HOME = os.path.expanduser("~")
 PD = HOME + "/research/parcel_data"
 DATALESS = 0x40000000
 PI = HOME + "/Desktop/Personal Info/"

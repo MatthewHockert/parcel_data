@@ -15,8 +15,8 @@ Plus a self-test that the Python original view equals geopandas read_file of
 the raw 2017 Ramsey shapefile (exact) and matches R's original view on a few
 columns (via Rscript, if available).
 
-Run: /Users/matthewhockert/packaging-test/pkg-test/bin/python \
-     /Users/matthewhockert/research/parcel_data/verification/scenic-quality_verify.py
+Run: ~/packaging-test/pkg-test/bin/python \
+     <PARCEL_HOME>/verification/scenic-quality_verify.py
 Results: verification/scenic-quality_results.csv
 """
 import gc
@@ -33,8 +33,8 @@ sys.path.insert(0, os.path.join(os.environ["PARCEL_HOME"], "python"))
 from read_parcels import read_parcels  # noqa: E402
 from verify_read import compare_reads  # noqa: E402
 
-HOME = "/Users/matthewhockert/research/parcel_data"
-REPO = "/Users/matthewhockert/Desktop/Personal Info/scenic-quality"
+HOME = os.environ["PARCEL_HOME"]
+REPO = os.path.expanduser("~/Desktop/Personal Info/scenic-quality")
 ZIP = f"{REPO}/data/parcels/gpkg_plan_regonal_parcels_2021.zip"
 VSI = f"/vsizip/{ZIP}/plan_regonal_parcels_2021.gpkg"
 COUNTIES = ["Anoka", "Carver", "Dakota", "Hennepin", "Ramsey", "Scott", "Washington"]

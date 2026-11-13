@@ -10,7 +10,8 @@ from .download_parcels import download_parcels
 from .parcel_columns import parcel_columns
 from .estimate_tax_cap import estimate_tax_cap
 from .collapse_condos import collapse_condos
+from .get_sales import get_sales
 
-__all__ = ["read_parcels", "download_parcels", "parcel_columns", "estimate_tax_cap",
+__all__ = ["read_parcels", "get_sales", "download_parcels", "parcel_columns", "estimate_tax_cap",
            "collapse_condos", "parcel_data_dir"]
-__version__ = "1.0.0"
+__version__ = "1.1.0"

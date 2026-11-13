@@ -9,9 +9,9 @@ suppressPackageStartupMessages({ library(sf); library(dplyr); library(glue) })
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 
-proj <- "/Users/matthewhockert/Desktop/Personal Info/st_paul_rc_affordable_housing"
+proj <- "~/Desktop/Personal Info/st_paul_rc_affordable_housing"
 setwd(proj)
-out_csv <- "/Users/matthewhockert/research/parcel_data/verification/st_paul_rc_affordable_housing_results.csv"
+out_csv <- file.path(Sys.getenv("PARCEL_HOME"), "verification/st_paul_rc_affordable_housing_results.csv")
 res <- list()
 ## resumable: keep comparisons that already passed in an earlier run, redo the rest
 prev <- if (file.exists(out_csv)) read.csv(out_csv, stringsAsFactors = FALSE) else NULL

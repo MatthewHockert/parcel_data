@@ -19,7 +19,7 @@ suppressPackageStartupMessages({
   library(sf)
 })
 
-PD_ROOT <- "/Users/matthewhockert/research/parcel_data"
+PD_ROOT <- Sys.getenv("PARCEL_HOME")
 source(file.path(PD_ROOT, "R", "read_parcels.R"))
 source(file.path(PD_ROOT, "R", "verify_read.R"))
 COUNTIES <- c("Anoka", "Carver", "Dakota", "Hennepin", "Ramsey", "Scott", "Washington")

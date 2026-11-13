@@ -11,7 +11,7 @@
 ## Output: inst/extdata/shapefile_schema.csv
 
 suppressPackageStartupMessages({ library(dplyr); library(readr); library(sf); library(purrr) })
-PD_ROOT <- "/Users/matthewhockert/research/parcel_data"
+PD_ROOT <- Sys.getenv("PARCEL_HOME")
 
 xwalk <- read_csv(file.path(PD_ROOT, "inst", "extdata", "column_crosswalk.csv"), show_col_types = FALSE)
 # std_name for any original name, by upper-case name (same rules as the crosswalk)

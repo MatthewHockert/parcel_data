@@ -5,9 +5,9 @@ suppressPackageStartupMessages({ library(sf); library(dplyr) })
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))
 source(file.path(Sys.getenv("PARCEL_HOME"), "R/verify_read.R"))
 
-proj <- "/Users/matthewhockert/Desktop/Personal Info/matthew_maps_saint_paul"
+proj <- "~/Desktop/Personal Info/matthew_maps_saint_paul"
 setwd(proj)   # the scripts setwd() here and use paths relative to it
-out_csv <- "/Users/matthewhockert/research/parcel_data/verification/matthew_maps_saint_paul_results.csv"
+out_csv <- file.path(Sys.getenv("PARCEL_HOME"), "verification/matthew_maps_saint_paul_results.csv")
 res <- list()
 add <- function(r, site, mode, note = "", via_raw = NA) {
   r <- mutate(r, site = site, mode = mode, note = note, via_raw = via_raw, .before = 1)

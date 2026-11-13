@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "parceldata"
-version = "1.0.0"
+version = "1.1.0"
 description = "Read the Twin Cities regional parcels, 2005-2025 (MetroGIS 7-county files, standardized GeoParquet on Zenodo)"
 readme = "README.md"
 license = { file = "LICENSE" }

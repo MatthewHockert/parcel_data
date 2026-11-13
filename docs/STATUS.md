@@ -361,3 +361,19 @@ Remaining after it reports:
   parcel_columns) and Ramsey 2021 (points, collapse_condos, as_shapefile), in R and in
   Python. A real Zenodo download of 2009 polygons into an empty per-user folder, then read
   and map, worked in R and in Python. Windows not tested on this machine.
+
+## 2026-11-13: get_sales(), dependencies loaded, paths hidden, README reorganized
+
+- `get_sales()` (R and Python): one row per county, pin and sale date, stacked
+  from the yearly files, with assessor values from the first file listing the
+  sale. Drops rows with no pin and sale dates after the file's year. No sale
+  type exists in the files. R and Python identical on Ramsey 2014-2024
+  (209,371 sales); all counties and years give 2,230,163 sales in about 4 min.
+- R: `library(parceldata)` attaches sf, dplyr and ggplot2 (Depends).
+- Python install is `pip install git+https://github.com/MatthewHockert/parcel_data`
+  (chosen over PyPI), with the zip URL as the no-Git fallback.
+- Machine paths removed from all tracked files: scripts read `PARCEL_HOME` or
+  `~`, and logs and CSVs show `<PARCEL_HOME>` and `~`. Older commits still hold
+  them (history not rewritten, by choice).
+- README: "Functions and examples" lists each function with code and output;
+  the build steps moved to the end as "How to recreate the package".
