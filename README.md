@@ -15,7 +15,7 @@ These steps are the same on Windows, Mac and Linux. Everything is pasted into R 
    R, paste into the R console:
    ```r
    install.packages("remotes")
-   remotes::install_github("MatthewHockert/parcel_data")
+   remotes::install_github("MatthewHockert/parcel_data", upgrade = "never")
    ```
    Python, paste into Python (a Jupyter notebook works too). It installs into the Python you are running, so it cannot land in the wrong one:
    ```python
