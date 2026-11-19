@@ -25,8 +25,7 @@ download_parcels <- function(years,
   on.exit(options(old_timeout))
 
   for (yr in years) for (ly in layers) {
-    store  <- if (ly == "points") "standardized_points" else "standardized"
-    target <- file.path(data_dir, store, sprintf("year=%d", yr))
+    target <- file.path(.parcel_store(ly), sprintf("year=%d", yr))
     if (dir.exists(target) && !overwrite) {
       message(sprintf("%d %s: already on disk, skipped", yr, ly)); next
     }
@@ -47,6 +46,7 @@ download_parcels <- function(years,
     }
     if (overwrite) unlink(target, recursive = TRUE)
     utils::unzip(zip_path, exdir = data_dir)
+    .parcel_store(ly, quiet = TRUE)   # polygon zips unzip to standardized/; this moves the year into standardized_polygons/
     unlink(zip_path)
   }
   invisible(data_dir)

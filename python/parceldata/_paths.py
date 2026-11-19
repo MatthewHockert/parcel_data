@@ -51,3 +51,41 @@ def parcel_data_dir(dir=None):
     if home:
         return os.path.join(home, "data")
     return _user_data_dir()
+
+
+def _store(layer="polygons", quiet=False):
+    """Store folder for a layer: <data dir>/standardized_polygons or standardized_points.
+
+    The polygon store was first named "standardized", and the Zenodo zips still unzip to
+    that name, so year folders found under the old name are moved across here. Called by
+    read_parcels() and download_parcels(). Python twin of .parcel_store() in R/paths.R.
+    """
+    import warnings
+    data_dir = parcel_data_dir()
+    if layer == "points":
+        return os.path.join(data_dir, "standardized_points")
+    old = os.path.join(data_dir, "standardized")
+    new = os.path.join(data_dir, "standardized_polygons")
+    if not os.path.isdir(old):
+        return new
+
+    moved = False
+    try:
+        if not os.path.isdir(new):
+            os.rename(old, new)                      # whole folder in one step
+            moved = True
+        else:
+            for yr in sorted(d for d in os.listdir(old) if d.startswith("year=")):
+                if not os.path.isdir(os.path.join(new, yr)):   # a year already in the new folder is left alone
+                    os.rename(os.path.join(old, yr), os.path.join(new, yr))
+                    moved = True
+            if not set(os.listdir(old)) - {".DS_Store"}:
+                import shutil
+                shutil.rmtree(old)
+    except OSError:
+        pass                                         # e.g. files open on Windows: handled below
+    if moved and not quiet:
+        print(f"polygon files moved from {old} to {new}")
+    if os.path.isdir(old):
+        warnings.warn(f"{old} still holds files that were not moved to {new}; move or delete them by hand")
+    return new if os.path.isdir(new) else old        # rename failed: keep reading the old folder

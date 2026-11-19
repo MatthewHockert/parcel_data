@@ -14,7 +14,7 @@ import pandas as pd
 import pyarrow.parquet as pq
 
 PD = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STORES = {"polygons": ("standardized", "column_crosswalk.csv"),
+STORES = {"polygons": ("standardized_polygons", "column_crosswalk.csv"),
           "points": ("standardized_points", "points_column_crosswalk.csv")}
 
 rows = []

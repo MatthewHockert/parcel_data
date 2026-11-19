@@ -24,7 +24,7 @@ standardized names.
 1. Clone or install the readers from the GitHub repository above.
 2. Set `PARCEL_HOME` to the repository folder.
 3. Unzip the years you need into `$PARCEL_HOME/data/`
-   (each zip starts at `standardized/` or `standardized_points/`).
+   (each zip starts at `standardized/` or `standardized_points/`; `download_parcels()` and `read_parcels()` rename `standardized/` to `standardized_polygons/`).
 4. Read:
    ```r
    source(file.path(Sys.getenv("PARCEL_HOME"), "R/read_parcels.R"))

@@ -295,7 +295,7 @@ write_csv(column_crosswalk, file.path(PD_ROOT, "inst", "extdata", "column_crossw
 # Write the store ----
 source(file.path(PD_ROOT, "R", "read_parcels.R"))   # parcel_linearize, parcel_interior_xy
 suppressPackageStartupMessages(library(arrow))
-STORE_DIR <- file.path(PD_ROOT, "data", "standardized")
+STORE_DIR <- file.path(PD_ROOT, "data", "standardized_polygons")
 
 ## Target types ----
 # One type per standardized column:

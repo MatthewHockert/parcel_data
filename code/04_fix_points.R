@@ -12,7 +12,7 @@ suppressPackageStartupMessages({ library(dplyr); library(arrow); library(sf); li
 PD_ROOT <- Sys.getenv("PARCEL_HOME")
 source(file.path(PD_ROOT, "R", "read_parcels.R"))
 
-files <- list.files(file.path(PD_ROOT, "data", "standardized"), pattern = "part-0[.]parquet$",
+files <- list.files(file.path(PD_ROOT, "data", "standardized_polygons"), pattern = "part-0[.]parquet$",
                     recursive = TRUE, full.names = TRUE)
 only <- suppressWarnings(as.integer(commandArgs(trailingOnly = TRUE))); only <- only[!is.na(only)]
 if (length(only)) files <- files[grepl(paste0("year=(", paste(only, collapse = "|"), ")/"), files)]
@@ -32,7 +32,7 @@ log <- bind_rows(lapply(files, function(f) {
   inside <- vapply(seq_len(nrow(pts)), function(k) pts$i[k] %in% hits[[k]], logical(1))
   d$geometry <- blob::as_blob(lapply(d$geometry, as.raw))
   write_parquet(d, f)
-  part <- sub(".*standardized/", "", dirname(f))
+  part <- sub(".*standardized_polygons/", "", dirname(f))
   r <- tibble(partition = part, rows = nrow(d), changed = sum(abs(old_x - d$pt_x) > 0.01, na.rm = TRUE),
               pt_missing = sum(is.na(d$pt_x)), inside_own = mean(inside))
   cat(format(Sys.time(), "%H:%M"), part, "changed", r$changed, "inside", round(r$inside_own, 5), "\n")

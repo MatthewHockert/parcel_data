@@ -19,7 +19,7 @@ import zipfile
 from tqdm import tqdm
 
 ZENODO_RECORD = "24116899"  # DOI 10.5281/zenodo.24116899
-from ._paths import _table, parcel_data_dir
+from ._paths import _store, _table, parcel_data_dir
 
 
 def _md5(path):
@@ -44,8 +44,7 @@ def download_parcels(years, layer="polygons",
     layers = ["polygons", "points"] if layer == "points" else ["polygons"]
     jobs = [(yr, ly) for yr in ([years] if isinstance(years, int) else years) for ly in layers]
     for yr, layer in jobs:
-        store = "standardized_points" if layer == "points" else "standardized"
-        target = os.path.join(data_dir, store, f"year={yr}")
+        target = os.path.join(_store(layer), f"year={yr}")
         if os.path.isdir(target) and not overwrite:
             print(f"{yr} {layer}: already on disk, skipped")
             continue
@@ -75,5 +74,6 @@ def download_parcels(years, layer="polygons",
             shutil.rmtree(target, ignore_errors=True)
         with zipfile.ZipFile(zip_path) as z:
             z.extractall(data_dir)
+        _store(layer, quiet=True)  # polygon zips unzip to standardized/; this moves the year into standardized_polygons/
         os.remove(zip_path)
     return data_dir

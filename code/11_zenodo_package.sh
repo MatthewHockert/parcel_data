@@ -1,8 +1,10 @@
 #!/bin/bash
 # Package the store for the Zenodo deposit (DOI 10.5281/zenodo.24116899).
 # One uncompressed zip per year and layer (parquet is already compressed);
-# paths inside start at standardized/ or standardized_points/, so unzipping
+# paths inside start at standardized_polygons/ or standardized_points/, so unzipping
 # into $PARCEL_HOME/data puts every partition where read_parcels() looks.
+# The zips in the published deposit start at standardized/ (the polygon store's
+# first name); download_parcels() moves those into standardized_polygons/.
 set -euo pipefail
 
 PARCEL_HOME="${PARCEL_HOME:-$HOME/research/parcel_data}"
@@ -11,7 +13,7 @@ mkdir -p "$OUT"
 cd "$PARCEL_HOME/data"
 
 for yr in $(seq 2005 2025); do
-  zip -0 -r -q -X "$OUT/parcels_polygons_${yr}.zip" "standardized/year=${yr}"
+  zip -0 -r -q -X "$OUT/parcels_polygons_${yr}.zip" "standardized_polygons/year=${yr}"
   zip -0 -r -q -X "$OUT/parcels_points_${yr}.zip"   "standardized_points/year=${yr}"
   echo "$yr done"
 done

@@ -1,7 +1,7 @@
 """read_parcels.py -- Python twin of R/read_parcels.R.
 
 One entry point to the MetroGIS 7-county parcel store (2005-2025 files) in
-parcel_data_dir()/standardized (see _paths.py), partitioned
+parcel_data_dir()/standardized_polygons (see _paths.py), partitioned
 year=YYYY/county=Name/part-0.parquet (plain Parquet, WKB geometry, EPSG 26915).
 
 Use from any project, after pip install (see README Setup):
@@ -58,7 +58,7 @@ import pyarrow.parquet as pq
 import shapely
 
 # the repo folder; falls back to the folder above this file
-from ._paths import _table, parcel_data_dir
+from ._paths import _store, _table, parcel_data_dir
 
 PARCEL_XWALK = _table("column_crosswalk.csv")
 PARCEL_DTYPES = _table("original_dtypes.csv")
@@ -259,7 +259,7 @@ def read_parcels(years=None, counties=None, cols=None, filter=None, bbox=None,
     if layer not in ("polygons", "points"):
         raise ValueError("layer must be 'polygons' or 'points'")
     is_points = layer == "points"
-    store = os.path.join(parcel_data_dir(), "standardized_points" if is_points else "standardized")
+    store = _store(layer)
     if is_points and (point_method != "surface" or as_shapefile or orig_fid):
         raise ValueError('layer="points" returns the published points: as_shapefile, orig_fid and point_method do not apply')
     if geometry not in ("polygon", "point", "none"):

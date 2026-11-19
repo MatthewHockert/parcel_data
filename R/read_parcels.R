@@ -116,7 +116,7 @@ read_parcels <- function(years    = NULL,           # e.g. 2016 or 2005:2024; NU
   names    <- match.arg(names)
   layer    <- match.arg(layer)
   is_points <- layer == "points"
-  store_dir <- file.path(parcel_data_dir(), if (is_points) "standardized_points" else "standardized")
+  store_dir <- .parcel_store(layer)
   if (is_points && (isTRUE(as_shapefile) || isTRUE(orig_fid) || pm_given)) {
     stop('layer = "points" returns the published points: as_shapefile, orig_fid and point_method do not apply')
   }

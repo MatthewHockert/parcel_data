@@ -50,7 +50,7 @@ RULES = [
 ]
 
 rows = []
-for f in sorted(glob.glob(os.path.join(PD, "data", "standardized", "year=*", "county=*", "part-0.parquet"))):
+for f in sorted(glob.glob(os.path.join(PD, "data", "standardized_polygons", "year=*", "county=*", "part-0.parquet"))):
     yr, cty = re.search(r"year=(\d+)/county=(\w+)", f).groups()
     vc = pq.read_table(f, columns=["use_class1"]).to_pandas().use_class1.value_counts()
     for lab, n in vc.items():

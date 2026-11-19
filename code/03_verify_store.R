@@ -16,7 +16,7 @@ source(file.path(PD_ROOT, "R", "read_parcels.R"))
 source(file.path(PD_ROOT, "R", "verify_read.R"))
 
 # partitions present in the store
-written <- list.dirs(file.path(PD_ROOT, "data", "standardized"), recursive = TRUE, full.names = FALSE)
+written <- list.dirs(file.path(PD_ROOT, "data", "standardized_polygons"), recursive = TRUE, full.names = FALSE)
 written <- written[grepl("^year=[0-9]{4}/county=", written)]
 parts <- tibble(year = as.integer(sub("^year=([0-9]{4}).*", "\\1", written)),
                 county = sub(".*county=", "", written))
@@ -52,7 +52,7 @@ verification <- bind_rows(lapply(seq_len(nrow(parts)), function(i) {
   r <- compare_reads(old, new, label = paste(yr, cty))
   # stored pt_x / pt_y must lie inside their own parcel (guards the
   # misalignment fixed by 04_fix_points.R)
-  pq <- arrow::read_parquet(file.path(PD_ROOT, "data", "standardized", paste0("year=", yr),
+  pq <- arrow::read_parquet(file.path(PD_ROOT, "data", "standardized_polygons", paste0("year=", yr),
                                       paste0("county=", cty), "part-0.parquet"),
                             col_select = c("row_in_file", "pt_x", "pt_y"))
   pq <- pq[order(pq$row_in_file), ]

@@ -1,7 +1,7 @@
 # Status — paused 2026-11-07 night
 
 ## Done
-- Store: 147 partitions (2005-2025 x 7 counties) in `data/standardized/`, every one
+- Store: 147 partitions (2005-2025 x 7 counties) in `data/standardized_polygons/`, every one
   verified exact against its source file (`docs/store_verification.csv`), and every
   stored pt_x/pt_y inside its own parcel (`docs/fix_points_log.csv`).
 - Sources: shapefiles for 2005-2020, 2022, 2025; GeoPackage for 2021; geodatabases

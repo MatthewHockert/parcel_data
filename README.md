@@ -276,7 +276,7 @@ The data are not in this repository. They go in `data/` (not tracked).
 
 | Data | Source | Files |
 |---|---|---|
-| Standardized store, polygons and Points, 2005-2025 | Zenodo, DOI [10.5281/zenodo.24116899](https://doi.org/10.5281/zenodo.24116899) (10 GB, one zip per year and layer) | `data/standardized/`, `data/standardized_points/` |
+| Standardized store, polygons and Points, 2005-2025 | Zenodo, DOI [10.5281/zenodo.24116899](https://doi.org/10.5281/zenodo.24116899) (10 GB, one zip per year and layer) | `data/standardized_polygons/`, `data/standardized_points/` |
 | Raw release files (build input only) | MetroGIS Regional Parcel Dataset, once published on the Minnesota Geospatial Commons. Those archive links no longer resolve, and Metropolitan Council GIS holds the archive. | `data/raw/<year>/` |
 | Column crosswalks | Built by `code/02_standardize.R` and `code/07_points_store.R` | `inst/extdata/column_crosswalk.csv`, `inst/extdata/points_column_crosswalk.csv` |
 
