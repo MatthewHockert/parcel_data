@@ -56,8 +56,11 @@ def download_parcels(years, layer="polygons",
         url = f"{base_url}/{zip_name}" + ("?download=1" if base_url.startswith("http") else "")
         zip_path = os.path.join(tempfile.gettempdir(), zip_name)
         print(f"{yr} {layer}: downloading")
-        # read in 1 MB pieces so the bar can advance; total comes from the server's
-        # Content-Length (missing -> tqdm shows a byte counter with no bar)
+        # PROGRESS BAR: tqdm() below draws it and bar.update() advances it.
+        # Read in 1 MB pieces so the bar can advance; total comes from the server's
+        # Content-Length (missing -> tqdm shows a byte counter with no bar).
+        # It only appears in a version installed after this was added, so
+        # reinstall the package if no bar shows.
         with urllib.request.urlopen(url) as r, open(zip_path, "wb") as out:
             size = r.headers.get("Content-Length")
             with tqdm(total=int(size) if size else None, unit="B", unit_scale=True,
