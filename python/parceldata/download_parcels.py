@@ -16,6 +16,8 @@ import tempfile
 import urllib.request
 import zipfile
 
+from tqdm import tqdm
+
 ZENODO_RECORD = "24116899"  # DOI 10.5281/zenodo.24116899
 from ._paths import _table, parcel_data_dir
 
@@ -54,8 +56,15 @@ def download_parcels(years, layer="polygons",
         url = f"{base_url}/{zip_name}" + ("?download=1" if base_url.startswith("http") else "")
         zip_path = os.path.join(tempfile.gettempdir(), zip_name)
         print(f"{yr} {layer}: downloading")
+        # read in 1 MB pieces so the bar can advance; total comes from the server's
+        # Content-Length (missing -> tqdm shows a byte counter with no bar)
         with urllib.request.urlopen(url) as r, open(zip_path, "wb") as out:
-            shutil.copyfileobj(r, out, 1 << 20)
+            size = r.headers.get("Content-Length")
+            with tqdm(total=int(size) if size else None, unit="B", unit_scale=True,
+                      unit_divisor=1024, desc=zip_name) as bar:
+                for chunk in iter(lambda: r.read(1 << 20), b""):
+                    out.write(chunk)
+                    bar.update(len(chunk))
         if _md5(zip_path) != md5[zip_name]:
             os.remove(zip_path)
             raise IOError(f"{zip_name}: checksum does not match, download again")

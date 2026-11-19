@@ -5,3 +5,4 @@ matplotlib
 pyarrow
 pyogrio
 shapely>=2.1
+tqdm

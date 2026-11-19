@@ -39,7 +39,7 @@ download_parcels <- function(years,
     url <- file.path(base_url, zip_name)
     if (startsWith(base_url, "http")) url <- paste0(url, "?download=1")
     utils::download.file(url, zip_path,
-                         mode = "wb", quiet = TRUE)
+                         mode = "wb", quiet = FALSE)   # FALSE shows the progress bar
     if (unname(tools::md5sum(zip_path)) != expected) {
       unlink(zip_path); stop(zip_name, ": checksum does not match, download again")
     }
