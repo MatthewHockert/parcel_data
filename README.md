@@ -42,7 +42,7 @@ These steps are the same on Windows, Mac and Linux. The R steps are all pasted i
    ```
    The files go in a standard folder for your account, which `download_parcels()` prints and `parcel_data_dir()` returns. R and Python use the same folder, so a year downloaded in one is there for the other. Years already downloaded are skipped.
 
-   Downloads from Zenodo run slowly. For example, one year's polygons (300-600 MB) take about 5-10 minutes, and all 21 years of both layers (10 GB) may take several hours, so fetch only the years you need. Standardized Points reads place each point on its parcel polygon, so a Points download also fetches that year's polygons. `point_location = "published"` keeps the points where the county published them.
+   Zenodo limits the speed of each connection, so `download_parcels()` fetches each zip as 8 pieces at once and joins them (set `connections = 1` for one plain download). One year's polygons (300-600 MB) take about 1-3 minutes, and all 21 years of both layers (10 GB) about an hour, so fetch only the years you need. Standardized Points reads place each point on its parcel polygon, so a Points download also fetches that year's polygons. `point_location = "published"` keeps the points where the county published them.
 3. **Map one county and year to check it works.** This colors Ramsey County's 2016 parcels by estimated market value, on a log scale because a few large parcels are worth far more than the rest. Parcels with no value are left out.
 
    R:

@@ -16,5 +16,6 @@ Depends:
     dplyr,
     ggplot2
 Imports:
-    arrow
+    arrow,
+    curl
 Encoding: UTF-8
