@@ -38,11 +38,10 @@ download_parcels <- function(years,
     message(sprintf("%d %s: downloading", yr, ly))
     url <- file.path(base_url, zip_name)
     if (startsWith(base_url, "http")) url <- paste0(url, "?download=1")
-    # PROGRESS BAR: download.file() draws it (a row of "=" that fills to 50 wide)
-    # because quiet = FALSE. It only appears in a version installed after this
-    # line was added, so reinstall the package if no bar shows.
-    utils::download.file(url, zip_path,
-                         mode = "wb", quiet = FALSE)
+    # PROGRESS BAR: drawn inside .download_with_bar() (below), 0% to 100%.
+    # It only appears in a version installed after this was added, so
+    # reinstall the package if no bar shows.
+    .download_with_bar(url, zip_path)
     if (unname(tools::md5sum(zip_path)) != expected) {
       unlink(zip_path); stop(zip_name, ": checksum does not match, download again")
     }
@@ -51,4 +50,35 @@ download_parcels <- function(years,
     unlink(zip_path)
   }
   invisible(data_dir)
+}
+
+## Copy src (an http or file:// URL) to dest in 1 MB pieces and draw the bar.
+## PROGRESS BAR: txtProgressBar(style = 3) prints |=====     |  45%, and
+## setTxtProgressBar() moves it after each piece. The percent is bytes so far
+## over the file size the server reports; with no size reported there is no bar.
+.download_with_bar <- function(src, dest, piece = 2^20) {
+  total <- .remote_size(src)
+  con <- url(src, "rb"); on.exit(close(con), add = TRUE)
+  out <- file(dest, "wb"); on.exit(close(out), add = TRUE)
+  bar <- if (!is.na(total)) utils::txtProgressBar(min = 0, max = 100, style = 3)
+  done <- 0
+  repeat {
+    buf <- readBin(con, "raw", piece)
+    if (length(buf) == 0) break
+    writeBin(buf, out)
+    done <- done + length(buf)
+    if (!is.null(bar)) utils::setTxtProgressBar(bar, 100 * done / total)
+  }
+  if (!is.null(bar)) close(bar)
+  invisible(dest)
+}
+
+## File size in bytes: from disk for file:// URLs, else the last Content-Length
+## header (the last one because Zenodo redirects first). NA if unknown.
+.remote_size <- function(src) {
+  if (startsWith(src, "file://")) return(file.size(sub("^file://", "", src)))
+  h <- tryCatch(curlGetHeaders(src), error = function(e) character())
+  len <- grep("^content-length:", h, ignore.case = TRUE, value = TRUE)
+  if (length(len) == 0) return(NA_real_)
+  as.numeric(trimws(sub("^[^:]*:", "", len[length(len)])))
 }
